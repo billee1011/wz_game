@@ -19,17 +19,20 @@ public class Main : MonoBehaviour {
         buffer.writeChar(70);
         buffer.writeInt(-1234);
         buffer.writeLong(13243535L);
+        buffer.writeFloat(232535.32f);
 
 
         int a = buffer.readByte();
         char b = buffer.readChar();
         int c = buffer.readInt();
         long d = buffer.readLong();
+        float e = buffer.readFloat();
 
         UnityEngine.Debug.Log(a);
         UnityEngine.Debug.Log(b);
         UnityEngine.Debug.Log(c);
         UnityEngine.Debug.Log(d);
+        UnityEngine.Debug.Log(e);
     }
 
 	// Use this for initialization

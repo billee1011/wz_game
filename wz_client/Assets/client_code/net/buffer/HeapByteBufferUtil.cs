@@ -55,7 +55,9 @@ namespace WzBuffer
         }
 
         public static void setFloat(byte[] bytes, int index, float value) {
-            
+            byte[] bs = BitConverter.GetBytes(value);
+            int result = BitConverter.ToInt32(bs , 0);
+            setInt(bytes, index, result);
         }
 
         public static void setDouble(byte[] bytes , int index , double value)
@@ -72,6 +74,14 @@ namespace WzBuffer
         {
             return (short)(bytes[index] << 8 |
                 bytes[index + 1]);
+        }
+
+        public static float getFloat(byte[] bytes , int index)
+        {
+            long value = getInt(bytes, index);
+            byte[] bs = BitConverter.GetBytes(value);
+            float result = (float)BitConverter.ToDouble(bs, 0);
+            return result;
         }
 
         public static int getInt(byte[] bytes , int index)

@@ -1,12 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{D318965E-8257-59FF-F8E7-4401F4ACC442}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -46,17 +45,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\client_code\Main.cs" />
-    <Compile Include="Assets\client_code\MainProxy.cs" />
-    <Compile Include="Assets\client_code\net\buffer\ByteBuffer.cs" />
-    <Compile Include="Assets\client_code\net\buffer\HeapByteBufferUtil.cs" />
-    <None Include="Assets\Resources\hello.txt" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-    </Reference>
+     <Compile Include="Assets\client_code\Main.cs" />
+     <Compile Include="Assets\client_code\MainProxy.cs" />
+     <Compile Include="Assets\client_code\net\buffer\ByteBuffer.cs" />
+     <Compile Include="Assets\client_code\net\buffer\HeapByteBufferUtil.cs" />
+     <None Include="Assets\Resources\hello.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -66,4 +65,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>

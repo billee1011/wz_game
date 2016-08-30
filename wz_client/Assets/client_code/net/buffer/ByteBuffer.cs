@@ -102,7 +102,9 @@ namespace WzBuffer
 
         public  void writeFloat(float value)
         {
-
+            ensureWriteable(4);
+            HeapByteBufferUtil.setFloat(bytes, writerIndex, value);
+            writerIndex += 4;
         }
 
         public void writeChar(int value)
@@ -160,7 +162,9 @@ namespace WzBuffer
 
         public  float readFloat()
         {
-            return 0;
+            float value = HeapByteBufferUtil.getFloat(bytes, readerIndex);
+            readerIndex += 4;
+            return value;
         }
 
         public  string readString()

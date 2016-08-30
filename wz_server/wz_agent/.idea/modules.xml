@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/wz_agent.iml" filepath="$PROJECT_DIR$/wz_agent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wz_center/wz_center.iml" filepath="$PROJECT_DIR$/../wz_center/wz_center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wz_common/wz_common.iml" filepath="$PROJECT_DIR$/../wz_common/wz_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wz_backup/wz_data.iml" filepath="$PROJECT_DIR$/../wz_backup/wz_data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wz_entity/wz_entity.iml" filepath="$PROJECT_DIR$/../wz_entity/wz_entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wz_login/wz_login.iml" filepath="$PROJECT_DIR$/../wz_login/wz_login.iml" />
+    </modules>
+  </component>
+</project>

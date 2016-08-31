@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WzBuffer
+namespace WzNet
 {
     public class ByteBuffer
     {
@@ -22,6 +22,11 @@ namespace WzBuffer
         public ByteBuffer(int capicity):this(capicity , ByteOrder.BIG)
         {
            
+        }
+
+        public ByteBuffer() : this(16, ByteOrder.BIG)
+        {
+
         }
 
         public  int capicity()
@@ -58,6 +63,11 @@ namespace WzBuffer
             ensureWriteable(length);
 
         }
+
+        public void writeBytes(byte[] dst, int offset, int length)
+        {
+        }
+
 
         public  void writeInt(int value)
         {
@@ -177,6 +187,13 @@ namespace WzBuffer
             char value = HeapByteBufferUtil.getChar(bytes, readerIndex);
             readerIndex += 2;
             return value;
+        }
+
+        public  byte[] getWriteBytes()
+        {
+            byte[] result = new byte[writerIndex];
+            System.Array.Copy(bytes, result, writerIndex);
+            return result;
         }
     }
 

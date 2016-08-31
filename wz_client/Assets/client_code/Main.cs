@@ -3,36 +3,20 @@ using System.Collections;
 using System.Net.Sockets;
 using System.Net;
 using System.Text;
-using WzBuffer;
+using WzNet;
 
 public class Main : MonoBehaviour {
     private Socket so = null;
-
+    private int count = 0;
 
     void Awake()
     {
         Object obj = Resources.Load("hello", typeof(TextAsset)) as TextAsset;
+        NetManager.getInst().connect("127.0.0.1", (short)15010);
 
-        ByteBuffer buffer = new ByteBuffer(128);
-
-        buffer.writeByte(-11);
-        buffer.writeChar(70);
-        buffer.writeInt(-1234);
-        buffer.writeLong(13243535L);
-        buffer.writeFloat(232535.32f);
+        NetManager.getInst().pushMessageSync(new RequestMessage(1, 2));
 
 
-        int a = buffer.readByte();
-        char b = buffer.readChar();
-        int c = buffer.readInt();
-        long d = buffer.readLong();
-        float e = buffer.readFloat();
-
-        UnityEngine.Debug.Log(a);
-        UnityEngine.Debug.Log(b);
-        UnityEngine.Debug.Log(c);
-        UnityEngine.Debug.Log(d);
-        UnityEngine.Debug.Log(e);
     }
 
 	// Use this for initialization
@@ -42,6 +26,7 @@ public class Main : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    
-	}
+        NetManager.getInst().onUpdate();
+
+    }
 }

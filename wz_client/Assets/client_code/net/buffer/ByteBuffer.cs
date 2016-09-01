@@ -34,10 +34,16 @@ namespace WzNet
             return bytes.Length;
         }
 
+        public int remain()
+        {
+            return bytes.Length - writerIndex;
+        }
+
         private void ensureWriteable(int length)
         {
             int minWriteAble = length + writerIndex;
-            if( minWriteAble < capicity())
+
+            if( minWriteAble < remain())
             {
                 return;
             }
@@ -46,6 +52,9 @@ namespace WzNet
             {
                 newCapacity <<= 1;
             }
+            byte[] newBytes = new byte[newCapacity];
+            System.Array.Copy(bytes, newBytes, bytes.Length);
+            bytes = newBytes;
         }
 
 
@@ -59,13 +68,15 @@ namespace WzNet
 
         public void writeBytes(byte[] dst)
         {
-            int length = dst.Length;
-            ensureWriteable(length);
+            writeBytes(dst, 0, dst.Length);
 
         }
 
         public void writeBytes(byte[] dst, int offset, int length)
         {
+            ensureWriteable(length);
+            HeapByteBufferUtil.setBytes(bytes, writerIndex, dst, offset, length);
+            writerIndex += length;
         }
 
 

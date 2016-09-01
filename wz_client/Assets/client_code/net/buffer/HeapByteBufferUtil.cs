@@ -21,9 +21,12 @@ namespace WzNet
             bytes[index] = (byte)value;
         }
 
-        public static void setBytes(byte[] bytes, int index, byte[] dst)
+        public static void setBytes(byte[] bytes, int index, byte[] dst , int dstIndex , int length)
         {
-            
+            for(int i = dstIndex; i < length; i++)
+            {
+                bytes[index + i] = dst[dstIndex + i];
+            }
         }
 
         public static void setBoolean(byte[] bytes , int index, bool value)

@@ -1,5 +1,6 @@
 package server;
 
+import database.DBManager;
 import net.NetServer;
 import net.codec.GameMessageDecoder;
 import net.handler.ServerHandler;
@@ -35,6 +36,7 @@ public class LoginServer extends ServerBase {
 		server.setHandler(new LoginServerHandler());
 		server.setDecoder(new LoginDecoder());
 		server.start();
+		DBManager.getInst().initDbProperties(props);
 	}
 
 	@Override
@@ -48,6 +50,6 @@ public class LoginServer extends ServerBase {
 	}
 
 	public static void main(String[] args) {
-
+		LoginServer.getInst().start();
 	}
 }

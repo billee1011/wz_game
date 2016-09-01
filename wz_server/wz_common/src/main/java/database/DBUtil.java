@@ -17,11 +17,11 @@ import java.util.Set;
  */
 public class DBUtil {
 
-	public static List<Map<String, Object>> executeQuery(String tableName, Map<String, Object> where) {
+	public static List<DbObject> executeQuery(String tableName, DbObject where) {
 		return executeQuery(tableName, where, null);
 	}
 
-	public static List<Map<String, Object>> executeQuery(String tableName, Map<String, Object> where, List<String> searchFields) {
+	public static List<DbObject> executeQuery(String tableName, DbObject where, List<String> searchFields) {
 		Connection conn = DBManager.getInst().getConnection();
 		List<Map<String, Object>> result = null;
 		try {
@@ -39,16 +39,20 @@ public class DBUtil {
 		return null;
 	}
 
-	public static List<Map<String, Object>> fillResult(ResultSet set) throws SQLException {
-		List<Map<String, Object>> result = new ArrayList<>();
+	public static int executeInsert(String tableName, DbObject data) {
+		return -1;
+	}
+
+	private static List<DbObject> fillResult(ResultSet set) throws SQLException {
+		List<DbObject> result = new ArrayList<>();
 		while (set.next()) {
 			result.add(fillOneResult(set));
 		}
 		return result;
 	}
 
-	public static Map<String, Object> fillOneResult(ResultSet set) throws SQLException {
-		Map<String, Object> result = new HashMap<>();
+	private static DbObject fillOneResult(ResultSet set) throws SQLException {
+		DbObject result = new DbObject();
 		ResultSetMetaData data = set.getMetaData();
 		int count = data.getColumnCount();
 		for (int i = 0; i < count; i++) {
@@ -70,7 +74,7 @@ public class DBUtil {
 		}
 	}
 
-	public static String getSql(String tableName, Map<String, Object> params, List<String> fieldsList) {
+	private static String getSql(String tableName, Map<String, Object> params, List<String> fieldsList) {
 		if (fieldsList == null) {
 			return getSqlString(tableName, params);
 		} else {
@@ -80,6 +84,14 @@ public class DBUtil {
 
 	private static String getFieldSqlString(String tableName, Map<String, Object> params, List<String> fieldsList) {
 		return "";
+	}
+
+	private static String getSqlInertString(String tableName, DbObject data) {
+		StringBuffer buffer = new StringBuffer(50);
+		buffer.append("insert into ");
+		buffer.append(tableName);
+		buffer.append(" values");
+		return buffer.toString();
 	}
 
 	private static String getSqlString(String tableName, Map<String, Object> params) {
@@ -101,8 +113,5 @@ public class DBUtil {
 			}
 		}
 		return buffer.toString();
-	}
-
-	public static void main(String[] args) {
 	}
 }

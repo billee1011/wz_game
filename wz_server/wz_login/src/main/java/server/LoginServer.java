@@ -4,6 +4,7 @@ import database.DBManager;
 import net.NetServer;
 import net.codec.GameMessageDecoder;
 import net.handler.ServerHandler;
+import proto.Server;
 import server.handler.LoginClientHandler;
 import server.handler.LoginServerHandler;
 import server.handler.codec.LoginDecoder;
@@ -50,6 +51,8 @@ public class LoginServer extends ServerBase {
 	}
 
 	public static void main(String[] args) {
-		LoginServer.getInst().start();
+//		LoginServer.getInst().start();
+		Server.RegisterUser.Builder builder = Server.RegisterUser.newBuilder();
+
 	}
 }

@@ -1,5 +1,6 @@
 package server.handler.action;
 
+import client.LoginCharacter;
 import client.LoginClient;
 import com.google.protobuf.MessageLite;
 import database.DBUtil;
@@ -27,18 +28,30 @@ public class LoginPasswordAction extends IMessageAction {
 		DbObject obj = new DbObject();
 		obj.put("username", userName);
 		List<DbObject> result = DBUtil.executeQuery("accounts", obj);
+		int userId = 0;
 		if (result.size() == 0) {
 			DbObject data = new DbObject();
 			data.put("username", userName);
 			data.put("password", password);
-			DBUtil.executeInsert("accounts", data);
+			userId = DBUtil.executeInsert("accounts", data);
+		} else {
+			userId = result.get(0).getInt("user_id");
 		}
 		client.setUserName(userName);
 		client.setPassword(password);
+		client.setUserId(userId);
 		onLoginSuccess(client);
 	}
 
 	private void onLoginSuccess(LoginClient client) {
+		List<LoginCharacter> charList = client.loadCharacterList();
+		LoginCharacter character = null;
+		if (charList.size() == 0) {
+			character = LoginCharacter.getDefault(client.getUserId());
+			character.saveCharacter();
+		} else {
+			character = charList.get(0);
+		}
 
 	}
 }

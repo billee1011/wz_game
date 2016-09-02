@@ -39,21 +39,28 @@ public class DBUtil {
 		return null;
 	}
 
-	public static boolean executeInsert(String tableName, DbObject data) {
+	public static int executeInsert(String tableName, DbObject data) {
 		Connection conn = DBManager.getInst().getConnection();
+		PreparedStatement stat = null;
+		ResultSet result = null;
 		try {
-			PreparedStatement stat = conn.prepareStatement(getSqlInertString(tableName, data));
+			stat = conn.prepareStatement(getSqlInertString(tableName, data));
 			Set<String> keys = data.keySet();
 			int index = 0;
 			for (String key : keys) {
 				index++;
 				setPreparedParams(index, stat, data.get(key));
 			}
-			return stat.execute();
+			stat.execute();
+			result = stat.getGeneratedKeys();
+			if( result.next()){
+				return result.getInt(1);
+			}
+			return 0;
 		} catch (SQLException e) {
 			e.printStackTrace();
+			return 0;
 		}
-		return false;
 	}
 
 	private static List<DbObject> fillResult(ResultSet set) throws SQLException {

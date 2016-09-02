@@ -1,9 +1,9 @@
 package net;
 
 import com.google.protobuf.InvalidProtocolBufferException;
-import io.netty.channel.ChannelHandlerContext;
-import net.proto.Server;
+import io.netty.channel.ChannelHandlerContext;s
 import net.request.RequestMessage;
+import proto.Server;
 import server.EServerType;
 import server.ServerManager;
 import server.ServerSession;

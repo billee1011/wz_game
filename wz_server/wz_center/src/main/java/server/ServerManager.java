@@ -3,12 +3,12 @@ package server;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import net.ITargetServerMessage;
-import net.proto.Server;
 import net.request.RequestMessage;
 import net.response.ResponseMessage;
 import org.omg.CORBA.Request;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import proto.Server;
 
 import java.util.HashMap;
 import java.util.Map;

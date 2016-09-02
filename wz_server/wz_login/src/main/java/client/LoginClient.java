@@ -1,6 +1,10 @@
 package client;
 
+import database.DBUtil;
+import database.DbObject;
 import io.netty.channel.ChannelHandlerContext;
+
+import java.util.List;
 
 /**
  * Created by Administrator on 2016/8/29 0029.
@@ -54,5 +58,18 @@ public class LoginClient {
 
 	public void disconnect() {
 		ioSession.channel().close();
+	}
+
+
+	public List<LoginCharacter> loadCharacterList() {
+		List<LoginCharacter> charList = null;
+		DbObject where = new DbObject();
+		where.put("user_id", userId);
+		List<DbObject> result = DBUtil.executeQuery("player", where);
+		result.forEach( e ->{
+			LoginCharacter character = new LoginCharacter(e);
+			charList.add(character);
+		});
+		return charList;
 	}
 }

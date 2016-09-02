@@ -15,5 +15,6 @@
     <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.4.Final" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:2.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.12" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.38" level="project" />
   </component>
 </module>

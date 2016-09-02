@@ -6,7 +6,7 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 /**
  * Created by WZ on 2016/8/25.
  */
-public class ServerHandler extends ChannelInboundHandlerAdapter {
+public abstract class ServerHandler extends ChannelInboundHandlerAdapter {
 
 	@Override
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {

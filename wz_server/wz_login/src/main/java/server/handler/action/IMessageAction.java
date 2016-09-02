@@ -1,5 +1,6 @@
 package server.handler.action;
 
+import client.LoginClient;
 import com.google.protobuf.MessageLite;
 
 /**
@@ -7,14 +8,14 @@ import com.google.protobuf.MessageLite;
  */
 public abstract class IMessageAction {
 
-	public abstract boolean valid(MessageLite message);
+	protected abstract boolean valid(MessageLite message);
 
-	public void handler(MessageLite message) {
-		if( !valid(message)) {
+	public void handler(LoginClient client, MessageLite message) {
+		if (!valid(message)) {
 			return;
 		}
-		handlerMessage(message);
+		handlerMessage(client, message);
 	}
 
-	public abstract void handlerMessage(MessageLite message);
+	protected abstract void handlerMessage(LoginClient client, MessageLite message);
 }

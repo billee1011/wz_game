@@ -68,7 +68,9 @@ public abstract class ServerBase {
 
 	}
 
-	;
+	public NetClient getCenterClient(){
+		return client;
+	}
 
 
 	public boolean initServerConf() {

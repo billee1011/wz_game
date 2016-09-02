@@ -17,9 +17,9 @@ import java.util.List;
 public class NetServer {
 	private ServerBootstrap boot = new ServerBootstrap();
 
-	private ServerHandler handler = new ServerHandler();
+	private ServerHandler handler;
 
-	private ByteToMessageDecoder decoder = null;
+	private ByteToMessageDecoder decoder;
 
 	private short port;
 

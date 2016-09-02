@@ -39,8 +39,21 @@ public class DBUtil {
 		return null;
 	}
 
-	public static int executeInsert(String tableName, DbObject data) {
-		return -1;
+	public static boolean executeInsert(String tableName, DbObject data) {
+		Connection conn = DBManager.getInst().getConnection();
+		try {
+			PreparedStatement stat = conn.prepareStatement(getSqlInertString(tableName, data));
+			Set<String> keys = data.keySet();
+			int index = 0;
+			for (String key : keys) {
+				index++;
+				setPreparedParams(index, stat, data.get(key));
+			}
+			return stat.execute();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
 	}
 
 	private static List<DbObject> fillResult(ResultSet set) throws SQLException {
@@ -87,11 +100,25 @@ public class DBUtil {
 	}
 
 	private static String getSqlInertString(String tableName, DbObject data) {
-		StringBuffer buffer = new StringBuffer(50);
-		buffer.append("insert into ");
-		buffer.append(tableName);
-		buffer.append(" values");
-		return buffer.toString();
+		StringBuilder sql = new StringBuilder();
+		StringBuilder values = new StringBuilder();
+		sql.append("INSERT INTO ").append(tableName);
+		values.append(" VALUES ");
+		String[] keys = (String[]) data.keySet().toArray(new String[0]);
+		Object[] params = new Object[keys.length];
+		for (int i = 0; i < keys.length; ++i) {
+			String key = keys[i];
+			params[i] = data.get(key);
+			String delim = (i == 0 ? "(" : ",");
+			sql.append(delim);
+			values.append(delim);
+			sql.append('`').append(key).append('`');
+			values.append("?");
+		}
+		sql.append(")");
+		values.append(")");
+		sql.append(values.toString());
+		return sql.toString();
 	}
 
 	private static String getSqlString(String tableName, Map<String, Object> params) {
@@ -113,5 +140,8 @@ public class DBUtil {
 			}
 		}
 		return buffer.toString();
+	}
+
+	public static void main(String[] args) {
 	}
 }

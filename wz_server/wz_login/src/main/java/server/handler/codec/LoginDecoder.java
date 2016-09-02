@@ -36,14 +36,14 @@ public class LoginDecoder extends ByteToMessageDecoder {
 				return;
 			}
 			ByteBuf out = Unpooled.buffer();
-			out.writeBytes(in, in.readerIndex());
+			out.writeBytes(in , in.readableBytes());
 			list.add(out);
 		} else {
 			if (client.length > in.readableBytes()) {
 				return;
 			}
 			ByteBuf out = Unpooled.buffer();
-			out.writeBytes(in, in.readerIndex());
+			out.writeBytes(in, in.readableBytes());
 			list.add(out);
 		}
 	}

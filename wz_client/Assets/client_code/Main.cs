@@ -28,7 +28,9 @@ public class Main : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+        GameObject canvas = GameObject.Find("Canvas");
+        Object.DontDestroyOnLoad(canvas);
+
 	}
 	
 	// Update is called once per frame

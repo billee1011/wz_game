@@ -1,0 +1,16 @@
+
+syntax = "proto3";
+
+package proto;
+
+message PBLoginReq
+{
+	int32 user_id = 1;
+	string token = 2;
+}
+
+message PBCreateRoleReq
+{
+	int32 gender = 1;
+	string name = 2;
+}

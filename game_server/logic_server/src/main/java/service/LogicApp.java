@@ -66,12 +66,10 @@ public class LogicApp extends BaseApp {
 	@Override
 	protected void initServer() {
 		initDataBase();
-		loadDebugProps();
+//		loadDebugProps();
 		BaseProvider.init();
 		BaseProvider.loadAll();
 		LogicActorManager.getInstance().start();
-		StragetyManager.getInstance().registerAllStragety();
-		XnStragetyManager.getInst().registerAllStragety();
 	}
 
 	@Override

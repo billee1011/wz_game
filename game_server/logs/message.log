@@ -12620,3 +12620,18 @@ value: 0
 2017-08-15 15:42:06 ShowInfo.java 23 [ nioEventLoopGroup-2-1:842100 ] - [ INFO ]  playerId:100016 reqId:32008 seqId:125 message:null
 2017-08-15 15:42:08 CenterMessageHandler.java 100 [ nioEventLoopGroup-3-3:851238 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null
 2017-08-15 15:42:11 CenterMessageHandler.java 100 [ nioEventLoopGroup-3-4:853386 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null
+2017-09-06 17:59:03 CenterMessageHandler.java 100 [ nioEventLoopGroup-3-1:3871 ] - [ INFO ]  player 0 , request:CENTER_REGISTER_SERVER, packet list: "1"
+list: "0"
+list: "0"
+
+2017-09-06 17:59:32 CenterMessageHandler.java 100 [ nioEventLoopGroup-3-2:32938 ] - [ INFO ]  player 0 , request:CENTER_REGISTER_SERVER, packet list: "5"
+list: "0"
+list: "0"
+list: "127.0.0.1"
+list: "9096"
+
+2017-09-06 18:00:04 CenterMessageHandler.java 100 [ nioEventLoopGroup-3-1:64505 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null
+2017-09-06 18:00:23 CenterMessageHandler.java 100 [ nioEventLoopGroup-3-3:83550 ] - [ INFO ]  player 0 , request:CENTER_REGISTER_SERVER, packet list: "2"
+list: "0"
+list: "0"
+

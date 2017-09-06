@@ -73,7 +73,6 @@ public abstract class BaseProvider {
 	}
 
 	public static void loadAll() {
-		providerList.forEach(e -> e.loadConfig());
 	}
 
 	public boolean loadConfig() {

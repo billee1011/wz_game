@@ -48,7 +48,7 @@ public abstract class RoomFacade implements GameRoomInterface {
 	/**
 	 * 私房退出桌子 同意解散 一天到期 后台删除桌子
 	 * 匹配退出桌子 自己游戏未进行时退出 所有人退出 后台删除桌子
-	 * */
+	 */
 	protected Map<Integer, Set<Integer>> roomToPlayers = new HashMap<>();
 
 	@Override
@@ -83,7 +83,7 @@ public abstract class RoomFacade implements GameRoomInterface {
 		}
 		switch (room.getMode()) {
 			case 4:
-				enterNiuNiuRoom(player,roomId);
+				enterNiuNiuRoom(player, roomId);
 				break;
 			case 6:
 			case 9:
@@ -96,7 +96,7 @@ public abstract class RoomFacade implements GameRoomInterface {
 		}
 	}
 
-	protected abstract void enterNiuNiuRoom(Player player,int roomId);
+	protected abstract void enterNiuNiuRoom(Player player, int roomId);
 
 	private void doEnterMatchingQueue(Player player, int roomId) {
 //		player.setRoomId(roomId);
@@ -110,8 +110,8 @@ public abstract class RoomFacade implements GameRoomInterface {
 		}
 		if (!enterPlayerQueue.contains(player)) {
 			enterPlayerQueue.add(player);
-			int roomNum = addRoomPlayerNum(roomId,player.getPlayerId());
-			logger.info("玩家{}成功加入{}匹配队列,当前匹配人数{},房间人数{}",player.getPlayerId(),roomId,enterPlayerQueue.size(),roomNum);
+			int roomNum = addRoomPlayerNum(roomId, player.getPlayerId());
+			logger.info("玩家{}成功加入{}匹配队列,当前匹配人数{},房间人数{}", player.getPlayerId(), roomId, enterPlayerQueue.size(), roomNum);
 			onPlayerEnterQueue(roomId);
 		}
 	}
@@ -125,27 +125,18 @@ public abstract class RoomFacade implements GameRoomInterface {
 //		ZjhDeskManager.getIns().addPlayer(player,roomId);
 //	}
 
-	private void doDeskGroupEnterMatchingQueue(Player player, int roomId){
+	private void doDeskGroupEnterMatchingQueue(Player player, int roomId) {
 //		player.setRoomId(roomId);
 		player.setMatchingGameId(getGameType().getValue());
 		player.setMatchingRoomId(roomId);
 		player.write(ResponseCode.LOBBY_MACHING, CommonCreator.createPBPair(player.getMatchingGameId(), roomId));
-		addRoomPlayerNum(roomId,player.getPlayerId());
-		GroupDeskManager.getIns().matchingDesk(player,getGameType(),roomId);
+		addRoomPlayerNum(roomId, player.getPlayerId());
+		GroupDeskManager.getIns().matchingDesk(player, getGameType(), roomId);
 	}
 
 	@Override
 	public void onPlayerEnterQueue(int roomId) {
-		Queue<Player> queue = enterPlayerMap.get(roomId);
-		if (CenterServer.getInst().isMatchSwitchQueueSize() && queue.size() < CenterServer.getInst().getQueueSize()) {
-			return;
-		}
-		if (queue.size() < getGameNeedPeople()) {
-			return;
-		}
-		List<Player> playerList = new ArrayList<>(queue);
-		queue.clear();
-		dispatchQueue(roomId, playerList);
+
 	}
 
 
@@ -181,16 +172,16 @@ public abstract class RoomFacade implements GameRoomInterface {
 		deskInfo.setRoomId(roomId);
 		deskInfo.setIoSession(ioSession);
 		deskInfo.setPlayerList(playerList);
-		
+
 		playerList.forEach(e -> {
 			e.addMatchPlayers(playerList);
 			e.updateLoginStatus(roomId + LoginStatusConst.AT_GAME_ROOM_ING);        /// 用加100的方式来判断不同的场景
 			e.setDeskInfo(deskInfo);
 //			e.setRoomId(roomId);
-			logger.info("玩家{}匹配创建桌子{},{}",e.getPlayerId(),roomId,deskInfo.getDeskId());
+			logger.info("玩家{}匹配创建桌子{},{}", e.getPlayerId(), roomId, deskInfo.getDeskId());
 		});
-		
-		CocoPacket packet = new CocoPacket(RequestCode.LOGIC_CREATE_DESK, createPBCreateDesk(getGameType(), roomId,deskInfo.getDeskId(), playerList));
+
+		CocoPacket packet = new CocoPacket(RequestCode.LOGIC_CREATE_DESK, createPBCreateDesk(getGameType(), roomId, deskInfo.getDeskId(), playerList));
 		serverSession.sendRequest(packet);
 		logger.debug(" send request to logic create desk");
 	}
@@ -228,32 +219,7 @@ public abstract class RoomFacade implements GameRoomInterface {
 
 	private boolean tryBestQueueMethod(List<Player> result, List<String> useIps, List<Player> allPlayer, String device
 			, boolean needIp, boolean needOne, boolean needDevice, boolean needOld, boolean needPay, int needPeople) {
-		for (Player player : allPlayer) {
-			if (result.contains(player)) {
-				continue;
-			}
-			if (CenterServer.getInst().isMatchSwitchIp() && useIps.contains(player.getIp()) && needIp) {
-				continue;
-			}
-			if (CenterServer.getInst().isMatchSwitchOne() && isPlayerMatch(result, player) && needOne) {
-				continue;
-			}
-			if (CenterServer.getInst().isMatchSwitchDevice() && !player.getDevice().equals(device) && needDevice) {
-				continue;
-			}
-			//这个目前没有用啊getCreateTime 这个没有赋值
-			if (CenterServer.getInst().isMatchSwitchOld() && MiscUtil.isSameDay(player.getCreateTime(), MiscUtil.getCurrentSeconds()) && needOld) {
-				continue;
-			}
-			if (CenterServer.getInst().isMatchSwitchPay() && player.getPay_total() <= 0 && needPay) {
-				continue;
-			}
-			result.add(player);
-			useIps.add(player.getIp());
-			if (result.size() >= needPeople) {
-				return true;
-			}
-		}
+
 		return false;
 	}
 
@@ -266,7 +232,7 @@ public abstract class RoomFacade implements GameRoomInterface {
 		return false;
 	}
 
-	public CoupleMajiang.PBCreateDesk createPBCreateDesk(GameType game, int roomId, int deskId,List<Player> playerList) {
+	public CoupleMajiang.PBCreateDesk createPBCreateDesk(GameType game, int roomId, int deskId, List<Player> playerList) {
 		CoupleMajiang.PBCreateDesk.Builder builder = CoupleMajiang.PBCreateDesk.newBuilder();
 		builder.setGameType(game.getValue());
 		builder.setRoomId(roomId);
@@ -316,21 +282,21 @@ public abstract class RoomFacade implements GameRoomInterface {
 
 	@Override
 	public void leaveGameRoom(Player player) {
-		if(enterPlayerMap != null){
+		if (enterPlayerMap != null) {
 			int matchingRoomId = player.getMatchingRoomId();
 			Queue<Player> enterPlayerQueue = enterPlayerMap.get(matchingRoomId);
-			if(enterPlayerQueue != null){
+			if (enterPlayerQueue != null) {
 				enterPlayerQueue.remove(player);
-				logger.info("玩家{}离开{}匹配队列,当前匹配队列人数{}",player.getPlayerId(),matchingRoomId,enterPlayerQueue.size());
+				logger.info("玩家{}离开{}匹配队列,当前匹配队列人数{}", player.getPlayerId(), matchingRoomId, enterPlayerQueue.size());
 			}
 		}
 		int roomId = player.getDeskOrMatchRoomId();
-		if(roomId != 0){
-			int roomNum = reduceRoomPlayerNum(roomId,player.getPlayerId());
+		if (roomId != 0) {
+			int roomNum = reduceRoomPlayerNum(roomId, player.getPlayerId());
 			player.setMatchingGameId(0);
 			player.setMatchingRoomId(0);
 			player.updateLoginStatus(LoginStatusConst.ENTER_HALL);
-			logger.info("玩家{}离开{}房间,当前房间人数{}",player.getPlayerId(),roomId,roomNum);
+			logger.info("玩家{}离开{}房间,当前房间人数{}", player.getPlayerId(), roomId, roomNum);
 		}
 //		player.setRoomId(0);
 	}
@@ -370,7 +336,7 @@ public abstract class RoomFacade implements GameRoomInterface {
 		return result;
 	}
 
-	public int addRoomPlayerNum(int roomId,int playerId) {
+	public int addRoomPlayerNum(int roomId, int playerId) {
 		Set<Integer> currentValue = roomToPlayers.get(roomId);
 		if (currentValue == null) {
 			currentValue = new HashSet<>();
@@ -380,7 +346,7 @@ public abstract class RoomFacade implements GameRoomInterface {
 		return currentValue.size();
 	}
 
-	public int reduceRoomPlayerNum(int roomId,int playerId) {
+	public int reduceRoomPlayerNum(int roomId, int playerId) {
 		Set<Integer> currentValue = roomToPlayers.get(roomId);
 		if (currentValue == null) {
 			return 0;
@@ -398,26 +364,27 @@ public abstract class RoomFacade implements GameRoomInterface {
 			roomToPlayers.put(conf.getId(), new HashSet<>());
 		}
 	}
-	
+
 	@Override
 	public void addGameRoom() {
 		for (CoupleRoom conf : CoupleRoomInfoProvider.getInst().getCoupleRoomCfgMap(getGameType()).values()) {
 			if (conf == null) {
 				continue;
 			}
-			if (!roomToPlayers.containsKey(conf.getId())){
+			if (!roomToPlayers.containsKey(conf.getId())) {
 				roomToPlayers.put(conf.getId(), new HashSet<>());
 			}
 		}
 	}
-	
-	public Set<Integer> getPlayerIds(int roomId){
+
+	public Set<Integer> getPlayerIds(int roomId) {
 		return roomToPlayers.get(roomId);
 	}
 
 
 	/**
 	 * 判断是否在房间中
+	 *
 	 * @param roomId
 	 * @param playerId
 	 * @return

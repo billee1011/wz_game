@@ -142,7 +142,7 @@ public class Player implements Serializable{
 	public static Player getDefault(int accountId, String name) {
 		Player player = new Player();
 		player.playerId = 0;
-		player.coin = CenterServer.getInst().getGameInitMoney();
+		player.coin = 100;
 		player.name = name;
 		player.gender = Gender.randomGender();
 		player.icon = Icon.randomIconString(player.gender.getValue());

@@ -175,7 +175,6 @@ public class CenterServer extends BaseApp {
 		PlayerNameManager.getInst().loadNameInfo();
 		reloadDynamicProps();
 		initStaticConfig();
-		LobbyGameManager.getInst().init();
 		CenterActorManager.getInstance().start();
 //		DataManager.getInst().init(100000, 50000);
 //		DataManager.getInst().start();

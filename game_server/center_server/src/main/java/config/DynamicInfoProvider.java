@@ -117,15 +117,5 @@ public class DynamicInfoProvider extends BaseProvider {
 		this.exchange2Max = exchange2Max;
 		this.exchange2Need = exchange2Need;
 	}
-	
-	public Account.PBExchangeConfig createPBDynamicConfig() {
-		Account.PBExchangeConfig.Builder builder = Account.PBExchangeConfig.newBuilder();
-		builder.setExchangeLowExch(exchange_lowExch);
-		builder.setExchange1Min(exchange1Min);
-		builder.setExchange1Max(exchange1Max);
-		builder.setExchange1MaxNeed(exchange1Need);
-		builder.setExchangeOtherNeed(exchange2Need);
-		builder.setExchangeRemain(CenterServer.getInst().getExchangeRetain());
-		return builder.build();
-	}
+
 }

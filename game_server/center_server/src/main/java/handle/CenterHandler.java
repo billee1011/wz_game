@@ -89,7 +89,7 @@ public class CenterHandler extends AbstractHandler {
 	@Override
 	public void handle(String s, Request request, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws IOException, ServletException {
 		LogUtil.logHttp(logger, s, request);
-		
+
 		if (s.equals("/rank_reward")) {
 			handleRankReward(httpServletRequest, httpServletResponse);
 		} else if (s.equals("/conf_room")) {
@@ -122,7 +122,7 @@ public class CenterHandler extends AbstractHandler {
 			handleMainSend(httpServletRequest, httpServletResponse);
 		} else if (s.equals("/agent_info")) {
 			handleAgentInfo(httpServletRequest, httpServletResponse);
-		} else if (s.equals("/agent_info_db")){
+		} else if (s.equals("/agent_info_db")) {
 			handleAgentInfoDb(httpServletRequest, httpServletResponse);
 		} else if (s.equals("/agent_pay")) {
 			handleAgentPay(httpServletRequest, httpServletResponse);
@@ -176,7 +176,7 @@ public class CenterHandler extends AbstractHandler {
 			handleRefreshDynamicPublic(httpServletRequest, httpServletResponse);
 		}
 	}
-	
+
 	/**
 	 * 通知登陆服刷新配置
 	 */
@@ -186,7 +186,7 @@ public class CenterHandler extends AbstractHandler {
 			sessionList.forEach(e -> e.sendRequest(new CocoPacket(RequestCode.LOGIN_RELOAD_CONF, null)));
 		}
 	}
-	
+
 	private void handleRefreshDynamicPublic(HttpServletRequest request, HttpServletResponse response) {
 		DynamicPropertiesPublicProvider.getInst().reLoad();
 		for (Player player : PlayerManager.getInstance().getOnlinePlayers()) {
@@ -195,13 +195,13 @@ public class CenterHandler extends AbstractHandler {
 		}
 		noticeLoginReloadConf();
 	}
-	
+
 	private void handleQueryDeskList(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 		Semaphore sp = new Semaphore(0, true);
 		CenterActorManager.getDeskActor().put(() -> {
-			Iterator<DeskInfo>  it = DeskManager.getInst().getAllDesk().iterator();
+			Iterator<DeskInfo> it = DeskManager.getInst().getAllDesk().iterator();
 			JSONArray deskList = new JSONArray();
-			while(it.hasNext()){
+			while (it.hasNext()) {
 				DeskInfo desk = it.next();
 				JSONObject deskObj = new JSONObject();
 				deskObj.put("gameId", desk.getGameId());
@@ -231,19 +231,19 @@ public class CenterHandler extends AbstractHandler {
 
 	private void handleLoadServerState(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 		writeResponse(httpServletResponse, "200");
-	
+
 		ConfServerStateProvider.getInst().reLoad();
 	}
-	
+
 	private void handleUpdatePro(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 
 		int type = Integer.parseInt(httpServletRequest.getParameter("type"));
 		int playerId = Integer.parseInt(httpServletRequest.getParameter("param1"));
 		String param2 = httpServletRequest.getParameter("param2");
 
-		CenterActorManager.getLogicActor(playerId).put(()->{
-			Player player =  PlayerManager.getInstance().getPlayerById(playerId);
-			if(null != player) {
+		CenterActorManager.getLogicActor(playerId).put(() -> {
+			Player player = PlayerManager.getInstance().getPlayerById(playerId);
+			if (null != player) {
 				switch (type) {
 					case 3:         /// 支付宝 名修改
 						player.setAlipayName(param2);
@@ -262,83 +262,82 @@ public class CenterHandler extends AbstractHandler {
 
 	private void handleLoadSlbInfo(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 		writeResponse(httpServletResponse, "200");
-		
-		CenterActorManager.getDbCheckActor().put(()->{
-			CenterServer.getInst().intGateSlbConf();
+
+		CenterActorManager.getDbCheckActor().put(() -> {
 			return null;
 		});
 	}
-	
+
 	private void handleRemoveServer(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 		String paramApp = httpServletRequest.getParameter("app");
 		String paramEndTime = httpServletRequest.getParameter("endTime");//2017-07-02 21:00:00
-		
+
 		int endTime = MiscUtil.getSecondsOfTimeStamp_ex(paramEndTime, "yyyy-MM-dd hh:mm:ss");
 		List<ASObject> list_object = new ArrayList<>();
 		ASObject object = new ASObject();
 		object.put("timeFrom", MiscUtil.getCurrentSeconds());
-        object.put("timeTo", endTime);
-        object.put("content", "服务器将在"+paramEndTime+" 停服，请各位玩家局时下线，以免发生不要的损失");
-        object.put("delay", 10);
-        object.put("id", 10000);
+		object.put("timeTo", endTime);
+		object.put("content", "服务器将在" + paramEndTime + " 停服，请各位玩家局时下线，以免发生不要的损失");
+		object.put("delay", 10);
+		object.put("id", 10000);
 		list_object.add(object);
-		
+
 		AppId app = AppId.getByDesc(paramApp);
-		if(app == AppId.CENTER){
+		if (app == AppId.CENTER) {
 			writeResponse(httpServletResponse, "200");
-			
+
 			List<ServerSession> sessionList = ServerManager.getInst().getSessionList(AppId.GATE);
 			if (sessionList != null) {
 				sessionList.forEach(e -> e.sendRequest(new CocoPacket(RequestCode.GATE_BROAD_CAST_MESSAGE
 						, CommonCreator.createPBGameProtocol(ResponseCode.LOBBY_PAO_MA_DENG.getValue()
 						, LobbyCreator.createPBPaomadengList(list_object, 1).toByteArray()))));
 			}
-			
+
 			CenterServer.getInst().beginStop(endTime);
 			return;
 		}
-		
+
 		int serverId = Integer.parseInt(httpServletRequest.getParameter("serverId"));
-		
+
 		ServerSession serverSession = ServerManager.getInst().getServerSession(app, serverId);
 		serverSession.getStop().set(true);
-		
-		if(app == AppId.LOGIC){
+
+		if (app == AppId.LOGIC) {
 			//不能再加入
 			CenterActorManager.getDeskActor().put(() -> {
-									
-				Iterator<DeskInfo>  it = DeskManager.getInst().getAllDesk().iterator();
-				while(it.hasNext()){
+
+				Iterator<DeskInfo> it = DeskManager.getInst().getAllDesk().iterator();
+				while (it.hasNext()) {
 					DeskInfo desk = it.next();
 					if (desk.getSessionId() == serverSession.getServerId()) {
 						logger.info("维护 " + desk.getGameName() + " 房间 {}", desk.getRoomId());
-						if(desk.getGameId() == GameType.NIUNIU.getValue()){
+						if (desk.getGameId() == GameType.NIUNIU.getValue()) {
 							DeskManager.getInst().resetNiuNiuDeskMap();
 						}
-						if(desk instanceof GroupDesk){
+						if (desk instanceof GroupDesk) {
 							GroupDeskManager.getIns().deskStop((GroupDesk) desk);
 						}
-					  	List<Player> players = new ArrayList<>(desk.getPlayerList());
-						for(Player player : players){
+						List<Player> players = new ArrayList<>(desk.getPlayerList());
+						for (Player player : players) {
 							player.write(ResponseCode.LOBBY_PAO_MA_DENG, LobbyCreator.createPBPaomadengList(list_object, 1));
 						}
-						
+
 					}
 				}
 				return null;
 			});
 		}
-		
+
 		//指定时间后关闭
 		CenterServer.getInst().sendStopServerRequest(serverSession, endTime);
 		writeResponse(httpServletResponse, "200");
 	}
-	
+
 	private void handleServersInfo(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 		JSONArray serverApps = new JSONArray();
 		for (AppId appId : AppId.values()) {
 			List<ServerSession> sessionList = ServerManager.getInst().getSessionList(appId);
-			if(sessionList != null && sessionList.size() > 0){
+			if (sessionList != null && sessionList.size() > 0) {
 				JSONArray serverApp = new JSONArray();
 				for (ServerSession session : sessionList) {
 					JSONObject server = new JSONObject();
@@ -346,7 +345,7 @@ public class CenterHandler extends AbstractHandler {
 					server.put("serverId", session.getServerId());
 					server.put("Address", session.getRemoteAddress() + ":" + session.getRemotePort());
 					server.put("loadFactor", session.getLoadFactor());
-					
+
 					serverApp.add(server);
 				}
 				serverApps.add(serverApp);
@@ -354,19 +353,19 @@ public class CenterHandler extends AbstractHandler {
 		}
 		writeResponse(httpServletResponse, serverApps.toString());
 	}
-	
+
 	private void handleQueryLogcDeskInfo(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 		Semaphore sp = new Semaphore(0, true);
 		CenterActorManager.getDeskActor().put(() -> {
-			Iterator<DeskInfo>  it = DeskManager.getInst().getAllDesk().iterator();
+			Iterator<DeskInfo> it = DeskManager.getInst().getAllDesk().iterator();
 			Map<String, Integer> mapDeskNum = new HashMap<>();
 			int totalNum = 0;
-			
-			while(it.hasNext()){
+
+			while (it.hasNext()) {
 				DeskInfo desk = it.next();
-				String address = desk.getBindServerSession().getRemoteAddress() + ":" +  desk.getBindServerSession().getRemotePort();
+				String address = desk.getBindServerSession().getRemoteAddress() + ":" + desk.getBindServerSession().getRemotePort();
 				Integer num = mapDeskNum.get(address);
-				if(num == null){
+				if (num == null) {
 					num = 0;
 				}
 				num++;
@@ -393,7 +392,7 @@ public class CenterHandler extends AbstractHandler {
 			LogUtil.error(logger, e);
 		}
 	}
-	
+
 	private void handleQueryDesk(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 		Semaphore sp = new Semaphore(0, true);
 		int deskId = Integer.parseInt(httpServletRequest.getParameter("deskId"));
@@ -406,30 +405,30 @@ public class CenterHandler extends AbstractHandler {
 //				deskInfo.put("roomId", RoomConst.NIUNIU);
 //				it = LobbyGameManager.getInst().getRoomPlayerInfoList(GameType.NIUNIU.getValue()).iterator();
 //			}else{
-				DeskInfo desk = DeskManager.getInst().getDeskInfo(deskId);
-				if(desk == null){
-					writeResponse(httpServletResponse, "400");
-					sp.release();
-					return null;
-				}
-				it = desk.getPlayerList().iterator();
-				deskInfo.put("deskId", deskId);
-				deskInfo.put("gameId", desk.getGameId());
-				deskInfo.put("roomId", desk.getRoomId());
+			DeskInfo desk = DeskManager.getInst().getDeskInfo(deskId);
+			if (desk == null) {
+				writeResponse(httpServletResponse, "400");
+				sp.release();
+				return null;
+			}
+			it = desk.getPlayerList().iterator();
+			deskInfo.put("deskId", deskId);
+			deskInfo.put("gameId", desk.getGameId());
+			deskInfo.put("roomId", desk.getRoomId());
 //			}
-			 
+
 			JSONArray playerArr = new JSONArray();
-			while(it.hasNext()){
+			while (it.hasNext()) {
 				Player player = it.next();
 				JSONObject playerInfo = new JSONObject();
 				playerInfo.put("playerId", player.getPlayerId());
 				playerInfo.put("nick", player.getName());
 				playerInfo.put("coin", player.getCoin());
-				
+
 				playerArr.add(playerInfo);
 			}
 			deskInfo.put("playerArr", playerArr);
-			
+
 			writeResponse(httpServletResponse, deskInfo.toString());
 			sp.release();
 			return null;
@@ -440,13 +439,13 @@ public class CenterHandler extends AbstractHandler {
 			LogUtil.error(logger, e);
 		}
 	}
-	
+
 	private void handleQueryPlayerDesk(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 		int playerId = Integer.parseInt(httpServletRequest.getParameter("playerId"));
 		Semaphore sp = new Semaphore(0, true);
-		CenterActorManager.getLogicActor(playerId).put(()->{
-			Player player =  PlayerManager.getInstance().getPlayerById(playerId);
-			if(player == null){
+		CenterActorManager.getLogicActor(playerId).put(() -> {
+			Player player = PlayerManager.getInstance().getPlayerById(playerId);
+			if (player == null) {
 				writeResponse(httpServletResponse, "400");
 				sp.release();
 				return null;
@@ -465,12 +464,12 @@ public class CenterHandler extends AbstractHandler {
 //				roomInfo.put("roomId", RoomConst.NIUNIU);
 //			} else 
 			DeskInfo desk = player.getDeskInfo();
-			if(desk != null){
+			if (desk != null) {
 				ServerSession serverSession = desk.getBindServerSession();
-				if(serverSession != null){
+				if (serverSession != null) {
 					server.put("ip", serverSession.getRemoteAddress());
 					server.put("port", serverSession.getRemotePort());
-				}else{
+				} else {
 					server.put("ip", "no create");
 					server.put("port", "no create");
 				}
@@ -478,11 +477,11 @@ public class CenterHandler extends AbstractHandler {
 				roomInfo.put("gameId", desk.getGameId());
 				roomInfo.put("roomId", desk.getRoomId());
 			}
-			if(roomInfo.has("deskId")){
+			if (roomInfo.has("deskId")) {
 				playerInfo.put("room", roomInfo);
 				playerInfo.put("server", server);
 			}
-			
+
 			writeResponse(httpServletResponse, playerInfo.toString());
 			sp.release();
 			return null;
@@ -493,28 +492,28 @@ public class CenterHandler extends AbstractHandler {
 			LogUtil.error(logger, e);
 		}
 	}
-	
+
 	private void handleRemoveDesk(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 		int deskId = Integer.parseInt(httpServletRequest.getParameter("deskId"));
 		CenterActorManager.getDeskActor().put(() -> {
 			DeskInfo desk = DeskManager.getInst().getDeskInfo(deskId);
-			if(desk != null){
+			if (desk != null) {
 				desk.getPlayerList().forEach(e -> {
-						LobbyGameManager.getInst().playerLeavePriRoom(GameType.getByValue(desk.getGameId()), e);
-						LobbyGameManager.getInst().playerLeaveGameRoom(e);
-						logger.info("离开了{}",e.getPlayerId());
-						if (e.isLogout()) {
-							e.logout();
-						}
+					LobbyGameManager.getInst().playerLeavePriRoom(GameType.getByValue(desk.getGameId()), e);
+					LobbyGameManager.getInst().playerLeaveGameRoom(e);
+					logger.info("离开了{}", e.getPlayerId());
+					if (e.isLogout()) {
+						e.logout();
+					}
 				});
 				GroupDeskManager.getIns().removeDesk(desk);
 				DeskManager.getInst().removeDesk(desk);
-				if(desk.isCreated()){
+				if (desk.isCreated()) {
 					ServerSession serverSession = desk.getBindServerSession();
-		            if (serverSession != null) {
+					if (serverSession != null) {
 //		            	serverSession.reduceFactor();
-		            	serverSession.sendRequest(new CocoPacket(RequestCode.LOGIC_REMOVE_DESK, null, desk.getDeskId()));
-		            }
+						serverSession.sendRequest(new CocoPacket(RequestCode.LOGIC_REMOVE_DESK, null, desk.getDeskId()));
+					}
 				}
 				desk.getPlayerList().forEach(e -> e.write(new CocoPacket(RequestCode.GATE_KICK_PLAYER, null, e.getPlayerId())));
 			}
@@ -522,12 +521,12 @@ public class CenterHandler extends AbstractHandler {
 		});
 		writeResponse(httpServletResponse, "200");
 	}
-	
+
 	private void handleQueryAllGameInfo(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 		Semaphore sp = new Semaphore(0, true);
 		CenterActorManager.getDeskActor().put(() -> {
 			int num = PlayerManager.getInstance().getPlayerCount();
-			
+
 			JSONArray gamesArr = new JSONArray();
 			JSONArray priGamesArr = new JSONArray();
 			for (GameType type : GameType.values()) {
@@ -536,11 +535,11 @@ public class CenterHandler extends AbstractHandler {
 				jo.put("gameId", type.getValue());
 				JSONArray numObjArr = new JSONArray();
 				Iterator<Pair<Integer, Integer>> it = LobbyGameManager.getInst().getRoomPlayerList(type.getValue()).iterator();
-				while(it.hasNext()){
+				while (it.hasNext()) {
 					Pair<Integer, Integer> p = it.next();
 					JSONObject numObj = new JSONObject();
-					numObj.put("roomId",p.getLeft());
-					numObj.put("num",p.getRight());
+					numObj.put("roomId", p.getLeft());
+					numObj.put("num", p.getRight());
 					numObjArr.add(numObj);
 				}
 				jo.put("playerNum", numObjArr);
@@ -551,13 +550,13 @@ public class CenterHandler extends AbstractHandler {
 				priJo.put("num", LobbyGameManager.getInst().getPriRoomPlayerNum(type));
 				priGamesArr.add(priJo);
 			}
-			
+
 			JSONObject jsonObject = new JSONObject();
 			jsonObject.put("onlineNum", num);
 			jsonObject.put("allPlayerNum", PlayerManager.getInstance().getAllPlayers().size());
 			jsonObject.put("game", gamesArr);
 			jsonObject.put("priGame", priGamesArr);
-			writeResponse(httpServletResponse,jsonObject.toString());
+			writeResponse(httpServletResponse, jsonObject.toString());
 			sp.release();
 			return null;
 		});
@@ -579,131 +578,131 @@ public class CenterHandler extends AbstractHandler {
 		int back_player_id = Integer.parseInt(httpServletRequest.getParameter("back_player_id"));
 		int amountCost = Integer.parseInt(httpServletRequest.getParameter("amount"));
 		int type = Integer.parseInt(httpServletRequest.getParameter("type"));
-		
-		if (amountCost < 0){
+
+		if (amountCost < 0) {
 			writeResponse(httpServletResponse, "210");
 			return;
 		}
-		
-			CenterActorManager.getLogicActor(back_player_id).put(()->{
+
+		CenterActorManager.getLogicActor(back_player_id).put(() -> {
 //		if (back_player_id != 0) { // 如果該操作為充錯退款  先操作玩家能退回多少錢
-				if (back_player_id == 0){
-					return amountCost;
+			if (back_player_id == 0) {
+				return amountCost;
+			}
+			Player player = PlayerManager.getInstance().getPlayerById(back_player_id);
+			String ip = "";
+			long pre_coin = 0;
+			long pre_bank_coin = 0;
+			int channel_id = 0;
+			String package_id = "";
+			String device = "";
+			long coinCost = 0;
+			long bankCost = amountCost;
+			pre_bank_coin = player.getBankMoney();
+			ip = player.getIp();
+			pre_coin = player.getCoin();
+			channel_id = player.getChannelId();
+			package_id = String.valueOf(player.getPackageId());
+			device = player.getDevice();
+
+			if (player.getBankMoney() < amountCost) { // 銀行錢不夠扣
+				bankCost = player.getBankMoney();
+				coinCost = amountCost - player.getBankMoney();
+				if (player.getCoin() < coinCost) { // 現金也不夠扣了
+					coinCost = player.getCoin();
 				}
-				Player player = PlayerManager.getInstance().getPlayerById(back_player_id);
-				String ip = "";
-				long pre_coin = 0;
-				long pre_bank_coin = 0;
-				int channel_id = 0;
-				String package_id = "";
-				String device = "";
-				long coinCost = 0;
-				long bankCost = amountCost;
-				pre_bank_coin = player.getBankMoney();
-				ip = player.getIp();
-				pre_coin = player.getCoin();
-				channel_id = player.getChannelId();
-				package_id = String.valueOf(player.getPackageId());
-				device = player.getDevice();
-				
-				if (player.getBankMoney() < amountCost) { // 銀行錢不夠扣
-					bankCost = player.getBankMoney();
-					coinCost = amountCost - player.getBankMoney();
-					if (player.getCoin() < coinCost) { // 現金也不夠扣了
-						coinCost = player.getCoin();
-					}
-				}
-				if (bankCost > 0){
-					player.updateBankCoin(bankCost, false);
-					player.addPay_money_agent(-bankCost); // 扣除充值额度
-					player.write(ResponseCode.ACCOUNT_MODIFY_RANKCOIN
-							, CommonCreator.createPBString(player.getBankMoney()+""));
-					logger.info("銀行更新 :玩家 {} 代理誤充扣回， 銀行金币減少{}，当前銀行总金币数为 {}", player.getPlayerId(), bankCost, player.getBankMoney());
-					ServerManager.getInst().getMinLoadSession(AppId.LOG)
-					.sendRequest(new CocoPacket(RequestCode.LOG_BANK
-							, LogHelper.logBankSave_ex(player.getPlayerId(), BankAction.AGENT_WITHDRAW.getValue(), (int) bankCost, pre_coin, pre_bank_coin + bankCost, pre_bank_coin, ip, channel_id, package_id, device)));
-				}
-				if (coinCost > 0){
-					if (player.isGameing()) {
+			}
+			if (bankCost > 0) {
+				player.updateBankCoin(bankCost, false);
+				player.addPay_money_agent(-bankCost); // 扣除充值额度
+				player.write(ResponseCode.ACCOUNT_MODIFY_RANKCOIN
+						, CommonCreator.createPBString(player.getBankMoney() + ""));
+				logger.info("銀行更新 :玩家 {} 代理誤充扣回， 銀行金币減少{}，当前銀行总金币数为 {}", player.getPlayerId(), bankCost, player.getBankMoney());
+				ServerManager.getInst().getMinLoadSession(AppId.LOG)
+						.sendRequest(new CocoPacket(RequestCode.LOG_BANK
+								, LogHelper.logBankSave_ex(player.getPlayerId(), BankAction.AGENT_WITHDRAW.getValue(), (int) bankCost, pre_coin, pre_bank_coin + bankCost, pre_bank_coin, ip, channel_id, package_id, device)));
+			}
+			if (coinCost > 0) {
+				if (player.isGameing()) {
 //						player.getDeskInfo().writeToLogic(new CocoPacket(RequestCode.LOGIC_UPDATE_MONEY
 //								, CommonCreator.createPBInt32((int) player.getCoin()), player.getPlayerId()));
-						player.getDeskInfo().writeToLogic(new CocoPacket(RequestCode.COUPLE_MONEY_CHANGE, CommonCreator.createPBPair((int) -coinCost, 1), player.getPlayerId()));
-						logger.info("金币更新 :玩家 {} 代理誤充金幣退回，游戏中 预扣除 {}， Logic向Center反向扣除更新金币", player.getPlayerId(), coinCost);
-					} else {
-						player.updateCoin(coinCost, false);
-						player.addPay_money_agent(-coinCost); // 扣除充值额度
-						logger.info("金币更新 :玩家 {} 代理誤充金幣退回， 金币減少 {}，当前总金币数为 {}", player.getPlayerId(), coinCost, player.getCoin());
-						player.write(ResponseCode.ACCOUNT_CHARGE_SUCC, CommonCreator.createPBInt32((int) -coinCost));
-					}
-					ServerManager.getInst().getMinLoadSession(AppId.LOG)
-					.sendRequest(new CocoPacket(RequestCode.LOG_MONEY
-							, LogHelper.logLoseMoney(player.getPlayerId(), MoneySubAction.AGENT_WITHDRAW.getValue(), 0, (int) coinCost, pre_coin, pre_coin + coinCost, ip, channel_id, package_id, device, 0)));
+					player.getDeskInfo().writeToLogic(new CocoPacket(RequestCode.COUPLE_MONEY_CHANGE, CommonCreator.createPBPair((int) -coinCost, 1), player.getPlayerId()));
+					logger.info("金币更新 :玩家 {} 代理誤充金幣退回，游戏中 预扣除 {}， Logic向Center反向扣除更新金币", player.getPlayerId(), coinCost);
+				} else {
+					player.updateCoin(coinCost, false);
+					player.addPay_money_agent(-coinCost); // 扣除充值额度
+					logger.info("金币更新 :玩家 {} 代理誤充金幣退回， 金币減少 {}，当前总金币数为 {}", player.getPlayerId(), coinCost, player.getCoin());
+					player.write(ResponseCode.ACCOUNT_CHARGE_SUCC, CommonCreator.createPBInt32((int) -coinCost));
 				}
-				PlayerSaver.savePlayerBase(player);
-				int cost = (int) (coinCost + bankCost);
-				String sql = "update agent_pay set amount = " + cost + ", player_out_last_bank_coin = " + player.getBankMoney() + " where id = " + id;
-				CenterActorManager.getUpdateActor().put(() -> {
-					ProcLogic.updateOfflineId(sql);
+				ServerManager.getInst().getMinLoadSession(AppId.LOG)
+						.sendRequest(new CocoPacket(RequestCode.LOG_MONEY
+								, LogHelper.logLoseMoney(player.getPlayerId(), MoneySubAction.AGENT_WITHDRAW.getValue(), 0, (int) coinCost, pre_coin, pre_coin + coinCost, ip, channel_id, package_id, device, 0)));
+			}
+			PlayerSaver.savePlayerBase(player);
+			int cost = (int) (coinCost + bankCost);
+			String sql = "update agent_pay set amount = " + cost + ", player_out_last_bank_coin = " + player.getBankMoney() + " where id = " + id;
+			CenterActorManager.getUpdateActor().put(() -> {
+				ProcLogic.updateOfflineId(sql);
+				return null;
+			});
+			if (cost > 0) {
+				/// 扣款发送邮件
+				String costStr = "";
+				if (cost % 100 == 0) {
+					costStr = String.valueOf(cost / 100);
+				} else {
+					costStr = String.valueOf((double) cost / 100);
+				}
+				MailEntity mail1 = MailEntity.createMail(back_player_id, player.getAvailableMailId(), 14, 0, costStr);
+				CenterActorManager.getDbActor(back_player_id).put(() -> {
+					MailEntity.insertMailIntoDataBase(mail1);
 					return null;
 				});
-				if (cost > 0){ 
-					/// 扣款发送邮件
-					String costStr = "";
-					if (cost % 100 == 0){
-						costStr = String.valueOf(cost / 100);
-					} else {
-						costStr = String.valueOf((double)cost / 100);
-					}
-					MailEntity mail1 = MailEntity.createMail(back_player_id, player.getAvailableMailId(), 14, 0, costStr);
-					CenterActorManager.getDbActor(back_player_id).put(() -> {
-						MailEntity.insertMailIntoDataBase(mail1);
-						return null;
-					});
-					player.addMail(mail1);
-					player.write(ResponseCode.MAIL_NEW_MAIL, MailCreator.createPBMailItem(mail1));
-				}
-				return cost;
-			},(e)->{
-				int amount = (int) e;
-				Player player = PlayerManager.getInstance().getPlayerById(agent_player_id);
-				String ip = "";
-				long pre_coin = 0;
-				long pre_bank_coin = 0;
-				int channel_id = 0;
-				String package_id = "";
-				String device = "";
+				player.addMail(mail1);
+				player.write(ResponseCode.MAIL_NEW_MAIL, MailCreator.createPBMailItem(mail1));
+			}
+			return cost;
+		}, (e) -> {
+			int amount = (int) e;
+			Player player = PlayerManager.getInstance().getPlayerById(agent_player_id);
+			String ip = "";
+			long pre_coin = 0;
+			long pre_bank_coin = 0;
+			int channel_id = 0;
+			String package_id = "";
+			String device = "";
 //				if (null != player) {
-					pre_bank_coin = player.getBankMoney();
-					ip = player.getIp();
-					player.updateBankCoin(amount, true);
-					PlayerSaver.savePlayer(player);
-					logger.info("銀行更新 :玩家 {} 代理加錢，類型{}， 銀行金币增加{}，当前銀行总金币数为 {}", player.getPlayerId(), type, amount, player.getBankMoney());
-					pre_coin = player.getCoin();
-					channel_id = player.getChannelId();
-					package_id = String.valueOf(player.getPackageId());
-					device = player.getDevice();
-		
-					player.write(ResponseCode.ACCOUNT_MODIFY_RANKCOIN
-							, CommonCreator.createPBString(player.getBankMoney()+""));
-					player.setShowBankMark(1);
-					player.write(ResponseCode.ACCOUNT_SHOW_BANK_MARK, null); // 转账通知显示红点
-		
-					PlayerSaver.savePlayer(player);
-					
-					/// 收款发送邮件
-					String costStr = "";
-					if (amount % 100 == 0){
-						costStr = String.valueOf(amount / 100);
-					} else {
-						costStr = String.valueOf((double)amount / 100);
-					}
-					MailEntity mail1 = MailEntity.createMail(agent_player_id, player.getAvailableMailId(), 13, 0, costStr);
-					CenterActorManager.getDbActor(agent_player_id).put(() -> {
-						MailEntity.insertMailIntoDataBase(mail1);
-						return null;
-					});
-					player.addMail(mail1);
-					player.write(ResponseCode.MAIL_NEW_MAIL, MailCreator.createPBMailItem(mail1));
+			pre_bank_coin = player.getBankMoney();
+			ip = player.getIp();
+			player.updateBankCoin(amount, true);
+			PlayerSaver.savePlayer(player);
+			logger.info("銀行更新 :玩家 {} 代理加錢，類型{}， 銀行金币增加{}，当前銀行总金币数为 {}", player.getPlayerId(), type, amount, player.getBankMoney());
+			pre_coin = player.getCoin();
+			channel_id = player.getChannelId();
+			package_id = String.valueOf(player.getPackageId());
+			device = player.getDevice();
+
+			player.write(ResponseCode.ACCOUNT_MODIFY_RANKCOIN
+					, CommonCreator.createPBString(player.getBankMoney() + ""));
+			player.setShowBankMark(1);
+			player.write(ResponseCode.ACCOUNT_SHOW_BANK_MARK, null); // 转账通知显示红点
+
+			PlayerSaver.savePlayer(player);
+
+			/// 收款发送邮件
+			String costStr = "";
+			if (amount % 100 == 0) {
+				costStr = String.valueOf(amount / 100);
+			} else {
+				costStr = String.valueOf((double) amount / 100);
+			}
+			MailEntity mail1 = MailEntity.createMail(agent_player_id, player.getAvailableMailId(), 13, 0, costStr);
+			CenterActorManager.getDbActor(agent_player_id).put(() -> {
+				MailEntity.insertMailIntoDataBase(mail1);
+				return null;
+			});
+			player.addMail(mail1);
+			player.write(ResponseCode.MAIL_NEW_MAIL, MailCreator.createPBMailItem(mail1));
 //				} else {
 //					Map<String, String> map_data = new HashMap<>();
 //					map_data.put("bank_coin", String.valueOf(amount));
@@ -721,19 +720,19 @@ public class CenterHandler extends AbstractHandler {
 //					package_id = String.valueOf(obj.getInt("package_id"));
 //					device = obj.getString("device");
 //				}
-		
-				long tmp_data = pre_bank_coin + amount;
-				String sql = "update agent_pay set player_in_last_bank_coin = " + tmp_data + ", status = 1  where id = " + id;
-				CenterActorManager.getUpdateActor().put(() -> {
-					ProcLogic.updateOfflineId(sql);
-					return null;
-				});
-				int flag = type == BankAction.AGENT_TAX.getValue() ? type : BankAction.AGENT_SAVE.getValue();
+
+			long tmp_data = pre_bank_coin + amount;
+			String sql = "update agent_pay set player_in_last_bank_coin = " + tmp_data + ", status = 1  where id = " + id;
+			CenterActorManager.getUpdateActor().put(() -> {
+				ProcLogic.updateOfflineId(sql);
+				return null;
+			});
+			int flag = type == BankAction.AGENT_TAX.getValue() ? type : BankAction.AGENT_SAVE.getValue();
 //				int flag = 0 > amount ? BankAction.AGENT_WITHDRAW.getValue() : BankAction.AGENT_SAVE.getValue();
-				ServerManager.getInst().getMinLoadSession(AppId.LOG)
-						.sendRequest(new CocoPacket(RequestCode.LOG_BANK
-								, LogHelper.logBankSave_ex(agent_player_id, flag, amount, pre_coin, pre_bank_coin + amount, pre_bank_coin, ip, channel_id, package_id, device)));
-			},CenterActorManager.getLogicActor(agent_player_id));
+			ServerManager.getInst().getMinLoadSession(AppId.LOG)
+					.sendRequest(new CocoPacket(RequestCode.LOG_BANK
+							, LogHelper.logBankSave_ex(agent_player_id, flag, amount, pre_coin, pre_bank_coin + amount, pre_bank_coin, ip, channel_id, package_id, device)));
+		}, CenterActorManager.getLogicActor(agent_player_id));
 //		}
 		writeResponse(httpServletResponse, "200");
 	}
@@ -748,8 +747,8 @@ public class CenterHandler extends AbstractHandler {
 //			map_data.put("bank_password", rank_pwd);
 //			PlayerSaver.offlineSavePlayerData(player_id, map_data, "update player set bank_password = " + rank_pwd + " where player_id = " + player_id);
 //		} else {
-			player.setBankPassword(rank_pwd);
-			PlayerSaver.savePlayer(player);
+		player.setBankPassword(rank_pwd);
+		PlayerSaver.savePlayer(player);
 //		}
 		writeResponse(httpServletResponse, "200");
 
@@ -757,6 +756,7 @@ public class CenterHandler extends AbstractHandler {
 
 	/**
 	 * 刷新公告配置与区域配置
+	 *
 	 * @param httpServletRequest
 	 * @param httpServletResponse
 	 */
@@ -782,7 +782,7 @@ public class CenterHandler extends AbstractHandler {
 //		if (null == player) {
 //			mail_id = RankManager.getInst().geneOfflineMailId(player_id);
 //		} else {
-			mail_id = player.getAvailableMailId();
+		mail_id = player.getAvailableMailId();
 //		}
 		MailEntity mail = MailEntity.createMail_ex(player_id, mail_id, 10, 0, agent_id, "", content);
 		CenterActorManager.getDbActor(player_id).put(() -> {
@@ -790,8 +790,8 @@ public class CenterHandler extends AbstractHandler {
 			return null;
 		});
 //		if (null != player) {
-			player.addMail(mail);
-			player.write(ResponseCode.MAIL_NEW_MAIL, MailCreator.createPBMailItem(mail));
+		player.addMail(mail);
+		player.write(ResponseCode.MAIL_NEW_MAIL, MailCreator.createPBMailItem(mail));
 //		}
 
 		/// 修改回复对应的文件
@@ -827,8 +827,8 @@ public class CenterHandler extends AbstractHandler {
 				int player_id = obj.getInt("player_id");
 				Player player = PlayerManager.getInstance().getPlayerById(player_id);
 //				if (null != player) {
-					player.setAgent_plan(obj.getInt("agent_plan"));
-					PlayerSaver.savePlayer(player);
+				player.setAgent_plan(obj.getInt("agent_plan"));
+				PlayerSaver.savePlayer(player);
 //				} else {
 //					Object data = DataManager.getInst().getCache().query(player_id);
 //					if (data == null) {
@@ -868,22 +868,22 @@ public class CenterHandler extends AbstractHandler {
 		String device = "";
 		Player player = PlayerManager.getInstance().getPlayerById(player_id);
 //		if (null != player) {
-			pre_coin = player.getCoin();
-			ip = player.getIp();
-			channel_id = player.getChannelId();
-			package_id = String.valueOf(player.getPackageId());
-			device = player.getDevice();
+		pre_coin = player.getCoin();
+		ip = player.getIp();
+		channel_id = player.getChannelId();
+		package_id = String.valueOf(player.getPackageId());
+		device = player.getDevice();
 //			player.updateCoin(amount, true);
 //			PlayerSaver.savePlayerBase(player);
 //			logger.info("金币更新 :玩家 {} 兑换失败退钱， 金币增加 {}，当前总金币数为 {}", player.getPlayerId(), amount, player.getCoin());
 //			player.write(ResponseCode.ACCOUNT_EXCHANGE_SUCC, AccountCreator.createPBLoginSucc(player));
-			// 退錢改為郵件通知
-			MailEntity mail = MailEntity.createMail(player.getPlayerId(), player.getAvailableMailId(), 12, amount, String.valueOf(agentId), String.valueOf(amount));
-			player.addMail(mail);
-			CenterActorManager.getDbActor(player.getPlayerId()).put(() -> {
-				MailEntity.insertMailIntoDataBase(mail);
-				return null;
-			});
+		// 退錢改為郵件通知
+		MailEntity mail = MailEntity.createMail(player.getPlayerId(), player.getAvailableMailId(), 12, amount, String.valueOf(agentId), String.valueOf(amount));
+		player.addMail(mail);
+		CenterActorManager.getDbActor(player.getPlayerId()).put(() -> {
+			MailEntity.insertMailIntoDataBase(mail);
+			return null;
+		});
 //		} else {
 //			Map<String, String> map_data = new HashMap<>();
 //			map_data.put("coin", String.valueOf(amount));
@@ -925,8 +925,8 @@ public class CenterHandler extends AbstractHandler {
 				int player_id = obj.getInt("player_id");
 				Player player = PlayerManager.getInstance().getPlayerById(player_id);
 //				if (null != player) {
-					player.setOnly_show_agent(obj.getBoolean("only_show_agent"));
-					PlayerSaver.savePlayer(player);
+				player.setOnly_show_agent(obj.getBoolean("only_show_agent"));
+				PlayerSaver.savePlayer(player);
 //				} else {
 //					Object data = DataManager.getInst().getCache().query(player_id);
 //					if (data == null) {
@@ -983,13 +983,13 @@ public class CenterHandler extends AbstractHandler {
 
 		writeResponse(httpServletResponse, "200");
 	}
-	
+
 	private void handleAgentPay(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 		int id = Integer.parseInt(httpServletRequest.getParameter("id"));
 		int player_id = Integer.parseInt(httpServletRequest.getParameter("player_id"));
 		int agent_id = Integer.parseInt(httpServletRequest.getParameter("agent_id"));
 		int amount = Integer.parseInt(httpServletRequest.getParameter("amount"));
-		
+
 		if (amount < 0) {
 			writeResponse(httpServletResponse, "201");
 			return;
@@ -1010,7 +1010,7 @@ public class CenterHandler extends AbstractHandler {
 				// 购入发邮件
 				player_in.addMail(mail1);
 				player_in.write(ResponseCode.MAIL_NEW_MAIL, MailCreator.createPBMailItem(mail1));
-				
+
 				// 转出购入加明细
 				TransferData transferData = TransferData.createTransferData(id, agent_id, player_id,
 						player_in.getName(), amount, 1, MiscUtil.getCurrentSeconds());
@@ -1019,7 +1019,7 @@ public class CenterHandler extends AbstractHandler {
 			}
 			writeResponse(httpServletResponse, "" + e);
 		});
-		
+
 	}
 
 	private void handleAgentInfoDb(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
@@ -1064,7 +1064,7 @@ public class CenterHandler extends AbstractHandler {
 //		if (null == player) {
 //			mail_id = RankManager.getInst().geneOfflineMailId(player_id);
 //		} else {
-			mail_id = player.getAvailableMailId();
+		mail_id = player.getAvailableMailId();
 //		}
 		MailEntity mail = MailEntity.createMail_ex(player_id, mail_id, contenti_id, 0, 0, title, content);
 		CenterActorManager.getDbActor(player_id).put(() -> {
@@ -1072,8 +1072,8 @@ public class CenterHandler extends AbstractHandler {
 			return null;
 		});
 //		if (null != player) {
-			player.addMail(mail);
-			player.write(ResponseCode.MAIL_NEW_MAIL, MailCreator.createPBMailItem(mail));
+		player.addMail(mail);
+		player.write(ResponseCode.MAIL_NEW_MAIL, MailCreator.createPBMailItem(mail));
 //		}
 	}
 
@@ -1139,26 +1139,26 @@ public class CenterHandler extends AbstractHandler {
 //			package_id = String.valueOf(obj.getInt("package_id"));
 //			device = obj.getString("device");
 //		} else {
-			pre_coin = player.getCoin();
-			ip = player.getIp();
-			channel_id = player.getChannelId();
-			package_id = "" + player.getPackageId();
-			device = "" + player.getDevice();
+		pre_coin = player.getCoin();
+		ip = player.getIp();
+		channel_id = player.getChannelId();
+		package_id = "" + player.getPackageId();
+		device = "" + player.getDevice();
 
-			CenterActorManager.getLogicActor(player.getPlayerId()).put(() -> {
-				if (player.isGameing()) {
-					player.getDeskInfo().writeToLogic(new CocoPacket(RequestCode.COUPLE_MONEY_CHANGE, CommonCreator.createPBPair((int)coin, 1), player.getPlayerId()));
-					logger.info("金币更新 :玩家 {} 后台充值，游戏中 预增加 {}， Logic向Center反向增加更新金币", player.getPlayerId(), coin);
-				} else {
-					player.updateCoin(coin, true);
-					PlayerSaver.savePlayerBase(player);
-					logger.info("金币更新 :玩家 {} 后台充值， 金币增加 {}，当前总金币数为 {}", player.getPlayerId(), coin, player.getCoin());
-				}
+		CenterActorManager.getLogicActor(player.getPlayerId()).put(() -> {
+			if (player.isGameing()) {
+				player.getDeskInfo().writeToLogic(new CocoPacket(RequestCode.COUPLE_MONEY_CHANGE, CommonCreator.createPBPair((int) coin, 1), player.getPlayerId()));
+				logger.info("金币更新 :玩家 {} 后台充值，游戏中 预增加 {}， Logic向Center反向增加更新金币", player.getPlayerId(), coin);
+			} else {
+				player.updateCoin(coin, true);
+				PlayerSaver.savePlayerBase(player);
+				logger.info("金币更新 :玩家 {} 后台充值， 金币增加 {}，当前总金币数为 {}", player.getPlayerId(), coin, player.getCoin());
+			}
 //				player.updateCoin(coin, true);
 //				logger.info("金币更新 :玩家 {} 后台充值， 金币增加 {}，当前总金币数为 {}", player.getPlayerId(), coin, player.getCoin());
-				player.write(ResponseCode.ACCOUNT_UPDATE_DATA, AccountCreator.createPBLoginSucc(player));
-				return null;
-			});
+			player.write(ResponseCode.ACCOUNT_UPDATE_DATA, AccountCreator.createPBLoginSucc(player));
+			return null;
+		});
 //		}
 
 		int flag = coin > 0 ? MoneyAction.GAIN.getValue() : MoneyAction.LOSE.getValue();
@@ -1329,8 +1329,8 @@ public class CenterHandler extends AbstractHandler {
 //			}
 //			last_coin = obj.getLong("coin");
 //		} else {
-			last_coin = player.getCoin();
-			writeResponse(response, "success");
+		last_coin = player.getCoin();
+		writeResponse(response, "success");
 //		}
 
 		player.addExchange_total(Long.valueOf(need_pay));
@@ -1346,163 +1346,10 @@ public class CenterHandler extends AbstractHandler {
 		}
 	}
 
-	private String calSign(String... params) {
-		StringBuilder builder = new StringBuilder();
-		for (int i = 0; i < params.length; i++) {
-			builder.append(i);
-			builder.append(params[i]);
-		}
-		builder.append("key");
-		builder.append(CenterServer.getInst().getCharge_secret_key());
-		return MiscUtil.getMD5(builder.toString());
-	}
 
 	private void handleRecharge(HttpServletRequest request, HttpServletResponse response) {
-		String orderId = request.getParameter("order_id");
-		int amount = Integer.parseInt(request.getParameter("amount"));
-		int payType = Integer.parseInt(request.getParameter("pay_type"));
-		int payChannel = Integer.parseInt(request.getParameter("pay_channel"));
-		String payChannelName = request.getParameter("pay_channel_name");
-		String time = request.getParameter("time");
-		String sign = request.getParameter("sign");
 
-		logger.info("orderId:{} amount:{} payType:{} payChannel:{} payChannelName:{} time:{} sign:{}", orderId, amount, payType, payChannel, payChannelName, time, sign);
-		String calSin = calSign(orderId, String.valueOf(amount), String.valueOf(payType), String.valueOf(payChannel), payChannelName, time);
-		if (!calSin.equals(sign)) {
-			writeResponse(response, "sign_failed");
-			return;
-		}
-		Map<String, Object> where = new HashMap<>();
-		where.put("order_id", orderId);
-		List<ASObject> list = DataQueryResult.load("order_info", where);
-		if (list.size() != 1) {
-			writeResponse(response, "order_not_exist");
-			return;
-		}
-		ASObject data = list.get(0);
-		//金额是否匹配, 如果大于则记录异常信号
-		Map<String, Object> updateData = new HashMap<>();
-		updateData.put("acutal_money", amount);
-		updateData.put("ok_time", MiscUtil.getCurrentSeconds());
-		updateData.put("pay_type", payType);
-		updateData.put("pay_channel", payChannel);
-		updateData.put("pay_channel_name", payChannelName);
-		if (amount > data.getInt("charge_num")) {
-			writeResponse(response, "order_amount_exception");
-			updateData.put("status", 3);                        //失败
-		} else {
-			if (data.getInt("status") == 2) {
-				writeResponse(response, "success");
-				return;
-			}
-			updateData.put("status", 2);                        //成功
-			int playerId = data.getInt("player_id");
-			CenterActorManager.getLogicActor(playerId).put(() -> {
-				sendMoneyToPlayer(playerId, amount);
-				return null;
-			});
-			writeResponse(response, "success");
-
-			ProcLogic.procPayMail(data.getInt("player_id"), amount);
-			ProcLogic.updateChannelDayLimit(payChannel, amount);
-
-			/// 是否在线
-			Player player = PlayerManager.getInstance().getPlayerById(playerId);
-//			if (null == player) {
-//				Map<String, String> map_data = new HashMap<>();
-//				map_data.put("pay_money", String.valueOf(amount));
-//				map_data.put("recharge", String.valueOf(amount));
-//				PlayerSaver.offlineSavePlayerData(playerId, map_data, "update player set pay_money = pay_money + " + amount + ", recharge = recharge + " + amount + " where player_id = " + playerId);
-//			} else {
-				//添加当日充值
-				player.addRecharge(amount);
-				player.addPay_money(amount);
-				PlayerCGManager.getInst().sendPlayerCgInfo(player);
-//			}
-		}
-		try {
-			DBUtil.executeUpdate("order_info", where, updateData);
-		} catch (SQLException e) {
-			e.printStackTrace();
-			return;
-		}
 	}
-
-	private void sendMoneyToPlayer(int playerId, int amount) {
-		Player player = PlayerManager.getInstance().getPlayerById(playerId);
-		int mail_id = 0;
-		long pre_coin = 0;
-		String ip = "";
-		int channel_id = 0;
-		String package_id = "";
-		String device = "";
-//		if (player != null) {
-			mail_id = player.getAvailableMailId();
-			pre_coin = player.getCoin();
-			ip = player.getIp();
-			channel_id = player.getChannelId();
-			package_id = String.valueOf(player.getPackageId());
-			device = player.getDevice();
-			/// 是否在游戏中
-			if (player.isGameing()) {
-				player.getDeskInfo().writeToLogic(new CocoPacket(RequestCode.COUPLE_MONEY_CHANGE, CommonCreator.createPBPair(amount, 1), player.getPlayerId()));
-				logger.info("金币更新 :玩家 {} 充值，游戏中 预增加 {}， Logic向Center反向增加更新金币", player.getPlayerId(), amount);
-			} else {
-				player.updateCoin(amount, true);
-				logger.info("金币更新 :玩家 {} 充值， 金币增加 {}，当前总金币数为 {}", player.getPlayerId(), amount, player.getCoin());
-			}
-			if (CenterServer.getInst().isRankReward()) {
-				player.setRechargeScore(player.getRechargeScore() + amount / 100);
-			}
-			PlayerSaver.savePlayerBase(player);
-			player.write(ResponseCode.ACCOUNT_CHARGE_SUCC, CommonCreator.createPBInt32(amount));
-//		} else {
-//			mail_id = RankManager.getInst().geneOfflineMailId(playerId);
-//
-//			Map<String, String> map_data = new HashMap<>();
-//			map_data.put("coin", String.valueOf(amount));
-//			map_data.put("recharge_score", String.valueOf(amount / 100));
-//			ASObject obj = PlayerSaver.offlineSavePlayerData(playerId, map_data, "update player set coin=coin +" + amount + ", recharge_score = recharge_score +" + amount / 100 + " where player_id = " + playerId);
-//			if (null == obj) {
-//				logger.error("handleWebCoin player_id:" + playerId);
-//				return;
-//			}
-//
-//			pre_coin = obj.getLong("coin");
-//			ip = obj.getString("ip");
-//			channel_id = obj.getInt("channel_id");
-//			package_id = String.valueOf(obj.getInt("package_id"));
-//			device = obj.getString("device");
-//		}
-		ServerManager.getInst().getMinLoadSession(AppId.LOG)
-				.sendRequest(new CocoPacket(RequestCode.LOG_MONEY
-						, LogHelper.logGainMoney(playerId, MoneySubAction.CHARGE_GAIN.getValue(), 0, amount, pre_coin, pre_coin + amount, ip, channel_id, package_id, device, 0)));
-
-		MailEntity mail = MailEntity.createMail(playerId, mail_id, 1, 0, String.valueOf(amount / 100), String.valueOf(amount / 100));
-		CenterActorManager.getDbActor(playerId).put(() -> {
-			MailEntity.insertMailIntoDataBase(mail);
-			return null;
-		});
-//		if (null != player) {
-			player.addMail(mail);
-			player.write(ResponseCode.MAIL_NEW_MAIL, MailCreator.createPBMailItem(mail));
-//		}
-	}
-
-//	private void updatePlayerDataBase(int playerId, int amount) {
-//		Connection conn = null;
-//		PreparedStatement stat = null;
-//		try {
-//			conn = DBManager.getConnection();
-//			String sql = "update player set coin=coin +" + amount + "and set recharge_score = recharge_score +" + amount / 100 + " where player_id = " + playerId;
-//			stat = conn.prepareStatement(sql);
-//			stat.executeUpdate();
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		} finally {
-//			DBManager.close(conn, stat);
-//		}
-//	}
 
 
 	private void handleMsgFeedBack(HttpServletRequest request, HttpServletResponse response) {

@@ -31,12 +31,6 @@ public abstract class BaseProvider {
 	protected static List<BaseProvider> providerList = new ArrayList<>();
 
 	public static void init() {
-		CoupleRoomInfoProvider.getInst();
-		RankInfoProvider.getInst();
-		DynamicInfoProvider.getInst();
-		AssisInfoProvider.getInst();
-		PersonalConfRoomProvider.getInst();
-		ConfNiuProvider.getInst();
 	}
 
 	public void reLoad() {

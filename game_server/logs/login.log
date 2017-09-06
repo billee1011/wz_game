@@ -1,0 +1,1785 @@
+2017-08-15 13:51:44 NetClient.java 96 [ nioEventLoopGroup-2-1:626 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-08-15 13:51:29
+2017-08-15 13:51:45 LoginServer.java 96 [ main:1077 ] - [ INFO ]  加载 包对应平台{}
+2017-08-15 13:51:45 LoginServer.java 97 [ main:1077 ] - [ INFO ]  加载 包对应渠道{}
+2017-08-15 13:51:45 LoginServer.java 115 [ main:1078 ] - [ INFO ]  加载 全局开关状态{}
+2017-08-15 13:51:45 LoginServer.java 116 [ main:1078 ] - [ INFO ]  加载 共享地区名:
+2017-08-15 13:51:45 LoginServer.java 130 [ main:1079 ] - [ INFO ]  加载 区域维护状态{}
+2017-08-15 13:51:45 Log.java 192 [ main:1144 ] - [ INFO ]  Logging initialized @2099ms
+2017-08-15 13:51:45 Server.java 346 [ main:1177 ] - [ INFO ]  jetty-9.3.14.v20161028
+2017-08-15 13:51:45 AbstractConnector.java 278 [ main:1213 ] - [ INFO ]  Started ServerConnector@76494737{HTTP/1.1,[http/1.1]}{0.0.0.0:9098}
+2017-08-15 13:51:45 Server.java 414 [ main:1213 ] - [ INFO ]  Started @2168ms
+2017-08-15 13:52:45 BaseApp.java 142 [ Actor-ping:61218 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 13:52:45 BaseApp.java 143 [ Actor-ping:61219 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 13:52:45 BaseApp.java 144 [ Actor-ping:61219 ] - [ INFO ]  freeMemory  :  212 MB
+2017-08-15 13:52:45 BaseApp.java 145 [ Actor-ping:61219 ] - [ INFO ]  usedMemory  :  31 MB
+2017-08-15 13:53:45 BaseApp.java 142 [ Actor-ping:121217 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 13:53:45 BaseApp.java 143 [ Actor-ping:121217 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 13:53:45 BaseApp.java 144 [ Actor-ping:121218 ] - [ INFO ]  freeMemory  :  210 MB
+2017-08-15 13:53:45 BaseApp.java 145 [ Actor-ping:121219 ] - [ INFO ]  usedMemory  :  33 MB
+2017-08-15 13:53:45 BaseApp.java 87 [ Actor-ping:121220 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 13:53:45 BaseApp.java 82 [ Actor-ping:121220 ] - [ INFO ]  Actor-ping=2
+
+2017-08-15 13:54:45 BaseApp.java 142 [ Actor-ping:181217 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 13:54:45 BaseApp.java 143 [ Actor-ping:181217 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 13:54:45 BaseApp.java 144 [ Actor-ping:181217 ] - [ INFO ]  freeMemory  :  210 MB
+2017-08-15 13:54:45 BaseApp.java 145 [ Actor-ping:181217 ] - [ INFO ]  usedMemory  :  33 MB
+2017-08-15 13:55:45 BaseApp.java 142 [ Actor-ping:241217 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 13:55:45 BaseApp.java 143 [ Actor-ping:241217 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 13:55:45 BaseApp.java 144 [ Actor-ping:241218 ] - [ INFO ]  freeMemory  :  207 MB
+2017-08-15 13:55:45 BaseApp.java 145 [ Actor-ping:241218 ] - [ INFO ]  usedMemory  :  36 MB
+2017-08-15 13:55:45 BaseApp.java 87 [ Actor-ping:241219 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 13:55:45 BaseApp.java 82 [ Actor-ping:241220 ] - [ INFO ]  Actor-ping=2
+
+2017-08-15 13:56:45 BaseApp.java 142 [ Actor-ping:301218 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 13:56:45 BaseApp.java 143 [ Actor-ping:301218 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 13:56:45 BaseApp.java 144 [ Actor-ping:301218 ] - [ INFO ]  freeMemory  :  207 MB
+2017-08-15 13:56:45 BaseApp.java 145 [ Actor-ping:301219 ] - [ INFO ]  usedMemory  :  36 MB
+2017-08-15 13:57:45 BaseApp.java 142 [ Actor-ping:361218 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 13:57:45 BaseApp.java 143 [ Actor-ping:361218 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 13:57:45 BaseApp.java 144 [ Actor-ping:361218 ] - [ INFO ]  freeMemory  :  207 MB
+2017-08-15 13:57:45 BaseApp.java 145 [ Actor-ping:361218 ] - [ INFO ]  usedMemory  :  36 MB
+2017-08-15 13:57:45 BaseApp.java 87 [ Actor-ping:361219 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 13:57:45 BaseApp.java 82 [ Actor-ping:361219 ] - [ INFO ]  Actor-ping=2
+
+2017-08-15 13:58:04 LoginHandler.java 402 [ qtp1191654595-48:380005 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:04 HttpChannel.java 480 [ qtp1191654595-48:380006 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:04 LoginHandler.java 402 [ qtp1191654595-41:380132 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:04 HttpChannel.java 480 [ qtp1191654595-41:380132 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:04 LoginHandler.java 402 [ qtp1191654595-45:380211 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:04 HttpChannel.java 480 [ qtp1191654595-45:380212 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:04 LoginHandler.java 402 [ qtp1191654595-42:380320 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:04 HttpChannel.java 480 [ qtp1191654595-42:380320 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:04 LoginHandler.java 402 [ qtp1191654595-43:380428 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:04 HttpChannel.java 480 [ qtp1191654595-43:380428 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:05 LoginHandler.java 402 [ qtp1191654595-47:381685 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:05 HttpChannel.java 480 [ qtp1191654595-47:381686 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:06 LoginHandler.java 402 [ qtp1191654595-48:381789 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:06 HttpChannel.java 480 [ qtp1191654595-48:381790 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:06 LoginHandler.java 402 [ qtp1191654595-41:381872 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:06 HttpChannel.java 480 [ qtp1191654595-41:381872 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:06 LoginHandler.java 402 [ qtp1191654595-46:381966 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:06 HttpChannel.java 480 [ qtp1191654595-46:381966 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:06 LoginHandler.java 402 [ qtp1191654595-45:382056 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:06 HttpChannel.java 480 [ qtp1191654595-45:382057 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:07 LoginHandler.java 402 [ qtp1191654595-43:383009 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:07 HttpChannel.java 480 [ qtp1191654595-43:383009 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:07 LoginHandler.java 402 [ qtp1191654595-48:383108 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:07 HttpChannel.java 480 [ qtp1191654595-48:383108 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:07 LoginHandler.java 402 [ qtp1191654595-47:383196 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:07 HttpChannel.java 480 [ qtp1191654595-47:383196 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:07 LoginHandler.java 402 [ qtp1191654595-42:383297 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:07 HttpChannel.java 480 [ qtp1191654595-42:383297 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:07 LoginHandler.java 402 [ qtp1191654595-45:383407 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 13:58:07 HttpChannel.java 480 [ qtp1191654595-45:383408 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 13:58:45 BaseApp.java 142 [ Actor-ping:421217 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 13:58:45 BaseApp.java 143 [ Actor-ping:421217 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 13:58:45 BaseApp.java 144 [ Actor-ping:421217 ] - [ INFO ]  freeMemory  :  185 MB
+2017-08-15 13:58:45 BaseApp.java 145 [ Actor-ping:421218 ] - [ INFO ]  usedMemory  :  58 MB
+2017-08-15 13:58:54 NetClient.java 96 [ nioEventLoopGroup-2-1:412 ] - [ INFO ]  receive the callback message and the result is 2 , connectServerStartTime 2017-08-15 13:51:29
+2017-08-15 13:58:55 LoginServer.java 96 [ main:912 ] - [ INFO ]  加载 包对应平台{}
+2017-08-15 13:58:55 LoginServer.java 97 [ main:913 ] - [ INFO ]  加载 包对应渠道{}
+2017-08-15 13:58:55 LoginServer.java 115 [ main:914 ] - [ INFO ]  加载 全局开关状态{}
+2017-08-15 13:58:55 LoginServer.java 116 [ main:915 ] - [ INFO ]  加载 共享地区名:
+2017-08-15 13:58:55 LoginServer.java 130 [ main:916 ] - [ INFO ]  加载 区域维护状态{}
+2017-08-15 13:58:55 Log.java 192 [ main:962 ] - [ INFO ]  Logging initialized @3273ms
+2017-08-15 13:58:55 Server.java 346 [ main:1011 ] - [ INFO ]  jetty-9.3.14.v20161028
+2017-08-15 13:58:55 AbstractConnector.java 278 [ main:1064 ] - [ INFO ]  Started ServerConnector@247310d0{HTTP/1.1,[http/1.1]}{0.0.0.0:9098}
+2017-08-15 13:58:55 Server.java 414 [ main:1065 ] - [ INFO ]  Started @3375ms
+2017-08-15 13:59:12 NetClient.java 96 [ nioEventLoopGroup-2-1:426 ] - [ INFO ]  receive the callback message and the result is 3 , connectServerStartTime 2017-08-15 13:51:29
+2017-08-15 13:59:12 LoginServer.java 96 [ main:886 ] - [ INFO ]  加载 包对应平台{}
+2017-08-15 13:59:12 LoginServer.java 97 [ main:886 ] - [ INFO ]  加载 包对应渠道{}
+2017-08-15 13:59:12 LoginServer.java 115 [ main:887 ] - [ INFO ]  加载 全局开关状态{}
+2017-08-15 13:59:12 LoginServer.java 116 [ main:888 ] - [ INFO ]  加载 共享地区名:
+2017-08-15 13:59:12 LoginServer.java 130 [ main:889 ] - [ INFO ]  加载 区域维护状态{}
+2017-08-15 13:59:13 Log.java 192 [ main:930 ] - [ INFO ]  Logging initialized @12578ms
+2017-08-15 13:59:13 Server.java 346 [ main:965 ] - [ INFO ]  jetty-9.3.14.v20161028
+2017-08-15 13:59:13 AbstractConnector.java 278 [ main:1011 ] - [ INFO ]  Started ServerConnector@247310d0{HTTP/1.1,[http/1.1]}{0.0.0.0:9098}
+2017-08-15 13:59:13 Server.java 414 [ main:1012 ] - [ INFO ]  Started @12659ms
+2017-08-15 13:59:55 LoginHandler.java 402 [ qtp1265900909-46:43299 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:00:04 HttpChannel.java 480 [ qtp1265900909-46:51998 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 14:00:04 LoginHandler.java 402 [ qtp1265900909-48:52428 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:00:04 HttpChannel.java 480 [ qtp1265900909-48:52429 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 14:00:04 LoginHandler.java 402 [ qtp1265900909-42:52875 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:00:04 HttpChannel.java 480 [ qtp1265900909-42:52875 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 14:00:05 LoginHandler.java 402 [ qtp1265900909-48:53040 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:00:05 HttpChannel.java 480 [ qtp1265900909-48:53040 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 14:00:05 LoginHandler.java 402 [ qtp1265900909-43:53210 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:00:05 HttpChannel.java 480 [ qtp1265900909-43:53211 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test11111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.getChannelForPackageId(LoginServer.java:59)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:404)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 14:00:13 BaseApp.java 142 [ Actor-ping:61017 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:00:13 BaseApp.java 143 [ Actor-ping:61018 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:00:13 BaseApp.java 144 [ Actor-ping:61018 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 14:00:13 BaseApp.java 145 [ Actor-ping:61018 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 14:01:04 NetClient.java 96 [ nioEventLoopGroup-2-1:431 ] - [ INFO ]  receive the callback message and the result is 4 , connectServerStartTime 2017-08-15 13:51:29
+2017-08-15 14:01:22 LoginServer.java 96 [ main:17911 ] - [ INFO ]  加载 包对应平台{}
+2017-08-15 14:01:22 LoginServer.java 97 [ main:17912 ] - [ INFO ]  加载 包对应渠道{}
+2017-08-15 14:01:22 LoginServer.java 115 [ main:17916 ] - [ INFO ]  加载 全局开关状态{}
+2017-08-15 14:01:22 LoginServer.java 116 [ main:17917 ] - [ INFO ]  加载 共享地区名:
+2017-08-15 14:01:22 LoginServer.java 130 [ main:17922 ] - [ INFO ]  加载 区域维护状态{}
+2017-08-15 14:01:22 Log.java 192 [ main:18001 ] - [ INFO ]  Logging initialized @18526ms
+2017-08-15 14:01:22 Server.java 346 [ main:18043 ] - [ INFO ]  jetty-9.3.14.v20161028
+2017-08-15 14:01:22 AbstractConnector.java 278 [ main:18087 ] - [ INFO ]  Started ServerConnector@7188af83{HTTP/1.1,[http/1.1]}{0.0.0.0:9098}
+2017-08-15 14:01:22 Server.java 414 [ main:18087 ] - [ INFO ]  Started @18612ms
+2017-08-15 14:02:22 BaseApp.java 142 [ Actor-ping:78097 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:02:22 BaseApp.java 143 [ Actor-ping:78097 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:02:22 BaseApp.java 144 [ Actor-ping:78097 ] - [ INFO ]  freeMemory  :  210 MB
+2017-08-15 14:02:22 BaseApp.java 145 [ Actor-ping:78097 ] - [ INFO ]  usedMemory  :  33 MB
+2017-08-15 14:03:22 BaseApp.java 142 [ Actor-ping:138095 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:03:22 BaseApp.java 143 [ Actor-ping:138096 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:03:22 BaseApp.java 144 [ Actor-ping:138098 ] - [ INFO ]  freeMemory  :  210 MB
+2017-08-15 14:03:22 BaseApp.java 145 [ Actor-ping:138098 ] - [ INFO ]  usedMemory  :  33 MB
+2017-08-15 14:03:22 BaseApp.java 87 [ Actor-ping:138100 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:03:22 BaseApp.java 82 [ Actor-ping:138100 ] - [ INFO ]  Actor-ping=3
+
+2017-08-15 14:04:22 BaseApp.java 142 [ Actor-ping:198091 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:04:22 BaseApp.java 143 [ Actor-ping:198092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:04:22 BaseApp.java 144 [ Actor-ping:198092 ] - [ INFO ]  freeMemory  :  210 MB
+2017-08-15 14:04:22 BaseApp.java 145 [ Actor-ping:198092 ] - [ INFO ]  usedMemory  :  33 MB
+2017-08-15 14:05:06 LoginHandler.java 402 [ qtp1855026648-46:242010 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:05:06 LoginHandler.java 408 [ qtp1855026648-46:242010 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:05:06 HttpChannel.java 480 [ qtp1855026648-46:242011 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.isOpenLogin(LoginServer.java:146)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:410)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 14:05:06 LoginHandler.java 402 [ qtp1855026648-42:242132 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:05:06 LoginHandler.java 408 [ qtp1855026648-42:242133 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:05:06 HttpChannel.java 480 [ qtp1855026648-42:242133 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.isOpenLogin(LoginServer.java:146)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:410)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 14:05:06 LoginHandler.java 402 [ qtp1855026648-41:242231 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:05:06 LoginHandler.java 408 [ qtp1855026648-41:242231 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:05:06 HttpChannel.java 480 [ qtp1855026648-41:242231 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.isOpenLogin(LoginServer.java:146)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:410)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 14:05:06 LoginHandler.java 402 [ qtp1855026648-44:242329 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:05:06 LoginHandler.java 408 [ qtp1855026648-44:242329 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:05:06 HttpChannel.java 480 [ qtp1855026648-44:242330 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.isOpenLogin(LoginServer.java:146)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:410)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 14:05:06 LoginHandler.java 402 [ qtp1855026648-43:242408 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:05:06 LoginHandler.java 408 [ qtp1855026648-43:242408 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:05:06 HttpChannel.java 480 [ qtp1855026648-43:242409 ] - [ WARN ]  //127.0.0.1:9098/fast_login?machine_id=F4-8C-50-0B-35-B4test111&channel=0&device=windows&package_id=44&game_version=1.0.4&app_version=1
+java.lang.NullPointerException
+	at server.LoginServer.isOpenLogin(LoginServer.java:146)
+	at server.handler.LoginHandler.handleFastLogin(LoginHandler.java:410)
+	at server.handler.LoginHandler.handle(LoginHandler.java:71)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 14:05:22 BaseApp.java 142 [ Actor-ping:258092 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:05:22 BaseApp.java 143 [ Actor-ping:258092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:05:22 BaseApp.java 144 [ Actor-ping:258092 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:05:22 BaseApp.java 145 [ Actor-ping:258092 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:05:22 BaseApp.java 87 [ Actor-ping:258094 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:05:22 BaseApp.java 82 [ Actor-ping:258096 ] - [ INFO ]  Actor-ping=3
+
+2017-08-15 14:05:41 LoginHandler.java 402 [ qtp1855026648-47:276955 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:05:41 LoginHandler.java 408 [ qtp1855026648-47:276956 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:05:41 LoginHandler.java 429 [ qtp1855026648-47:276963 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:05:41 LoginHandler.java 431 [ qtp1855026648-47:276964 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:05:41 IP.java 66 [ qtp1855026648-47:277013 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 14:05:41 IP.java 86 [ qtp1855026648-47:277014 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 14:05:41 LoginHandler.java 514 [ qtp1855026648-47:277014 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 14:05:41 LoginServer.java 161 [ qtp1855026648-47:277014 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:05:41 LoginHandler.java 610 [ qtp1855026648-47:277069 ] - [ INFO ]  sendCltResult 1 send login request to center
+2017-08-15 14:05:41 LoginHandler.java 614 [ nioEventLoopGroup-2-1:277099 ] - [ INFO ]  sendCltResult userId:1 e:packet.CocoPacket@7c8149b0
+2017-08-15 14:05:41 LoginHandler.java 623 [ nioEventLoopGroup-2-1:277102 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:06:22 BaseApp.java 142 [ Actor-ping:318092 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:06:22 BaseApp.java 143 [ Actor-ping:318092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:06:22 BaseApp.java 144 [ Actor-ping:318092 ] - [ INFO ]  freeMemory  :  190 MB
+2017-08-15 14:06:22 BaseApp.java 145 [ Actor-ping:318092 ] - [ INFO ]  usedMemory  :  53 MB
+2017-08-15 14:07:22 BaseApp.java 142 [ Actor-ping:378092 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:07:22 BaseApp.java 143 [ Actor-ping:378092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:07:22 BaseApp.java 144 [ Actor-ping:378092 ] - [ INFO ]  freeMemory  :  190 MB
+2017-08-15 14:07:22 BaseApp.java 145 [ Actor-ping:378092 ] - [ INFO ]  usedMemory  :  53 MB
+2017-08-15 14:07:22 BaseApp.java 87 [ Actor-ping:378094 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:07:22 BaseApp.java 82 [ Actor-ping:378094 ] - [ INFO ]  Actor-ping=3
+
+2017-08-15 14:08:22 BaseApp.java 142 [ Actor-ping:438092 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:08:22 BaseApp.java 143 [ Actor-ping:438092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:08:22 BaseApp.java 144 [ Actor-ping:438092 ] - [ INFO ]  freeMemory  :  190 MB
+2017-08-15 14:08:22 BaseApp.java 145 [ Actor-ping:438092 ] - [ INFO ]  usedMemory  :  53 MB
+2017-08-15 14:08:28 LoginHandler.java 402 [ qtp1855026648-46:444261 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:08:28 LoginHandler.java 408 [ qtp1855026648-46:444261 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:08:28 LoginHandler.java 429 [ qtp1855026648-46:444266 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:08:28 LoginHandler.java 431 [ qtp1855026648-46:444266 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:08:28 IP.java 66 [ qtp1855026648-46:444275 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 14:08:28 IP.java 86 [ qtp1855026648-46:444276 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 14:08:28 LoginHandler.java 514 [ qtp1855026648-46:444276 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 14:08:28 LoginServer.java 161 [ qtp1855026648-46:444276 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:08:28 LoginHandler.java 610 [ qtp1855026648-46:444285 ] - [ INFO ]  sendCltResult 2 send login request to center
+2017-08-15 14:08:28 LoginHandler.java 614 [ nioEventLoopGroup-2-1:444288 ] - [ INFO ]  sendCltResult userId:2 e:packet.CocoPacket@3c9452a
+2017-08-15 14:08:28 LoginHandler.java 623 [ nioEventLoopGroup-2-1:444288 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:09:22 BaseApp.java 142 [ Actor-ping:498092 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:09:22 BaseApp.java 143 [ Actor-ping:498092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:09:22 BaseApp.java 144 [ Actor-ping:498093 ] - [ INFO ]  freeMemory  :  190 MB
+2017-08-15 14:09:22 BaseApp.java 145 [ Actor-ping:498093 ] - [ INFO ]  usedMemory  :  53 MB
+2017-08-15 14:09:22 BaseApp.java 82 [ Actor-ping:498095 ] - [ INFO ]  Actor-ping=3
+
+2017-08-15 14:09:22 BaseApp.java 87 [ Actor-ping:498095 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:10:22 BaseApp.java 142 [ Actor-ping:558092 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:10:22 BaseApp.java 143 [ Actor-ping:558092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:10:22 BaseApp.java 144 [ Actor-ping:558092 ] - [ INFO ]  freeMemory  :  190 MB
+2017-08-15 14:10:22 BaseApp.java 145 [ Actor-ping:558092 ] - [ INFO ]  usedMemory  :  53 MB
+2017-08-15 14:11:11 LoginHandler.java 402 [ qtp1855026648-48:606834 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test1111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:11:11 LoginHandler.java 408 [ qtp1855026648-48:606834 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:11:11 LoginHandler.java 429 [ qtp1855026648-48:606840 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:11:11 LoginHandler.java 431 [ qtp1855026648-48:606840 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:11:11 IP.java 66 [ qtp1855026648-48:606848 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 14:11:11 IP.java 86 [ qtp1855026648-48:606848 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 14:11:11 LoginHandler.java 514 [ qtp1855026648-48:606849 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 14:11:11 LoginServer.java 161 [ qtp1855026648-48:606849 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:11:11 LoginHandler.java 610 [ qtp1855026648-48:606858 ] - [ INFO ]  sendCltResult 3 send login request to center
+2017-08-15 14:11:11 LoginHandler.java 614 [ nioEventLoopGroup-2-1:606860 ] - [ INFO ]  sendCltResult userId:3 e:packet.CocoPacket@3a362c1c
+2017-08-15 14:11:11 LoginHandler.java 623 [ nioEventLoopGroup-2-1:606861 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:11:22 BaseApp.java 142 [ Actor-ping:618092 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:11:22 BaseApp.java 143 [ Actor-ping:618092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:11:22 BaseApp.java 144 [ Actor-ping:618092 ] - [ INFO ]  freeMemory  :  188 MB
+2017-08-15 14:11:22 BaseApp.java 145 [ Actor-ping:618092 ] - [ INFO ]  usedMemory  :  55 MB
+2017-08-15 14:11:22 BaseApp.java 87 [ Actor-ping:618094 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:11:22 BaseApp.java 82 [ Actor-ping:618095 ] - [ INFO ]  Actor-ping=3
+
+2017-08-15 14:12:22 BaseApp.java 142 [ Actor-ping:678092 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:12:22 BaseApp.java 143 [ Actor-ping:678092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:12:22 BaseApp.java 144 [ Actor-ping:678092 ] - [ INFO ]  freeMemory  :  188 MB
+2017-08-15 14:12:22 BaseApp.java 145 [ Actor-ping:678092 ] - [ INFO ]  usedMemory  :  55 MB
+2017-08-15 14:13:11 LoginHandler.java 402 [ qtp1855026648-41:727279 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test1111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:13:11 LoginHandler.java 408 [ qtp1855026648-41:727280 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:13:11 LoginHandler.java 429 [ qtp1855026648-41:727285 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:13:11 LoginHandler.java 431 [ qtp1855026648-41:727285 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:13:11 LoginServer.java 161 [ qtp1855026648-41:727293 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:13:11 LoginHandler.java 610 [ qtp1855026648-41:727302 ] - [ INFO ]  sendCltResult 3 send login request to center
+2017-08-15 14:13:11 LoginHandler.java 614 [ nioEventLoopGroup-2-1:727305 ] - [ INFO ]  sendCltResult userId:3 e:packet.CocoPacket@7b3ce396
+2017-08-15 14:13:11 LoginHandler.java 623 [ nioEventLoopGroup-2-1:727305 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:13:22 BaseApp.java 142 [ Actor-ping:738092 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:13:22 BaseApp.java 143 [ Actor-ping:738092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:13:22 BaseApp.java 144 [ Actor-ping:738092 ] - [ INFO ]  freeMemory  :  187 MB
+2017-08-15 14:13:22 BaseApp.java 145 [ Actor-ping:738092 ] - [ INFO ]  usedMemory  :  56 MB
+2017-08-15 14:13:22 BaseApp.java 87 [ Actor-ping:738094 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:13:22 BaseApp.java 82 [ Actor-ping:738095 ] - [ INFO ]  Actor-ping=3
+
+2017-08-15 14:14:14 LoginHandler.java 402 [ qtp1855026648-42:790496 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:14:14 LoginHandler.java 408 [ qtp1855026648-42:790497 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:14:14 LoginHandler.java 429 [ qtp1855026648-42:790498 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:14:14 LoginHandler.java 431 [ qtp1855026648-42:790498 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:14:14 IP.java 66 [ qtp1855026648-42:790504 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 14:14:14 IP.java 86 [ qtp1855026648-42:790504 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 14:14:14 LoginHandler.java 514 [ qtp1855026648-42:790504 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 14:14:14 LoginServer.java 161 [ qtp1855026648-42:790504 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:14:14 LoginHandler.java 610 [ qtp1855026648-42:790513 ] - [ INFO ]  sendCltResult 4 send login request to center
+2017-08-15 14:14:14 LoginHandler.java 614 [ nioEventLoopGroup-2-1:790516 ] - [ INFO ]  sendCltResult userId:4 e:packet.CocoPacket@51e294c5
+2017-08-15 14:14:14 LoginHandler.java 623 [ nioEventLoopGroup-2-1:790516 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:14:22 BaseApp.java 142 [ Actor-ping:798092 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:14:22 BaseApp.java 143 [ Actor-ping:798092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:14:22 BaseApp.java 144 [ Actor-ping:798092 ] - [ INFO ]  freeMemory  :  185 MB
+2017-08-15 14:14:22 BaseApp.java 145 [ Actor-ping:798092 ] - [ INFO ]  usedMemory  :  58 MB
+2017-08-15 14:14:37 LoginHandler.java 402 [ qtp1855026648-44:813291 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:14:37 LoginHandler.java 408 [ qtp1855026648-44:813291 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:14:37 LoginHandler.java 429 [ qtp1855026648-44:813296 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:14:37 LoginHandler.java 431 [ qtp1855026648-44:813297 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:14:37 LoginServer.java 161 [ qtp1855026648-44:813301 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:14:37 LoginHandler.java 610 [ qtp1855026648-44:813307 ] - [ INFO ]  sendCltResult 2 send login request to center
+2017-08-15 14:14:37 LoginHandler.java 614 [ nioEventLoopGroup-2-1:813309 ] - [ INFO ]  sendCltResult userId:2 e:packet.CocoPacket@6e89ac16
+2017-08-15 14:14:37 LoginHandler.java 623 [ nioEventLoopGroup-2-1:813309 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:15:09 LoginHandler.java 402 [ qtp1855026648-43:844891 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test1111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:15:09 LoginHandler.java 408 [ qtp1855026648-43:844891 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:15:09 LoginHandler.java 429 [ qtp1855026648-43:844893 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:15:09 LoginHandler.java 431 [ qtp1855026648-43:844893 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:15:09 LoginServer.java 161 [ qtp1855026648-43:844898 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:15:09 LoginHandler.java 610 [ qtp1855026648-43:844907 ] - [ INFO ]  sendCltResult 3 send login request to center
+2017-08-15 14:15:09 LoginHandler.java 614 [ nioEventLoopGroup-2-1:844910 ] - [ INFO ]  sendCltResult userId:3 e:packet.CocoPacket@736b2a43
+2017-08-15 14:15:09 LoginHandler.java 623 [ nioEventLoopGroup-2-1:844910 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:15:22 BaseApp.java 142 [ Actor-ping:858091 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:15:22 BaseApp.java 143 [ Actor-ping:858091 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:15:22 BaseApp.java 144 [ Actor-ping:858092 ] - [ INFO ]  freeMemory  :  182 MB
+2017-08-15 14:15:22 BaseApp.java 145 [ Actor-ping:858092 ] - [ INFO ]  usedMemory  :  61 MB
+2017-08-15 14:15:22 BaseApp.java 87 [ Actor-ping:858108 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:15:22 BaseApp.java 82 [ Actor-ping:858108 ] - [ INFO ]  Actor-ping=3
+
+2017-08-15 14:15:59 LoginHandler.java 402 [ qtp1855026648-46:895348 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test1111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:15:59 LoginHandler.java 408 [ qtp1855026648-46:895349 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:15:59 LoginHandler.java 429 [ qtp1855026648-46:895351 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:15:59 LoginHandler.java 431 [ qtp1855026648-46:895351 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:15:59 LoginServer.java 161 [ qtp1855026648-46:895356 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:15:59 LoginHandler.java 610 [ qtp1855026648-46:895364 ] - [ INFO ]  sendCltResult 3 send login request to center
+2017-08-15 14:15:59 LoginHandler.java 614 [ nioEventLoopGroup-2-1:895368 ] - [ INFO ]  sendCltResult userId:3 e:packet.CocoPacket@718387bc
+2017-08-15 14:15:59 LoginHandler.java 623 [ nioEventLoopGroup-2-1:895368 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:16:22 BaseApp.java 142 [ Actor-ping:918092 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:16:22 BaseApp.java 143 [ Actor-ping:918092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:16:22 BaseApp.java 144 [ Actor-ping:918092 ] - [ INFO ]  freeMemory  :  182 MB
+2017-08-15 14:16:22 BaseApp.java 145 [ Actor-ping:918092 ] - [ INFO ]  usedMemory  :  61 MB
+2017-08-15 14:16:50 LoginHandler.java 402 [ qtp1855026648-47:946264 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:16:50 LoginHandler.java 408 [ qtp1855026648-47:946265 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:16:50 LoginHandler.java 429 [ qtp1855026648-47:946269 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:16:50 LoginHandler.java 431 [ qtp1855026648-47:946270 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:16:50 LoginServer.java 161 [ qtp1855026648-47:946273 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:16:50 LoginHandler.java 610 [ qtp1855026648-47:946278 ] - [ INFO ]  sendCltResult 2 send login request to center
+2017-08-15 14:16:50 LoginHandler.java 614 [ nioEventLoopGroup-2-1:946281 ] - [ INFO ]  sendCltResult userId:2 e:packet.CocoPacket@561100ac
+2017-08-15 14:16:50 LoginHandler.java 623 [ nioEventLoopGroup-2-1:946281 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:17:17 LoginHandler.java 402 [ qtp1855026648-48:973155 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test1111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:17:17 LoginHandler.java 408 [ qtp1855026648-48:973156 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:17:17 LoginHandler.java 429 [ qtp1855026648-48:973157 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:17:17 LoginHandler.java 431 [ qtp1855026648-48:973157 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:17:17 LoginServer.java 161 [ qtp1855026648-48:973161 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:17:17 LoginHandler.java 610 [ qtp1855026648-48:973166 ] - [ INFO ]  sendCltResult 3 send login request to center
+2017-08-15 14:17:17 LoginHandler.java 614 [ nioEventLoopGroup-2-1:973169 ] - [ INFO ]  sendCltResult userId:3 e:packet.CocoPacket@58bb5d
+2017-08-15 14:17:17 LoginHandler.java 623 [ nioEventLoopGroup-2-1:973169 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:17:22 BaseApp.java 142 [ Actor-ping:978092 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:17:22 BaseApp.java 143 [ Actor-ping:978092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:17:22 BaseApp.java 144 [ Actor-ping:978092 ] - [ INFO ]  freeMemory  :  180 MB
+2017-08-15 14:17:22 BaseApp.java 145 [ Actor-ping:978092 ] - [ INFO ]  usedMemory  :  63 MB
+2017-08-15 14:17:22 BaseApp.java 87 [ Actor-ping:978094 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:17:22 BaseApp.java 82 [ Actor-ping:978094 ] - [ INFO ]  Actor-ping=3
+
+2017-08-15 14:17:44 LoginHandler.java 402 [ qtp1855026648-41:999804 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test131543252 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:17:44 LoginHandler.java 408 [ qtp1855026648-41:999804 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:17:44 LoginHandler.java 429 [ qtp1855026648-41:999806 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:17:44 LoginHandler.java 431 [ qtp1855026648-41:999806 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:17:44 IP.java 66 [ qtp1855026648-41:999811 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 14:17:44 IP.java 86 [ qtp1855026648-41:999811 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 14:17:44 LoginHandler.java 514 [ qtp1855026648-41:999811 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 14:17:44 LoginServer.java 161 [ qtp1855026648-41:999811 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:17:44 LoginHandler.java 610 [ qtp1855026648-41:999817 ] - [ INFO ]  sendCltResult 5 send login request to center
+2017-08-15 14:17:44 LoginHandler.java 614 [ nioEventLoopGroup-2-1:999819 ] - [ INFO ]  sendCltResult userId:5 e:packet.CocoPacket@1efcb800
+2017-08-15 14:17:44 LoginHandler.java 623 [ nioEventLoopGroup-2-1:999820 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:18:22 BaseApp.java 142 [ Actor-ping:1038092 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:18:22 BaseApp.java 143 [ Actor-ping:1038092 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:18:22 BaseApp.java 144 [ Actor-ping:1038092 ] - [ INFO ]  freeMemory  :  177 MB
+2017-08-15 14:18:22 BaseApp.java 145 [ Actor-ping:1038092 ] - [ INFO ]  usedMemory  :  66 MB
+2017-08-15 14:18:36 LoginHandler.java 402 [ qtp1855026648-42:1051678 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11111 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:18:36 LoginHandler.java 408 [ qtp1855026648-42:1051678 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:18:36 LoginHandler.java 429 [ qtp1855026648-42:1051680 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:18:36 LoginHandler.java 431 [ qtp1855026648-42:1051680 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:18:36 LoginServer.java 161 [ qtp1855026648-42:1051686 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:18:36 LoginHandler.java 610 [ qtp1855026648-42:1051691 ] - [ INFO ]  sendCltResult 2 send login request to center
+2017-08-15 14:18:36 LoginHandler.java 614 [ nioEventLoopGroup-2-1:1051694 ] - [ INFO ]  sendCltResult userId:2 e:packet.CocoPacket@3e1bd89
+2017-08-15 14:18:36 LoginHandler.java 623 [ nioEventLoopGroup-2-1:1051694 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:19:05 LoginHandler.java 402 [ qtp1855026648-43:1080734 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test12316 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:19:05 LoginHandler.java 408 [ qtp1855026648-43:1080734 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:19:05 LoginHandler.java 429 [ qtp1855026648-43:1080737 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:19:05 LoginHandler.java 431 [ qtp1855026648-43:1080737 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:19:05 IP.java 66 [ qtp1855026648-43:1080741 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 14:19:05 IP.java 86 [ qtp1855026648-43:1080741 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 14:19:05 LoginHandler.java 514 [ qtp1855026648-43:1080741 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 14:19:05 LoginServer.java 161 [ qtp1855026648-43:1080741 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:19:05 LoginHandler.java 610 [ qtp1855026648-43:1080747 ] - [ INFO ]  sendCltResult 6 send login request to center
+2017-08-15 14:19:05 LoginHandler.java 614 [ nioEventLoopGroup-2-1:1080751 ] - [ INFO ]  sendCltResult userId:6 e:packet.CocoPacket@28f4fde0
+2017-08-15 14:19:05 LoginHandler.java 623 [ nioEventLoopGroup-2-1:1080751 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:19:22 BaseApp.java 142 [ Actor-ping:1098093 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:19:22 BaseApp.java 143 [ Actor-ping:1098093 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:19:22 BaseApp.java 144 [ Actor-ping:1098093 ] - [ INFO ]  freeMemory  :  174 MB
+2017-08-15 14:19:22 BaseApp.java 145 [ Actor-ping:1098093 ] - [ INFO ]  usedMemory  :  69 MB
+2017-08-15 14:19:22 BaseApp.java 87 [ Actor-ping:1098095 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:19:22 BaseApp.java 82 [ Actor-ping:1098095 ] - [ INFO ]  Actor-ping=3
+
+2017-08-15 14:20:08 ClientHandler.java 47 [ nioEventLoopGroup-2-1:1144283 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 14:20:08 ClientHandler.java 32 [ nioEventLoopGroup-2-1:1144286 ] - [ INFO ]   channel in active 
+2017-08-15 14:20:08 NetClient.java 110 [ nioEventLoopGroup-2-1:1144286 ] - [ ERROR ]  LOGIN,serverId=4与center连接断开,5秒后准备重连.
+2017-08-15 14:20:22 NetClient.java 96 [ nioEventLoopGroup-2-1:530 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-08-15 14:20:17
+2017-08-15 14:20:22 LoginServer.java 96 [ main:1123 ] - [ INFO ]  加载 包对应平台{}
+2017-08-15 14:20:22 LoginServer.java 97 [ main:1124 ] - [ INFO ]  加载 包对应渠道{}
+2017-08-15 14:20:22 LoginServer.java 115 [ main:1126 ] - [ INFO ]  加载 全局开关状态{}
+2017-08-15 14:20:22 LoginServer.java 116 [ main:1126 ] - [ INFO ]  加载 共享地区名:
+2017-08-15 14:20:22 LoginServer.java 130 [ main:1128 ] - [ INFO ]  加载 区域维护状态{}
+2017-08-15 14:20:22 Log.java 192 [ main:1171 ] - [ INFO ]  Logging initialized @1669ms
+2017-08-15 14:20:22 Server.java 346 [ main:1212 ] - [ INFO ]  jetty-9.3.14.v20161028
+2017-08-15 14:20:22 AbstractConnector.java 278 [ main:1264 ] - [ INFO ]  Started ServerConnector@76494737{HTTP/1.1,[http/1.1]}{0.0.0.0:9098}
+2017-08-15 14:20:22 Server.java 414 [ main:1264 ] - [ INFO ]  Started @1763ms
+2017-08-15 14:20:42 LoginHandler.java 402 [ qtp1191654595-45:20943 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test53243 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:20:42 LoginHandler.java 408 [ qtp1191654595-45:20943 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:20:42 LoginHandler.java 429 [ qtp1191654595-45:20946 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:20:42 LoginHandler.java 431 [ qtp1191654595-45:20946 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:20:42 IP.java 66 [ qtp1191654595-45:20953 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 14:20:42 IP.java 86 [ qtp1191654595-45:20953 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 14:20:42 LoginHandler.java 514 [ qtp1191654595-45:20955 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 14:20:42 LoginServer.java 161 [ qtp1191654595-45:20955 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:20:42 LoginHandler.java 610 [ qtp1191654595-45:20969 ] - [ INFO ]  sendCltResult 7 send login request to center
+2017-08-15 14:20:42 LoginHandler.java 614 [ nioEventLoopGroup-2-1:20980 ] - [ INFO ]  sendCltResult userId:7 e:packet.CocoPacket@7e0955ad
+2017-08-15 14:20:42 LoginHandler.java 623 [ nioEventLoopGroup-2-1:20982 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:21:22 BaseApp.java 142 [ Actor-ping:61270 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:21:22 BaseApp.java 143 [ Actor-ping:61271 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:21:22 BaseApp.java 144 [ Actor-ping:61271 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 14:21:22 BaseApp.java 145 [ Actor-ping:61271 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 14:22:22 BaseApp.java 142 [ Actor-ping:121269 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:22:22 BaseApp.java 143 [ Actor-ping:121269 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:22:22 BaseApp.java 144 [ Actor-ping:121269 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 14:22:22 BaseApp.java 145 [ Actor-ping:121269 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 14:22:22 BaseApp.java 87 [ Actor-ping:121270 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:22:22 BaseApp.java 82 [ Actor-ping:121271 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:23:16 LoginHandler.java 402 [ qtp1191654595-41:174483 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test3131231 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:23:16 LoginHandler.java 408 [ qtp1191654595-41:174484 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:23:16 LoginHandler.java 429 [ qtp1191654595-41:174485 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:23:16 LoginHandler.java 431 [ qtp1191654595-41:174486 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:23:16 IP.java 66 [ qtp1191654595-41:174490 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 14:23:16 IP.java 86 [ qtp1191654595-41:174490 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 14:23:16 LoginHandler.java 514 [ qtp1191654595-41:174490 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 14:23:16 LoginServer.java 161 [ qtp1191654595-41:174490 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:23:16 LoginHandler.java 610 [ qtp1191654595-41:174495 ] - [ INFO ]  sendCltResult 8 send login request to center
+2017-08-15 14:23:16 LoginHandler.java 614 [ nioEventLoopGroup-2-1:174498 ] - [ INFO ]  sendCltResult userId:8 e:packet.CocoPacket@7154087f
+2017-08-15 14:23:16 LoginHandler.java 623 [ nioEventLoopGroup-2-1:174498 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:23:22 BaseApp.java 142 [ Actor-ping:181268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:23:22 BaseApp.java 143 [ Actor-ping:181268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:23:22 BaseApp.java 144 [ Actor-ping:181268 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:23:22 BaseApp.java 145 [ Actor-ping:181268 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:24:22 BaseApp.java 142 [ Actor-ping:241268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:24:22 BaseApp.java 143 [ Actor-ping:241268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:24:22 BaseApp.java 144 [ Actor-ping:241269 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:24:22 BaseApp.java 145 [ Actor-ping:241269 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:24:22 BaseApp.java 87 [ Actor-ping:241270 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:24:22 BaseApp.java 82 [ Actor-ping:241270 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:25:22 BaseApp.java 142 [ Actor-ping:301268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:25:22 BaseApp.java 143 [ Actor-ping:301268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:25:22 BaseApp.java 144 [ Actor-ping:301268 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:25:22 BaseApp.java 145 [ Actor-ping:301268 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:26:22 BaseApp.java 142 [ Actor-ping:361268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:26:22 BaseApp.java 143 [ Actor-ping:361268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:26:22 BaseApp.java 144 [ Actor-ping:361268 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:26:22 BaseApp.java 145 [ Actor-ping:361268 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:26:22 BaseApp.java 87 [ Actor-ping:361269 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:26:22 BaseApp.java 82 [ Actor-ping:361270 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:27:22 BaseApp.java 142 [ Actor-ping:421269 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:27:22 BaseApp.java 143 [ Actor-ping:421269 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:27:22 BaseApp.java 144 [ Actor-ping:421270 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:27:22 BaseApp.java 145 [ Actor-ping:421270 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:28:22 BaseApp.java 142 [ Actor-ping:481269 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:28:22 BaseApp.java 143 [ Actor-ping:481269 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:28:22 BaseApp.java 144 [ Actor-ping:481270 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:28:22 BaseApp.java 145 [ Actor-ping:481270 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:28:22 BaseApp.java 87 [ Actor-ping:481271 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:28:22 BaseApp.java 82 [ Actor-ping:481271 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:29:22 BaseApp.java 142 [ Actor-ping:541268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:29:22 BaseApp.java 143 [ Actor-ping:541268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:29:22 BaseApp.java 144 [ Actor-ping:541268 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:29:22 BaseApp.java 145 [ Actor-ping:541268 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:30:22 BaseApp.java 142 [ Actor-ping:601269 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:30:22 BaseApp.java 143 [ Actor-ping:601269 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:30:22 BaseApp.java 144 [ Actor-ping:601270 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:30:22 BaseApp.java 145 [ Actor-ping:601270 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:30:22 BaseApp.java 87 [ Actor-ping:601271 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:30:22 BaseApp.java 82 [ Actor-ping:601271 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:31:22 BaseApp.java 142 [ Actor-ping:661268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:31:22 BaseApp.java 143 [ Actor-ping:661268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:31:22 BaseApp.java 144 [ Actor-ping:661268 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:31:22 BaseApp.java 145 [ Actor-ping:661268 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:32:22 BaseApp.java 142 [ Actor-ping:721268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:32:22 BaseApp.java 143 [ Actor-ping:721268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:32:22 BaseApp.java 144 [ Actor-ping:721268 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:32:22 BaseApp.java 145 [ Actor-ping:721268 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:32:22 BaseApp.java 87 [ Actor-ping:721270 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:32:22 BaseApp.java 82 [ Actor-ping:721270 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:33:22 BaseApp.java 142 [ Actor-ping:781268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:33:22 BaseApp.java 143 [ Actor-ping:781268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:33:22 BaseApp.java 144 [ Actor-ping:781268 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:33:22 BaseApp.java 145 [ Actor-ping:781268 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:34:22 BaseApp.java 142 [ Actor-ping:841268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:34:22 BaseApp.java 143 [ Actor-ping:841268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:34:22 BaseApp.java 144 [ Actor-ping:841268 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:34:22 BaseApp.java 145 [ Actor-ping:841268 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:34:22 BaseApp.java 87 [ Actor-ping:841269 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:34:22 BaseApp.java 82 [ Actor-ping:841270 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:35:22 BaseApp.java 142 [ Actor-ping:901268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:35:22 BaseApp.java 143 [ Actor-ping:901268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:35:22 BaseApp.java 144 [ Actor-ping:901268 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:35:22 BaseApp.java 145 [ Actor-ping:901269 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:36:22 BaseApp.java 142 [ Actor-ping:961268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:36:22 BaseApp.java 143 [ Actor-ping:961268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:36:22 BaseApp.java 144 [ Actor-ping:961269 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:36:22 BaseApp.java 145 [ Actor-ping:961269 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:36:22 BaseApp.java 87 [ Actor-ping:961270 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:36:22 BaseApp.java 82 [ Actor-ping:961270 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:37:22 BaseApp.java 142 [ Actor-ping:1021269 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:37:22 BaseApp.java 143 [ Actor-ping:1021269 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:37:22 BaseApp.java 144 [ Actor-ping:1021269 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:37:22 BaseApp.java 145 [ Actor-ping:1021269 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:38:22 BaseApp.java 142 [ Actor-ping:1081268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:38:22 BaseApp.java 143 [ Actor-ping:1081268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:38:22 BaseApp.java 144 [ Actor-ping:1081268 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 14:38:22 BaseApp.java 145 [ Actor-ping:1081269 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 14:38:22 BaseApp.java 87 [ Actor-ping:1081269 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:38:22 BaseApp.java 82 [ Actor-ping:1081270 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:38:58 LoginHandler.java 402 [ qtp1191654595-43:1116441 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test13214 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:38:58 LoginHandler.java 408 [ qtp1191654595-43:1116442 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:38:58 LoginHandler.java 429 [ qtp1191654595-43:1116444 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:38:58 LoginHandler.java 431 [ qtp1191654595-43:1116444 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:38:58 IP.java 66 [ qtp1191654595-43:1116448 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 14:38:58 IP.java 86 [ qtp1191654595-43:1116449 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 14:38:58 LoginHandler.java 514 [ qtp1191654595-43:1116449 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 14:38:58 LoginServer.java 161 [ qtp1191654595-43:1116449 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:38:58 LoginHandler.java 610 [ qtp1191654595-43:1116456 ] - [ INFO ]  sendCltResult 9 send login request to center
+2017-08-15 14:38:58 LoginHandler.java 614 [ nioEventLoopGroup-2-1:1116458 ] - [ INFO ]  sendCltResult userId:9 e:packet.CocoPacket@1cf32d51
+2017-08-15 14:38:58 LoginHandler.java 623 [ nioEventLoopGroup-2-1:1116458 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:39:22 BaseApp.java 142 [ Actor-ping:1141268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:39:22 BaseApp.java 143 [ Actor-ping:1141268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:39:22 BaseApp.java 144 [ Actor-ping:1141268 ] - [ INFO ]  freeMemory  :  193 MB
+2017-08-15 14:39:22 BaseApp.java 145 [ Actor-ping:1141268 ] - [ INFO ]  usedMemory  :  50 MB
+2017-08-15 14:40:22 BaseApp.java 142 [ Actor-ping:1201268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:40:22 BaseApp.java 143 [ Actor-ping:1201268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:40:22 BaseApp.java 144 [ Actor-ping:1201268 ] - [ INFO ]  freeMemory  :  193 MB
+2017-08-15 14:40:22 BaseApp.java 145 [ Actor-ping:1201268 ] - [ INFO ]  usedMemory  :  50 MB
+2017-08-15 14:40:22 BaseApp.java 87 [ Actor-ping:1201269 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:40:22 BaseApp.java 82 [ Actor-ping:1201270 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:41:22 BaseApp.java 142 [ Actor-ping:1261268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:41:22 BaseApp.java 143 [ Actor-ping:1261268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:41:22 BaseApp.java 144 [ Actor-ping:1261268 ] - [ INFO ]  freeMemory  :  193 MB
+2017-08-15 14:41:22 BaseApp.java 145 [ Actor-ping:1261268 ] - [ INFO ]  usedMemory  :  50 MB
+2017-08-15 14:42:22 BaseApp.java 142 [ Actor-ping:1321269 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:42:22 BaseApp.java 143 [ Actor-ping:1321269 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:42:22 BaseApp.java 144 [ Actor-ping:1321269 ] - [ INFO ]  freeMemory  :  193 MB
+2017-08-15 14:42:22 BaseApp.java 145 [ Actor-ping:1321269 ] - [ INFO ]  usedMemory  :  50 MB
+2017-08-15 14:42:22 BaseApp.java 87 [ Actor-ping:1321270 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:42:22 BaseApp.java 82 [ Actor-ping:1321270 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:43:22 BaseApp.java 142 [ Actor-ping:1381269 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:43:22 BaseApp.java 143 [ Actor-ping:1381269 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:43:22 BaseApp.java 144 [ Actor-ping:1381269 ] - [ INFO ]  freeMemory  :  193 MB
+2017-08-15 14:43:22 BaseApp.java 145 [ Actor-ping:1381269 ] - [ INFO ]  usedMemory  :  50 MB
+2017-08-15 14:44:22 BaseApp.java 142 [ Actor-ping:1441268 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:44:22 BaseApp.java 143 [ Actor-ping:1441268 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:44:22 BaseApp.java 144 [ Actor-ping:1441268 ] - [ INFO ]  freeMemory  :  193 MB
+2017-08-15 14:44:22 BaseApp.java 145 [ Actor-ping:1441268 ] - [ INFO ]  usedMemory  :  50 MB
+2017-08-15 14:44:22 BaseApp.java 87 [ Actor-ping:1441269 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:44:22 BaseApp.java 82 [ Actor-ping:1441270 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:45:13 ClientHandler.java 47 [ nioEventLoopGroup-2-1:1491539 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 14:45:13 ClientHandler.java 32 [ nioEventLoopGroup-2-1:1491543 ] - [ INFO ]   channel in active 
+2017-08-15 14:45:13 NetClient.java 110 [ nioEventLoopGroup-2-1:1491543 ] - [ ERROR ]  LOGIN,serverId=1与center连接断开,5秒后准备重连.
+2017-08-15 14:45:28 NetClient.java 96 [ nioEventLoopGroup-2-1:497 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-08-15 14:45:24
+2017-08-15 14:45:29 LoginServer.java 96 [ main:1038 ] - [ INFO ]  加载 包对应平台{}
+2017-08-15 14:45:29 LoginServer.java 97 [ main:1039 ] - [ INFO ]  加载 包对应渠道{}
+2017-08-15 14:45:29 LoginServer.java 115 [ main:1040 ] - [ INFO ]  加载 全局开关状态{}
+2017-08-15 14:45:29 LoginServer.java 116 [ main:1040 ] - [ INFO ]  加载 共享地区名:
+2017-08-15 14:45:29 LoginServer.java 130 [ main:1041 ] - [ INFO ]  加载 区域维护状态{}
+2017-08-15 14:45:29 Log.java 192 [ main:1083 ] - [ INFO ]  Logging initialized @1542ms
+2017-08-15 14:45:29 Server.java 346 [ main:1125 ] - [ INFO ]  jetty-9.3.14.v20161028
+2017-08-15 14:45:29 AbstractConnector.java 278 [ main:1167 ] - [ INFO ]  Started ServerConnector@76494737{HTTP/1.1,[http/1.1]}{0.0.0.0:9098}
+2017-08-15 14:45:29 Server.java 414 [ main:1167 ] - [ INFO ]  Started @1627ms
+2017-08-15 14:46:05 LoginHandler.java 402 [ qtp1191654595-45:37304 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test414223 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:46:05 LoginHandler.java 408 [ qtp1191654595-45:37304 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:46:05 LoginHandler.java 429 [ qtp1191654595-45:37306 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:46:05 LoginHandler.java 431 [ qtp1191654595-45:37306 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:46:05 IP.java 66 [ qtp1191654595-45:37313 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 14:46:05 IP.java 86 [ qtp1191654595-45:37313 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 14:46:05 LoginHandler.java 514 [ qtp1191654595-45:37315 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 14:46:05 LoginServer.java 161 [ qtp1191654595-45:37315 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:46:05 LoginHandler.java 610 [ qtp1191654595-45:37333 ] - [ INFO ]  sendCltResult 10 send login request to center
+2017-08-15 14:46:05 LoginHandler.java 614 [ nioEventLoopGroup-2-1:37345 ] - [ INFO ]  sendCltResult userId:10 e:packet.CocoPacket@2906545d
+2017-08-15 14:46:05 LoginHandler.java 623 [ nioEventLoopGroup-2-1:37348 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:46:29 BaseApp.java 142 [ Actor-ping:61174 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:46:29 BaseApp.java 143 [ Actor-ping:61174 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:46:29 BaseApp.java 144 [ Actor-ping:61174 ] - [ INFO ]  freeMemory  :  199 MB
+2017-08-15 14:46:29 BaseApp.java 145 [ Actor-ping:61174 ] - [ INFO ]  usedMemory  :  44 MB
+2017-08-15 14:47:29 BaseApp.java 142 [ Actor-ping:121172 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:47:29 BaseApp.java 143 [ Actor-ping:121173 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:47:29 BaseApp.java 144 [ Actor-ping:121173 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 14:47:29 BaseApp.java 145 [ Actor-ping:121173 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 14:47:29 BaseApp.java 87 [ Actor-ping:121175 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:47:29 BaseApp.java 82 [ Actor-ping:121175 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:48:29 BaseApp.java 142 [ Actor-ping:181174 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:48:29 BaseApp.java 143 [ Actor-ping:181174 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:48:29 BaseApp.java 144 [ Actor-ping:181174 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 14:48:29 BaseApp.java 145 [ Actor-ping:181174 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 14:49:29 BaseApp.java 142 [ Actor-ping:241173 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:49:29 BaseApp.java 143 [ Actor-ping:241173 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:49:29 BaseApp.java 144 [ Actor-ping:241173 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 14:49:29 BaseApp.java 145 [ Actor-ping:241173 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 14:49:29 BaseApp.java 87 [ Actor-ping:241174 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:49:29 BaseApp.java 82 [ Actor-ping:241174 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:50:29 BaseApp.java 142 [ Actor-ping:301172 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:50:29 BaseApp.java 143 [ Actor-ping:301172 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:50:29 BaseApp.java 144 [ Actor-ping:301172 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 14:50:29 BaseApp.java 145 [ Actor-ping:301172 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 14:51:29 BaseApp.java 142 [ Actor-ping:361172 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:51:29 BaseApp.java 143 [ Actor-ping:361172 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:51:29 BaseApp.java 144 [ Actor-ping:361172 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 14:51:29 BaseApp.java 145 [ Actor-ping:361172 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 14:51:29 BaseApp.java 87 [ Actor-ping:361174 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:51:29 BaseApp.java 82 [ Actor-ping:361174 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:52:29 BaseApp.java 142 [ Actor-ping:421172 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:52:29 BaseApp.java 143 [ Actor-ping:421172 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:52:29 BaseApp.java 144 [ Actor-ping:421172 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 14:52:29 BaseApp.java 145 [ Actor-ping:421172 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 14:53:29 BaseApp.java 142 [ Actor-ping:481172 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:53:29 BaseApp.java 143 [ Actor-ping:481172 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:53:29 BaseApp.java 144 [ Actor-ping:481172 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 14:53:29 BaseApp.java 145 [ Actor-ping:481172 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 14:53:29 BaseApp.java 87 [ Actor-ping:481173 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:53:29 BaseApp.java 82 [ Actor-ping:481174 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:54:29 BaseApp.java 142 [ Actor-ping:541173 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:54:29 BaseApp.java 143 [ Actor-ping:541173 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:54:29 BaseApp.java 144 [ Actor-ping:541174 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 14:54:29 BaseApp.java 145 [ Actor-ping:541174 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 14:55:29 BaseApp.java 142 [ Actor-ping:601172 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:55:29 BaseApp.java 143 [ Actor-ping:601172 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:55:29 BaseApp.java 144 [ Actor-ping:601172 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 14:55:29 BaseApp.java 145 [ Actor-ping:601173 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 14:55:29 BaseApp.java 87 [ Actor-ping:601174 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 14:55:29 BaseApp.java 82 [ Actor-ping:601175 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 14:56:29 BaseApp.java 142 [ Actor-ping:661172 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:56:29 BaseApp.java 143 [ Actor-ping:661172 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:56:29 BaseApp.java 144 [ Actor-ping:661172 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 14:56:29 BaseApp.java 145 [ Actor-ping:661172 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 14:57:03 ClientHandler.java 47 [ nioEventLoopGroup-2-1:695888 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 14:57:03 ClientHandler.java 32 [ nioEventLoopGroup-2-1:695892 ] - [ INFO ]   channel in active 
+2017-08-15 14:57:03 NetClient.java 110 [ nioEventLoopGroup-2-1:695892 ] - [ ERROR ]  LOGIN,serverId=1与center连接断开,5秒后准备重连.
+2017-08-15 14:58:11 NetClient.java 96 [ nioEventLoopGroup-2-1:528 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-08-15 14:58:06
+2017-08-15 14:58:11 LoginServer.java 96 [ main:983 ] - [ INFO ]  加载 包对应平台{}
+2017-08-15 14:58:11 LoginServer.java 97 [ main:983 ] - [ INFO ]  加载 包对应渠道{}
+2017-08-15 14:58:11 LoginServer.java 115 [ main:984 ] - [ INFO ]  加载 全局开关状态{}
+2017-08-15 14:58:11 LoginServer.java 116 [ main:984 ] - [ INFO ]  加载 共享地区名:
+2017-08-15 14:58:11 LoginServer.java 130 [ main:984 ] - [ INFO ]  加载 区域维护状态{}
+2017-08-15 14:58:11 Log.java 192 [ main:1026 ] - [ INFO ]  Logging initialized @1530ms
+2017-08-15 14:58:11 Server.java 346 [ main:1067 ] - [ INFO ]  jetty-9.3.14.v20161028
+2017-08-15 14:58:11 AbstractConnector.java 278 [ main:1116 ] - [ INFO ]  Started ServerConnector@76494737{HTTP/1.1,[http/1.1]}{0.0.0.0:9098}
+2017-08-15 14:58:11 Server.java 414 [ main:1117 ] - [ INFO ]  Started @1620ms
+2017-08-15 14:58:30 LoginHandler.java 402 [ qtp1191654595-45:19760 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test1132423 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 14:58:30 LoginHandler.java 408 [ qtp1191654595-45:19760 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 14:58:30 LoginHandler.java 429 [ qtp1191654595-45:19762 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 14:58:30 LoginHandler.java 431 [ qtp1191654595-45:19762 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 14:58:30 IP.java 66 [ qtp1191654595-45:19768 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 14:58:30 IP.java 86 [ qtp1191654595-45:19768 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 14:58:30 LoginHandler.java 514 [ qtp1191654595-45:19770 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 14:58:30 LoginServer.java 161 [ qtp1191654595-45:19770 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 14:58:30 LoginHandler.java 610 [ qtp1191654595-45:19788 ] - [ INFO ]  sendCltResult 11 send login request to center
+2017-08-15 14:58:30 LoginHandler.java 614 [ nioEventLoopGroup-2-1:19798 ] - [ INFO ]  sendCltResult userId:11 e:packet.CocoPacket@e3931dd
+2017-08-15 14:58:30 LoginHandler.java 623 [ nioEventLoopGroup-2-1:19802 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 14:59:11 BaseApp.java 142 [ Actor-ping:61123 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 14:59:11 BaseApp.java 143 [ Actor-ping:61123 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 14:59:11 BaseApp.java 144 [ Actor-ping:61123 ] - [ INFO ]  freeMemory  :  199 MB
+2017-08-15 14:59:11 BaseApp.java 145 [ Actor-ping:61123 ] - [ INFO ]  usedMemory  :  44 MB
+2017-08-15 15:00:11 BaseApp.java 142 [ Actor-ping:121121 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:00:11 BaseApp.java 143 [ Actor-ping:121121 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:00:11 BaseApp.java 144 [ Actor-ping:121121 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 15:00:11 BaseApp.java 145 [ Actor-ping:121121 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 15:00:11 BaseApp.java 87 [ Actor-ping:121123 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:00:11 BaseApp.java 82 [ Actor-ping:121123 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 15:01:11 BaseApp.java 142 [ Actor-ping:181121 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:01:11 BaseApp.java 143 [ Actor-ping:181121 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:01:11 BaseApp.java 144 [ Actor-ping:181122 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 15:01:11 BaseApp.java 145 [ Actor-ping:181122 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 15:02:11 BaseApp.java 142 [ Actor-ping:241120 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:02:11 BaseApp.java 143 [ Actor-ping:241120 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:02:11 BaseApp.java 144 [ Actor-ping:241121 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 15:02:11 BaseApp.java 145 [ Actor-ping:241121 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 15:02:11 BaseApp.java 87 [ Actor-ping:241122 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:02:11 BaseApp.java 82 [ Actor-ping:241122 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 15:03:11 BaseApp.java 142 [ Actor-ping:301120 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:03:11 BaseApp.java 143 [ Actor-ping:301121 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:03:11 BaseApp.java 144 [ Actor-ping:301121 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 15:03:11 BaseApp.java 145 [ Actor-ping:301121 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 15:04:11 BaseApp.java 142 [ Actor-ping:361122 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:04:11 BaseApp.java 143 [ Actor-ping:361122 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:04:11 BaseApp.java 144 [ Actor-ping:361122 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 15:04:11 BaseApp.java 145 [ Actor-ping:361128 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 15:04:11 BaseApp.java 87 [ Actor-ping:361128 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:04:11 BaseApp.java 82 [ Actor-ping:361129 ] - [ INFO ]  Actor-ping=2
+
+2017-08-15 15:05:11 BaseApp.java 142 [ Actor-ping:421122 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:05:11 BaseApp.java 143 [ Actor-ping:421122 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:05:11 BaseApp.java 144 [ Actor-ping:421122 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 15:05:11 BaseApp.java 145 [ Actor-ping:421122 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 15:05:31 LoginHandler.java 402 [ qtp1191654595-43:441137 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test3131 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:05:31 LoginHandler.java 408 [ qtp1191654595-43:441137 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:05:31 LoginHandler.java 429 [ qtp1191654595-43:441139 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:05:31 LoginHandler.java 431 [ qtp1191654595-43:441139 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:05:31 IP.java 66 [ qtp1191654595-43:441143 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 15:05:31 IP.java 86 [ qtp1191654595-43:441143 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 15:05:31 LoginHandler.java 514 [ qtp1191654595-43:441143 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 15:05:31 LoginServer.java 161 [ qtp1191654595-43:441143 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:05:31 LoginHandler.java 610 [ qtp1191654595-43:441148 ] - [ INFO ]  sendCltResult 12 send login request to center
+2017-08-15 15:05:31 LoginHandler.java 614 [ nioEventLoopGroup-2-1:441150 ] - [ INFO ]  sendCltResult userId:12 e:packet.CocoPacket@4a1f5491
+2017-08-15 15:05:31 LoginHandler.java 623 [ nioEventLoopGroup-2-1:441151 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:06:11 BaseApp.java 142 [ Actor-ping:481120 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:06:11 BaseApp.java 143 [ Actor-ping:481120 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:06:11 BaseApp.java 144 [ Actor-ping:481120 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:06:11 BaseApp.java 145 [ Actor-ping:481120 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:06:11 BaseApp.java 87 [ Actor-ping:481122 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:06:11 BaseApp.java 82 [ Actor-ping:481122 ] - [ INFO ]  Actor-ping=2
+
+2017-08-15 15:07:11 BaseApp.java 142 [ Actor-ping:541121 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:07:11 BaseApp.java 143 [ Actor-ping:541121 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:07:11 BaseApp.java 144 [ Actor-ping:541121 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:07:11 BaseApp.java 145 [ Actor-ping:541121 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:08:11 BaseApp.java 142 [ Actor-ping:601120 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:08:11 BaseApp.java 143 [ Actor-ping:601120 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:08:11 BaseApp.java 144 [ Actor-ping:601120 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:08:11 BaseApp.java 145 [ Actor-ping:601120 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:08:11 BaseApp.java 87 [ Actor-ping:601122 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:08:11 BaseApp.java 82 [ Actor-ping:601122 ] - [ INFO ]  Actor-ping=2
+
+2017-08-15 15:09:11 BaseApp.java 142 [ Actor-ping:661121 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:09:11 BaseApp.java 143 [ Actor-ping:661121 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:09:11 BaseApp.java 144 [ Actor-ping:661121 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:09:11 BaseApp.java 145 [ Actor-ping:661121 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:10:11 BaseApp.java 142 [ Actor-ping:721120 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:10:11 BaseApp.java 143 [ Actor-ping:721120 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:10:11 BaseApp.java 144 [ Actor-ping:721120 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:10:11 BaseApp.java 145 [ Actor-ping:721120 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:10:11 BaseApp.java 87 [ Actor-ping:721122 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:10:11 BaseApp.java 82 [ Actor-ping:721122 ] - [ INFO ]  Actor-ping=2
+
+2017-08-15 15:11:11 BaseApp.java 142 [ Actor-ping:781121 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:11:11 BaseApp.java 143 [ Actor-ping:781121 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:11:11 BaseApp.java 144 [ Actor-ping:781121 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:11:11 BaseApp.java 145 [ Actor-ping:781121 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:12:11 BaseApp.java 142 [ Actor-ping:841120 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:12:11 BaseApp.java 143 [ Actor-ping:841120 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:12:11 BaseApp.java 144 [ Actor-ping:841120 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:12:11 BaseApp.java 145 [ Actor-ping:841120 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:12:11 BaseApp.java 87 [ Actor-ping:841122 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:12:11 BaseApp.java 82 [ Actor-ping:841122 ] - [ INFO ]  Actor-ping=2
+
+2017-08-15 15:13:11 BaseApp.java 142 [ Actor-ping:901120 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:13:11 BaseApp.java 143 [ Actor-ping:901120 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:13:11 BaseApp.java 144 [ Actor-ping:901120 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:13:11 BaseApp.java 145 [ Actor-ping:901120 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:14:11 BaseApp.java 142 [ Actor-ping:961121 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:14:11 BaseApp.java 143 [ Actor-ping:961121 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:14:11 BaseApp.java 144 [ Actor-ping:961121 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:14:11 BaseApp.java 145 [ Actor-ping:961121 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:14:11 BaseApp.java 87 [ Actor-ping:961123 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:14:11 BaseApp.java 82 [ Actor-ping:961123 ] - [ INFO ]  Actor-ping=2
+
+2017-08-15 15:14:21 LoginHandler.java 402 [ qtp1191654595-41:970899 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test3131 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:14:21 LoginHandler.java 408 [ qtp1191654595-41:970899 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:14:21 LoginHandler.java 429 [ qtp1191654595-41:970901 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:14:21 LoginHandler.java 431 [ qtp1191654595-41:970901 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:14:21 LoginServer.java 161 [ qtp1191654595-41:970907 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:14:21 LoginHandler.java 610 [ qtp1191654595-41:970915 ] - [ INFO ]  sendCltResult 12 send login request to center
+2017-08-15 15:14:21 LoginHandler.java 614 [ nioEventLoopGroup-2-1:970918 ] - [ INFO ]  sendCltResult userId:12 e:packet.CocoPacket@19059982
+2017-08-15 15:14:21 LoginHandler.java 623 [ nioEventLoopGroup-2-1:970919 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:15:11 BaseApp.java 142 [ Actor-ping:1021121 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:15:11 BaseApp.java 143 [ Actor-ping:1021121 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:15:11 BaseApp.java 144 [ Actor-ping:1021122 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 15:15:11 BaseApp.java 145 [ Actor-ping:1021122 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 15:16:11 BaseApp.java 142 [ Actor-ping:1081121 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:16:11 BaseApp.java 143 [ Actor-ping:1081121 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:16:11 BaseApp.java 144 [ Actor-ping:1081122 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 15:16:11 BaseApp.java 145 [ Actor-ping:1081122 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 15:16:11 BaseApp.java 87 [ Actor-ping:1081123 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:16:11 BaseApp.java 82 [ Actor-ping:1081124 ] - [ INFO ]  Actor-ping=2
+
+2017-08-15 15:17:11 BaseApp.java 142 [ Actor-ping:1141120 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:17:11 BaseApp.java 143 [ Actor-ping:1141120 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:17:11 BaseApp.java 144 [ Actor-ping:1141120 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 15:17:11 BaseApp.java 145 [ Actor-ping:1141120 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 15:18:11 BaseApp.java 142 [ Actor-ping:1201120 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:18:11 BaseApp.java 143 [ Actor-ping:1201120 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:18:11 BaseApp.java 144 [ Actor-ping:1201121 ] - [ INFO ]  freeMemory  :  195 MB
+2017-08-15 15:18:11 BaseApp.java 145 [ Actor-ping:1201121 ] - [ INFO ]  usedMemory  :  48 MB
+2017-08-15 15:18:11 BaseApp.java 87 [ Actor-ping:1201122 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:18:11 BaseApp.java 82 [ Actor-ping:1201123 ] - [ INFO ]  Actor-ping=2
+
+2017-08-15 15:18:24 ClientHandler.java 47 [ nioEventLoopGroup-2-1:1214087 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 15:18:24 ClientHandler.java 32 [ nioEventLoopGroup-2-1:1214091 ] - [ INFO ]   channel in active 
+2017-08-15 15:18:24 NetClient.java 110 [ nioEventLoopGroup-2-1:1214091 ] - [ ERROR ]  LOGIN,serverId=1与center连接断开,5秒后准备重连.
+2017-08-15 15:18:38 NetClient.java 96 [ nioEventLoopGroup-2-1:514 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-08-15 15:18:34
+2017-08-15 15:18:39 LoginServer.java 96 [ main:969 ] - [ INFO ]  加载 包对应平台{}
+2017-08-15 15:18:39 LoginServer.java 97 [ main:969 ] - [ INFO ]  加载 包对应渠道{}
+2017-08-15 15:18:39 LoginServer.java 115 [ main:970 ] - [ INFO ]  加载 全局开关状态{}
+2017-08-15 15:18:39 LoginServer.java 116 [ main:970 ] - [ INFO ]  加载 共享地区名:
+2017-08-15 15:18:39 LoginServer.java 130 [ main:971 ] - [ INFO ]  加载 区域维护状态{}
+2017-08-15 15:18:39 Log.java 192 [ main:1011 ] - [ INFO ]  Logging initialized @1520ms
+2017-08-15 15:18:39 Server.java 346 [ main:1055 ] - [ INFO ]  jetty-9.3.14.v20161028
+2017-08-15 15:18:39 AbstractConnector.java 278 [ main:1107 ] - [ INFO ]  Started ServerConnector@76494737{HTTP/1.1,[http/1.1]}{0.0.0.0:9098}
+2017-08-15 15:18:39 Server.java 414 [ main:1108 ] - [ INFO ]  Started @1617ms
+2017-08-15 15:18:54 LoginHandler.java 402 [ qtp1191654595-46:16374 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test3131 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:18:54 LoginHandler.java 408 [ qtp1191654595-46:16374 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:18:54 LoginHandler.java 429 [ qtp1191654595-46:16376 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:18:54 LoginHandler.java 431 [ qtp1191654595-46:16376 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:18:54 LoginServer.java 161 [ qtp1191654595-46:16386 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:18:54 LoginHandler.java 610 [ qtp1191654595-46:16392 ] - [ INFO ]  sendCltResult 12 send login request to center
+2017-08-15 15:18:54 LoginHandler.java 614 [ nioEventLoopGroup-2-1:16408 ] - [ INFO ]  sendCltResult userId:12 e:packet.CocoPacket@4f07184b
+2017-08-15 15:18:54 LoginHandler.java 623 [ nioEventLoopGroup-2-1:16411 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:19:22 LoginHandler.java 402 [ qtp1191654595-41:44411 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test43242 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:19:22 LoginHandler.java 408 [ qtp1191654595-41:44412 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:19:22 LoginHandler.java 429 [ qtp1191654595-41:44413 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:19:22 LoginHandler.java 431 [ qtp1191654595-41:44414 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:19:22 IP.java 66 [ qtp1191654595-41:44420 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 15:19:22 IP.java 86 [ qtp1191654595-41:44421 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 15:19:22 LoginHandler.java 514 [ qtp1191654595-41:44421 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 15:19:22 LoginServer.java 161 [ qtp1191654595-41:44421 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:19:22 LoginHandler.java 610 [ qtp1191654595-41:44437 ] - [ INFO ]  sendCltResult 13 send login request to center
+2017-08-15 15:19:22 LoginHandler.java 614 [ nioEventLoopGroup-2-1:44441 ] - [ INFO ]  sendCltResult userId:13 e:packet.CocoPacket@18a71d10
+2017-08-15 15:19:22 LoginHandler.java 623 [ nioEventLoopGroup-2-1:44441 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:19:39 BaseApp.java 142 [ Actor-ping:61114 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:19:39 BaseApp.java 143 [ Actor-ping:61115 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:19:39 BaseApp.java 144 [ Actor-ping:61115 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 15:19:39 BaseApp.java 145 [ Actor-ping:61115 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 15:20:39 BaseApp.java 142 [ Actor-ping:121114 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:20:39 BaseApp.java 143 [ Actor-ping:121115 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:20:39 BaseApp.java 144 [ Actor-ping:121115 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:20:39 BaseApp.java 145 [ Actor-ping:121115 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:20:39 BaseApp.java 87 [ Actor-ping:121116 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:20:39 BaseApp.java 82 [ Actor-ping:121116 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 15:21:39 BaseApp.java 142 [ Actor-ping:181114 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:21:39 BaseApp.java 143 [ Actor-ping:181114 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:21:39 BaseApp.java 144 [ Actor-ping:181114 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:21:39 BaseApp.java 145 [ Actor-ping:181114 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:22:39 BaseApp.java 142 [ Actor-ping:241114 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:22:39 BaseApp.java 143 [ Actor-ping:241115 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:22:39 BaseApp.java 144 [ Actor-ping:241115 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:22:39 BaseApp.java 145 [ Actor-ping:241115 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:22:39 BaseApp.java 87 [ Actor-ping:241116 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:22:39 BaseApp.java 82 [ Actor-ping:241116 ] - [ INFO ]  Actor-ping=2
+
+2017-08-15 15:23:34 ClientHandler.java 47 [ nioEventLoopGroup-2-1:296315 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 15:23:34 ClientHandler.java 32 [ nioEventLoopGroup-2-1:296319 ] - [ INFO ]   channel in active 
+2017-08-15 15:23:34 NetClient.java 110 [ nioEventLoopGroup-2-1:296319 ] - [ ERROR ]  LOGIN,serverId=1与center连接断开,5秒后准备重连.
+2017-08-15 15:23:34 LoginHandler.java 402 [ qtp1191654595-46:296485 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test43242 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:23:34 LoginHandler.java 408 [ qtp1191654595-46:296485 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:23:34 LoginHandler.java 429 [ qtp1191654595-46:296487 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:23:34 LoginHandler.java 431 [ qtp1191654595-46:296487 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:23:34 LoginServer.java 161 [ qtp1191654595-46:296492 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:23:34 LoginHandler.java 610 [ qtp1191654595-46:296498 ] - [ INFO ]  sendCltResult 13 send login request to center
+2017-08-15 15:23:48 NetClient.java 96 [ nioEventLoopGroup-2-1:550 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-08-15 15:23:42
+2017-08-15 15:23:48 LoginServer.java 96 [ main:1026 ] - [ INFO ]  加载 包对应平台{}
+2017-08-15 15:23:48 LoginServer.java 97 [ main:1026 ] - [ INFO ]  加载 包对应渠道{}
+2017-08-15 15:23:48 LoginServer.java 115 [ main:1027 ] - [ INFO ]  加载 全局开关状态{}
+2017-08-15 15:23:48 LoginServer.java 116 [ main:1027 ] - [ INFO ]  加载 共享地区名:
+2017-08-15 15:23:48 LoginServer.java 130 [ main:1028 ] - [ INFO ]  加载 区域维护状态{}
+2017-08-15 15:23:48 Log.java 192 [ main:1073 ] - [ INFO ]  Logging initialized @1640ms
+2017-08-15 15:23:48 Server.java 346 [ main:1114 ] - [ INFO ]  jetty-9.3.14.v20161028
+2017-08-15 15:23:48 AbstractConnector.java 278 [ main:1165 ] - [ INFO ]  Started ServerConnector@76494737{HTTP/1.1,[http/1.1]}{0.0.0.0:9098}
+2017-08-15 15:23:48 Server.java 414 [ main:1165 ] - [ INFO ]  Started @1732ms
+2017-08-15 15:24:23 LoginHandler.java 402 [ qtp1191654595-48:35684 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test12 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:24:23 LoginHandler.java 408 [ qtp1191654595-48:35684 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:24:23 LoginHandler.java 429 [ qtp1191654595-48:35686 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:24:23 LoginHandler.java 431 [ qtp1191654595-48:35687 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:24:23 IP.java 66 [ qtp1191654595-48:35694 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 15:24:23 IP.java 86 [ qtp1191654595-48:35695 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 15:24:23 LoginHandler.java 514 [ qtp1191654595-48:35696 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 15:24:23 LoginServer.java 161 [ qtp1191654595-48:35696 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:24:23 LoginHandler.java 610 [ qtp1191654595-48:35717 ] - [ INFO ]  sendCltResult 14 send login request to center
+2017-08-15 15:24:23 LoginHandler.java 614 [ nioEventLoopGroup-2-1:35730 ] - [ INFO ]  sendCltResult userId:14 e:packet.CocoPacket@e3931dd
+2017-08-15 15:24:23 LoginHandler.java 623 [ nioEventLoopGroup-2-1:35732 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:24:25 LoginHandler.java 402 [ qtp1191654595-41:37475 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:24:25 LoginHandler.java 408 [ qtp1191654595-41:37476 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:24:25 LoginHandler.java 429 [ qtp1191654595-41:37478 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:24:25 LoginHandler.java 431 [ qtp1191654595-41:37479 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:24:25 LoginServer.java 161 [ qtp1191654595-41:37486 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:24:25 LoginHandler.java 610 [ qtp1191654595-41:37492 ] - [ INFO ]  sendCltResult 4 send login request to center
+2017-08-15 15:24:25 LoginHandler.java 614 [ nioEventLoopGroup-2-1:37494 ] - [ INFO ]  sendCltResult userId:4 e:packet.CocoPacket@6e32f6f5
+2017-08-15 15:24:25 LoginHandler.java 623 [ nioEventLoopGroup-2-1:37495 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:24:48 BaseApp.java 142 [ Actor-ping:61171 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:24:48 BaseApp.java 143 [ Actor-ping:61172 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:24:48 BaseApp.java 144 [ Actor-ping:61172 ] - [ INFO ]  freeMemory  :  198 MB
+2017-08-15 15:24:48 BaseApp.java 145 [ Actor-ping:61172 ] - [ INFO ]  usedMemory  :  45 MB
+2017-08-15 15:25:44 LoginHandler.java 402 [ qtp1191654595-43:117276 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:25:44 LoginHandler.java 408 [ qtp1191654595-43:117276 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:25:44 LoginHandler.java 429 [ qtp1191654595-43:117278 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:25:44 LoginHandler.java 431 [ qtp1191654595-43:117278 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:25:44 LoginServer.java 161 [ qtp1191654595-43:117282 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:25:44 LoginHandler.java 610 [ qtp1191654595-43:117288 ] - [ INFO ]  sendCltResult 4 send login request to center
+2017-08-15 15:25:44 LoginHandler.java 614 [ nioEventLoopGroup-2-1:117292 ] - [ INFO ]  sendCltResult userId:4 e:packet.CocoPacket@19059982
+2017-08-15 15:25:44 LoginHandler.java 623 [ nioEventLoopGroup-2-1:117292 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:25:46 LoginHandler.java 402 [ qtp1191654595-42:118809 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test12 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:25:46 LoginHandler.java 408 [ qtp1191654595-42:118809 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:25:46 LoginHandler.java 429 [ qtp1191654595-42:118811 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:25:46 LoginHandler.java 431 [ qtp1191654595-42:118811 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:25:46 LoginServer.java 161 [ qtp1191654595-42:118816 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:25:46 LoginHandler.java 610 [ qtp1191654595-42:118821 ] - [ INFO ]  sendCltResult 14 send login request to center
+2017-08-15 15:25:46 LoginHandler.java 614 [ nioEventLoopGroup-2-1:118824 ] - [ INFO ]  sendCltResult userId:14 e:packet.CocoPacket@41436d6e
+2017-08-15 15:25:46 LoginHandler.java 623 [ nioEventLoopGroup-2-1:118824 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:25:48 BaseApp.java 142 [ Actor-ping:121170 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:25:48 BaseApp.java 143 [ Actor-ping:121170 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:25:48 BaseApp.java 144 [ Actor-ping:121170 ] - [ INFO ]  freeMemory  :  193 MB
+2017-08-15 15:25:48 BaseApp.java 145 [ Actor-ping:121170 ] - [ INFO ]  usedMemory  :  50 MB
+2017-08-15 15:25:48 BaseApp.java 87 [ Actor-ping:121173 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:25:48 BaseApp.java 82 [ Actor-ping:121173 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 15:26:48 BaseApp.java 142 [ Actor-ping:181170 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:26:48 BaseApp.java 143 [ Actor-ping:181171 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:26:48 BaseApp.java 144 [ Actor-ping:181171 ] - [ INFO ]  freeMemory  :  193 MB
+2017-08-15 15:26:48 BaseApp.java 145 [ Actor-ping:181172 ] - [ INFO ]  usedMemory  :  50 MB
+2017-08-15 15:27:48 BaseApp.java 142 [ Actor-ping:241170 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:27:48 BaseApp.java 143 [ Actor-ping:241170 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:27:48 BaseApp.java 144 [ Actor-ping:241171 ] - [ INFO ]  freeMemory  :  193 MB
+2017-08-15 15:27:48 BaseApp.java 145 [ Actor-ping:241171 ] - [ INFO ]  usedMemory  :  50 MB
+2017-08-15 15:27:48 BaseApp.java 87 [ Actor-ping:241172 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:27:48 BaseApp.java 82 [ Actor-ping:241173 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 15:27:49 ClientHandler.java 47 [ nioEventLoopGroup-2-1:241952 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 15:27:49 ClientHandler.java 32 [ nioEventLoopGroup-2-1:241956 ] - [ INFO ]   channel in active 
+2017-08-15 15:27:49 NetClient.java 110 [ nioEventLoopGroup-2-1:241956 ] - [ ERROR ]  LOGIN,serverId=1与center连接断开,5秒后准备重连.
+2017-08-15 15:28:02 NetClient.java 96 [ nioEventLoopGroup-2-1:531 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-08-15 15:27:56
+2017-08-15 15:28:03 LoginServer.java 96 [ main:1081 ] - [ INFO ]  加载 包对应平台{}
+2017-08-15 15:28:03 LoginServer.java 97 [ main:1081 ] - [ INFO ]  加载 包对应渠道{}
+2017-08-15 15:28:03 LoginServer.java 115 [ main:1082 ] - [ INFO ]  加载 全局开关状态{}
+2017-08-15 15:28:03 LoginServer.java 116 [ main:1082 ] - [ INFO ]  加载 共享地区名:
+2017-08-15 15:28:03 LoginServer.java 130 [ main:1084 ] - [ INFO ]  加载 区域维护状态{}
+2017-08-15 15:28:03 Log.java 192 [ main:1126 ] - [ INFO ]  Logging initialized @1618ms
+2017-08-15 15:28:03 Server.java 346 [ main:1162 ] - [ INFO ]  jetty-9.3.14.v20161028
+2017-08-15 15:28:03 AbstractConnector.java 278 [ main:1205 ] - [ INFO ]  Started ServerConnector@76494737{HTTP/1.1,[http/1.1]}{0.0.0.0:9098}
+2017-08-15 15:28:03 Server.java 414 [ main:1205 ] - [ INFO ]  Started @1697ms
+2017-08-15 15:28:27 LoginHandler.java 402 [ qtp1191654595-46:25462 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test12 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:28:27 LoginHandler.java 408 [ qtp1191654595-46:25462 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:28:27 LoginHandler.java 429 [ qtp1191654595-46:25464 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:28:27 LoginHandler.java 431 [ qtp1191654595-46:25464 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:28:27 LoginServer.java 161 [ qtp1191654595-46:25473 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:28:27 LoginHandler.java 610 [ qtp1191654595-46:25480 ] - [ INFO ]  sendCltResult 14 send login request to center
+2017-08-15 15:28:27 LoginHandler.java 614 [ nioEventLoopGroup-2-1:25494 ] - [ INFO ]  sendCltResult userId:14 e:packet.CocoPacket@12c3f842
+2017-08-15 15:28:27 LoginHandler.java 623 [ nioEventLoopGroup-2-1:25497 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:28:33 LoginHandler.java 402 [ qtp1191654595-42:31672 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test31 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:28:33 LoginHandler.java 408 [ qtp1191654595-42:31673 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:28:33 LoginHandler.java 429 [ qtp1191654595-42:31674 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:28:33 LoginHandler.java 431 [ qtp1191654595-42:31675 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:28:33 IP.java 66 [ qtp1191654595-42:31678 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 15:28:33 IP.java 86 [ qtp1191654595-42:31678 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 15:28:33 LoginHandler.java 514 [ qtp1191654595-42:31679 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 15:28:33 LoginServer.java 161 [ qtp1191654595-42:31679 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:28:33 LoginHandler.java 610 [ qtp1191654595-42:31697 ] - [ INFO ]  sendCltResult 15 send login request to center
+2017-08-15 15:28:33 LoginHandler.java 614 [ nioEventLoopGroup-2-1:31701 ] - [ INFO ]  sendCltResult userId:15 e:packet.CocoPacket@4e79010f
+2017-08-15 15:28:33 LoginHandler.java 623 [ nioEventLoopGroup-2-1:31701 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:29:03 BaseApp.java 142 [ Actor-ping:61210 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:29:03 BaseApp.java 143 [ Actor-ping:61211 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:29:03 BaseApp.java 144 [ Actor-ping:61211 ] - [ INFO ]  freeMemory  :  197 MB
+2017-08-15 15:29:03 BaseApp.java 145 [ Actor-ping:61211 ] - [ INFO ]  usedMemory  :  46 MB
+2017-08-15 15:30:03 BaseApp.java 142 [ Actor-ping:121210 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:30:03 BaseApp.java 143 [ Actor-ping:121210 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:30:03 BaseApp.java 144 [ Actor-ping:121210 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:30:03 BaseApp.java 145 [ Actor-ping:121210 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:30:03 BaseApp.java 87 [ Actor-ping:121211 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:30:03 BaseApp.java 82 [ Actor-ping:121212 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 15:31:03 BaseApp.java 142 [ Actor-ping:181210 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:31:03 BaseApp.java 143 [ Actor-ping:181211 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:31:03 BaseApp.java 144 [ Actor-ping:181211 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:31:03 BaseApp.java 145 [ Actor-ping:181211 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:32:03 BaseApp.java 142 [ Actor-ping:241210 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:32:03 BaseApp.java 143 [ Actor-ping:241210 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:32:03 BaseApp.java 144 [ Actor-ping:241210 ] - [ INFO ]  freeMemory  :  196 MB
+2017-08-15 15:32:03 BaseApp.java 145 [ Actor-ping:241210 ] - [ INFO ]  usedMemory  :  47 MB
+2017-08-15 15:32:03 BaseApp.java 87 [ Actor-ping:241211 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:32:03 BaseApp.java 82 [ Actor-ping:241212 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 15:32:11 LoginHandler.java 402 [ qtp1191654595-43:248972 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:32:11 LoginHandler.java 408 [ qtp1191654595-43:248973 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:32:11 LoginHandler.java 429 [ qtp1191654595-43:248975 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:32:11 LoginHandler.java 431 [ qtp1191654595-43:248975 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:32:11 LoginServer.java 161 [ qtp1191654595-43:248980 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:32:11 LoginHandler.java 610 [ qtp1191654595-43:248984 ] - [ INFO ]  sendCltResult 4 send login request to center
+2017-08-15 15:32:11 LoginHandler.java 614 [ nioEventLoopGroup-2-1:248987 ] - [ INFO ]  sendCltResult userId:4 e:packet.CocoPacket@5ffd1c68
+2017-08-15 15:32:11 LoginHandler.java 623 [ nioEventLoopGroup-2-1:248988 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:33:03 BaseApp.java 142 [ Actor-ping:301211 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:33:03 BaseApp.java 143 [ Actor-ping:301211 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:33:03 BaseApp.java 144 [ Actor-ping:301212 ] - [ INFO ]  freeMemory  :  194 MB
+2017-08-15 15:33:03 BaseApp.java 145 [ Actor-ping:301212 ] - [ INFO ]  usedMemory  :  49 MB
+2017-08-15 15:34:03 BaseApp.java 142 [ Actor-ping:361210 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:34:03 BaseApp.java 143 [ Actor-ping:361210 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:34:03 BaseApp.java 144 [ Actor-ping:361210 ] - [ INFO ]  freeMemory  :  194 MB
+2017-08-15 15:34:03 BaseApp.java 145 [ Actor-ping:361210 ] - [ INFO ]  usedMemory  :  49 MB
+2017-08-15 15:34:03 BaseApp.java 87 [ Actor-ping:361212 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:34:03 BaseApp.java 82 [ Actor-ping:361212 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 15:35:03 BaseApp.java 142 [ Actor-ping:421210 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:35:03 BaseApp.java 143 [ Actor-ping:421210 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:35:03 BaseApp.java 144 [ Actor-ping:421210 ] - [ INFO ]  freeMemory  :  194 MB
+2017-08-15 15:35:03 BaseApp.java 145 [ Actor-ping:421211 ] - [ INFO ]  usedMemory  :  49 MB
+2017-08-15 15:35:22 LoginHandler.java 402 [ qtp1191654595-41:439883 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:35:22 LoginHandler.java 408 [ qtp1191654595-41:439883 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:35:22 LoginHandler.java 429 [ qtp1191654595-41:439885 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:35:22 LoginHandler.java 431 [ qtp1191654595-41:439885 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:35:22 LoginServer.java 161 [ qtp1191654595-41:439889 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:35:22 LoginHandler.java 610 [ qtp1191654595-41:439897 ] - [ INFO ]  sendCltResult 4 send login request to center
+2017-08-15 15:35:22 LoginHandler.java 614 [ nioEventLoopGroup-2-1:439899 ] - [ INFO ]  sendCltResult userId:4 e:packet.CocoPacket@8ab4677
+2017-08-15 15:35:22 LoginHandler.java 623 [ nioEventLoopGroup-2-1:439899 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:35:48 LoginHandler.java 402 [ qtp1191654595-44:466212 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test12 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:35:48 LoginHandler.java 408 [ qtp1191654595-44:466212 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:35:48 LoginHandler.java 429 [ qtp1191654595-44:466214 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:35:48 LoginHandler.java 431 [ qtp1191654595-44:466214 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:35:48 LoginServer.java 161 [ qtp1191654595-44:466223 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:35:48 LoginHandler.java 610 [ qtp1191654595-44:466232 ] - [ INFO ]  sendCltResult 14 send login request to center
+2017-08-15 15:35:48 LoginHandler.java 614 [ nioEventLoopGroup-2-1:466237 ] - [ INFO ]  sendCltResult userId:14 e:packet.CocoPacket@1c37d070
+2017-08-15 15:35:48 LoginHandler.java 623 [ nioEventLoopGroup-2-1:466238 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:35:53 LoginHandler.java 402 [ qtp1191654595-47:471052 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test14 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:35:53 LoginHandler.java 408 [ qtp1191654595-47:471053 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:35:53 LoginHandler.java 429 [ qtp1191654595-47:471055 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:35:53 LoginHandler.java 431 [ qtp1191654595-47:471055 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:35:53 IP.java 66 [ qtp1191654595-47:471061 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 15:35:53 IP.java 86 [ qtp1191654595-47:471061 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 15:35:53 LoginHandler.java 514 [ qtp1191654595-47:471061 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 15:35:53 LoginServer.java 161 [ qtp1191654595-47:471062 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:35:53 LoginHandler.java 610 [ qtp1191654595-47:471069 ] - [ INFO ]  sendCltResult 16 send login request to center
+2017-08-15 15:35:53 LoginHandler.java 614 [ nioEventLoopGroup-2-1:471072 ] - [ INFO ]  sendCltResult userId:16 e:packet.CocoPacket@2396d86f
+2017-08-15 15:35:53 LoginHandler.java 623 [ nioEventLoopGroup-2-1:471072 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:35:54 LoginHandler.java 402 [ qtp1191654595-46:471788 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test13 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:35:54 LoginHandler.java 408 [ qtp1191654595-46:471788 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:35:54 LoginHandler.java 429 [ qtp1191654595-46:471790 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:35:54 LoginHandler.java 431 [ qtp1191654595-46:471790 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:35:54 IP.java 66 [ qtp1191654595-46:471795 ] - [ INFO ]  find ip is 127.0.0.1
+2017-08-15 15:35:54 IP.java 86 [ qtp1191654595-46:471796 ] - [ INFO ]  offset is 8493612, index_offset is 24889
+2017-08-15 15:35:54 LoginHandler.java 514 [ qtp1191654595-46:471796 ] - [ INFO ]  the Province and the City is 本机地址 
+2017-08-15 15:35:54 LoginServer.java 161 [ qtp1191654595-46:471796 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:35:54 LoginHandler.java 610 [ qtp1191654595-46:471805 ] - [ INFO ]  sendCltResult 17 send login request to center
+2017-08-15 15:35:54 LoginHandler.java 614 [ nioEventLoopGroup-2-1:471808 ] - [ INFO ]  sendCltResult userId:17 e:packet.CocoPacket@10983bdf
+2017-08-15 15:35:54 LoginHandler.java 623 [ nioEventLoopGroup-2-1:471808 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:36:03 BaseApp.java 142 [ Actor-ping:481210 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:36:03 BaseApp.java 143 [ Actor-ping:481210 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:36:03 BaseApp.java 144 [ Actor-ping:481210 ] - [ INFO ]  freeMemory  :  190 MB
+2017-08-15 15:36:03 BaseApp.java 145 [ Actor-ping:481210 ] - [ INFO ]  usedMemory  :  53 MB
+2017-08-15 15:36:03 BaseApp.java 87 [ Actor-ping:481211 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:36:03 BaseApp.java 82 [ Actor-ping:481211 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 15:37:03 BaseApp.java 142 [ Actor-ping:541210 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:37:03 BaseApp.java 143 [ Actor-ping:541210 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:37:03 BaseApp.java 144 [ Actor-ping:541210 ] - [ INFO ]  freeMemory  :  190 MB
+2017-08-15 15:37:03 BaseApp.java 145 [ Actor-ping:541210 ] - [ INFO ]  usedMemory  :  53 MB
+2017-08-15 15:37:49 LoginHandler.java 402 [ qtp1191654595-42:587579 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test11 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:37:49 LoginHandler.java 408 [ qtp1191654595-42:587580 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:37:49 LoginHandler.java 429 [ qtp1191654595-42:587583 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:37:49 LoginHandler.java 431 [ qtp1191654595-42:587584 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:37:49 LoginServer.java 161 [ qtp1191654595-42:587590 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:37:49 LoginHandler.java 610 [ qtp1191654595-42:587595 ] - [ INFO ]  sendCltResult 4 send login request to center
+2017-08-15 15:37:49 LoginHandler.java 614 [ nioEventLoopGroup-2-1:587599 ] - [ INFO ]  sendCltResult userId:4 e:packet.CocoPacket@667b7eec
+2017-08-15 15:37:49 LoginHandler.java 623 [ nioEventLoopGroup-2-1:587600 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:37:50 LoginHandler.java 402 [ qtp1191654595-48:588044 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test12 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:37:50 LoginHandler.java 408 [ qtp1191654595-48:588045 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:37:50 LoginHandler.java 429 [ qtp1191654595-48:588046 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:37:50 LoginHandler.java 431 [ qtp1191654595-48:588047 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:37:50 LoginServer.java 161 [ qtp1191654595-48:588053 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:37:50 LoginHandler.java 610 [ qtp1191654595-48:588058 ] - [ INFO ]  sendCltResult 14 send login request to center
+2017-08-15 15:37:50 LoginHandler.java 614 [ nioEventLoopGroup-2-1:588061 ] - [ INFO ]  sendCltResult userId:14 e:packet.CocoPacket@227c3e3e
+2017-08-15 15:37:50 LoginHandler.java 623 [ nioEventLoopGroup-2-1:588061 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:37:50 LoginHandler.java 402 [ qtp1191654595-43:588682 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test13 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:37:50 LoginHandler.java 408 [ qtp1191654595-43:588682 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:37:50 LoginHandler.java 429 [ qtp1191654595-43:588684 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:37:50 LoginHandler.java 431 [ qtp1191654595-43:588684 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:37:50 LoginServer.java 161 [ qtp1191654595-43:588689 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:37:50 LoginHandler.java 610 [ qtp1191654595-43:588695 ] - [ INFO ]  sendCltResult 17 send login request to center
+2017-08-15 15:37:50 LoginHandler.java 614 [ nioEventLoopGroup-2-1:588698 ] - [ INFO ]  sendCltResult userId:17 e:packet.CocoPacket@76bad90c
+2017-08-15 15:37:50 LoginHandler.java 623 [ nioEventLoopGroup-2-1:588699 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:37:51 LoginHandler.java 402 [ qtp1191654595-41:589297 ] - [ INFO ]  handleFastLogin machine_id:F4-8C-50-0B-35-B4test14 device:windows packageId:44 game_version:1.0.4 app_version:1
+2017-08-15 15:37:51 LoginHandler.java 408 [ qtp1191654595-41:589298 ] - [ INFO ]  handleFastLogin platform_id: channel:1
+2017-08-15 15:37:51 LoginHandler.java 429 [ qtp1191654595-41:589299 ] - [ INFO ]  handleFastLogin the forward for is null
+2017-08-15 15:37:51 LoginHandler.java 431 [ qtp1191654595-41:589300 ] - [ INFO ]  handleFastLogin the host is 127.0.0.1
+2017-08-15 15:37:51 LoginServer.java 161 [ qtp1191654595-41:589304 ] - [ ERROR ]  找不到 本机地址 地区配置 且并没有配置共享地址!
+2017-08-15 15:37:51 LoginHandler.java 610 [ qtp1191654595-41:589310 ] - [ INFO ]  sendCltResult 16 send login request to center
+2017-08-15 15:37:51 LoginHandler.java 614 [ nioEventLoopGroup-2-1:589312 ] - [ INFO ]  sendCltResult userId:16 e:packet.CocoPacket@58a03482
+2017-08-15 15:37:51 LoginHandler.java 623 [ nioEventLoopGroup-2-1:589313 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-08-15 15:38:03 BaseApp.java 142 [ Actor-ping:601210 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:38:03 BaseApp.java 143 [ Actor-ping:601210 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:38:03 BaseApp.java 144 [ Actor-ping:601210 ] - [ INFO ]  freeMemory  :  183 MB
+2017-08-15 15:38:03 BaseApp.java 145 [ Actor-ping:601210 ] - [ INFO ]  usedMemory  :  60 MB
+2017-08-15 15:38:03 BaseApp.java 87 [ Actor-ping:601211 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:38:03 BaseApp.java 82 [ Actor-ping:601213 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 15:39:03 BaseApp.java 142 [ Actor-ping:661210 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:39:03 BaseApp.java 143 [ Actor-ping:661210 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:39:03 BaseApp.java 144 [ Actor-ping:661210 ] - [ INFO ]  freeMemory  :  183 MB
+2017-08-15 15:39:03 BaseApp.java 145 [ Actor-ping:661210 ] - [ INFO ]  usedMemory  :  60 MB
+2017-08-15 15:40:03 BaseApp.java 142 [ Actor-ping:721209 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:40:03 BaseApp.java 143 [ Actor-ping:721209 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:40:03 BaseApp.java 144 [ Actor-ping:721210 ] - [ INFO ]  freeMemory  :  183 MB
+2017-08-15 15:40:03 BaseApp.java 145 [ Actor-ping:721210 ] - [ INFO ]  usedMemory  :  60 MB
+2017-08-15 15:40:03 BaseApp.java 87 [ Actor-ping:721211 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:40:03 BaseApp.java 82 [ Actor-ping:721211 ] - [ INFO ]  Actor-ping=1
+
+2017-08-15 15:41:03 BaseApp.java 142 [ Actor-ping:781210 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:41:03 BaseApp.java 143 [ Actor-ping:781210 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:41:03 BaseApp.java 144 [ Actor-ping:781210 ] - [ INFO ]  freeMemory  :  183 MB
+2017-08-15 15:41:03 BaseApp.java 145 [ Actor-ping:781210 ] - [ INFO ]  usedMemory  :  60 MB
+2017-08-15 15:42:03 BaseApp.java 142 [ Actor-ping:841210 ] - [ INFO ]  totalMemory :  243 MB
+2017-08-15 15:42:03 BaseApp.java 143 [ Actor-ping:841210 ] - [ INFO ]  maxMemory :  3612 MB
+2017-08-15 15:42:03 BaseApp.java 144 [ Actor-ping:841210 ] - [ INFO ]  freeMemory  :  183 MB
+2017-08-15 15:42:03 BaseApp.java 145 [ Actor-ping:841210 ] - [ INFO ]  usedMemory  :  60 MB
+2017-08-15 15:42:03 BaseApp.java 87 [ Actor-ping:841212 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-08-15 15:42:03 BaseApp.java 82 [ Actor-ping:841212 ] - [ INFO ]  Actor-ping=2
+
+2017-08-15 15:42:25 ClientHandler.java 47 [ nioEventLoopGroup-2-1:863539 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-08-15 15:42:25 ClientHandler.java 32 [ nioEventLoopGroup-2-1:863543 ] - [ INFO ]   channel in active 
+2017-08-15 15:42:25 NetClient.java 110 [ nioEventLoopGroup-2-1:863543 ] - [ ERROR ]  LOGIN,serverId=1与center连接断开,5秒后准备重连.

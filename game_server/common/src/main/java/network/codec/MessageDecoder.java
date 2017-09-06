@@ -1,0 +1,53 @@
+package network.codec;
+
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.handler.codec.ByteToMessageCodec;
+import io.netty.handler.codec.ByteToMessageDecoder;
+import packet.CocoPacket;
+import util.NettyUtil;
+
+import java.util.List;
+
+/**
+ * Created by Administrator on 2017/2/4.
+ */
+public class MessageDecoder extends ByteToMessageDecoder {
+	private static final String DECODER_STATE_KEY = "DECODE_STATE";
+
+	private static class DecoderState {
+		public int length = -1;
+	}
+
+
+	@Override
+	protected void decode(ChannelHandlerContext ctx, ByteBuf in, List<Object> out) throws Exception {
+		DecoderState state = NettyUtil.getAttribute(ctx, DECODER_STATE_KEY);
+		if (state == null) {
+			state = new DecoderState();
+			NettyUtil.setAttribute(ctx, DECODER_STATE_KEY, state);
+		}
+		if (in.readableBytes() < 2 && state.length == -1) {
+			return;
+		}
+		if (state.length != -1) {
+			if (in.readableBytes() < state.length) {
+				return;
+			}
+		} else {
+			state.length = in.readShort();
+			if (in.readableBytes() < state.length) {
+				return;
+			}
+		}
+		ByteBuf obj = Unpooled.buffer();
+		int length = state.length;
+		obj.writeBytes(in, length);
+		CocoPacket packet = new CocoPacket();
+		packet.readPacket(obj);
+		packet.setPacketLength((short) length);
+		out.add(packet);
+		state.length = -1;
+	}
+}

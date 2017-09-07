@@ -27,7 +27,7 @@ class UiLogin : MonoBehaviour
         string name = userName.text;
         UnityEngine.Debug.Log("LOGGER the button clicked event " + name);
 
-        HttpUtil.Instance.sendGetRequest("127.0.0.1:10024/login/fast_login?userName=" + name ,OnLoginResult,3000 );
+        HttpUtil.Instance.sendGetRequest("127.0.0.1:9098/fast_login?userName=" + name ,OnLoginResult,3000 );
     }
 
     class LoginResponse
@@ -60,8 +60,8 @@ class UiLogin : MonoBehaviour
     {
         UnityEngine.Debug.Log("connect success ");
         PBLoginReq req = new PBLoginReq();
-        req.UserId = userId;
         req.Token = token;
+        req.UserId = userId;
         Packet packet = new Packet(PACKET_TYPE.PACKET_CLLogin, req);
         NetClient.Instance.PushPacket(packet);
     }

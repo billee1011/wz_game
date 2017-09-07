@@ -202,9 +202,19 @@
             {
                 return false;
             }
-            
+
             //-- 02. write header
             //-- PacketID_t
+            //-- UINT32:m_PacketIndex[0xff000000], m_PacketStatus[0x00f00000], m_PakcetSize[0x000fffff]
+            Int16 packetUInt32 = 0;
+            try
+            {
+                oStream.Write(packetUInt32);
+            }
+            catch (System.Exception ex)
+            {
+                CommonDebugLog.LogWarning("ex:=[" + ex.ToString() + "]");
+            }
             try
             {
                 oStream.Write((UInt16)m_PacketID);                
@@ -214,20 +224,9 @@
                 CommonDebugLog.LogWarning("ex:=[" + ex.ToString() + "]");
             }
             
-            //-- UINT32:m_PacketIndex[0xff000000], m_PacketStatus[0x00f00000], m_PakcetSize[0x000fffff]
-            UInt32 packetUInt32 = 0;
             //PacketUtil.SetPacketIndex(ref packetUInt32, m_PacketIndex);
             //PacketUtil.SetPacketStatus(ref packetUInt32, m_PacketStatus);
-            //PacketUtil.SetPacketBodyLength(ref packetUInt32, GetPacketBodySize());
-
-            try
-            {
-                oStream.Write(packetUInt32);
-            }
-            catch (System.Exception ex)
-            {
-                CommonDebugLog.LogWarning("ex:=[" + ex.ToString() + "]");
-            }
+            //PacketUtil.SetPacketBodyLength(ref packetUInt32, GetPacketBodySize())
 
             return true;
         }
@@ -245,7 +244,6 @@
         {
             Stream iStream = oStream.BaseStream;
             long packetUINT32Pos = iStream.Position;
-            packetUINT32Pos += sizeof(UInt16);
             
             if (!WritePacketHeader(ref oStream))
             {
@@ -257,11 +255,8 @@
                 return false;
             }
             long endPos = iStream.Length;
-            long bodyLength = endPos - lengthHeader;
-            UInt32 packetUInt32 = 0;
-            PacketUtil.SetPacketIndex(ref packetUInt32, m_PacketIndex);
-            PacketUtil.SetPacketStatus(ref packetUInt32, m_PacketStatus);
-            PacketUtil.SetPacketBodyLength(ref packetUInt32, (UInt32)bodyLength);
+            long bodyLength = endPos - sizeof(Int16);
+            Int16 packetUInt32 = (Int16)bodyLength;
 
             try
             {

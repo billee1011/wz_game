@@ -266,7 +266,6 @@ __NO_USED_LOGICSENDBUFFER:
             {
                 return false;
             }
-            UnityEngine.Debug.Log("begin process packet  ====================" );
 
             //-- 判断是否有待处理的逻辑层消息缓冲数据
             LogicRecvBuffer logicRecvBuf = m_LogicRecvBufQueue.GetUsedBuf();

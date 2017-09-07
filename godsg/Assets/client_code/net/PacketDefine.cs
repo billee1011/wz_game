@@ -19,7 +19,7 @@ namespace P3Net
 	public enum PacketBegin
 	{
 		//client ==> login
-		PACKET_CL_BEGIN = 101,
+		PACKET_CL_BEGIN = 0x0101,
 		//login ==> client
 		PACKET_LC_BEGIN = PACKET_CL_BEGIN + PacketNumber.PACKET_CL_NUMBER,
 
@@ -133,7 +133,7 @@ namespace P3Net
 		PACKET_TYPE_NONE = 0,	//-- 消息空，默认值
 
 		//client ==> login
-		PACKET_CLLogin = PacketBegin.PACKET_CL_BEGIN + 0,       //-- 客户端请求登陆
+		PACKET_CLLogin = PacketBegin.PACKET_CL_BEGIN + 1,       //-- 客户端请求登陆
 
 		PACKET_CL_END,
 

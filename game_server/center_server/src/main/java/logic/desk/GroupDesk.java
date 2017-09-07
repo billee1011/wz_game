@@ -13,8 +13,8 @@ import define.constant.LoginStatusConst;
 import network.ServerManager;
 import network.ServerSession;
 import packet.CocoPacket;
-import protobuf.Common;
-import protobuf.CoupleMajiang;
+import proto.Common;
+import proto.CoupleMajiang;
 import protocol.c2s.RequestCode;
 
 public class GroupDesk extends DeskInfo {

@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import actor.CenterActorManager;
 import actor.IActor;
 import database.DBUtil;
-import protobuf.CoupleMajiang;
+import proto.CoupleMajiang;
 import util.MiscUtil;
 
 public class PlayerSaver {

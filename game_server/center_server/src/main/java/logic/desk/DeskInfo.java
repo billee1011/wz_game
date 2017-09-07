@@ -20,17 +20,16 @@ import logic.room.LobbyGameManager;
 import network.ServerManager;
 import network.ServerSession;
 import packet.CocoPacket;
-import protobuf.Common;
-import protobuf.CoupleMajiang;
-import protobuf.Lobby;
-import protobuf.Xueniu;
-import protobuf.creator.CommonCreator;
+import proto.Common;
+import proto.CoupleMajiang;
+import proto.Lobby;
+import proto.Xueniu;
+import proto.creator.CommonCreator;
 import protocol.c2s.RequestCode;
 import protocol.s2c.ResponseCode;
 import util.MiscUtil;
 import util.NettyUtil;
 import util.Randomizer;
-import util.WordBadUtil;
 
 /**
  * Created by Administrator on 2017/2/7.

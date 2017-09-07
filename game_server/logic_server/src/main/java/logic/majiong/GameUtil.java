@@ -1,18 +1,12 @@
 package logic.majiong;
 
 import logic.debug.ArrayPai;
-import logic.debug.bean.MjArray;
-import logic.define.GameType;
 import logic.majiong.define.MJPosition;
 import logic.majiong.define.MJType;
-import logic.poker.PokerCard;
-import protobuf.CoupleMajiang;
+import proto.CoupleMajiang;
 import util.Randomizer;
 
 import java.util.*;
-
-import config.AssisInfoProvider;
-import config.bean.AssisSeriation;
 
 public class GameUtil {
 	public static List<Integer> selectKe(List<Integer> cards) {

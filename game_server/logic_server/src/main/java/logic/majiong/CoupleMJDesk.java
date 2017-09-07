@@ -3,26 +3,20 @@ package logic.majiong;
 import actor.LogicActorManager;
 import common.LogHelper;
 import config.CoupleRoomInfoProvider;
-import config.DynamicInfoProvider;
 import config.JsonUtil;
-import config.bean.FanType;
 import data.MoneySubAction;
-import database.DBUtil;
 import logic.define.GameType;
 import logic.majiong.cpstragety.EightyEightStragety;
 import logic.majiong.cpstragety.StragetyManager;
 import logic.majiong.define.MJPosition;
 import logic.majiong.define.MJType;
 import logic.record.TaxRecordUtil;
-import logic.record.detail.MjDetail;
-import logic.record.detail.OnePosDetail;
-import net.sf.json.util.JSONUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import protobuf.Common;
-import protobuf.CoupleMajiang;
-import protobuf.creator.CommonCreator;
-import protobuf.creator.CoupleCreator;
+import proto.Common;
+import proto.CoupleMajiang;
+import proto.creator.CommonCreator;
+import proto.creator.CoupleCreator;
 import protocol.c2s.RequestCode;
 import protocol.s2c.ResponseCode;
 import util.LogUtil;
@@ -30,7 +24,6 @@ import util.MiscUtil;
 import util.Pair;
 import util.Randomizer;
 
-import java.sql.SQLException;
 import java.util.*;
 
 /**

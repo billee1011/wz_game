@@ -1342,3 +1342,244 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2017-09-07 17:05:41 BaseApp.java 143 [ Actor-ping:61309 ] - [ INFO ]  maxMemory :  3612 MB
 2017-09-07 17:05:41 BaseApp.java 144 [ Actor-ping:61309 ] - [ INFO ]  freeMemory  :  197 MB
 2017-09-07 17:05:41 BaseApp.java 145 [ Actor-ping:61309 ] - [ INFO ]  usedMemory  :  46 MB
+2017-09-07 17:06:41 BaseApp.java 142 [ Actor-ping:121308 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:06:41 BaseApp.java 143 [ Actor-ping:121309 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:06:41 BaseApp.java 144 [ Actor-ping:121309 ] - [ INFO ]  freeMemory  :  195 MB
+2017-09-07 17:06:41 BaseApp.java 145 [ Actor-ping:121310 ] - [ INFO ]  usedMemory  :  48 MB
+2017-09-07 17:06:41 BaseApp.java 87 [ Actor-ping:121310 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:06:41 BaseApp.java 82 [ Actor-ping:121311 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:07:41 BaseApp.java 142 [ Actor-ping:181308 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:07:41 BaseApp.java 143 [ Actor-ping:181308 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:07:41 BaseApp.java 144 [ Actor-ping:181309 ] - [ INFO ]  freeMemory  :  195 MB
+2017-09-07 17:07:41 BaseApp.java 145 [ Actor-ping:181309 ] - [ INFO ]  usedMemory  :  48 MB
+2017-09-07 17:08:41 BaseApp.java 142 [ Actor-ping:241308 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:08:41 BaseApp.java 143 [ Actor-ping:241309 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:08:41 BaseApp.java 144 [ Actor-ping:241309 ] - [ INFO ]  freeMemory  :  195 MB
+2017-09-07 17:08:41 BaseApp.java 145 [ Actor-ping:241309 ] - [ INFO ]  usedMemory  :  48 MB
+2017-09-07 17:08:41 BaseApp.java 87 [ Actor-ping:241310 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:08:41 BaseApp.java 82 [ Actor-ping:241310 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:09:41 BaseApp.java 142 [ Actor-ping:301308 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:09:41 BaseApp.java 143 [ Actor-ping:301308 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:09:41 BaseApp.java 144 [ Actor-ping:301308 ] - [ INFO ]  freeMemory  :  195 MB
+2017-09-07 17:09:41 BaseApp.java 145 [ Actor-ping:301309 ] - [ INFO ]  usedMemory  :  48 MB
+2017-09-07 17:10:07 ClientHandler.java 47 [ nioEventLoopGroup-2-1:326430 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 17:10:07 ClientHandler.java 32 [ nioEventLoopGroup-2-1:326433 ] - [ INFO ]   channel in active 
+2017-09-07 17:10:07 NetClient.java 110 [ nioEventLoopGroup-2-1:326434 ] - [ ERROR ]  LOGIN,serverId=1与center连接断开,5秒后准备重连.
+2017-09-07 17:34:49 NetClient.java 96 [ nioEventLoopGroup-2-1:752 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-09-07 17:34:33
+2017-09-07 17:34:50 Log.java 192 [ main:1688 ] - [ INFO ]  Logging initialized @2341ms
+2017-09-07 17:34:50 Server.java 346 [ main:1730 ] - [ INFO ]  jetty-9.3.14.v20161028
+2017-09-07 17:34:50 AbstractConnector.java 278 [ main:1780 ] - [ INFO ]  Started ServerConnector@710c2b53{HTTP/1.1,[http/1.1]}{0.0.0.0:9098}
+2017-09-07 17:34:50 Server.java 414 [ main:1780 ] - [ INFO ]  Started @2434ms
+2017-09-07 17:35:50 BaseApp.java 142 [ Actor-ping:61788 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:35:50 BaseApp.java 143 [ Actor-ping:61789 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:35:50 BaseApp.java 144 [ Actor-ping:61789 ] - [ INFO ]  freeMemory  :  207 MB
+2017-09-07 17:35:50 BaseApp.java 145 [ Actor-ping:61789 ] - [ INFO ]  usedMemory  :  36 MB
+2017-09-07 17:35:55 LoginHandler.java 67 [ qtp14183023-47:66012 ] - [ INFO ]   handle fast login
+2017-09-07 17:35:55 LoginHandler.java 67 [ qtp14183023-46:66012 ] - [ INFO ]   handle fast login
+2017-09-07 17:35:55 LoginHandler.java 78 [ nioEventLoopGroup-2-1:66064 ] - [ INFO ]  sendCltResult userId:0 e:packet.CocoPacket@34d0740f
+2017-09-07 17:35:55 LoginHandler.java 87 [ nioEventLoopGroup-2-1:66068 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-09-07 17:35:55 LoginHandler.java 78 [ nioEventLoopGroup-2-1:66163 ] - [ INFO ]  sendCltResult userId:0 e:packet.CocoPacket@a1504b8
+2017-09-07 17:35:55 LoginHandler.java 87 [ nioEventLoopGroup-2-1:66164 ] - [ INFO ]  sendCltResult the reply message is 127.0.0.1:9096
+2017-09-07 17:36:50 BaseApp.java 142 [ Actor-ping:121784 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:36:50 BaseApp.java 143 [ Actor-ping:121786 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:36:50 BaseApp.java 144 [ Actor-ping:121786 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:36:50 BaseApp.java 145 [ Actor-ping:121786 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:36:50 BaseApp.java 87 [ Actor-ping:121787 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:36:50 BaseApp.java 82 [ Actor-ping:121788 ] - [ INFO ]  Actor-ping=1
+
+2017-09-07 17:37:50 BaseApp.java 142 [ Actor-ping:181783 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:37:50 BaseApp.java 143 [ Actor-ping:181783 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:37:50 BaseApp.java 144 [ Actor-ping:181784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:37:50 BaseApp.java 145 [ Actor-ping:181784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:38:50 BaseApp.java 142 [ Actor-ping:241784 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:38:50 BaseApp.java 143 [ Actor-ping:241784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:38:50 BaseApp.java 144 [ Actor-ping:241784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:38:50 BaseApp.java 145 [ Actor-ping:241784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:38:50 BaseApp.java 87 [ Actor-ping:241785 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:38:50 BaseApp.java 82 [ Actor-ping:241786 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:39:50 BaseApp.java 142 [ Actor-ping:301783 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:39:50 BaseApp.java 143 [ Actor-ping:301784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:39:50 BaseApp.java 144 [ Actor-ping:301784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:39:50 BaseApp.java 145 [ Actor-ping:301784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:40:50 BaseApp.java 142 [ Actor-ping:361784 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:40:50 BaseApp.java 143 [ Actor-ping:361784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:40:50 BaseApp.java 144 [ Actor-ping:361784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:40:50 BaseApp.java 145 [ Actor-ping:361784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:40:50 BaseApp.java 87 [ Actor-ping:361785 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:40:50 BaseApp.java 82 [ Actor-ping:361785 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:41:50 BaseApp.java 142 [ Actor-ping:421784 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:41:50 BaseApp.java 143 [ Actor-ping:421784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:41:50 BaseApp.java 144 [ Actor-ping:421784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:41:50 BaseApp.java 145 [ Actor-ping:421784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:42:50 BaseApp.java 142 [ Actor-ping:481793 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:42:50 BaseApp.java 143 [ Actor-ping:481794 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:42:50 BaseApp.java 144 [ Actor-ping:481795 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:42:50 BaseApp.java 145 [ Actor-ping:481795 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:42:50 BaseApp.java 87 [ Actor-ping:481796 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:42:50 BaseApp.java 82 [ Actor-ping:481800 ] - [ INFO ]  Actor-ping=3
+
+2017-09-07 17:43:50 BaseApp.java 142 [ Actor-ping:541783 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:43:50 BaseApp.java 143 [ Actor-ping:541784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:43:50 BaseApp.java 144 [ Actor-ping:541784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:43:50 BaseApp.java 145 [ Actor-ping:541784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:44:50 BaseApp.java 142 [ Actor-ping:601784 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:44:50 BaseApp.java 143 [ Actor-ping:601784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:44:50 BaseApp.java 144 [ Actor-ping:601784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:44:50 BaseApp.java 145 [ Actor-ping:601784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:44:50 BaseApp.java 82 [ Actor-ping:601785 ] - [ INFO ]  Actor-ping=3
+
+2017-09-07 17:44:50 BaseApp.java 87 [ Actor-ping:601786 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:45:50 BaseApp.java 142 [ Actor-ping:661783 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:45:50 BaseApp.java 143 [ Actor-ping:661783 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:45:50 BaseApp.java 144 [ Actor-ping:661783 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:45:50 BaseApp.java 145 [ Actor-ping:661783 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:46:50 BaseApp.java 142 [ Actor-ping:721783 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:46:50 BaseApp.java 143 [ Actor-ping:721783 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:46:50 BaseApp.java 144 [ Actor-ping:721784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:46:50 BaseApp.java 145 [ Actor-ping:721784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:46:50 BaseApp.java 87 [ Actor-ping:721784 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:46:50 BaseApp.java 82 [ Actor-ping:721785 ] - [ INFO ]  Actor-ping=3
+
+2017-09-07 17:47:50 BaseApp.java 142 [ Actor-ping:781784 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:47:50 BaseApp.java 143 [ Actor-ping:781784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:47:50 BaseApp.java 144 [ Actor-ping:781784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:47:50 BaseApp.java 145 [ Actor-ping:781784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:48:50 BaseApp.java 142 [ Actor-ping:841784 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:48:50 BaseApp.java 143 [ Actor-ping:841784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:48:50 BaseApp.java 144 [ Actor-ping:841784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:48:50 BaseApp.java 145 [ Actor-ping:841784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:48:50 BaseApp.java 87 [ Actor-ping:841785 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:48:50 BaseApp.java 82 [ Actor-ping:841785 ] - [ INFO ]  Actor-ping=3
+
+2017-09-07 17:49:50 BaseApp.java 142 [ Actor-ping:901783 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:49:50 BaseApp.java 143 [ Actor-ping:901783 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:49:50 BaseApp.java 144 [ Actor-ping:901783 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:49:50 BaseApp.java 145 [ Actor-ping:901783 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:50:50 BaseApp.java 142 [ Actor-ping:961783 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:50:50 BaseApp.java 143 [ Actor-ping:961783 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:50:50 BaseApp.java 144 [ Actor-ping:961783 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:50:50 BaseApp.java 145 [ Actor-ping:961783 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:50:50 BaseApp.java 87 [ Actor-ping:961785 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:50:50 BaseApp.java 82 [ Actor-ping:961785 ] - [ INFO ]  Actor-ping=3
+
+2017-09-07 17:51:50 BaseApp.java 142 [ Actor-ping:1021783 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:51:50 BaseApp.java 143 [ Actor-ping:1021784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:51:50 BaseApp.java 144 [ Actor-ping:1021785 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:51:50 BaseApp.java 145 [ Actor-ping:1021785 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:52:50 BaseApp.java 142 [ Actor-ping:1081783 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:52:50 BaseApp.java 143 [ Actor-ping:1081784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:52:50 BaseApp.java 144 [ Actor-ping:1081784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:52:50 BaseApp.java 145 [ Actor-ping:1081784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:52:50 BaseApp.java 87 [ Actor-ping:1081785 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:52:50 BaseApp.java 82 [ Actor-ping:1081786 ] - [ INFO ]  Actor-ping=3
+
+2017-09-07 17:53:50 BaseApp.java 142 [ Actor-ping:1141783 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:53:50 BaseApp.java 143 [ Actor-ping:1141784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:53:50 BaseApp.java 144 [ Actor-ping:1141784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:53:50 BaseApp.java 145 [ Actor-ping:1141784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:54:50 BaseApp.java 142 [ Actor-ping:1201784 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:54:50 BaseApp.java 143 [ Actor-ping:1201784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:54:50 BaseApp.java 144 [ Actor-ping:1201784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:54:50 BaseApp.java 145 [ Actor-ping:1201785 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:54:50 BaseApp.java 82 [ Actor-ping:1201785 ] - [ INFO ]  Actor-ping=3
+
+2017-09-07 17:54:50 BaseApp.java 87 [ Actor-ping:1201785 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:55:50 BaseApp.java 142 [ Actor-ping:1261784 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:55:50 BaseApp.java 143 [ Actor-ping:1261784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:55:50 BaseApp.java 144 [ Actor-ping:1261784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:55:50 BaseApp.java 145 [ Actor-ping:1261784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:56:50 BaseApp.java 142 [ Actor-ping:1321784 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:56:50 BaseApp.java 143 [ Actor-ping:1321784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:56:50 BaseApp.java 144 [ Actor-ping:1321784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:56:50 BaseApp.java 145 [ Actor-ping:1321784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:56:50 BaseApp.java 87 [ Actor-ping:1321785 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:56:50 BaseApp.java 82 [ Actor-ping:1321785 ] - [ INFO ]  Actor-ping=3
+
+2017-09-07 17:57:50 BaseApp.java 142 [ Actor-ping:1381787 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:57:50 BaseApp.java 143 [ Actor-ping:1381787 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:57:50 BaseApp.java 144 [ Actor-ping:1381788 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:57:50 BaseApp.java 145 [ Actor-ping:1381788 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:58:50 BaseApp.java 142 [ Actor-ping:1441783 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:58:50 BaseApp.java 143 [ Actor-ping:1441783 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:58:50 BaseApp.java 144 [ Actor-ping:1441784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:58:50 BaseApp.java 145 [ Actor-ping:1441784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 17:58:50 BaseApp.java 87 [ Actor-ping:1441785 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:58:50 BaseApp.java 82 [ Actor-ping:1441786 ] - [ INFO ]  Actor-ping=3
+
+2017-09-07 17:59:50 BaseApp.java 142 [ Actor-ping:1501784 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:59:50 BaseApp.java 143 [ Actor-ping:1501784 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:59:50 BaseApp.java 144 [ Actor-ping:1501784 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 17:59:50 BaseApp.java 145 [ Actor-ping:1501784 ] - [ INFO ]  usedMemory  :  49 MB
+2017-09-07 18:00:50 BaseApp.java 87 [ Actor-ping:1561811 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 18:00:50 BaseApp.java 82 [ Actor-ping:1561811 ] - [ INFO ]  Actor-ping=3
+
+2017-09-07 18:00:50 BaseApp.java 142 [ Actor-ping:1561811 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 18:00:50 BaseApp.java 143 [ Actor-ping:1561811 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 18:00:50 BaseApp.java 144 [ Actor-ping:1561811 ] - [ INFO ]  freeMemory  :  194 MB
+2017-09-07 18:00:50 BaseApp.java 145 [ Actor-ping:1561811 ] - [ INFO ]  usedMemory  :  49 MB

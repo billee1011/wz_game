@@ -11,7 +11,7 @@ import io.netty.channel.ChannelHandlerContext;
 import network.AbstractHandlers;
 import network.NetClient;
 import packet.CocoPacket;
-import protobuf.Common;
+import proto.Common;
 import protocol.c2s.RequestCode;
 import server.LoginServer;
 import util.Pair;

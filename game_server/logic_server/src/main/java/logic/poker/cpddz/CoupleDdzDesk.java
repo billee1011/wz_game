@@ -7,7 +7,7 @@ import logic.poker.ddz.DdzDeskInfo;
 import logic.poker.ddz.DdzPos;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import protobuf.creator.CommonCreator;
+import proto.creator.CommonCreator;
 import protocol.s2c.ResponseCode;
 
 import java.util.List;

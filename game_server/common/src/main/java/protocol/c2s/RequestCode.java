@@ -187,7 +187,8 @@ public enum RequestCode {
 	LOGIN_RELOAD_CONF(10700, AppId.LOGIN),                         // 重载登陆服数据
 	LOGIN_REMOVE_SERVER(10701, AppId.LOGIN),                     //服务器要关闭
 
-	;
+
+	LOGIC_PLAYER_LOGIN(0x1001, AppId.LOGIC),;
 
 	private final AppId sendTo;
 

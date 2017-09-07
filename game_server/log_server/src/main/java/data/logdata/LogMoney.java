@@ -9,7 +9,7 @@ import com.google.protobuf.MessageLite;
 
 import database.DBUtil;
 import network.AbstractHandlers;
-import protobuf.Log;
+import proto.Log;
 import util.MiscUtil;
 
 /**

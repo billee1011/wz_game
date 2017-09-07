@@ -1,8 +1,8 @@
 package logic.majiong.xueniu;
 
 import logic.majiong.XueniuFanType;
-import protobuf.Common;
-import protobuf.Xueniu;
+import proto.Common;
+import proto.Xueniu;
 
 import java.util.List;
 

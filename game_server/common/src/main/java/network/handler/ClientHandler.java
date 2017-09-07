@@ -1,14 +1,11 @@
 package network.handler;
 
-import actor.ICallback;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import network.NetClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import packet.CocoPacket;
-import protobuf.creator.CommonCreator;
-import protocol.c2s.RequestCode;
 
 /**
  * Created by Administrator on 2017/2/4.

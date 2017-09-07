@@ -62,7 +62,7 @@
         <dependency>
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
-            <version>2.5.0</version>
+            <version>3.1.0</version>
         </dependency>
 
         <dependency>
@@ -70,7 +70,7 @@
             <artifactId>junit</artifactId>
             <version>4.11</version>
         </dependency>
-        
+
 
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>

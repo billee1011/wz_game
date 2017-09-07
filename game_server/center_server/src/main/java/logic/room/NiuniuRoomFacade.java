@@ -16,8 +16,8 @@ import logic.desk.DeskManager;
 import network.ServerManager;
 import network.ServerSession;
 import packet.CocoPacket;
-import protobuf.Common;
-import protobuf.creator.CommonCreator;
+import proto.Common;
+import proto.creator.CommonCreator;
 import protocol.c2s.RequestCode;
 import protocol.s2c.ResponseCode;
 

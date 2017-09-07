@@ -1,11 +1,11 @@
 package network.handler.module;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.Appinfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,8 +17,6 @@ import chr.Player;
 import chr.PlayerManager;
 import chr.PlayerSaver;
 import common.LogHelper;
-import config.CoupleRoomInfoProvider;
-import config.bean.CoupleRoom;
 import config.bean.PlayerCGConfigData;
 import data.OnlineAction;
 import database.DataQueryResult;
@@ -36,13 +34,15 @@ import network.AbstractHandlers;
 import network.ServerManager;
 import network.ServerSession;
 import packet.CocoPacket;
-import protobuf.Common;
-import protobuf.CoupleMajiang;
-import protobuf.creator.AccountCreator;
-import protobuf.creator.CommonCreator;
+import proto.Common;
+import proto.CoupleMajiang;
+import proto.Login;
+import proto.creator.AccountCreator;
+import proto.creator.CommonCreator;
 import protocol.c2s.RequestCode;
 import protocol.s2c.ResponseCode;
 import service.CenterServer;
+import sun.misc.Request;
 import util.ASObject;
 import util.MiscUtil;
 import util.NettyUtil;
@@ -66,7 +66,7 @@ public class CenterModule implements IModuleMessageHandler {
 	public void registerModuleHandler(AbstractHandlers handler) {
 		handler.registerAction(RequestCode.CENTER_REGISTER_SERVER.getValue(), this::actionRegisterServer, Common.PBStringList.getDefaultInstance());
 		handler.registerAction(RequestCode.CENTER_DISPATCH_GATE.getValue(), this::actionDispatchGate, Common.PBStringList.getDefaultInstance());
-		handler.registerAction(RequestCode.ACCOUNT_LOGIN.getValue(), this::actionValidLogin, Common.PBString.getDefaultInstance());
+		handler.registerAction(RequestCode.ACCOUNT_LOGIN.getValue(), this::actionValidLogin, Login.PBLoginReq.getDefaultInstance());
 //		handler.registerAction(RequestCode.CENTER_GATE_PORT.getValue(), this::actionGatePort, Common.PBStringList.getDefaultInstance());
 		handler.registerAction(RequestCode.CENTER_CREATE_DESK_SUCC.getValue(), this::actionCreateDeskSuccess, Common.PBPlayerInfoList.getDefaultInstance());
 		handler.registerAction(RequestCode.CENTER_PLAYER_LOGOUT.getValue(), this::actionPlayerLogout, Common.PBString.getDefaultInstance());
@@ -456,99 +456,19 @@ public class CenterModule implements IModuleMessageHandler {
 
 	private void actionValidLogin(ChannelHandlerContext ioSession, CocoPacket srcPacket, AbstractHandlers.MessageHolder<MessageLite> message) {
 		logger.info("player login the game ");
-		Common.PBString request = message.get();
+		Login.PBLoginReq request = message.get();
 		if (request == null) {
 			return;
 		}
-		String token = request.getValue();
+		String token = request.getToken();
 		LoginInfo info = tokenMap.get(token);
 		if (info == null) {
 			logger.warn("the token is not success");
 			return;
 		}
-		Map<String, Object> playerWhere = new HashMap<>();
-		playerWhere.put("user_id", info.userId);
-
-		CenterActorManager.getDbActor(info.userId).put(() -> DataQueryResult.load("player", playerWhere), g -> {
-			@SuppressWarnings("unchecked")
-			List<ASObject> playerList = (List<ASObject>) g;
-//			ServerManager.getInst().addServerSessionLoadFactor(ioSession);
-			if (playerList.size() == 0) {
-				Player player = Player.getDefault(info.userId, PlayerNameManager.getInst().randomName4NewPlayer());
-				info.copyPlayer(player);
-				int playerId = PlayerSaver.insertPlayer(player);
-				player.setPlayerId(playerId);
-				logger.info("new account so create player for it and the player id is {}", playerId);
-//				DataManager.getInst().loadChar(playerId, (e, f) -> {
-//					if (e != null) {
-//						onPlayerLoginSucc(ioSession, srcPacket, e, info, token);
-//					} else {
-//						logger.error(" load char failed because {}", f);
-//					}
-//				});
-				onPlayerLoginSucc(ioSession, srcPacket, player, info, token);
-			} else {
-				ASObject data = playerList.get(0);
-				int playerId = data.getInt("player_id");
-				CenterActorManager.getLogicActor(playerId).put(() -> {
-					logger.info("load player {} from cache or database ", playerId);
-					Player player = PlayerManager.getInstance().getPlayerById(playerId);
-//					if (player != null) {
-					logger.info("player is on line so kick out the current player {}", playerId);
-					if (player.getLoginStatus() == LoginStatusConst.EXIT_GAME) {
-						onPlayerLoginSucc(ioSession, srcPacket, player, info, token);
-					} else {
-//							String preToken = player.getToken();
-						player.setToken(token);
-						info.copyPlayer(player);
-						player.setLoginTime(MiscUtil.getCurrentSeconds());
-
-						if (player.isLogout()) {
-							player.setLogout(false);
-						} else {
-							ChannelHandlerContext preIoSession = player.getSession();
-							if (preIoSession != null) {
-								ServerSession serverSession = NettyUtil.getAttribute(ioSession, ServerSession.KEY);
-								ServerSession preServerSession = NettyUtil.getAttribute(preIoSession, ServerSession.KEY);
-								//如果之前在不同的gate,踢下线,且退出之后不需要往center发送掉线消息
-								if (serverSession != preServerSession) {
-									player.write(ResponseCode.ACCOUNT_LOGIN_OTHER_WHERE, null);
-								}
-//									//同个gate在gate返回时处理
-//									if (preServerSession != null) {
-//										preServerSession.reduceFactor();
-//									}
-								onPlayerOtherLogin(player);
-								logger.info("Player {} is reLogin, do not logout! curGate{}", player.getPlayerId(), serverSession.getServerId());
-							}
-						}
-
-						CocoPacket packet = new CocoPacket(ResponseCode.ACCOUNT_LOGIN_SUCC.getValue(), AccountCreator.createPBLoginAndDynamic(player));
-						packet.setSeqId(srcPacket.getSeqId());
-						ioSession.writeAndFlush(packet);
-
-						player.setSession(ioSession);
-						//推送CG
-						PlayerCGConfigData cgConfigData = PlayerCGManager.getInst().getTheMaxCG(player);
-						if (cgConfigData != null) {
-							player.write(ResponseCode.PLAYRE_CG, CommonCreator.createPBPairString(cgConfigData.getLimit_detail(), cgConfigData.getForward_url()));
-						}
-					}
-//					} else {
-//						DataManager.getInst().loadChar(playerId, (e, f) -> {
-//							if (e != null) {
-//								onPlayerLoginSucc(ioSession, srcPacket, e, info, token);
-//							} else {
-//								logger.error(" load char failed because {}", f);
-//							}
-//						});
-//					}
-					PlayerManager.getInstance().registerPlayer(player);
-					return null;
-				});
-
-			}
-		}, CenterActorManager.getLogicActor(0));
+		//登陆成功的就不是这边处理的问题了， 让logic去登陆，如果有角色直接返回， 没有角创建一个角色 ==
+		ServerSession session = ServerManager.getInst().getServerSession(AppId.LOGIC, 1);
+		session.sendRequest(new CocoPacket(RequestCode.LOGIC_PLAYER_LOGIN, request));
 	}
 
 	private void onPlayerLoginSucc(ChannelHandlerContext ioSession, CocoPacket srcPacket, Player player, LoginInfo info, String token) {

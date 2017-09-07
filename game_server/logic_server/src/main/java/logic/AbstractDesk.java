@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import config.CoupleRoomInfoProvider;
 import config.bean.CoupleRoom;
 import logic.majiong.PlayerInfo;
-import protobuf.creator.CommonCreator;
+import proto.creator.CommonCreator;
 import protocol.s2c.ResponseCode;
 import util.IDGenerator;
 import util.MiscUtil;

@@ -3,9 +3,7 @@ package logic.record.ddz;
 import logic.majiong.PlayerInfo;
 import logic.poker.PokerCard;
 import logic.poker.PokerUtil;
-import logic.poker.ddz.DdzPos;
-import protobuf.Ddz;
-import protobuf.Log;
+import proto.Ddz;
 
 import java.util.ArrayList;
 import java.util.HashMap;

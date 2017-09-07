@@ -804,3 +804,190 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2017-09-07 17:05:44 BaseApp.java 143 [ Actor-ping:60628 ] - [ INFO ]  maxMemory :  3612 MB
 2017-09-07 17:05:44 BaseApp.java 144 [ Actor-ping:60628 ] - [ INFO ]  freeMemory  :  210 MB
 2017-09-07 17:05:44 BaseApp.java 145 [ Actor-ping:60628 ] - [ INFO ]  usedMemory  :  33 MB
+2017-09-07 17:06:44 BaseApp.java 142 [ Actor-ping:120626 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:06:44 BaseApp.java 143 [ Actor-ping:120626 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:06:44 BaseApp.java 144 [ Actor-ping:120626 ] - [ INFO ]  freeMemory  :  210 MB
+2017-09-07 17:06:44 BaseApp.java 145 [ Actor-ping:120626 ] - [ INFO ]  usedMemory  :  33 MB
+2017-09-07 17:06:44 BaseApp.java 87 [ Actor-ping:120629 ] - [ INFO ]  
+2017-09-07 17:06:44 BaseApp.java 82 [ Actor-ping:120629 ] - [ INFO ]  Actor-ping=1
+
+2017-09-07 17:07:44 BaseApp.java 142 [ Actor-ping:180625 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:07:44 BaseApp.java 143 [ Actor-ping:180626 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:07:44 BaseApp.java 144 [ Actor-ping:180626 ] - [ INFO ]  freeMemory  :  210 MB
+2017-09-07 17:07:44 BaseApp.java 145 [ Actor-ping:180626 ] - [ INFO ]  usedMemory  :  33 MB
+2017-09-07 17:08:44 BaseApp.java 142 [ Actor-ping:240626 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:08:44 BaseApp.java 143 [ Actor-ping:240626 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:08:44 BaseApp.java 144 [ Actor-ping:240626 ] - [ INFO ]  freeMemory  :  210 MB
+2017-09-07 17:08:44 BaseApp.java 145 [ Actor-ping:240626 ] - [ INFO ]  usedMemory  :  33 MB
+2017-09-07 17:08:44 BaseApp.java 87 [ Actor-ping:240627 ] - [ INFO ]  
+2017-09-07 17:08:44 BaseApp.java 82 [ Actor-ping:240627 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:09:44 BaseApp.java 142 [ Actor-ping:300625 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:09:44 BaseApp.java 143 [ Actor-ping:300625 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:09:44 BaseApp.java 144 [ Actor-ping:300625 ] - [ INFO ]  freeMemory  :  210 MB
+2017-09-07 17:09:44 BaseApp.java 145 [ Actor-ping:300626 ] - [ INFO ]  usedMemory  :  33 MB
+2017-09-07 17:10:07 ClientHandler.java 47 [ nioEventLoopGroup-2-1:322838 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 17:10:07 ClientHandler.java 32 [ nioEventLoopGroup-2-1:322843 ] - [ INFO ]   channel in active 
+2017-09-07 17:10:07 NetClient.java 110 [ nioEventLoopGroup-2-1:322847 ] - [ ERROR ]  GATE,serverId=1与center连接断开,5秒后准备重连.
+2017-09-07 17:34:56 GateApp.java 42 [ main:0 ] - [ INFO ]   init gate app and  app bind the port 9096
+2017-09-07 17:34:56 NetClient.java 96 [ nioEventLoopGroup-2-1:668 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-09-07 17:34:33
+2017-09-07 17:35:56 BaseApp.java 142 [ Actor-ping:60797 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:35:56 BaseApp.java 143 [ Actor-ping:60798 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:35:56 BaseApp.java 144 [ Actor-ping:60798 ] - [ INFO ]  freeMemory  :  210 MB
+2017-09-07 17:35:56 BaseApp.java 145 [ Actor-ping:60799 ] - [ INFO ]  usedMemory  :  33 MB
+2017-09-07 17:36:56 BaseApp.java 142 [ Actor-ping:120794 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:36:56 BaseApp.java 143 [ Actor-ping:120795 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:36:56 BaseApp.java 144 [ Actor-ping:120795 ] - [ INFO ]  freeMemory  :  210 MB
+2017-09-07 17:36:56 BaseApp.java 145 [ Actor-ping:120795 ] - [ INFO ]  usedMemory  :  33 MB
+2017-09-07 17:36:56 BaseApp.java 87 [ Actor-ping:120798 ] - [ INFO ]  
+2017-09-07 17:36:56 BaseApp.java 82 [ Actor-ping:120798 ] - [ INFO ]  Actor-ping=1
+
+2017-09-07 17:37:56 BaseApp.java 142 [ Actor-ping:180795 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:37:56 BaseApp.java 143 [ Actor-ping:180795 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:37:56 BaseApp.java 144 [ Actor-ping:180795 ] - [ INFO ]  freeMemory  :  210 MB
+2017-09-07 17:37:56 BaseApp.java 145 [ Actor-ping:180795 ] - [ INFO ]  usedMemory  :  33 MB
+2017-09-07 17:38:56 BaseApp.java 142 [ Actor-ping:240795 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:38:56 BaseApp.java 143 [ Actor-ping:240796 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:38:56 BaseApp.java 144 [ Actor-ping:240796 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:38:56 BaseApp.java 145 [ Actor-ping:240797 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:38:56 BaseApp.java 87 [ Actor-ping:240797 ] - [ INFO ]  
+2017-09-07 17:38:56 BaseApp.java 82 [ Actor-ping:240798 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:39:56 BaseApp.java 142 [ Actor-ping:300795 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:39:56 BaseApp.java 143 [ Actor-ping:300796 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:39:56 BaseApp.java 144 [ Actor-ping:300796 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:39:56 BaseApp.java 145 [ Actor-ping:300796 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:40:56 BaseApp.java 142 [ Actor-ping:360795 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:40:56 BaseApp.java 143 [ Actor-ping:360795 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:40:56 BaseApp.java 144 [ Actor-ping:360795 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:40:56 BaseApp.java 145 [ Actor-ping:360795 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:40:56 BaseApp.java 87 [ Actor-ping:360796 ] - [ INFO ]  
+2017-09-07 17:40:56 BaseApp.java 82 [ Actor-ping:360797 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:41:56 BaseApp.java 142 [ Actor-ping:420795 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:41:56 BaseApp.java 143 [ Actor-ping:420796 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:41:56 BaseApp.java 144 [ Actor-ping:420796 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:41:56 BaseApp.java 145 [ Actor-ping:420796 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:42:56 BaseApp.java 142 [ Actor-ping:480795 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:42:56 BaseApp.java 143 [ Actor-ping:480795 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:42:56 BaseApp.java 144 [ Actor-ping:480795 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:42:56 BaseApp.java 145 [ Actor-ping:480795 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:42:56 BaseApp.java 87 [ Actor-ping:480797 ] - [ INFO ]  
+2017-09-07 17:42:56 BaseApp.java 82 [ Actor-ping:480797 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:43:56 BaseApp.java 142 [ Actor-ping:540797 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:43:56 BaseApp.java 143 [ Actor-ping:540798 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:43:56 BaseApp.java 144 [ Actor-ping:540798 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:43:56 BaseApp.java 145 [ Actor-ping:540798 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:44:56 BaseApp.java 142 [ Actor-ping:600795 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:44:56 BaseApp.java 143 [ Actor-ping:600795 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:44:56 BaseApp.java 144 [ Actor-ping:600795 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:44:56 BaseApp.java 145 [ Actor-ping:600795 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:44:56 BaseApp.java 87 [ Actor-ping:600797 ] - [ INFO ]  
+2017-09-07 17:44:56 BaseApp.java 82 [ Actor-ping:600797 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:45:56 BaseApp.java 142 [ Actor-ping:660794 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:45:56 BaseApp.java 143 [ Actor-ping:660794 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:45:56 BaseApp.java 144 [ Actor-ping:660795 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:45:56 BaseApp.java 145 [ Actor-ping:660795 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:46:56 BaseApp.java 142 [ Actor-ping:720795 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:46:56 BaseApp.java 143 [ Actor-ping:720795 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:46:56 BaseApp.java 144 [ Actor-ping:720795 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:46:56 BaseApp.java 145 [ Actor-ping:720795 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:46:56 BaseApp.java 87 [ Actor-ping:720797 ] - [ INFO ]  
+2017-09-07 17:46:56 BaseApp.java 82 [ Actor-ping:720797 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:47:56 BaseApp.java 142 [ Actor-ping:780798 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:47:56 BaseApp.java 143 [ Actor-ping:780798 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:47:56 BaseApp.java 144 [ Actor-ping:780798 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:47:56 BaseApp.java 145 [ Actor-ping:780799 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:48:56 BaseApp.java 142 [ Actor-ping:840794 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:48:56 BaseApp.java 143 [ Actor-ping:840795 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:48:56 BaseApp.java 144 [ Actor-ping:840795 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:48:56 BaseApp.java 145 [ Actor-ping:840795 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:48:56 BaseApp.java 87 [ Actor-ping:840796 ] - [ INFO ]  
+2017-09-07 17:48:56 BaseApp.java 82 [ Actor-ping:840797 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:49:56 BaseApp.java 142 [ Actor-ping:900795 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:49:56 BaseApp.java 143 [ Actor-ping:900795 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:49:56 BaseApp.java 144 [ Actor-ping:900796 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:49:56 BaseApp.java 145 [ Actor-ping:900796 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:50:56 BaseApp.java 142 [ Actor-ping:960794 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:50:56 BaseApp.java 143 [ Actor-ping:960795 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:50:56 BaseApp.java 144 [ Actor-ping:960795 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:50:56 BaseApp.java 145 [ Actor-ping:960795 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:50:56 BaseApp.java 87 [ Actor-ping:960797 ] - [ INFO ]  
+2017-09-07 17:50:56 BaseApp.java 82 [ Actor-ping:960797 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:51:56 BaseApp.java 142 [ Actor-ping:1020795 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:51:56 BaseApp.java 143 [ Actor-ping:1020795 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:51:56 BaseApp.java 144 [ Actor-ping:1020796 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:51:56 BaseApp.java 145 [ Actor-ping:1020796 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:52:56 BaseApp.java 142 [ Actor-ping:1080794 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:52:56 BaseApp.java 143 [ Actor-ping:1080795 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:52:56 BaseApp.java 144 [ Actor-ping:1080795 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:52:56 BaseApp.java 145 [ Actor-ping:1080795 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:52:56 BaseApp.java 87 [ Actor-ping:1080796 ] - [ INFO ]  
+2017-09-07 17:52:56 BaseApp.java 82 [ Actor-ping:1080797 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:53:56 BaseApp.java 142 [ Actor-ping:1140794 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:53:56 BaseApp.java 143 [ Actor-ping:1140794 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:53:56 BaseApp.java 144 [ Actor-ping:1140795 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:53:56 BaseApp.java 145 [ Actor-ping:1140795 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:54:56 BaseApp.java 142 [ Actor-ping:1200795 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:54:56 BaseApp.java 143 [ Actor-ping:1200796 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:54:56 BaseApp.java 144 [ Actor-ping:1200796 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:54:56 BaseApp.java 145 [ Actor-ping:1200796 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:54:56 BaseApp.java 87 [ Actor-ping:1200796 ] - [ INFO ]  
+2017-09-07 17:54:56 BaseApp.java 82 [ Actor-ping:1200797 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:55:56 BaseApp.java 142 [ Actor-ping:1260794 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:55:56 BaseApp.java 143 [ Actor-ping:1260794 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:55:56 BaseApp.java 144 [ Actor-ping:1260795 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:55:56 BaseApp.java 145 [ Actor-ping:1260795 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:56:56 BaseApp.java 142 [ Actor-ping:1320795 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:56:56 BaseApp.java 143 [ Actor-ping:1320795 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:56:56 BaseApp.java 144 [ Actor-ping:1320795 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:56:56 BaseApp.java 145 [ Actor-ping:1320795 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:56:56 BaseApp.java 87 [ Actor-ping:1320796 ] - [ INFO ]  
+2017-09-07 17:56:56 BaseApp.java 82 [ Actor-ping:1320796 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:57:56 BaseApp.java 142 [ Actor-ping:1380796 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:57:56 BaseApp.java 143 [ Actor-ping:1380796 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:57:56 BaseApp.java 144 [ Actor-ping:1380797 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:57:56 BaseApp.java 145 [ Actor-ping:1380797 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:58:56 BaseApp.java 142 [ Actor-ping:1440795 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:58:56 BaseApp.java 143 [ Actor-ping:1440795 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:58:56 BaseApp.java 144 [ Actor-ping:1440795 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:58:56 BaseApp.java 145 [ Actor-ping:1440795 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 17:58:56 BaseApp.java 87 [ Actor-ping:1440797 ] - [ INFO ]  
+2017-09-07 17:58:56 BaseApp.java 82 [ Actor-ping:1440797 ] - [ INFO ]  Actor-ping=2
+
+2017-09-07 17:59:56 BaseApp.java 142 [ Actor-ping:1500794 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:59:56 BaseApp.java 143 [ Actor-ping:1500794 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:59:56 BaseApp.java 144 [ Actor-ping:1500795 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 17:59:56 BaseApp.java 145 [ Actor-ping:1500795 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 18:00:56 BaseApp.java 142 [ Actor-ping:1560804 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 18:00:56 BaseApp.java 143 [ Actor-ping:1560805 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 18:00:56 BaseApp.java 144 [ Actor-ping:1560806 ] - [ INFO ]  freeMemory  :  209 MB
+2017-09-07 18:00:56 BaseApp.java 145 [ Actor-ping:1560806 ] - [ INFO ]  usedMemory  :  34 MB
+2017-09-07 18:00:56 BaseApp.java 87 [ Actor-ping:1560807 ] - [ INFO ]  
+2017-09-07 18:00:56 BaseApp.java 82 [ Actor-ping:1560807 ] - [ INFO ]  Actor-ping=3
+

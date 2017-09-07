@@ -25,8 +25,8 @@ import network.codec.MessageDecoder;
 import network.codec.MessageEncoder;
 import network.handler.ClientHandler;
 import packet.CocoPacket;
-import protobuf.Common;
-import protobuf.creator.CommonCreator;
+import proto.Common;
+import proto.creator.CommonCreator;
 import protocol.c2s.RequestCode;
 import util.MiscUtil;
 

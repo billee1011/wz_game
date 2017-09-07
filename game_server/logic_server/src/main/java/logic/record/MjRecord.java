@@ -3,7 +3,7 @@ package logic.record;
 import logic.majiong.PlayerDeskInfo;
 import logic.majiong.PlayerInfo;
 import logic.majiong.define.MJPosition;
-import protobuf.Common;
+import proto.Common;
 import util.MiscUtil;
 import util.Pair;
 

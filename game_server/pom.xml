@@ -32,29 +32,6 @@
                 </configuration>
             </plugin>
 
-            <!--<plugin>-->
-            <!--<artifactId>maven-assembly-plugin</artifactId>-->
-            <!--<configuration>-->
-            <!--<descriptorRefs>-->
-            <!--<descriptorRef>jar-with-dependencies</descriptorRef>-->
-            <!--</descriptorRefs>-->
-            <!--<archive>-->
-            <!--<manifest>-->
-            <!--<mainClass>service.GameServer</mainClass>-->
-            <!--</manifest>-->
-            <!--</archive>-->
-            <!--</configuration>-->
-            <!--<executions>-->
-            <!--<execution>-->
-            <!--<id>make-assembly</id>-->
-            <!--<phase>package</phase>-->
-            <!--<goals>-->
-            <!--<goal>single</goal>-->
-            <!--</goals>-->
-            <!--</execution>-->
-            <!--</executions>-->
-            <!--</plugin>-->
-
             <!-- 项目资源插件 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -68,11 +45,11 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                        <!--
-                        <encoding>GBK</encoding>
-                         -->
+                            <!--
+                            <encoding>GBK</encoding>
+                             -->
                             <encoding>UTF-8</encoding>
-    
+
                             <!-- conf到所有文件到conf/目录下 -->
                             <outputDirectory>${project.build.directory}/conf</outputDirectory>
                             <resources>

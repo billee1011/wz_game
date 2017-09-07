@@ -14,7 +14,7 @@ import logic.Desk;
 import logic.DeskMgr;
 import logic.majiong.define.Gender;
 import packet.CocoPacket;
-import protobuf.creator.CommonCreator;
+import proto.creator.CommonCreator;
 import protocol.c2s.RequestCode;
 import protocol.s2c.ResponseCode;
 import service.LogicApp;

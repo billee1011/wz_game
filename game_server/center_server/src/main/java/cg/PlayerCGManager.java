@@ -11,7 +11,7 @@ import config.bean.PlayerCGConfigData;
 import config.provider.PlayerCGConfigProvider;
 import database.DBUtil;
 import database.DataQueryResult;
-import protobuf.creator.CommonCreator;
+import proto.creator.CommonCreator;
 import protocol.s2c.ResponseCode;
 import util.ASObject;
 import util.MiscUtil;

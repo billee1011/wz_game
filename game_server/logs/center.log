@@ -1833,3 +1833,546 @@ Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher
 2017-09-07 17:05:41 BaseApp.java 143 [ Actor-db_check_actor:87855 ] - [ INFO ]  maxMemory :  3612 MB
 2017-09-07 17:05:41 BaseApp.java 144 [ Actor-db_check_actor:87855 ] - [ INFO ]  freeMemory  :  173 MB
 2017-09-07 17:05:41 BaseApp.java 145 [ Actor-db_check_actor:87855 ] - [ INFO ]  usedMemory  :  70 MB
+2017-09-07 17:06:37 BaseApp.java 142 [ Actor-db_check_actor:143551 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:06:37 BaseApp.java 143 [ Actor-db_check_actor:143551 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:06:37 BaseApp.java 144 [ Actor-db_check_actor:143551 ] - [ INFO ]  freeMemory  :  173 MB
+2017-09-07 17:06:37 BaseApp.java 145 [ Actor-db_check_actor:143552 ] - [ INFO ]  usedMemory  :  70 MB
+2017-09-07 17:06:37 BaseApp.java 87 [ Actor-db_check_actor:143553 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:06:37 BaseApp.java 82 [ Actor-db_check_actor:143563 ] - [ INFO ]  Actor-db_check_actor=3
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:07:37 BaseApp.java 142 [ Actor-db_check_actor:203552 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:07:37 BaseApp.java 143 [ Actor-db_check_actor:203552 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:07:37 BaseApp.java 144 [ Actor-db_check_actor:203552 ] - [ INFO ]  freeMemory  :  173 MB
+2017-09-07 17:07:37 BaseApp.java 145 [ Actor-db_check_actor:203553 ] - [ INFO ]  usedMemory  :  70 MB
+2017-09-07 17:08:37 BaseApp.java 142 [ Actor-db_check_actor:263552 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:08:37 BaseApp.java 143 [ Actor-db_check_actor:263552 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:08:37 BaseApp.java 144 [ Actor-db_check_actor:263553 ] - [ INFO ]  freeMemory  :  173 MB
+2017-09-07 17:08:37 BaseApp.java 145 [ Actor-db_check_actor:263553 ] - [ INFO ]  usedMemory  :  70 MB
+2017-09-07 17:08:37 BaseApp.java 87 [ Actor-db_check_actor:263553 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:08:37 BaseApp.java 82 [ Actor-db_check_actor:263563 ] - [ INFO ]  Actor-db_check_actor=3
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:09:37 BaseApp.java 142 [ Actor-db_check_actor:323552 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:09:37 BaseApp.java 143 [ Actor-db_check_actor:323552 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:09:37 BaseApp.java 144 [ Actor-db_check_actor:323552 ] - [ INFO ]  freeMemory  :  173 MB
+2017-09-07 17:09:37 BaseApp.java 145 [ Actor-db_check_actor:323552 ] - [ INFO ]  usedMemory  :  70 MB
+2017-09-07 17:09:37 CenterServer.java 205 [ Actor-db_check_actor:323565 ] - [ INFO ]  allPlayer num 0
+2017-09-07 17:09:37 CenterServer.java 206 [ Actor-db_check_actor:323565 ] - [ INFO ]  online num 0
+2017-09-07 17:09:37 CenterServer.java 209 [ Actor-db_check_actor:323573 ] - [ INFO ]  game type : COUPLE_MJ
+2017-09-07 17:09:37 CenterServer.java 210 [ Actor-db_check_actor:323573 ] - [ INFO ]  room player num : null
+2017-09-07 17:09:37 CenterServer.java 211 [ Actor-db_check_actor:323573 ] - [ INFO ]  room status : null
+2017-09-07 17:09:37 CenterServer.java 209 [ Actor-db_check_actor:323574 ] - [ INFO ]  game type : XUENIU
+2017-09-07 17:09:37 CenterServer.java 210 [ Actor-db_check_actor:323574 ] - [ INFO ]  room player num : null
+2017-09-07 17:09:37 CenterServer.java 211 [ Actor-db_check_actor:323574 ] - [ INFO ]  room status : null
+2017-09-07 17:09:37 CenterServer.java 209 [ Actor-db_check_actor:323574 ] - [ INFO ]  game type : XUEZHAN
+2017-09-07 17:09:37 CenterServer.java 210 [ Actor-db_check_actor:323574 ] - [ INFO ]  room player num : null
+2017-09-07 17:09:37 CenterServer.java 211 [ Actor-db_check_actor:323574 ] - [ INFO ]  room status : null
+2017-09-07 17:09:37 CenterServer.java 209 [ Actor-db_check_actor:323574 ] - [ INFO ]  game type : NIUNIU
+2017-09-07 17:09:37 CenterServer.java 210 [ Actor-db_check_actor:323575 ] - [ INFO ]  room player num : null
+2017-09-07 17:09:37 CenterServer.java 211 [ Actor-db_check_actor:323575 ] - [ INFO ]  room status : null
+2017-09-07 17:09:37 CenterServer.java 209 [ Actor-db_check_actor:323575 ] - [ INFO ]  game type : DDZ
+2017-09-07 17:09:37 CenterServer.java 210 [ Actor-db_check_actor:323575 ] - [ INFO ]  room player num : null
+2017-09-07 17:09:37 CenterServer.java 211 [ Actor-db_check_actor:323575 ] - [ INFO ]  room status : null
+2017-09-07 17:09:37 CenterServer.java 209 [ Actor-db_check_actor:323575 ] - [ INFO ]  game type : ZJH
+2017-09-07 17:09:37 CenterServer.java 210 [ Actor-db_check_actor:323575 ] - [ INFO ]  room player num : null
+2017-09-07 17:09:37 CenterServer.java 211 [ Actor-db_check_actor:323576 ] - [ INFO ]  room status : null
+2017-09-07 17:09:37 CenterServer.java 209 [ Actor-db_check_actor:323576 ] - [ INFO ]  game type : COUPLE_DDZ
+2017-09-07 17:09:37 CenterServer.java 210 [ Actor-db_check_actor:323576 ] - [ INFO ]  room player num : null
+2017-09-07 17:09:37 CenterServer.java 211 [ Actor-db_check_actor:323576 ] - [ INFO ]  room status : null
+2017-09-07 17:09:37 CenterServer.java 209 [ Actor-db_check_actor:323577 ] - [ INFO ]  game type : LZ_DDZ
+2017-09-07 17:09:37 CenterServer.java 210 [ Actor-db_check_actor:323577 ] - [ INFO ]  room player num : null
+2017-09-07 17:09:37 CenterServer.java 211 [ Actor-db_check_actor:323577 ] - [ INFO ]  room status : null
+2017-09-07 17:09:37 CenterServer.java 209 [ Actor-db_check_actor:323577 ] - [ INFO ]  game type : CLASS_NIU
+2017-09-07 17:09:37 CenterServer.java 210 [ Actor-db_check_actor:323578 ] - [ INFO ]  room player num : null
+2017-09-07 17:09:37 CenterServer.java 211 [ Actor-db_check_actor:323578 ] - [ INFO ]  room status : null
+2017-09-07 17:09:37 CenterServer.java 209 [ Actor-db_check_actor:323578 ] - [ INFO ]  game type : GRAD_NIU
+2017-09-07 17:09:37 CenterServer.java 210 [ Actor-db_check_actor:323578 ] - [ INFO ]  room player num : null
+2017-09-07 17:09:37 CenterServer.java 211 [ Actor-db_check_actor:323578 ] - [ INFO ]  room status : null
+2017-09-07 17:34:34 PlayerNameManager.java 53 [ main:0 ] - [ INFO ]   the load name cost time is 196
+2017-09-07 17:34:35 Log.java 192 [ Thread-2:859 ] - [ INFO ]  Logging initialized @2072ms
+2017-09-07 17:34:35 Server.java 346 [ Thread-2:918 ] - [ INFO ]  jetty-9.3.14.v20161028
+2017-09-07 17:34:35 AbstractConnector.java 278 [ Thread-2:966 ] - [ INFO ]  Started ServerConnector@6a87ae41{HTTP/1.1,[http/1.1]}{0.0.0.0:9093}
+2017-09-07 17:34:35 Server.java 414 [ Thread-2:967 ] - [ INFO ]  Started @2181ms
+2017-09-07 17:34:49 ServerManager.java 84 [ Actor-Dispatcher-logic_actor_pool-0:15165 ] - [ INFO ]  LOGIN服务器,第一次连接,当前连接信息[1, 0, 0]
+2017-09-07 17:34:56 ServerManager.java 84 [ Actor-Dispatcher-logic_actor_pool-0:22114 ] - [ INFO ]  GATE服务器,第一次连接,当前连接信息[5, 0, 0, 127.0.0.1, 9096]
+2017-09-07 17:35:13 ServerManager.java 84 [ Actor-Dispatcher-logic_actor_pool-0:39103 ] - [ INFO ]  LOGIC服务器,第一次连接,当前连接信息[2, 0, 0]
+2017-09-07 17:35:35 BaseApp.java 142 [ Actor-db_check_actor:60868 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:35:35 BaseApp.java 143 [ Actor-db_check_actor:60869 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:35:35 BaseApp.java 144 [ Actor-db_check_actor:60869 ] - [ INFO ]  freeMemory  :  167 MB
+2017-09-07 17:35:35 BaseApp.java 145 [ Actor-db_check_actor:60870 ] - [ INFO ]  usedMemory  :  76 MB
+2017-09-07 17:35:55 CenterModule.java 441 [ Actor-Dispatcher-logic_actor_pool-0:80508 ] - [ INFO ]   the gate ip is 127.0.0.1 and the port is 9096
+2017-09-07 17:35:55 CenterModule.java 441 [ Actor-Dispatcher-logic_actor_pool-0:80511 ] - [ INFO ]   the gate ip is 127.0.0.1 and the port is 9096
+2017-09-07 17:35:57 CenterModule.java 456 [ Actor-Dispatcher-logic_actor_pool-0:82392 ] - [ INFO ]  player login the game 
+2017-09-07 17:36:17 PlayerSaver.java 239 [ Actor-Dispatcher-logic_actor_pool-0:102887 ] - [ ERROR ]  {}
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'game_version' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:932)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2551)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
+	at com.jolbox.bonecp.PreparedStatementHandle.execute(PreparedStatementHandle.java:140)
+	at database.DBUtil.execute(DBUtil.java:144)
+	at database.DBUtil.execute(DBUtil.java:153)
+	at database.DBUtil.executeInsert(DBUtil.java:310)
+	at database.DBUtil.executeInsert(DBUtil.java:168)
+	at chr.PlayerSaver.insertPlayer(PlayerSaver.java:237)
+	at network.handler.module.CenterModule.lambda$actionValidLogin$10(CenterModule.java:477)
+	at actor.Actor$1.run(Actor.java:208)
+	at actor.Actor.runTask(Actor.java:202)
+	at actor.Actor.access$400(Actor.java:13)
+	at actor.Actor$TaskRunner.run(Actor.java:188)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 17:36:17 CenterModule.java 479 [ Actor-Dispatcher-logic_actor_pool-0:102889 ] - [ INFO ]  new account so create player for it and the player id is 0
+2017-09-07 17:36:17 Actor.java 192 [ Actor-Dispatcher-logic_actor_pool-0:102904 ] - [ ERROR ]  
+java.lang.NullPointerException
+	at proto.Account$PBLoginSuccRes$Builder.setProvince(Account.java:10408)
+	at proto.creator.AccountCreator.createPBLoginAndDynamic(AccountCreator.java:73)
+	at network.handler.module.CenterModule.onPlayerLoginSucc(CenterModule.java:565)
+	at network.handler.module.CenterModule.lambda$actionValidLogin$10(CenterModule.java:487)
+	at actor.Actor$1.run(Actor.java:208)
+	at actor.Actor.runTask(Actor.java:202)
+	at actor.Actor.access$400(Actor.java:13)
+	at actor.Actor$TaskRunner.run(Actor.java:188)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 17:36:35 BaseApp.java 142 [ Actor-db_check_actor:120843 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:36:35 BaseApp.java 143 [ Actor-db_check_actor:120843 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:36:35 BaseApp.java 144 [ Actor-db_check_actor:120843 ] - [ INFO ]  freeMemory  :  163 MB
+2017-09-07 17:36:35 BaseApp.java 145 [ Actor-db_check_actor:120843 ] - [ INFO ]  usedMemory  :  80 MB
+2017-09-07 17:36:35 BaseApp.java 87 [ Actor-db_check_actor:120844 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:36:35 BaseApp.java 82 [ Actor-db_check_actor:120844 ] - [ INFO ]  Actor-db_check_actor=5
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:37:35 BaseApp.java 142 [ Actor-db_check_actor:180842 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:37:35 BaseApp.java 143 [ Actor-db_check_actor:180842 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:37:35 BaseApp.java 144 [ Actor-db_check_actor:180842 ] - [ INFO ]  freeMemory  :  163 MB
+2017-09-07 17:37:35 BaseApp.java 145 [ Actor-db_check_actor:180843 ] - [ INFO ]  usedMemory  :  80 MB
+2017-09-07 17:38:35 BaseApp.java 142 [ Actor-db_check_actor:240841 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:38:35 BaseApp.java 143 [ Actor-db_check_actor:240842 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:38:35 BaseApp.java 144 [ Actor-db_check_actor:240842 ] - [ INFO ]  freeMemory  :  163 MB
+2017-09-07 17:38:35 BaseApp.java 145 [ Actor-db_check_actor:240842 ] - [ INFO ]  usedMemory  :  80 MB
+2017-09-07 17:38:35 BaseApp.java 87 [ Actor-db_check_actor:240843 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:38:35 BaseApp.java 82 [ Actor-db_check_actor:240843 ] - [ INFO ]  Actor-db_check_actor=5
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:39:35 BaseApp.java 142 [ Actor-db_check_actor:300842 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:39:35 BaseApp.java 143 [ Actor-db_check_actor:300842 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:39:35 BaseApp.java 144 [ Actor-db_check_actor:300843 ] - [ INFO ]  freeMemory  :  163 MB
+2017-09-07 17:39:35 BaseApp.java 145 [ Actor-db_check_actor:300843 ] - [ INFO ]  usedMemory  :  80 MB
+2017-09-07 17:39:35 CenterServer.java 187 [ Actor-db_check_actor:300873 ] - [ INFO ]  allPlayer num 1
+2017-09-07 17:39:35 CenterServer.java 188 [ Actor-db_check_actor:300873 ] - [ INFO ]  online num 1
+2017-09-07 17:39:35 CenterServer.java 191 [ Actor-db_check_actor:300879 ] - [ INFO ]  game type : COUPLE_MJ
+2017-09-07 17:39:35 CenterServer.java 192 [ Actor-db_check_actor:300880 ] - [ INFO ]  room player num : null
+2017-09-07 17:39:35 CenterServer.java 193 [ Actor-db_check_actor:300880 ] - [ INFO ]  room status : null
+2017-09-07 17:39:35 CenterServer.java 191 [ Actor-db_check_actor:300880 ] - [ INFO ]  game type : XUENIU
+2017-09-07 17:39:35 CenterServer.java 192 [ Actor-db_check_actor:300880 ] - [ INFO ]  room player num : null
+2017-09-07 17:39:35 CenterServer.java 193 [ Actor-db_check_actor:300880 ] - [ INFO ]  room status : null
+2017-09-07 17:39:35 CenterServer.java 191 [ Actor-db_check_actor:300880 ] - [ INFO ]  game type : XUEZHAN
+2017-09-07 17:39:35 CenterServer.java 192 [ Actor-db_check_actor:300880 ] - [ INFO ]  room player num : null
+2017-09-07 17:39:35 CenterServer.java 193 [ Actor-db_check_actor:300880 ] - [ INFO ]  room status : null
+2017-09-07 17:39:35 CenterServer.java 191 [ Actor-db_check_actor:300880 ] - [ INFO ]  game type : NIUNIU
+2017-09-07 17:39:35 CenterServer.java 192 [ Actor-db_check_actor:300880 ] - [ INFO ]  room player num : null
+2017-09-07 17:39:35 CenterServer.java 193 [ Actor-db_check_actor:300881 ] - [ INFO ]  room status : null
+2017-09-07 17:39:35 CenterServer.java 191 [ Actor-db_check_actor:300881 ] - [ INFO ]  game type : DDZ
+2017-09-07 17:39:35 CenterServer.java 192 [ Actor-db_check_actor:300881 ] - [ INFO ]  room player num : null
+2017-09-07 17:39:35 CenterServer.java 193 [ Actor-db_check_actor:300881 ] - [ INFO ]  room status : null
+2017-09-07 17:39:35 CenterServer.java 191 [ Actor-db_check_actor:300881 ] - [ INFO ]  game type : ZJH
+2017-09-07 17:39:35 CenterServer.java 192 [ Actor-db_check_actor:300881 ] - [ INFO ]  room player num : null
+2017-09-07 17:39:35 CenterServer.java 193 [ Actor-db_check_actor:300881 ] - [ INFO ]  room status : null
+2017-09-07 17:39:35 CenterServer.java 191 [ Actor-db_check_actor:300881 ] - [ INFO ]  game type : COUPLE_DDZ
+2017-09-07 17:39:35 CenterServer.java 192 [ Actor-db_check_actor:300881 ] - [ INFO ]  room player num : null
+2017-09-07 17:39:35 CenterServer.java 193 [ Actor-db_check_actor:300881 ] - [ INFO ]  room status : null
+2017-09-07 17:39:35 CenterServer.java 191 [ Actor-db_check_actor:300882 ] - [ INFO ]  game type : LZ_DDZ
+2017-09-07 17:39:35 CenterServer.java 192 [ Actor-db_check_actor:300882 ] - [ INFO ]  room player num : null
+2017-09-07 17:39:35 CenterServer.java 193 [ Actor-db_check_actor:300882 ] - [ INFO ]  room status : null
+2017-09-07 17:39:35 CenterServer.java 191 [ Actor-db_check_actor:300882 ] - [ INFO ]  game type : CLASS_NIU
+2017-09-07 17:39:35 CenterServer.java 192 [ Actor-db_check_actor:300882 ] - [ INFO ]  room player num : null
+2017-09-07 17:39:35 CenterServer.java 193 [ Actor-db_check_actor:300882 ] - [ INFO ]  room status : null
+2017-09-07 17:39:35 CenterServer.java 191 [ Actor-db_check_actor:300882 ] - [ INFO ]  game type : GRAD_NIU
+2017-09-07 17:39:35 CenterServer.java 192 [ Actor-db_check_actor:300882 ] - [ INFO ]  room player num : null
+2017-09-07 17:39:35 CenterServer.java 193 [ Actor-db_check_actor:300882 ] - [ INFO ]  room status : null
+2017-09-07 17:40:35 BaseApp.java 142 [ Actor-db_check_actor:360841 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:40:35 BaseApp.java 143 [ Actor-db_check_actor:360841 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:40:35 BaseApp.java 144 [ Actor-db_check_actor:360842 ] - [ INFO ]  freeMemory  :  161 MB
+2017-09-07 17:40:35 BaseApp.java 145 [ Actor-db_check_actor:360842 ] - [ INFO ]  usedMemory  :  82 MB
+2017-09-07 17:40:35 BaseApp.java 87 [ Actor-db_check_actor:360843 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:40:35 BaseApp.java 82 [ Actor-db_check_actor:360843 ] - [ INFO ]  Actor-db_check_actor=5
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:41:35 BaseApp.java 142 [ Actor-db_check_actor:420842 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:41:35 BaseApp.java 143 [ Actor-db_check_actor:420842 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:41:35 BaseApp.java 144 [ Actor-db_check_actor:420842 ] - [ INFO ]  freeMemory  :  161 MB
+2017-09-07 17:41:35 BaseApp.java 145 [ Actor-db_check_actor:420842 ] - [ INFO ]  usedMemory  :  82 MB
+2017-09-07 17:42:35 BaseApp.java 142 [ Actor-db_check_actor:480842 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:42:35 BaseApp.java 143 [ Actor-db_check_actor:480842 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:42:35 BaseApp.java 144 [ Actor-db_check_actor:480842 ] - [ INFO ]  freeMemory  :  161 MB
+2017-09-07 17:42:35 BaseApp.java 145 [ Actor-db_check_actor:480842 ] - [ INFO ]  usedMemory  :  82 MB
+2017-09-07 17:42:35 BaseApp.java 87 [ Actor-db_check_actor:480843 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:42:35 BaseApp.java 82 [ Actor-db_check_actor:480843 ] - [ INFO ]  Actor-db_check_actor=5
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:43:35 BaseApp.java 142 [ Actor-db_check_actor:540842 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:43:35 BaseApp.java 143 [ Actor-db_check_actor:540842 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:43:35 BaseApp.java 144 [ Actor-db_check_actor:540843 ] - [ INFO ]  freeMemory  :  161 MB
+2017-09-07 17:43:35 BaseApp.java 145 [ Actor-db_check_actor:540843 ] - [ INFO ]  usedMemory  :  82 MB
+2017-09-07 17:44:35 BaseApp.java 142 [ Actor-db_check_actor:600841 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:44:35 BaseApp.java 143 [ Actor-db_check_actor:600841 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:44:35 BaseApp.java 144 [ Actor-db_check_actor:600841 ] - [ INFO ]  freeMemory  :  161 MB
+2017-09-07 17:44:35 BaseApp.java 145 [ Actor-db_check_actor:600841 ] - [ INFO ]  usedMemory  :  82 MB
+2017-09-07 17:44:35 BaseApp.java 87 [ Actor-db_check_actor:600842 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:44:35 BaseApp.java 82 [ Actor-db_check_actor:600842 ] - [ INFO ]  Actor-db_check_actor=5
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:44:35 CenterServer.java 187 [ Actor-db_check_actor:600844 ] - [ INFO ]  allPlayer num 1
+2017-09-07 17:44:35 CenterServer.java 188 [ Actor-db_check_actor:600844 ] - [ INFO ]  online num 1
+2017-09-07 17:44:35 CenterServer.java 191 [ Actor-db_check_actor:600844 ] - [ INFO ]  game type : COUPLE_MJ
+2017-09-07 17:44:35 CenterServer.java 192 [ Actor-db_check_actor:600844 ] - [ INFO ]  room player num : null
+2017-09-07 17:44:35 CenterServer.java 193 [ Actor-db_check_actor:600844 ] - [ INFO ]  room status : null
+2017-09-07 17:44:35 CenterServer.java 191 [ Actor-db_check_actor:600844 ] - [ INFO ]  game type : XUENIU
+2017-09-07 17:44:35 CenterServer.java 192 [ Actor-db_check_actor:600845 ] - [ INFO ]  room player num : null
+2017-09-07 17:44:35 CenterServer.java 193 [ Actor-db_check_actor:600845 ] - [ INFO ]  room status : null
+2017-09-07 17:44:35 CenterServer.java 191 [ Actor-db_check_actor:600845 ] - [ INFO ]  game type : XUEZHAN
+2017-09-07 17:44:35 CenterServer.java 192 [ Actor-db_check_actor:600845 ] - [ INFO ]  room player num : null
+2017-09-07 17:44:35 CenterServer.java 193 [ Actor-db_check_actor:600845 ] - [ INFO ]  room status : null
+2017-09-07 17:44:35 CenterServer.java 191 [ Actor-db_check_actor:600845 ] - [ INFO ]  game type : NIUNIU
+2017-09-07 17:44:35 CenterServer.java 192 [ Actor-db_check_actor:600845 ] - [ INFO ]  room player num : null
+2017-09-07 17:44:35 CenterServer.java 193 [ Actor-db_check_actor:600845 ] - [ INFO ]  room status : null
+2017-09-07 17:44:35 CenterServer.java 191 [ Actor-db_check_actor:600845 ] - [ INFO ]  game type : DDZ
+2017-09-07 17:44:35 CenterServer.java 192 [ Actor-db_check_actor:600845 ] - [ INFO ]  room player num : null
+2017-09-07 17:44:35 CenterServer.java 193 [ Actor-db_check_actor:600845 ] - [ INFO ]  room status : null
+2017-09-07 17:44:35 CenterServer.java 191 [ Actor-db_check_actor:600845 ] - [ INFO ]  game type : ZJH
+2017-09-07 17:44:35 CenterServer.java 192 [ Actor-db_check_actor:600845 ] - [ INFO ]  room player num : null
+2017-09-07 17:44:35 CenterServer.java 193 [ Actor-db_check_actor:600845 ] - [ INFO ]  room status : null
+2017-09-07 17:44:35 CenterServer.java 191 [ Actor-db_check_actor:600845 ] - [ INFO ]  game type : COUPLE_DDZ
+2017-09-07 17:44:35 CenterServer.java 192 [ Actor-db_check_actor:600845 ] - [ INFO ]  room player num : null
+2017-09-07 17:44:35 CenterServer.java 193 [ Actor-db_check_actor:600845 ] - [ INFO ]  room status : null
+2017-09-07 17:44:35 CenterServer.java 191 [ Actor-db_check_actor:600846 ] - [ INFO ]  game type : LZ_DDZ
+2017-09-07 17:44:35 CenterServer.java 192 [ Actor-db_check_actor:600846 ] - [ INFO ]  room player num : null
+2017-09-07 17:44:35 CenterServer.java 193 [ Actor-db_check_actor:600846 ] - [ INFO ]  room status : null
+2017-09-07 17:44:35 CenterServer.java 191 [ Actor-db_check_actor:600846 ] - [ INFO ]  game type : CLASS_NIU
+2017-09-07 17:44:35 CenterServer.java 192 [ Actor-db_check_actor:600846 ] - [ INFO ]  room player num : null
+2017-09-07 17:44:35 CenterServer.java 193 [ Actor-db_check_actor:600846 ] - [ INFO ]  room status : null
+2017-09-07 17:44:35 CenterServer.java 191 [ Actor-db_check_actor:600846 ] - [ INFO ]  game type : GRAD_NIU
+2017-09-07 17:44:35 CenterServer.java 192 [ Actor-db_check_actor:600846 ] - [ INFO ]  room player num : null
+2017-09-07 17:44:35 CenterServer.java 193 [ Actor-db_check_actor:600846 ] - [ INFO ]  room status : null
+2017-09-07 17:45:35 BaseApp.java 142 [ Actor-db_check_actor:660842 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:45:35 BaseApp.java 143 [ Actor-db_check_actor:660842 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:45:35 BaseApp.java 144 [ Actor-db_check_actor:660842 ] - [ INFO ]  freeMemory  :  161 MB
+2017-09-07 17:45:35 BaseApp.java 145 [ Actor-db_check_actor:660843 ] - [ INFO ]  usedMemory  :  82 MB
+2017-09-07 17:46:35 BaseApp.java 142 [ Actor-db_check_actor:720841 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:46:35 BaseApp.java 143 [ Actor-db_check_actor:720841 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:46:35 BaseApp.java 144 [ Actor-db_check_actor:720841 ] - [ INFO ]  freeMemory  :  161 MB
+2017-09-07 17:46:35 BaseApp.java 145 [ Actor-db_check_actor:720842 ] - [ INFO ]  usedMemory  :  82 MB
+2017-09-07 17:46:35 BaseApp.java 87 [ Actor-db_check_actor:720842 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:46:35 BaseApp.java 82 [ Actor-db_check_actor:720843 ] - [ INFO ]  Actor-db_check_actor=5
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:47:35 BaseApp.java 142 [ Actor-db_check_actor:780844 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:47:35 BaseApp.java 143 [ Actor-db_check_actor:780844 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:47:35 BaseApp.java 144 [ Actor-db_check_actor:780844 ] - [ INFO ]  freeMemory  :  161 MB
+2017-09-07 17:47:35 BaseApp.java 145 [ Actor-db_check_actor:780844 ] - [ INFO ]  usedMemory  :  82 MB
+2017-09-07 17:48:35 BaseApp.java 142 [ Actor-db_check_actor:840841 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:48:35 BaseApp.java 143 [ Actor-db_check_actor:840841 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:48:35 BaseApp.java 144 [ Actor-db_check_actor:840841 ] - [ INFO ]  freeMemory  :  161 MB
+2017-09-07 17:48:35 BaseApp.java 145 [ Actor-db_check_actor:840841 ] - [ INFO ]  usedMemory  :  82 MB
+2017-09-07 17:48:35 BaseApp.java 87 [ Actor-db_check_actor:840842 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:48:35 BaseApp.java 82 [ Actor-db_check_actor:840843 ] - [ INFO ]  Actor-db_check_actor=5
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:49:35 CenterServer.java 187 [ Actor-db_check_actor:900845 ] - [ INFO ]  allPlayer num 1
+2017-09-07 17:49:35 CenterServer.java 188 [ Actor-db_check_actor:900845 ] - [ INFO ]  online num 1
+2017-09-07 17:49:35 CenterServer.java 191 [ Actor-db_check_actor:900845 ] - [ INFO ]  game type : COUPLE_MJ
+2017-09-07 17:49:35 CenterServer.java 192 [ Actor-db_check_actor:900846 ] - [ INFO ]  room player num : null
+2017-09-07 17:49:35 CenterServer.java 193 [ Actor-db_check_actor:900846 ] - [ INFO ]  room status : null
+2017-09-07 17:49:35 CenterServer.java 191 [ Actor-db_check_actor:900846 ] - [ INFO ]  game type : XUENIU
+2017-09-07 17:49:35 CenterServer.java 192 [ Actor-db_check_actor:900846 ] - [ INFO ]  room player num : null
+2017-09-07 17:49:35 CenterServer.java 193 [ Actor-db_check_actor:900846 ] - [ INFO ]  room status : null
+2017-09-07 17:49:35 CenterServer.java 191 [ Actor-db_check_actor:900846 ] - [ INFO ]  game type : XUEZHAN
+2017-09-07 17:49:35 CenterServer.java 192 [ Actor-db_check_actor:900846 ] - [ INFO ]  room player num : null
+2017-09-07 17:49:35 CenterServer.java 193 [ Actor-db_check_actor:900846 ] - [ INFO ]  room status : null
+2017-09-07 17:49:35 CenterServer.java 191 [ Actor-db_check_actor:900846 ] - [ INFO ]  game type : NIUNIU
+2017-09-07 17:49:35 CenterServer.java 192 [ Actor-db_check_actor:900846 ] - [ INFO ]  room player num : null
+2017-09-07 17:49:35 CenterServer.java 193 [ Actor-db_check_actor:900846 ] - [ INFO ]  room status : null
+2017-09-07 17:49:35 CenterServer.java 191 [ Actor-db_check_actor:900846 ] - [ INFO ]  game type : DDZ
+2017-09-07 17:49:35 CenterServer.java 192 [ Actor-db_check_actor:900847 ] - [ INFO ]  room player num : null
+2017-09-07 17:49:35 CenterServer.java 193 [ Actor-db_check_actor:900847 ] - [ INFO ]  room status : null
+2017-09-07 17:49:35 CenterServer.java 191 [ Actor-db_check_actor:900847 ] - [ INFO ]  game type : ZJH
+2017-09-07 17:49:35 CenterServer.java 192 [ Actor-db_check_actor:900847 ] - [ INFO ]  room player num : null
+2017-09-07 17:49:35 CenterServer.java 193 [ Actor-db_check_actor:900847 ] - [ INFO ]  room status : null
+2017-09-07 17:49:35 CenterServer.java 191 [ Actor-db_check_actor:900847 ] - [ INFO ]  game type : COUPLE_DDZ
+2017-09-07 17:49:35 CenterServer.java 192 [ Actor-db_check_actor:900847 ] - [ INFO ]  room player num : null
+2017-09-07 17:49:35 CenterServer.java 193 [ Actor-db_check_actor:900847 ] - [ INFO ]  room status : null
+2017-09-07 17:49:35 CenterServer.java 191 [ Actor-db_check_actor:900847 ] - [ INFO ]  game type : LZ_DDZ
+2017-09-07 17:49:35 CenterServer.java 192 [ Actor-db_check_actor:900847 ] - [ INFO ]  room player num : null
+2017-09-07 17:49:35 CenterServer.java 193 [ Actor-db_check_actor:900847 ] - [ INFO ]  room status : null
+2017-09-07 17:49:35 CenterServer.java 191 [ Actor-db_check_actor:900847 ] - [ INFO ]  game type : CLASS_NIU
+2017-09-07 17:49:35 CenterServer.java 192 [ Actor-db_check_actor:900848 ] - [ INFO ]  room player num : null
+2017-09-07 17:49:35 CenterServer.java 193 [ Actor-db_check_actor:900848 ] - [ INFO ]  room status : null
+2017-09-07 17:49:35 CenterServer.java 191 [ Actor-db_check_actor:900848 ] - [ INFO ]  game type : GRAD_NIU
+2017-09-07 17:49:35 CenterServer.java 192 [ Actor-db_check_actor:900848 ] - [ INFO ]  room player num : null
+2017-09-07 17:49:35 CenterServer.java 193 [ Actor-db_check_actor:900848 ] - [ INFO ]  room status : null
+2017-09-07 17:49:35 BaseApp.java 142 [ Actor-db_check_actor:900848 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:49:35 BaseApp.java 143 [ Actor-db_check_actor:900848 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:49:35 BaseApp.java 144 [ Actor-db_check_actor:900848 ] - [ INFO ]  freeMemory  :  160 MB
+2017-09-07 17:49:35 BaseApp.java 145 [ Actor-db_check_actor:900848 ] - [ INFO ]  usedMemory  :  83 MB
+2017-09-07 17:50:35 BaseApp.java 142 [ Actor-db_check_actor:960842 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:50:35 BaseApp.java 143 [ Actor-db_check_actor:960842 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:50:35 BaseApp.java 144 [ Actor-db_check_actor:960842 ] - [ INFO ]  freeMemory  :  160 MB
+2017-09-07 17:50:35 BaseApp.java 145 [ Actor-db_check_actor:960842 ] - [ INFO ]  usedMemory  :  83 MB
+2017-09-07 17:50:35 BaseApp.java 87 [ Actor-db_check_actor:960843 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:50:35 BaseApp.java 82 [ Actor-db_check_actor:960843 ] - [ INFO ]  Actor-db_check_actor=5
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:51:35 BaseApp.java 142 [ Actor-db_check_actor:1020842 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:51:35 BaseApp.java 143 [ Actor-db_check_actor:1020842 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:51:35 BaseApp.java 144 [ Actor-db_check_actor:1020843 ] - [ INFO ]  freeMemory  :  160 MB
+2017-09-07 17:51:35 BaseApp.java 145 [ Actor-db_check_actor:1020843 ] - [ INFO ]  usedMemory  :  83 MB
+2017-09-07 17:52:35 BaseApp.java 142 [ Actor-db_check_actor:1080842 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:52:35 BaseApp.java 143 [ Actor-db_check_actor:1080842 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:52:35 BaseApp.java 144 [ Actor-db_check_actor:1080842 ] - [ INFO ]  freeMemory  :  160 MB
+2017-09-07 17:52:35 BaseApp.java 145 [ Actor-db_check_actor:1080842 ] - [ INFO ]  usedMemory  :  83 MB
+2017-09-07 17:52:35 BaseApp.java 87 [ Actor-db_check_actor:1080842 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:52:35 BaseApp.java 82 [ Actor-db_check_actor:1080843 ] - [ INFO ]  Actor-db_check_actor=5
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:53:35 BaseApp.java 142 [ Actor-db_check_actor:1140843 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:53:35 BaseApp.java 143 [ Actor-db_check_actor:1140843 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:53:35 BaseApp.java 144 [ Actor-db_check_actor:1140843 ] - [ INFO ]  freeMemory  :  160 MB
+2017-09-07 17:53:35 BaseApp.java 145 [ Actor-db_check_actor:1140843 ] - [ INFO ]  usedMemory  :  83 MB
+2017-09-07 17:54:35 BaseApp.java 142 [ Actor-db_check_actor:1200842 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:54:35 BaseApp.java 143 [ Actor-db_check_actor:1200842 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:54:35 BaseApp.java 144 [ Actor-db_check_actor:1200842 ] - [ INFO ]  freeMemory  :  160 MB
+2017-09-07 17:54:35 BaseApp.java 145 [ Actor-db_check_actor:1200842 ] - [ INFO ]  usedMemory  :  83 MB
+2017-09-07 17:54:35 BaseApp.java 87 [ Actor-db_check_actor:1200842 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:54:35 BaseApp.java 82 [ Actor-db_check_actor:1200843 ] - [ INFO ]  Actor-db_check_actor=5
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:54:35 CenterServer.java 187 [ Actor-db_check_actor:1200844 ] - [ INFO ]  allPlayer num 1
+2017-09-07 17:54:35 CenterServer.java 188 [ Actor-db_check_actor:1200844 ] - [ INFO ]  online num 1
+2017-09-07 17:54:35 CenterServer.java 191 [ Actor-db_check_actor:1200844 ] - [ INFO ]  game type : COUPLE_MJ
+2017-09-07 17:54:35 CenterServer.java 192 [ Actor-db_check_actor:1200845 ] - [ INFO ]  room player num : null
+2017-09-07 17:54:35 CenterServer.java 193 [ Actor-db_check_actor:1200845 ] - [ INFO ]  room status : null
+2017-09-07 17:54:35 CenterServer.java 191 [ Actor-db_check_actor:1200845 ] - [ INFO ]  game type : XUENIU
+2017-09-07 17:54:35 CenterServer.java 192 [ Actor-db_check_actor:1200845 ] - [ INFO ]  room player num : null
+2017-09-07 17:54:35 CenterServer.java 193 [ Actor-db_check_actor:1200845 ] - [ INFO ]  room status : null
+2017-09-07 17:54:35 CenterServer.java 191 [ Actor-db_check_actor:1200845 ] - [ INFO ]  game type : XUEZHAN
+2017-09-07 17:54:35 CenterServer.java 192 [ Actor-db_check_actor:1200845 ] - [ INFO ]  room player num : null
+2017-09-07 17:54:35 CenterServer.java 193 [ Actor-db_check_actor:1200845 ] - [ INFO ]  room status : null
+2017-09-07 17:54:35 CenterServer.java 191 [ Actor-db_check_actor:1200845 ] - [ INFO ]  game type : NIUNIU
+2017-09-07 17:54:35 CenterServer.java 192 [ Actor-db_check_actor:1200845 ] - [ INFO ]  room player num : null
+2017-09-07 17:54:35 CenterServer.java 193 [ Actor-db_check_actor:1200845 ] - [ INFO ]  room status : null
+2017-09-07 17:54:35 CenterServer.java 191 [ Actor-db_check_actor:1200845 ] - [ INFO ]  game type : DDZ
+2017-09-07 17:54:35 CenterServer.java 192 [ Actor-db_check_actor:1200845 ] - [ INFO ]  room player num : null
+2017-09-07 17:54:35 CenterServer.java 193 [ Actor-db_check_actor:1200846 ] - [ INFO ]  room status : null
+2017-09-07 17:54:35 CenterServer.java 191 [ Actor-db_check_actor:1200846 ] - [ INFO ]  game type : ZJH
+2017-09-07 17:54:35 CenterServer.java 192 [ Actor-db_check_actor:1200846 ] - [ INFO ]  room player num : null
+2017-09-07 17:54:35 CenterServer.java 193 [ Actor-db_check_actor:1200846 ] - [ INFO ]  room status : null
+2017-09-07 17:54:35 CenterServer.java 191 [ Actor-db_check_actor:1200846 ] - [ INFO ]  game type : COUPLE_DDZ
+2017-09-07 17:54:35 CenterServer.java 192 [ Actor-db_check_actor:1200846 ] - [ INFO ]  room player num : null
+2017-09-07 17:54:35 CenterServer.java 193 [ Actor-db_check_actor:1200846 ] - [ INFO ]  room status : null
+2017-09-07 17:54:35 CenterServer.java 191 [ Actor-db_check_actor:1200846 ] - [ INFO ]  game type : LZ_DDZ
+2017-09-07 17:54:35 CenterServer.java 192 [ Actor-db_check_actor:1200846 ] - [ INFO ]  room player num : null
+2017-09-07 17:54:35 CenterServer.java 193 [ Actor-db_check_actor:1200846 ] - [ INFO ]  room status : null
+2017-09-07 17:54:35 CenterServer.java 191 [ Actor-db_check_actor:1200846 ] - [ INFO ]  game type : CLASS_NIU
+2017-09-07 17:54:35 CenterServer.java 192 [ Actor-db_check_actor:1200846 ] - [ INFO ]  room player num : null
+2017-09-07 17:54:35 CenterServer.java 193 [ Actor-db_check_actor:1200846 ] - [ INFO ]  room status : null
+2017-09-07 17:54:35 CenterServer.java 191 [ Actor-db_check_actor:1200846 ] - [ INFO ]  game type : GRAD_NIU
+2017-09-07 17:54:35 CenterServer.java 192 [ Actor-db_check_actor:1200846 ] - [ INFO ]  room player num : null
+2017-09-07 17:54:35 CenterServer.java 193 [ Actor-db_check_actor:1200847 ] - [ INFO ]  room status : null
+2017-09-07 17:55:35 BaseApp.java 142 [ Actor-db_check_actor:1260841 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:55:35 BaseApp.java 143 [ Actor-db_check_actor:1260841 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:55:35 BaseApp.java 144 [ Actor-db_check_actor:1260842 ] - [ INFO ]  freeMemory  :  159 MB
+2017-09-07 17:55:35 BaseApp.java 145 [ Actor-db_check_actor:1260842 ] - [ INFO ]  usedMemory  :  84 MB
+2017-09-07 17:56:35 BaseApp.java 142 [ Actor-db_check_actor:1320847 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:56:35 BaseApp.java 143 [ Actor-db_check_actor:1320847 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:56:35 BaseApp.java 144 [ Actor-db_check_actor:1320847 ] - [ INFO ]  freeMemory  :  159 MB
+2017-09-07 17:56:35 BaseApp.java 145 [ Actor-db_check_actor:1320847 ] - [ INFO ]  usedMemory  :  84 MB
+2017-09-07 17:56:35 BaseApp.java 87 [ Actor-db_check_actor:1320848 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:56:35 BaseApp.java 82 [ Actor-db_check_actor:1320848 ] - [ INFO ]  Actor-db_check_actor=5
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:57:35 BaseApp.java 142 [ Actor-db_check_actor:1380841 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:57:35 BaseApp.java 143 [ Actor-db_check_actor:1380841 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:57:35 BaseApp.java 144 [ Actor-db_check_actor:1380841 ] - [ INFO ]  freeMemory  :  159 MB
+2017-09-07 17:57:35 BaseApp.java 145 [ Actor-db_check_actor:1380841 ] - [ INFO ]  usedMemory  :  84 MB
+2017-09-07 17:58:35 BaseApp.java 142 [ Actor-db_check_actor:1440842 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:58:35 BaseApp.java 143 [ Actor-db_check_actor:1440842 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:58:35 BaseApp.java 144 [ Actor-db_check_actor:1440842 ] - [ INFO ]  freeMemory  :  159 MB
+2017-09-07 17:58:35 BaseApp.java 145 [ Actor-db_check_actor:1440842 ] - [ INFO ]  usedMemory  :  84 MB
+2017-09-07 17:58:35 BaseApp.java 87 [ Actor-db_check_actor:1440843 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:58:35 BaseApp.java 82 [ Actor-db_check_actor:1440843 ] - [ INFO ]  Actor-db_check_actor=5
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:59:35 BaseApp.java 142 [ Actor-db_check_actor:1500843 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:59:35 BaseApp.java 143 [ Actor-db_check_actor:1500843 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:59:35 BaseApp.java 144 [ Actor-db_check_actor:1500843 ] - [ INFO ]  freeMemory  :  158 MB
+2017-09-07 17:59:35 BaseApp.java 145 [ Actor-db_check_actor:1500843 ] - [ INFO ]  usedMemory  :  85 MB
+2017-09-07 17:59:35 CenterServer.java 187 [ Actor-db_check_actor:1500845 ] - [ INFO ]  allPlayer num 1
+2017-09-07 17:59:35 CenterServer.java 188 [ Actor-db_check_actor:1500845 ] - [ INFO ]  online num 1
+2017-09-07 17:59:35 CenterServer.java 191 [ Actor-db_check_actor:1500845 ] - [ INFO ]  game type : COUPLE_MJ
+2017-09-07 17:59:35 CenterServer.java 192 [ Actor-db_check_actor:1500845 ] - [ INFO ]  room player num : null
+2017-09-07 17:59:35 CenterServer.java 193 [ Actor-db_check_actor:1500845 ] - [ INFO ]  room status : null
+2017-09-07 17:59:35 CenterServer.java 191 [ Actor-db_check_actor:1500846 ] - [ INFO ]  game type : XUENIU
+2017-09-07 17:59:35 CenterServer.java 192 [ Actor-db_check_actor:1500846 ] - [ INFO ]  room player num : null
+2017-09-07 17:59:35 CenterServer.java 193 [ Actor-db_check_actor:1500846 ] - [ INFO ]  room status : null
+2017-09-07 17:59:35 CenterServer.java 191 [ Actor-db_check_actor:1500846 ] - [ INFO ]  game type : XUEZHAN
+2017-09-07 17:59:35 CenterServer.java 192 [ Actor-db_check_actor:1500846 ] - [ INFO ]  room player num : null
+2017-09-07 17:59:35 CenterServer.java 193 [ Actor-db_check_actor:1500846 ] - [ INFO ]  room status : null
+2017-09-07 17:59:35 CenterServer.java 191 [ Actor-db_check_actor:1500846 ] - [ INFO ]  game type : NIUNIU
+2017-09-07 17:59:35 CenterServer.java 192 [ Actor-db_check_actor:1500846 ] - [ INFO ]  room player num : null
+2017-09-07 17:59:35 CenterServer.java 193 [ Actor-db_check_actor:1500846 ] - [ INFO ]  room status : null
+2017-09-07 17:59:35 CenterServer.java 191 [ Actor-db_check_actor:1500846 ] - [ INFO ]  game type : DDZ
+2017-09-07 17:59:35 CenterServer.java 192 [ Actor-db_check_actor:1500846 ] - [ INFO ]  room player num : null
+2017-09-07 17:59:35 CenterServer.java 193 [ Actor-db_check_actor:1500846 ] - [ INFO ]  room status : null
+2017-09-07 17:59:35 CenterServer.java 191 [ Actor-db_check_actor:1500846 ] - [ INFO ]  game type : ZJH
+2017-09-07 17:59:35 CenterServer.java 192 [ Actor-db_check_actor:1500847 ] - [ INFO ]  room player num : null
+2017-09-07 17:59:35 CenterServer.java 193 [ Actor-db_check_actor:1500847 ] - [ INFO ]  room status : null
+2017-09-07 17:59:35 CenterServer.java 191 [ Actor-db_check_actor:1500847 ] - [ INFO ]  game type : COUPLE_DDZ
+2017-09-07 17:59:35 CenterServer.java 192 [ Actor-db_check_actor:1500847 ] - [ INFO ]  room player num : null
+2017-09-07 17:59:35 CenterServer.java 193 [ Actor-db_check_actor:1500847 ] - [ INFO ]  room status : null
+2017-09-07 17:59:35 CenterServer.java 191 [ Actor-db_check_actor:1500847 ] - [ INFO ]  game type : LZ_DDZ
+2017-09-07 17:59:35 CenterServer.java 192 [ Actor-db_check_actor:1500847 ] - [ INFO ]  room player num : null
+2017-09-07 17:59:35 CenterServer.java 193 [ Actor-db_check_actor:1500847 ] - [ INFO ]  room status : null
+2017-09-07 17:59:35 CenterServer.java 191 [ Actor-db_check_actor:1500847 ] - [ INFO ]  game type : CLASS_NIU
+2017-09-07 17:59:35 CenterServer.java 192 [ Actor-db_check_actor:1500847 ] - [ INFO ]  room player num : null
+2017-09-07 17:59:35 CenterServer.java 193 [ Actor-db_check_actor:1500848 ] - [ INFO ]  room status : null
+2017-09-07 17:59:35 CenterServer.java 191 [ Actor-db_check_actor:1500848 ] - [ INFO ]  game type : GRAD_NIU
+2017-09-07 17:59:35 CenterServer.java 192 [ Actor-db_check_actor:1500848 ] - [ INFO ]  room player num : null
+2017-09-07 17:59:35 CenterServer.java 193 [ Actor-db_check_actor:1500848 ] - [ INFO ]  room status : null
+2017-09-07 18:00:35 BaseApp.java 142 [ Actor-db_check_actor:1560842 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 18:00:35 BaseApp.java 143 [ Actor-db_check_actor:1560842 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 18:00:35 BaseApp.java 144 [ Actor-db_check_actor:1560842 ] - [ INFO ]  freeMemory  :  158 MB
+2017-09-07 18:00:35 BaseApp.java 145 [ Actor-db_check_actor:1560842 ] - [ INFO ]  usedMemory  :  85 MB
+2017-09-07 18:00:35 BaseApp.java 87 [ Actor-db_check_actor:1560843 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 18:00:35 BaseApp.java 82 [ Actor-db_check_actor:1560843 ] - [ INFO ]  Actor-db_check_actor=5
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+

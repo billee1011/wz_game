@@ -2,7 +2,7 @@ package logic.majiong;
 
 import logic.AbstractDeskInfo;
 import logic.majiong.define.MJPosition;
-import protobuf.CoupleMajiang;
+import proto.CoupleMajiang;
 import util.MiscUtil;
 import util.Pair;
 

@@ -1,8 +1,6 @@
 package server.handler;
 
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.util.Base64;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,8 +20,8 @@ import com.google.protobuf.InvalidProtocolBufferException;
 
 import database.DataQueryResult;
 import packet.CocoPacket;
-import protobuf.Common;
-import protobuf.creator.CommonCreator;
+import proto.Common;
+import proto.creator.CommonCreator;
 import protocol.c2s.RequestCode;
 import server.LoginServer;
 import util.ASObject;

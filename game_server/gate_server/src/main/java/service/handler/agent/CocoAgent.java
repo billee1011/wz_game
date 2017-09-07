@@ -1,7 +1,7 @@
 package service.handler.agent;
 
 import io.netty.channel.ChannelHandlerContext;
-import protobuf.creator.PacketCreator;
+import proto.creator.PacketCreator;
 
 /**
  * Created by Administrator on 2017/2/7.

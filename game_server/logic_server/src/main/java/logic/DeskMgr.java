@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import logic.majiong.PlayerInfo;
 import packet.CocoPacket;
-import protobuf.creator.CommonCreator;
+import proto.creator.CommonCreator;
 import protocol.c2s.RequestCode;
 import service.LogicApp;
 

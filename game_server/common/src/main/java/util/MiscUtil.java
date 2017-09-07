@@ -3,7 +3,7 @@ package util;
 
 import actor.IActor;
 import actor.ICallback;
-import protobuf.Common;
+import proto.Common;
 
 import java.io.*;
 import java.nio.charset.Charset;

@@ -2,12 +2,8 @@ package logic.majiong;
 
 import actor.LogicActorManager;
 import common.LogHelper;
-import config.AssisInfoProvider;
 import config.CoupleRoomInfoProvider;
-import config.DynamicInfoProvider;
 import config.JsonUtil;
-import config.bean.AssisSeriation;
-import config.provider.PersonalConfRoomProvider;
 import data.MoneySubAction;
 import define.DealZimo;
 import logic.debug.ArrayPai;
@@ -17,22 +13,19 @@ import logic.majiong.define.MJType;
 import logic.majiong.xnStragety.XnStragetyManager;
 import logic.majiong.xueniu.XNOneCalRecord;
 import logic.record.TaxRecordUtil;
-import logic.record.detail.MjDetail;
-import logic.record.detail.OnePosDetail;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import protobuf.Common;
-import protobuf.CoupleMajiang;
-import protobuf.Xueniu;
-import protobuf.creator.CommonCreator;
-import protobuf.creator.CoupleCreator;
-import protobuf.creator.XueniuCreator;
+import proto.Common;
+import proto.CoupleMajiang;
+import proto.Xueniu;
+import proto.creator.CommonCreator;
+import proto.creator.CoupleCreator;
+import proto.creator.XueniuCreator;
 import protocol.c2s.RequestCode;
 import protocol.s2c.ResponseCode;
 import util.*;
 
 import java.util.*;
-import java.util.concurrent.ScheduledFuture;
 
 /**
  * Created by Administrator on 2016/12/27.

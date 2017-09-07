@@ -15,7 +15,7 @@ import database.DBManager;
 import database.DataQueryResult;
 import define.Gender;
 import mail.MailEntity;
-import protobuf.CoupleMajiang;
+import proto.CoupleMajiang;
 import util.ASObject;
 import util.MiscUtil;
 

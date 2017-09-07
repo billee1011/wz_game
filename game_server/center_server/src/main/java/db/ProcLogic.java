@@ -2,7 +2,6 @@ package db;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
@@ -13,23 +12,13 @@ import actor.CenterActorManager;
 import actor.ICallback;
 import chr.Player;
 import chr.PlayerManager;
-import chr.PlayerSaver;
-import common.LogHelper;
 import config.bean.ChannelConfig;
 import config.provider.ChannelInfoProvider;
-import data.BankAction;
 import database.DBManager;
 import database.DBUtil;
-import define.AppId;
-import define.constant.MessageConst;
 import mail.MailEntity;
-import network.ServerManager;
-import packet.CocoPacket;
-import protobuf.creator.CommonCreator;
-import protobuf.creator.MailCreator;
-import protocol.c2s.RequestCode;
+import proto.creator.MailCreator;
 import protocol.s2c.ResponseCode;
-import service.CenterServer;
 import util.MiscUtil;
 
 /**

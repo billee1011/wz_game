@@ -25,7 +25,6 @@ public class LoginServerHandler extends AbstractHandlers {
 
 	@Override
 	protected void registerAction() {
-		registerAction(RequestCode.LOGIN_RELOAD_CONF.getValue(), this::reloadConf);
 		registerAction(RequestCode.LOGIN_REMOVE_SERVER.getValue(), this::removeServer, Common.PBInt32.getDefaultInstance());
 	}
 	
@@ -36,10 +35,6 @@ public class LoginServerHandler extends AbstractHandlers {
 		}
 		Common.PBInt32 endTime = message.get();
 		LoginServer.getInst().beginStop(endTime.getValue());
-	}
-	
-	private void reloadConf(ChannelHandlerContext client, CocoPacket packet, MessageHolder<MessageLite> message) {
-		LoginServer.getInst().initLoginConf();
 	}
 
 

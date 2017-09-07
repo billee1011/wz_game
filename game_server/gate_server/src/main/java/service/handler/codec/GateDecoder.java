@@ -6,10 +6,12 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;
 import network.codec.MessageDecoder;
 import packet.CocoPacket;
+import packet.LittleEndianByteBufUtil;
 import service.handler.agent.CocoAgent;
 import sun.management.Agent;
 import util.NettyUtil;
 
+import java.nio.ByteOrder;
 import java.util.List;
 
 /**
@@ -38,23 +40,25 @@ public class GateDecoder extends ByteToMessageDecoder {
 				return;
 			}
 		} else {
-			state.length = in.readShort();
+			state.length = LittleEndianByteBufUtil.readShort(in);
 			if (in.readableBytes() < state.length) {
 				return;
 			}
 		}
 		ByteBuf obj = Unpooled.buffer();
 		obj.writeBytes(in, state.length);
-		int reqCode = obj.readShort();
+		int reqCode = LittleEndianByteBufUtil.readShort(obj);
 		int length = obj.readableBytes();
 		byte[] bytes = new byte[obj.readableBytes()];
 		obj.readBytes(bytes, 0, length);
 //		CocoAgent agent = NettyUtil.getAttribute(ctx, "agent");
 //		if (agent == null) {
-			out.add(new CocoPacket(reqCode + REQUEST_FLAG, bytes));
+		out.add(new CocoPacket(reqCode + REQUEST_FLAG, bytes));
 //		} else {
 //			out.add(new CocoPacket(reqCode + REQUEST_FLAG, bytes, agent.getPlayerId()));
 //		}
 		state.length = -1;
 	}
+
+
 }

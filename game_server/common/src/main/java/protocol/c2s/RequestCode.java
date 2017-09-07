@@ -10,9 +10,8 @@ import define.AppId;
 public enum RequestCode {
 	PING(1, AppId.GATE),
 	RESPONSE_TO_CLIIENT_CODE(-1, AppId.GATE),
-	ACCOUNT_BEGIN(256),
-	ACCOUNT_FAST_LOGIN(257),
-	ACCOUNT_REGISTER(258, AppId.CENTER),
+	ACCOUNT_BEGIN(0x0100),
+	ACCOUNT_LOGIN(0x0102, AppId.CENTER),
 	ACCOUNT_RETRIEVE_PASSWORD(259),
 	ACCOUNT_MODIFY_PASSWORD(260),
 	ACCOUNT_MODIFY_ICON(261, AppId.CENTER),
@@ -21,7 +20,6 @@ public enum RequestCode {
 	ACCOUNT_SAVE_MONEY(264, AppId.CENTER),
 	ACCOUNT_WITHDRAW_MONEY(265, AppId.CENTER),
 	ACCOUNT_MODIFY_GENDER(266, AppId.CENTER),
-	ACCOUNT_LOGIN(267, AppId.CENTER),
 	ACCOUNT_EXCHANGE(268, AppId.CENTER),                            //兑换
 	ACCOUNT_GAIN_VALID_CODE(269),                        //获取验证码
 	ACCOUNT_GET_WX_PRE_ID(270),                        //获取pre id
@@ -78,7 +76,7 @@ public enum RequestCode {
 	COUPLE_GUO(784),                                    //过
 	COUPLE_DO_TING(785),                                //听牌动作
 	COUPLE_RESET_GAME(786),                            //恢复游戏数据
-	
+
 
 	MAIL_BEGIN(1024),                                //邮件模块
 	MAIL_ALL(1025, AppId.CENTER),
@@ -117,10 +115,10 @@ public enum RequestCode {
 	DDZ_CANCEL_TUOGUAN(2054),       //斗地主取消托管
 
 	LOGIC_ROOM_GAME_START(2309),                               //房间开始游戏
-	
+
 	LOGIC_GIVE_UP(2311),                                        //玩家认输
 	LOGIC_CONTINUE_GAME(2312),                                  //玩家请求继续游戏
-	
+
 
 	//扎金花
 	ZJH_ADD_GOLD(2817),               //加注
@@ -131,15 +129,15 @@ public enum RequestCode {
 	ZJH_ALL_GOLD_IN(2823),                             //孤注一掷
 	ZJH__FULL_PRESSURE(2824),                             //压满
 
-	GRAB_NIU_GRAB_ZHUANG(3074),				// 抢庄
-	GRAB_NIU_ADD_BET(3075),					// 加注
-	GRAB_NIU_PLAYER_CAL(3076),				// 玩家点击是否有牛
-	
+	GRAB_NIU_GRAB_ZHUANG(3074),                // 抢庄
+	GRAB_NIU_ADD_BET(3075),                    // 加注
+	GRAB_NIU_PLAYER_CAL(3076),                // 玩家点击是否有牛
+
 	LOBBY_DEBUG_ARRAY_PAI(4353, AppId.CENTER),                   // 客戶端请求排牌
-	
+
 	LOBBY_DEBUG_CHECK_FAN_TYPE(4356, AppId.CENTER),                   // 客戶端请求檢測牌型
-	
-	
+
+
 	//-------服务器内部通信协议号范围10100-10800---------gate做了限制----------
 	CENTER_REGISTER_SERVER(10101, AppId.CENTER),
 	CENTER_DISPATCH_GATE(10102, AppId.CENTER),                   //发送信息给center 要求分配gate给登录
@@ -153,13 +151,13 @@ public enum RequestCode {
 	CENTER_SERVER_PING(10110, AppId.CENTER),                     //心跳
 	CENTER_GMAME_PLAYERS(10111, AppId.CENTER),                   /// 这一局有哪几个人玩
 	CENTER_CREATE_ZJH_DESK_SUCC(10112, AppId.CENTER),            //桌子创建成功
-	CENTER_CREATE_GRAD_NIU_DESK_SUCC(10113,AppId.CENTER),	     // 创建抢庄牛桌子成功
-	CENTER_PLAYER_DESK_IS_REMOVE(10114,AppId.CENTER),			 // logic通知center桌子已经解算了
-	CENTER_GATE_FACTOR(10115,AppId.CENTER),					     // gate同步最新负载数
+	CENTER_CREATE_GRAD_NIU_DESK_SUCC(10113, AppId.CENTER),         // 创建抢庄牛桌子成功
+	CENTER_PLAYER_DESK_IS_REMOVE(10114, AppId.CENTER),             // logic通知center桌子已经解算了
+	CENTER_GATE_FACTOR(10115, AppId.CENTER),                         // gate同步最新负载数
 	CENTER_DEBUG_ARRAY_PAI_RES(10116, AppId.CENTER),             // 设置排牌返回
 	CENTER_DEBUG_CHECK_FAN_TYPE_RES(10117, AppId.CENTER),        // 檢測牌型返回
-	
-	COUPLE_MONEY_CHANGE(10300),                          	     //钱币修改
+
+	COUPLE_MONEY_CHANGE(10300),                                 //钱币修改
 	LOGIC_CREATE_DESK(10301),
 	LOGIC_ENTER_NIUNIU_DESK(10302),                              //进入牛牛房间
 	LOGIC_PLAYER_LEAVE_DESK(10303),                              //玩家离开桌子
@@ -171,28 +169,28 @@ public enum RequestCode {
 	LOGIC_RELOAD_CONF_PERSONAL_ROOM(10309),                      //通知logic修改私房的配置
 	LOGIC_REMOVE_DESK(10310),                                    //强制刪除桌子
 	LOGIC_REMOVE_SERVER(10311),                                  //服务器要关闭
-	LOGIC_ENTER_GRAB_NIU_DESK(10312),					         // 进入抢庄牛房间
-	LOGIC_DEBUG_ARRAY_PAI(10313),					             // 通知logic修改排牌配置
-	LOGIC_DEBUG_CHECK_FAN_TYPE(10314),					         // 通知logic檢測牌型
-	
+	LOGIC_ENTER_GRAB_NIU_DESK(10312),                             // 进入抢庄牛房间
+	LOGIC_DEBUG_ARRAY_PAI(10313),                                 // 通知logic修改排牌配置
+	LOGIC_DEBUG_CHECK_FAN_TYPE(10314),                             // 通知logic檢測牌型
+
 	GATE_BROAD_CAST_MESSAGE(10500, AppId.GATE),                  //广播消
 	GATE_KICK_PLAYER(10501, AppId.GATE),                         //剔玩家下线
 	GATE_KICK_ALL_PLAYER(10502, AppId.GATE),                     //剔玩家下线
 	GATE_REMOVE_SERVER(10503, AppId.GATE),                       //服务器要关闭
-	
+
 	LOG_ACCOUNT(10600, AppId.LOG),                               //写日志
 	LOG_MONEY(10601, AppId.LOG),                                 //金币明细
 	LOG_ONLINE(10602, AppId.LOG),                                //金币明细
 	LOG_BANK(10603, AppId.LOG),                                  //银行记录
 	LOG_REMOVE_SERVER(10604, AppId.LOG),                         //服务器要关闭
-	
-	LOGIN_RELOAD_CONF(10700, AppId.LOGIN),             			 // 重载登陆服数据
+
+	LOGIN_RELOAD_CONF(10700, AppId.LOGIN),                         // 重载登陆服数据
 	LOGIN_REMOVE_SERVER(10701, AppId.LOGIN),                     //服务器要关闭
-	
+
 	;
 
 	private final AppId sendTo;
-	
+
 	RequestCode(int value, AppId sendTo) {
 		this.sendTo = sendTo;
 		this.value = value;

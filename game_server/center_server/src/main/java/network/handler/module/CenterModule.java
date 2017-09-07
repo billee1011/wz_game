@@ -46,24 +46,7 @@ import service.CenterServer;
 import util.ASObject;
 import util.MiscUtil;
 import util.NettyUtil;
-import util.Randomizer;
 
-/**
- * 桌子创建
- * 0x0705                           匹配桌子创建成功                           返回广播此类玩家桌子成功并进入				logic 服务器负载+1
- * 0x0705f(0x07061)     创建zjh桌子成功（所有私房）        返回广播此类玩家桌子成功并进入				logic 服务器负载+1
- * 0x0708a              麻将私房桌子创建成功                    之前已经有广播玩家信息   然后返回创建桌子成功               logic 服务器负载+1
- * <p>
- * 桌子解散
- * 0x070b               所有桌子删除都走这个                    房间人数减少      玩家退出  广播桌子结束   删除桌子         logic 服务器负载-1
- * 0x070c               私房解算                                        广播结算界面      删除桌子   --------
- * logic服务器断开                           房间人数减少      桌上玩家踢出  退出  删除桌子
- * <p>
- * 玩家退出桌子
- * 0x0706               所有玩家从桌子上退出成功               房间人数减少 离开桌子组 设置自己桌子null 如果时掉线则退出
- * <p>
- * 玩家断开或者踢出          gate负载-1  玩家判断桌子是否有  如果有则判断是否创建然后退出 和发送logic退出  不存在离开匹配队列 和退出
- */
 public class CenterModule implements IModuleMessageHandler {
 
 	private static final Logger logger = LoggerFactory.getLogger(CenterModule.class);
@@ -452,24 +435,10 @@ public class CenterModule implements IModuleMessageHandler {
 		String gateIp = session.getRemoteAddress();
 		int gatePort = session.getLocalPort();
 		Common.PBStringList request = message.get();
-		if (request.getListCount() < 7) {
-			logger.error(" the params count is  less than need");
-			return;
-		}
 		String[] strs = request.getList(0).split(":");
 		int userId = Integer.parseInt(strs[0]);
 		LoginInfo info = new LoginInfo();
 		info.userId = userId;
-		info.province = request.getList(1);
-		info.city = request.getList(2);
-		info.channel = request.getList(3);
-		info.device = request.getList(4);
-		info.packageId = Integer.parseInt(request.getList(5));
-		info.ip = request.getList(6);
-		info.machine_id = request.getList(8);
-		info.game_version = request.getList(9);
-		info.app_version = request.getList(10);
-		info.platform_id = request.getList(11);
 		tokenMap.put(strs[1], info);
 		logger.info(" the gate ip is {} and the port is {}", gateIp, gatePort);
 		CocoPacket packet = new CocoPacket(RequestCode.CENTER_DISPATCH_GATE, CommonCreator.createPBString(gateIp + ":" + gatePort));
@@ -486,10 +455,6 @@ public class CenterModule implements IModuleMessageHandler {
 	}
 
 	private void actionValidLogin(ChannelHandlerContext ioSession, CocoPacket srcPacket, AbstractHandlers.MessageHolder<MessageLite> message) {
-		if (CenterServer.getInst().isStop()) {
-			logger.info(" the server stopping and can't login");
-			return;
-		}
 		logger.info("player login the game ");
 		Common.PBString request = message.get();
 		if (request == null) {

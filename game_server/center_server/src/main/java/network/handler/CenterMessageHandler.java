@@ -60,24 +60,14 @@ public class CenterMessageHandler extends AbstractHandlers {
 	public void handPacket(ChannelHandlerContext client, CocoPacket packet) {
 		RequestCode reqCode = packet.getReqCode();
 		if (reqCode.getSendTo() != getAppId()) {
-//			LogUtil.msgLogger.info("center 牛牛协议player {} , request:{}, seqId:{}", packet.getPlayerId(), reqCode, packet.getSeqId());
-
 			if (reqCode.getSendTo() == AppId.LOGIC) {
 				Player player = PlayerManager.getInstance().getPlayerById(packet.getPlayerId());
 				if (player == null) {
-//					LogUtil.msgLogger.info("跳出去了{}",packet.getPlayerId());
 					return;
 				}
-//				logger.info("玩家{}当前roomeId{}",player.getPlayerId(),player.getRoomId());
-//				if (player.getRoomId() == RoomConst.NIUNIU) {
-////					LogUtil.msgLogger.info("转发牛牛协议player {} , request:{}, seqId:{}", packet.getPlayerId(), reqCode, packet.getSeqId());
-//					CenterServer.getInst().getNiuniuSession().sendRequest(packet);
-//				} else {
-//					LogUtil.msgLogger.info("转发其他协议player {} , request:{}, seqId:{}", packet.getPlayerId(), reqCode, packet.getSeqId());
-					if (player.getDeskInfo() != null) {
-						player.getDeskInfo().writeToLogic(packet);
-					}
-//				}
+				if (player.getDeskInfo() != null) {
+					player.getDeskInfo().writeToLogic(packet);
+				}
 			} else if (reqCode.getSendTo() == AppId.GATE) {
 				Player player = PlayerManager.getInstance().getPlayerById(packet.getPlayerId());
 				if (player != null) {
@@ -122,20 +112,20 @@ public class CenterMessageHandler extends AbstractHandlers {
 
 	@Override
 	public void handleSessionInActive(ServerSession session) {
-		logger.info("{}服务器断开连接,serverId={},ip={},port={}",session.getAppId(),session.getServerId(),session.getRemoteAddress(),session.getLocalPort());
+		logger.info("{}服务器断开连接,serverId={},ip={},port={}", session.getAppId(), session.getServerId(), session.getRemoteAddress(), session.getLocalPort());
 		if (session.getAppId() == AppId.LOGIC) {
 			Collection<Player> players = PlayerManager.getInstance().getOnlinePlayers();
-			
+
 			Set<DeskInfo> set = new HashSet<>();
-			
-			Iterator<DeskInfo>  it = DeskManager.getInst().getAllDesk().iterator();
-			while(it.hasNext()){
+
+			Iterator<DeskInfo> it = DeskManager.getInst().getAllDesk().iterator();
+			while (it.hasNext()) {
 				DeskInfo desk = it.next();
-				if(desk.getSessionId() == session.getServerId()){
+				if (desk.getSessionId() == session.getServerId()) {
 					set.add(desk);
 				}
 			}
-			
+
 			players.forEach(e -> {
 				if (e != null && e.getDeskInfo() != null) {
 					if (e.getDeskInfo().getSessionId() == session.getServerId()) {
@@ -153,7 +143,7 @@ public class CenterMessageHandler extends AbstractHandlers {
 					}
 				}
 			});
-			
+
 			if (set.size() > 0) {
 				CenterActorManager.getDeskActor().put(() -> {
 					set.forEach(e -> {
@@ -163,10 +153,10 @@ public class CenterMessageHandler extends AbstractHandlers {
 					return null;
 				});
 			}
-		}else if (session.getAppId() == AppId.GATE) {
+		} else if (session.getAppId() == AppId.GATE) {
 			Collection<Player> players = PlayerManager.getInstance().getOnlinePlayers();
 			players.forEach(e -> {
-				if(e.getSession() == session.getIoSession()){
+				if (e.getSession() == session.getIoSession()) {
 					CenterModule.getIns().playerLogout(session.getIoSession(), e);
 				}
 			});

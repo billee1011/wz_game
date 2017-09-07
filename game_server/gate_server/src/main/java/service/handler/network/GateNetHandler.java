@@ -1,16 +1,14 @@
 package service.handler.network;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.google.protobuf.InvalidProtocolBufferException;
-
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.timeout.IdleStateEvent;
 import network.AbstractHandlers;
 import network.handler.ServerHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import packet.CocoPacket;
 import protobuf.Account;
 import protobuf.creator.CommonCreator;
@@ -26,7 +24,7 @@ import util.NettyUtil;
  */
 public class GateNetHandler extends ServerHandler implements ChannelFutureListener {
 	private static Logger logger = LoggerFactory.getLogger(GateNetHandler.class);
-	
+
 	public GateNetHandler(AbstractHandlers handlers) {
 		super(handlers);
 	}
@@ -35,7 +33,7 @@ public class GateNetHandler extends ServerHandler implements ChannelFutureListen
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
 		super.channelActive(ctx);
 	}
-	
+
 	@Override
 	public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
 		if (evt instanceof IdleStateEvent) {
@@ -58,10 +56,10 @@ public class GateNetHandler extends ServerHandler implements ChannelFutureListen
 		}
 		ctx.channel().close();
 	}
-	
+
 	@Override
 	public void operationComplete(ChannelFuture future) throws Exception {
-		if(!future.isSuccess()){
+		if (!future.isSuccess()) {
 			CocoAgent agent = NettyUtil.getAttribute(future, "agent");
 			if (agent != null) {
 				GateApp.getInst().getClient().sendRequest(new CocoPacket(RequestCode.CENTER_PLAYER_LOGOUT, CommonCreator.createPBString(agent.getSessionId()), agent.getPlayerId()));
@@ -81,13 +79,9 @@ public class GateNetHandler extends ServerHandler implements ChannelFutureListen
 		if (RequestCode.RESPONSE_TO_CLIIENT_CODE != packet.getReqCode()) {
 			logger.debug(" the packet req id is {}", packet.getReqCode());
 		}
-		
+
 		if (isRequestMessage(packet)) {
 			RequestCode req = packet.getReqCode();
-			if(req.getValue() >= 10100){
-				logger.warn(" 客户端发送内部协议号或返回协议号 {}",req);
-				return;
-			}
 			if (req == RequestCode.ACCOUNT_LOGIN) {
 				GateApp.getInst().getClient().sendRequest(packet, e -> {
 					if (e instanceof CocoPacket) {
@@ -95,13 +89,13 @@ public class GateNetHandler extends ServerHandler implements ChannelFutureListen
 						try {
 							Account.PBLoginSuccRes pb = Account.PBLoginSuccRes.parseFrom(res.getBytes());
 							CocoAgent preAgent = AgentManager.getInst().getCocoAgent(pb.getPlayerId());
-							if(preAgent != null ){
-								if(preAgent.getCtx() != ctx){
+							if (preAgent != null) {
+								if (preAgent.getCtx() != ctx) {
 									//之前的用户被挤下线
 									AgentManager.getInst().kickAgent(pb.getPlayerId());
 								}
 							}
-							
+
 							CocoAgent agent = new CocoAgent(pb.getPlayerId(), ctx, pb.getSessionId());
 							NettyUtil.setAttribute(ctx, "agent", agent);
 							AgentManager.getInst().registerAgent(agent);
@@ -116,7 +110,7 @@ public class GateNetHandler extends ServerHandler implements ChannelFutureListen
 			} else {
 				//当前session属于哪个角色,只有登陆验证之后的游戏包才会发送到center
 				CocoAgent curAgent = NettyUtil.getAttribute(ctx, "agent");
-				if(curAgent != null){
+				if (curAgent != null) {
 					packet.setPlayerId(curAgent.getPlayerId());
 					handlers.handPacket(ctx, (CocoPacket) msg);
 				}

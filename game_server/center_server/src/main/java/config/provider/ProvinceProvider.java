@@ -2,8 +2,7 @@ package config.provider;
 
 import config.bean.Province;
 import database.DataQueryResult;
-import service.CenterServer;
-import util.ASObject;
+import util.MapObject;
 
 import java.util.HashMap;
 import java.util.List;
@@ -46,8 +45,8 @@ public class ProvinceProvider extends BaseProvider  {
 
     private void getInfo() {
     	Map<String, Province> provinceMap = new HashMap<>();
-        List<ASObject> data_list = DataQueryResult.load("select * from conf_province");
-        for (ASObject data_info : data_list) {
+        List<MapObject> data_list = DataQueryResult.load("select * from conf_province");
+        for (MapObject data_info : data_list) {
         	Province province = new Province();
         	province.setId(data_info.getInt("id"));
         	province.setProvinceName(data_info.getString("province"));

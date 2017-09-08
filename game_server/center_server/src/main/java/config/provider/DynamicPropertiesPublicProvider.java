@@ -4,7 +4,7 @@ import config.JsonUtil;
 import config.bean.DynamicPropertiesPublicData;
 import database.DataQueryResult;
 import define.constant.DynamicPublicConst;
-import util.ASObject;
+import util.MapObject;
 
 import java.util.HashMap;
 import java.util.List;
@@ -43,8 +43,8 @@ public class DynamicPropertiesPublicProvider extends BaseProvider {
 
     private void getInfo() {
     	Map<Integer, DynamicPropertiesPublicData> dynamic_properties_pulibc = new HashMap<>();
-        List<ASObject> data_list = DataQueryResult.load("SELECT * FROM conf_dynamic_properties_public");
-        for (ASObject data_info : data_list) {
+        List<MapObject> data_list = DataQueryResult.load("SELECT * FROM conf_dynamic_properties_public");
+        for (MapObject data_info : data_list) {
             DynamicPropertiesPublicData dppd = new DynamicPropertiesPublicData();
             int id = data_info.getInt("id");
             dppd.setId(id);

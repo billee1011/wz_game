@@ -2,11 +2,9 @@ package config.provider;
 
 import config.JsonUtil;
 import config.bean.Rank;
-import database.DBUtil;
 import database.DataQueryResult;
-import util.ASObject;
+import util.MapObject;
 
-import java.sql.ResultSet;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -40,8 +38,8 @@ public class RankInfoProvider extends BaseProvider {
 
 	private void getRankRewardInfo() {
 		Map<Integer, Rank> rankMap = new HashMap<>();
-		List<ASObject> rankList = DataQueryResult.load("select * from ranking");
-		for (ASObject rankInfo : rankList) {
+		List<MapObject> rankList = DataQueryResult.load("select * from ranking");
+		for (MapObject rankInfo : rankList) {
 			int id = rankInfo.getInt("id");
 			Rank rank = new Rank();
 			rank.setId(id);

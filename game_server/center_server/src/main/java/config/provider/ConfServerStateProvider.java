@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import database.DataQueryResult;
-import util.ASObject;
+import util.MapObject;
 import util.Pair;
 
 public class ConfServerStateProvider extends BaseProvider {
@@ -35,8 +35,8 @@ public class ConfServerStateProvider extends BaseProvider {
 
     private void getInfo() {
     	List<Pair<Integer, Integer>> serverState = new ArrayList<Pair<Integer,Integer>>();
-    	List<ASObject> data_list = DataQueryResult.load("SELECT * FROM conf_server_state");
-        for (ASObject data_info : data_list) {
+    	List<MapObject> data_list = DataQueryResult.load("SELECT * FROM conf_server_state");
+        for (MapObject data_info : data_list) {
         	serverState.add(new Pair<Integer, Integer>(data_info.getInt("num"), data_info.getInt("state")));
         }
         

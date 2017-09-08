@@ -3,7 +3,7 @@ package config.provider;
 import config.JsonUtil;
 import config.bean.AgentInfoData;
 import database.DataQueryResult;
-import util.ASObject;
+import util.MapObject;
 
 import java.util.HashMap;
 import java.util.List;
@@ -69,10 +69,10 @@ public class AgentInfoProvider extends BaseProvider  {
     }
 
     private void loadDBData(String show_status, Map<String, Map<Integer, AgentInfoData>> agent_info_map) {
-        List<ASObject> data_list = DataQueryResult.load("select * from agent_info right join " +
+        List<MapObject> data_list = DataQueryResult.load("select * from agent_info right join " +
                 "(select agent_ids as agent_id from agent_show_status where " + show_status + " = 1 LIMIT " + rand_num + ") as tmp_ass on agent_info.agent_id = tmp_ass.agent_id " +
                 "where `status` = 1 ");
-        for (ASObject data_info : data_list) {
+        for (MapObject data_info : data_list) {
             AgentInfoData aid = new AgentInfoData();
             int agent_id = data_info.getInt("agent_id");
             aid.setAgent_id(agent_id);
@@ -97,8 +97,8 @@ public class AgentInfoProvider extends BaseProvider  {
     private Map<String, Map<Integer, AgentInfoData>> getInfoAll() {
     	agent_info_for_wx = new HashMap<>();
     	Map<String, Map<Integer, AgentInfoData>> map_all = new HashMap<>();
-        List<ASObject> data_list = DataQueryResult.load("select * from agent_info");
-        for (ASObject data_info : data_list) {
+        List<MapObject> data_list = DataQueryResult.load("select * from agent_info");
+        for (MapObject data_info : data_list) {
             AgentInfoData aid = new AgentInfoData();
             int agent_id = data_info.getInt("agent_id");
             aid.setAgent_id(agent_id);

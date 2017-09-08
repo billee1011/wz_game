@@ -3,7 +3,7 @@ package config.bean;
 import java.util.List;
 
 import config.IConfParseBean;
-import util.ASObject;
+import util.MapObject;
 
 /**
  * Created by Administrator on 2016/12/2.
@@ -31,7 +31,7 @@ public class CoupleRoom implements IConfParseBean {
 
 	}
 
-	public CoupleRoom(ASObject o) {
+	public CoupleRoom(MapObject o) {
 		this.id = o.getInt("id");
 		this.base = (float) (o.getInt("lowScore")) / 100;
 		this.minReq = o.getInt("startValue");

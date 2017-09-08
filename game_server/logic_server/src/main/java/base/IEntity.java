@@ -16,9 +16,8 @@ public class IEntity {
 	}
 
 
-	public IEntity(EntityType entityType, long entityId) {
+	public IEntity(EntityType entityType) {
 		this.entityType = entityType;
-		this.entityId = entityId;
 	}
 
 	public EntityType getEntityType() {

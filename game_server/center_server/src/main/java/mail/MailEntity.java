@@ -1,7 +1,7 @@
 package mail;
 
 import database.DBUtil;
-import util.ASObject;
+import util.MapObject;
 import util.MiscUtil;
 
 import java.io.Serializable;
@@ -56,7 +56,7 @@ public class MailEntity implements Serializable {
 
 	}
 
-	public static MailEntity createMail(ASObject data) {
+	public static MailEntity createMail(MapObject data) {
 		MailEntity entity = new MailEntity();
 		entity.playerId = data.getInt("player_id");
 		entity.id = data.getInt("id");

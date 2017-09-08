@@ -1,6 +1,6 @@
 package config.bean;
 
-import util.ASObject;
+import util.MapObject;
 
 /**
  * Created by Administrator on 2017/3/5.
@@ -43,7 +43,7 @@ public class ChannelConfig {
 	private String anno_url;
 	private int anno_id;
 
-	public ChannelConfig(ASObject o) {
+	public ChannelConfig(MapObject o) {
 		this.id = o.getInt("id");
 		this.platform_id = o.getString("platform_id");
 		this.recharge = o.getBoolean("recharge");

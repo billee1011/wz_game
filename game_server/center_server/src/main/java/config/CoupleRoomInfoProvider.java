@@ -11,8 +11,7 @@ import config.bean.RoomConfig;
 import config.provider.BaseProvider;
 import database.DBUtil;
 import database.DataQueryResult;
-import define.GameType;
-import util.ASObject;
+import util.MapObject;
 
 public class CoupleRoomInfoProvider extends BaseProvider {
 	private static CoupleRoomInfoProvider ourInstance = new CoupleRoomInfoProvider();
@@ -39,14 +38,14 @@ public class CoupleRoomInfoProvider extends BaseProvider {
 	}
 
 	public void loadConfRoom() {
-		List<ASObject> roomList = DataQueryResult.load("conf_room", null);
+		List<MapObject> roomList = DataQueryResult.load("conf_room", null);
 		Map<Integer, CoupleRoom> coupleRoomCfgMap = new HashMap<>();
 		roomList.forEach(e -> coupleRoomCfgMap.put(e.getInt("id"), new CoupleRoom(e)));
 		this.coupleRoomCfgMap = coupleRoomCfgMap;
 	}
 
 	public void loadConfRoomEx() {
-		List<ASObject> roomList = DataQueryResult.load("conf_room_ex", null);
+		List<MapObject> roomList = DataQueryResult.load("conf_room_ex", null);
 		Map<Integer, RoomConfig> conf_room_ex = new HashMap<>();
 		roomList.forEach(e -> conf_room_ex.put(e.getInt("id"), new RoomConfig(e)));
 		this.conf_room_ex = conf_room_ex;
@@ -54,7 +53,7 @@ public class CoupleRoomInfoProvider extends BaseProvider {
 	
 	public void loadConfGrabNiu() {
 		Map<Integer, GrabNiuConfig> conf_grab_niu = new HashMap<>();
-		List<ASObject> grab_niu_List = DataQueryResult.load("conf_grab_niu", null);
+		List<MapObject> grab_niu_List = DataQueryResult.load("conf_grab_niu", null);
 		grab_niu_List.forEach(e -> conf_grab_niu.put(e.getInt("room_id"), new GrabNiuConfig(e)));
 		this.confGrabNiu = JsonUtil.getGson().toJson(conf_grab_niu, Map.class);
 	}
@@ -80,16 +79,6 @@ public class CoupleRoomInfoProvider extends BaseProvider {
 		}
 	}
 
-
-	public Map<Integer, CoupleRoom> getCoupleRoomCfgMap(GameType game) {
-		Map<Integer, CoupleRoom> result = new HashMap<>();
-		for (CoupleRoom room : coupleRoomCfgMap.values()) {
-			if (room.getMode() == game.getValue()) {
-				result.put(room.getId(), room);
-			}
-		}
-		return result;
-	}
 
 	public int getRoomStatus(int id) {
 		CoupleRoom room = coupleRoomCfgMap.get(id);

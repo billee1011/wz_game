@@ -1,6 +1,6 @@
 package config.bean;
 
-import util.ASObject;
+import util.MapObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,7 @@ public class RoomConfig {
 	private int full_round;
 	private List<Integer> raise = new ArrayList<>();
 
-	public RoomConfig(ASObject obj) {
+	public RoomConfig(MapObject obj) {
 		this.room_id = obj.getInt("room_id");
 		this.max_round = obj.getInt("max_round");
 		this.compare_round = obj.getInt("compare_round");

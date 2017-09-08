@@ -1,9 +1,6 @@
 package logic;
 
 
-import cg.PlayerCGManager;
-import rank.RankManager;
-
 import java.util.Calendar;
 
 /**
@@ -32,10 +29,7 @@ public class DailyFlush {
 
 	private void flush10MinuteEvent(int hour, int minute) {
 		if (hour == 0 && minute == 0) {
-			RankManager.getInst().freshRankList(true);
-			PlayerCGManager.getInst().clearPlayerCg();
 		} else {
-			RankManager.getInst().freshRankList(false);
 		}
 	}
 

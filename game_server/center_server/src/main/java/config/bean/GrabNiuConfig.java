@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import net.sf.json.JSONArray;
-import util.ASObject;
+import util.MapObject;
 
 public class GrabNiuConfig {
     private List<Integer> grabZhuang = new ArrayList<>();
     private List<Integer> addBet = new ArrayList<>();
 
-    public GrabNiuConfig(ASObject obj) {
+    public GrabNiuConfig(MapObject obj) {
         JSONArray grabZhuangJson = JSONArray.fromObject(obj.getString("grab_zhuang"));
         JSONArray addBetJson = JSONArray.fromObject(obj.getString("add_bet"));
 

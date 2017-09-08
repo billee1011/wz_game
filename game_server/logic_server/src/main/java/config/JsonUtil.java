@@ -49,8 +49,8 @@ public class JsonUtil {
 		}
 	}
 
-    public static String getJsonString(Object object) {
-        Gson gson = new Gson();
-        return gson.toJson(object).toString();
-    }
+	public static String getJsonString(Object object) {
+		Gson gson = new Gson();
+		return gson.toJson(object).toString();
+	}
 }

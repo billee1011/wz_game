@@ -3,7 +3,7 @@ package config.provider;
 import config.JsonUtil;
 import config.bean.PaoMaDengData;
 import database.DataQueryResult;
-import util.ASObject;
+import util.MapObject;
 import util.MiscUtil;
 
 import java.util.*;
@@ -42,8 +42,8 @@ public class PaoMaDengProvider extends BaseProvider {
     private void getInfo() {
     	Map<Integer, PaoMaDengData>  pamadeng_map = new LinkedHashMap<>();
     	Map<Integer, PaoMaDengData> pamadeng_all_map = new LinkedHashMap<>();
-        List<ASObject> data_list = DataQueryResult.load("select * from conf_marquee ORDER BY `timeTo` DESC");
-        for (ASObject data_info : data_list) {
+        List<MapObject> data_list = DataQueryResult.load("select * from conf_marquee ORDER BY `timeTo` DESC");
+        for (MapObject data_info : data_list) {
             PaoMaDengData pmdd = new PaoMaDengData();
             pmdd.setId(data_info.getInt("id"));
             pmdd.setTimeFrom(data_info.getString("timeFrom"));
@@ -62,11 +62,11 @@ public class PaoMaDengProvider extends BaseProvider {
         this.pamadeng_all_map = pamadeng_all_map;
     }
 
-    public List<ASObject> getDataAll(int num) {
+    public List<MapObject> getDataAll(int num) {
         int tmp_num = 0;
-        List<ASObject> list_object = new ArrayList<>();
+        List<MapObject> list_object = new ArrayList<>();
         for (Object obj : pamadeng_all_map.keySet()) {
-            ASObject object = new ASObject();
+            MapObject object = new MapObject();
             object.put("timeFrom", MiscUtil.getSecondsOfTimeStamp_ex(pamadeng_map.get(obj).getTimeFrom(), "yyyy-MM-dd hh:mm"));
             object.put("timeTo", MiscUtil.getSecondsOfTimeStamp_ex(pamadeng_map.get(obj).getTimeTo(), "yyyy-MM-dd hh:mm"));
             object.put("content", pamadeng_map.get(obj).getContent());
@@ -81,16 +81,16 @@ public class PaoMaDengProvider extends BaseProvider {
         return list_object;
     }
 
-    public List<ASObject> getData(int flag, int player_id, int num) {
+    public List<MapObject> getData(int flag, int player_id, int num) {
         int tmp_num = 0;
-        List<ASObject> list_object = new ArrayList<>();
+        List<MapObject> list_object = new ArrayList<>();
         for (Object obj : pamadeng_map.keySet()) {
             /// 取出自己 和 群发
             if(1 == flag && (player_id != pamadeng_map.get(obj).getPlayer_id() && 0 != pamadeng_map.get(obj).getPlayer_id())) {
                 continue;
             }
 
-            ASObject object = new ASObject();
+            MapObject object = new MapObject();
             object.put("timeFrom", MiscUtil.getSecondsOfTimeStamp_ex(pamadeng_map.get(obj).getTimeFrom(), "yyyy-MM-dd hh:mm"));
             object.put("timeTo", MiscUtil.getSecondsOfTimeStamp_ex(pamadeng_map.get(obj).getTimeTo(), "yyyy-MM-dd hh:mm"));
             object.put("content", pamadeng_map.get(obj).getContent());

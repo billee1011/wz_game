@@ -7,7 +7,7 @@ import java.util.Map;
 import config.JsonUtil;
 import config.bean.ConfNiu;
 import database.DataQueryResult;
-import util.ASObject;
+import util.MapObject;
 
 public class ConfNiuProvider extends BaseProvider{
 	
@@ -35,8 +35,8 @@ public class ConfNiuProvider extends BaseProvider{
 	
 	public void loadNiuResult() {
 		Map<Integer, ConfNiu> confNiuMap  = new HashMap<>();
-		List<ASObject> listNiu = DataQueryResult.load("conf_niu", null);
-		for(ASObject obj : listNiu){
+		List<MapObject> listNiu = DataQueryResult.load("conf_niu", null);
+		for(MapObject obj : listNiu){
 			int roomId = obj.getInt("roomId");
 			if(roomId == 0){
 				continue;//客户端不需要

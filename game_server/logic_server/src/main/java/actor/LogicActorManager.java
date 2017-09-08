@@ -14,14 +14,13 @@ public class LogicActorManager implements IActorManager {
 
 	private ActTimer logicTimer = null;
 
+	private ActTimer dbTimer = null;
 
-	private ActorDispatcher logicActors = null;
+	private IActor dbCheckActor = null;
 
-	private ActorDispatcher httpActors = null;
+	private ActorDispatcher loadActors = null;
 
-	private ActorDispatcher deskActors = null;
-
-	private ActorDispatcher recordActors = null;
+	private ActorDispatcher dbActors = null;
 
 	private LogicActorManager() {
 	}
@@ -29,20 +28,18 @@ public class LogicActorManager implements IActorManager {
 	public boolean start() {
 		logicTimer = new ActTimer("logic_timer");
 		logicTimer.start();
-		logicActors = new ActorDispatcher(2, "logic_actor_pool");
-		if (!logicActors.start()) {
+		dbTimer = new ActTimer("db_check");
+		dbTimer.start();
+		dbCheckActor = new Actor("db_check");
+		if (!dbCheckActor.start()) {
 			return false;
 		}
-		httpActors = new ActorDispatcher(2, "http_pool");
-		if (!httpActors.start()) {
+		loadActors = new ActorDispatcher(2, "load_db");
+		if (!loadActors.start()) {
 			return false;
 		}
-		deskActors = new ActorDispatcher(8, "desk_logic");
-		if (!deskActors.start()) {
-			return false;
-		}
-		recordActors = new ActorDispatcher(2, "record");
-		if (!recordActors.start()) {
+		dbActors = new ActorDispatcher(4, "db_actor");
+		if (!dbActors.start()) {
 			return false;
 		}
 		return true;
@@ -51,11 +48,22 @@ public class LogicActorManager implements IActorManager {
 	@Override
 	public String getStatus() {
 		StringBuilder builder = new StringBuilder(256);
-		builder.append(recordActors.getActorStatus() + "\n");
-		builder.append(logicActors.getActorStatus() + "\n");
-		builder.append(httpActors.getActorStatus() + "\n");
-		builder.append(deskActors.getActorStatus() + "\n");
+		builder.append(dbActors.getActorStatus() + "\n");
+		builder.append(loadActors.getActorStatus() + "\n");
 		return builder.toString();
+	}
+
+	public static IActor getDBCheckActor() {
+		return getInstance().dbCheckActor;
+	}
+
+
+	public static IActor getDBLoadActor(long id) {
+		return getInstance().loadActors.getActor((int) id);
+	}
+
+	public static IActor getDBActor(long id) {
+		return getInstance().dbActors.getActor((int) id);
 	}
 
 	public static ActTimer getTimer() {
@@ -63,28 +71,12 @@ public class LogicActorManager implements IActorManager {
 	}
 
 	public static IActor getLogicActor() {
-		return getInstance().logicActors.getActor(1);
+		return getInstance().loadActors.getActor(1);
 	}
 
-	public static IActor getLogicActor_ex() {
-		return getInstance().logicActors.getActor(1);
+
+	public static ActTimer getDBTimer() {
+		return getInstance().dbTimer;
 	}
-
-	public static IActor getDeskActor(int deskId) {
-		return getInstance().deskActors.getActor(deskId);
-	}
-
-//	public static ScheduledFuture<?> registerOneTimeTask(long delay, Runnable run) {
-//		return registerOneTimeTask(delay, run, getDeskActor(0));
-//	}
-//
-//	public static ScheduledFuture<?> registerOneTimeTask(long delay, Runnable run, IActor target) {
-//		return getInstance().logicTimer.register(1000, delay, 1, run, getDeskActor(0), "");
-//	}
-
-	public static ScheduledFuture<?> registerOneTimeTask(long delay, Runnable run, int deskId) {
-		return getInstance().logicTimer.register(1000, delay, 1, run, getDeskActor(deskId), "");
-	}
-
 
 }

@@ -20,7 +20,7 @@ public class CocoPacket implements IPacket {
 	public CocoPacket() {
 	}
 
-	public CocoPacket(RequestCode code, MessageLite message, int playerId) {
+	public CocoPacket(RequestCode code, MessageLite message, long playerId) {
 		this(code.getValue(), message == null ? null : message.toByteArray(), playerId);
 	}
 
@@ -28,7 +28,7 @@ public class CocoPacket implements IPacket {
 		this(code.getValue(), message);
 	}
 
-	public CocoPacket(int reqId, byte[] bytes, int playerId) {
+	public CocoPacket(int reqId, byte[] bytes, long playerId) {
 		this.bytes = bytes;
 		header = new MessageHeader(SEQ_GENE.getAndIncrement(), reqId, System.currentTimeMillis(), getPacketLength(), playerId);
 	}
@@ -82,11 +82,11 @@ public class CocoPacket implements IPacket {
 		return header.getSeqId();
 	}
 
-	public int getPlayerId() {
+	public long getPlayerId() {
 		return header.getPlayerId();
 	}
 
-	public void setPlayerId(int playerId) {
+	public void setPlayerId(long playerId) {
 		header.setPlayerId(playerId);
 	}
 

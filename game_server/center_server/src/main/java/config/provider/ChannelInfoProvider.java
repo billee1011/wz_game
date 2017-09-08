@@ -2,8 +2,7 @@ package config.provider;
 
 import config.bean.ChannelConfig;
 import database.DataQueryResult;
-import service.CenterServer;
-import util.ASObject;
+import util.MapObject;
 
 import java.util.HashMap;
 import java.util.List;
@@ -43,7 +42,7 @@ public class ChannelInfoProvider extends BaseProvider {
 	@Override
 	public void doLoad() {
 		Map<Integer, Map<Integer, ChannelConfig>> channelConfigMap = new HashMap<>();
-		List<ASObject> roomList = DataQueryResult.load("conf_channel_switch", null);
+		List<MapObject> roomList = DataQueryResult.load("conf_channel_switch", null);
 		roomList.forEach(e -> {
 			Map<Integer, ChannelConfig> packageMap = channelConfigMap.get(e.getInt("id"));
 			if (packageMap == null) {

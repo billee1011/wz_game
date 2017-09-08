@@ -3,7 +3,7 @@ package config.provider;
 import config.JsonUtil;
 import config.bean.PlayerCGConfigData;
 import database.DataQueryResult;
-import util.ASObject;
+import util.MapObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -49,8 +49,8 @@ public class PlayerCGConfigProvider extends BaseProvider {
 
     private void getInfo() {
     	Map<Integer, PlayerCGConfigData> agent_info_map = new HashMap<>();
-        List<ASObject> data_list = DataQueryResult.load("select * from player_cg_config");
-        for (ASObject data_info : data_list) {
+        List<MapObject> data_list = DataQueryResult.load("select * from player_cg_config");
+        for (MapObject data_info : data_list) {
             PlayerCGConfigData pCGcd = new PlayerCGConfigData();
             int id = data_info.getInt("id");
             pCGcd.setId(id);

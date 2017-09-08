@@ -19,90 +19,90 @@ import util.NettyUtil;
  * Created by Administrator on 2017/2/7.
  */
 public class AgentManager {
-	private static AgentManager instance = new AgentManager();
+    private static AgentManager instance = new AgentManager();
 
-	private static Logger logger = LoggerFactory.getLogger(AgentManager.class);
+    private static Logger logger = LoggerFactory.getLogger(AgentManager.class);
 
-	private AgentManager() {
+    private AgentManager() {
 
-	}
+    }
 
-	public static AgentManager getInst() {
-		return instance;
-	}
+    public static AgentManager getInst() {
+        return instance;
+    }
 
-	private Map<Integer, CocoAgent> agentMap = new ConcurrentHashMap<>();
+    private Map<Long, CocoAgent> agentMap = new ConcurrentHashMap<>();
 
-	public void registerAgent(CocoAgent agent) {
-		agentMap.put(agent.getPlayerId(), agent);
-		synGateFactor();
-	}
-	
-	private void synGateFactor(){
-		int factor = agentMap.size();
-		GateApp.getInst().getClient().sendRequest(new CocoPacket(RequestCode.CENTER_GATE_FACTOR, CommonCreator.createPBInt32(factor), 1));
-	}
+    public void registerAgent(CocoAgent agent) {
+        agentMap.put(agent.getPlayerId(), agent);
+        synGateFactor();
+    }
 
-	public void removeAgent(int id) {
+    private void synGateFactor() {
+        int factor = agentMap.size();
+//		GateApp.getInst().getClient().sendRequest(new CocoPacket(RequestCode.CENTER_GATE_FACTOR, CommonCreator.createPBInt32(factor), 1));
+    }
+
+    public void removeAgent(long id) {
 //		CocoAgent agent = agentMap.get(id);
 //		if (agent == null) {
 //			logger.debug(" can't find the agent and the player id is {}", id);
 //			return;
 //		}
 //		agent.closeAgent();
-		agentMap.remove(id);
-		synGateFactor();
-	}
-	
-	public void kickAgent(int id) {
-		CocoAgent agent = agentMap.remove(id);
-		if (agent == null) {
-			logger.debug(" can't find the agent and the player id is {}", id);
-			return;
-		}
-		//避免此连接断开给center发送logout
-		NettyUtil.setAttribute(agent.getCtx(), "agent", null);
-		
-		agent.writeMessage(ResponseCode.ACCOUNT_LOGIN_OTHER_WHERE.getValue(), null);
-		agent.closeAgent();
-		
-		synGateFactor();
-	}
+        agentMap.remove(id);
+        synGateFactor();
+    }
 
-	public CocoAgent getCocoAgent(int playerId) {
-		return agentMap.get(playerId);
-	}
+    public void kickAgent(long id) {
+        CocoAgent agent = agentMap.remove(id);
+        if (agent == null) {
+            logger.debug(" can't find the agent and the player id is {}", id);
+            return;
+        }
+        //避免此连接断开给center发送logout
+        NettyUtil.setAttribute(agent.getCtx(), "agent", null);
 
-	public void closeAgent(int playerId) {
-		CocoAgent agent = agentMap.get(playerId);
-		if (agent == null) {
-			logger.debug(" can't find the agent and the player id is {}", playerId);
-			return;
-		}
-		agent.closeAgent();
-	}
+        agent.writeMessage(ResponseCode.ACCOUNT_LOGIN_OTHER_WHERE.getValue(), null);
+        agent.closeAgent();
 
-	public void closeAll() {
-		getAllAgents().forEach(e -> {
-			if (e != null) {
-				e.closeAgent();
-			}
-		});
-	}
+        synGateFactor();
+    }
 
+    public CocoAgent getCocoAgent(int playerId) {
+        return agentMap.get(playerId);
+    }
 
-	public List<CocoAgent> getAllAgents() {
-		return new ArrayList<>(agentMap.values());
-	}
+    public void closeAgent(long playerId) {
+        CocoAgent agent = agentMap.get(playerId);
+        if (agent == null) {
+            logger.debug(" can't find the agent and the player id is {}", playerId);
+            return;
+        }
+        agent.closeAgent();
+    }
+
+    public void closeAll() {
+        getAllAgents().forEach(e -> {
+            if (e != null) {
+                e.closeAgent();
+            }
+        });
+    }
 
 
-	public void writeMessage(CocoPacket packet) {
-		CocoAgent agent = agentMap.get(packet.getPlayerId());
-		if (agent == null) {
-			logger.debug(" can't find the agent and the player id is {}", packet.getPlayerId());
-			return;
-		}
-		agent.writeMessage(packet.getReqId(), packet.getBytes());
-	}
+    public List<CocoAgent> getAllAgents() {
+        return new ArrayList<>(agentMap.values());
+    }
+
+
+    public void writeMessage(CocoPacket packet) {
+        CocoAgent agent = agentMap.get(packet.getPlayerId());
+        if (agent == null) {
+            logger.debug(" can't find the agent and the player id is {}", packet.getPlayerId());
+            return;
+        }
+        agent.writeMessage(packet.getReqId(), packet.getBytes());
+    }
 
 }

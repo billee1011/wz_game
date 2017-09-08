@@ -3,7 +3,7 @@ package config.provider;
 import config.JsonUtil;
 import config.bean.AgentAuickReplyData;
 import database.DataQueryResult;
-import util.ASObject;
+import util.MapObject;
 
 import java.util.HashMap;
 import java.util.List;
@@ -43,8 +43,8 @@ public class AgentAuickReplyProvider extends BaseProvider {
 
     private void getInfo() {
     	Map<Integer, AgentAuickReplyData> temp = new HashMap<>();
-    	List<ASObject> data_list = DataQueryResult.load("SELECT * FROM agent_quick_reply WHERE selected = 1");
-        for (ASObject data_info : data_list) {
+    	List<MapObject> data_list = DataQueryResult.load("SELECT * FROM agent_quick_reply WHERE selected = 1");
+        for (MapObject data_info : data_list) {
             AgentAuickReplyData aar = new AgentAuickReplyData();
             int agent_id = data_info.getInt("agent_id");
             aar.setAgent_id(agent_id);

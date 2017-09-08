@@ -21,7 +21,7 @@ import server.handler.LoginServerHandler;
 import server.ip.IP;
 import service.BaseApp;
 import timer.ActTimer;
-import util.ASObject;
+import util.MapObject;
 
 /**
  * Created by Administrator on 2017/2/4.
@@ -83,8 +83,8 @@ public class LoginServer extends BaseApp {
 	private void initPlatData() {
 		ConcurrentHashMap<Integer, String> package2plat = new ConcurrentHashMap<>();
 		ConcurrentHashMap<Integer, Integer> package2channel = new ConcurrentHashMap<>();
-		List<ASObject> userList = DataQueryResult.load("conf_channel_switch", new HashMap<>());
-		for (ASObject data : userList) {
+		List<MapObject> userList = DataQueryResult.load("conf_channel_switch", new HashMap<>());
+		for (MapObject data : userList) {
 			int packageId = data.getInt("package_id");
 			int channelId = data.getInt("id");
 			String platfromId = data.getString("platform_id");
@@ -103,8 +103,8 @@ public class LoginServer extends BaseApp {
 	private void initPublicSet() {
 		String provinceOtherPlace = "";
 		ConcurrentHashMap<String, Boolean> openSet = new ConcurrentHashMap<>();
-		List<ASObject> data = DataQueryResult.load("conf_dynamic_properties_public", new HashMap<>());
-		for (ASObject obj : data) {
+		List<MapObject> data = DataQueryResult.load("conf_dynamic_properties_public", new HashMap<>());
+		for (MapObject obj : data) {
 			openSet.put(obj.getString("key"), obj.getInt("status") == 1);
 			if (obj.getString("key").equals("provinceotherplace")) {
 				provinceOtherPlace = obj.getString("value");

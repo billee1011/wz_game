@@ -29,19 +29,8 @@ public class GateClientHandler extends AbstractHandlers {
 
 	@Override
 	protected void registerAction() {
-		registerAction(RequestCode.GATE_BROAD_CAST_MESSAGE.getValue(), this::actionBroadCastMessage, Common.PBGameProtocol.getDefaultInstance());
 		registerAction(RequestCode.GATE_KICK_PLAYER.getValue(), this::actionKickOutPlayer);
 		registerAction(RequestCode.GATE_KICK_ALL_PLAYER.getValue(), this::actionKickAllPlayer);
-		registerAction(RequestCode.GATE_REMOVE_SERVER.getValue(), this::removeServer, Common.PBInt32.getDefaultInstance());
-	}
-	
-	/** 后台关闭服务器 */
-	private void removeServer(ChannelHandlerContext client, CocoPacket packet, MessageHolder<MessageLite> message) {
-		if(packet.getPlayerId() != 0){
-			return;
-		}
-		Common.PBInt32 endTime = message.get();
-		GateApp.getInst().beginStop(endTime.getValue());
 	}
 
 	private void actionKickAllPlayer(ChannelHandlerContext client, CocoPacket packet, MessageHolder<MessageLite> message) {
@@ -52,16 +41,6 @@ public class GateClientHandler extends AbstractHandlers {
 
 	private void actionKickOutPlayer(ChannelHandlerContext client, CocoPacket packet, MessageHolder<MessageLite> message) {
 		AgentManager.getInst().closeAgent(packet.getPlayerId());
-	}
-
-	private void actionBroadCastMessage(ChannelHandlerContext client, CocoPacket packet, MessageHolder<MessageLite> message) {
-		Common.PBGameProtocol request = message.get();
-		//要广播的信息 id 跟 信息体
-		ByteString byteString = request.getMessage();
-		int size = byteString.size();
-		final byte[] bytes = new byte[size];
-		byteString.copyTo(bytes, 0);
-		AgentManager.getInst().getAllAgents().forEach(e -> e.writeMessage(request.getResponseCode(), bytes));
 	}
 
 	@Override

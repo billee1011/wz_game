@@ -1,10 +1,9 @@
 package logic.name;
 
-import chr.PlayerManager;
 import database.DataQueryResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import util.ASObject;
+import util.MapObject;
 import util.Randomizer;
 
 import java.util.*;
@@ -36,7 +35,7 @@ public class PlayerNameManager {
 		randomOne.clear();
 		useNameMap.clear();
 		randomTwo.clear();
-		List<ASObject> randomNameList = DataQueryResult.load("select * from random_name");
+		List<MapObject> randomNameList = DataQueryResult.load("select * from random_name");
 		randomNameList.forEach(e -> {
 			String first = e.getString("first");
 			if (!first.equals("")) {
@@ -47,7 +46,7 @@ public class PlayerNameManager {
 				randomTwo.add(last);
 			}
 		});
-		List<ASObject> usedNameList = DataQueryResult.load("select nickname from player");
+		List<MapObject> usedNameList = DataQueryResult.load("select nickname from player");
 		usedNameList.forEach(e -> useNameMap.put(e.getString("nick_name"), true));
 		long time2 = System.currentTimeMillis();
 		logger.info(" the load name cost time is {}", (time2 - time1));

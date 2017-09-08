@@ -1,11 +1,9 @@
 package config.provider;
 
-import config.bean.AgentInfoData;
 import database.DataQueryResult;
-import util.ASObject;
+import util.MapObject;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by admin on 2017/4/6.
@@ -36,7 +34,7 @@ public class ExchangeBigLimitProvider extends BaseProvider  {
 
     @Override
     public void doLoad() {
-        List<ASObject> confExchangeList = DataQueryResult.load("conf_exchange", null);
+        List<MapObject> confExchangeList = DataQueryResult.load("conf_exchange", null);
         if (confExchangeList.size() != 1) {
             return ;
         }

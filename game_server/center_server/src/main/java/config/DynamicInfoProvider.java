@@ -2,7 +2,7 @@ package config;
 
 import config.provider.BaseProvider;
 import database.DataQueryResult;
-import util.ASObject;
+import util.MapObject;
 
 import java.util.List;
 
@@ -94,11 +94,11 @@ public class DynamicInfoProvider extends BaseProvider {
 
 	@Override
 	public void doLoad() {
-		List<ASObject> configList = DataQueryResult.load("conf_dynamic_properties", null);
+		List<MapObject> configList = DataQueryResult.load("conf_dynamic_properties", null);
 		if (configList.size() != 1) {
 			return;
 		}
-		ASObject data = configList.get(0);
+		MapObject data = configList.get(0);
 		int exchange_lowExch = data.getInt("exchange_lowExch");
 		int exchange1Min = data.getInt("exchange_minExch1");
 		int exchange1Max = data.getInt("exchange_maxExch1");

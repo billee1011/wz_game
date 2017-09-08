@@ -1,0 +1,1386 @@
+2017-09-07 15:05:47 NetClient.java 96 [ nioEventLoopGroup-2-1:494 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-09-07 15:05:22
+2017-09-07 15:06:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:61196 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:06:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:61197 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:06:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:61197 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:06:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:61197 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:07:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:121192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:07:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:121193 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:07:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:121194 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:07:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:121194 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:07:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:121194 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=1|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:07:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:121195 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:08:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:181191 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:08:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:181191 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:08:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:181191 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:08:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:181191 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:09:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:241192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:09:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:241192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:09:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:241192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:09:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:241192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:09:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:241193 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:09:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:241194 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:10:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:301192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:10:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:301192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:10:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:301192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:10:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:301192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:11:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:361192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:11:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:361193 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:11:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:361193 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:11:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:361193 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:11:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:361194 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:11:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:361194 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:12:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:421191 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:12:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:421191 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:12:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:421192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:12:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:421192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:13:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:481191 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:13:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:481192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:13:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:481192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:13:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:481193 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:13:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:481198 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:13:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:481198 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:14:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:541192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:14:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:541192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:14:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:541192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:14:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:541192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:15:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:601192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:15:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:601193 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:15:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:601193 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:15:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:601193 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:15:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:601194 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=1|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:15:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:601197 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:16:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:661192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:16:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:661192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:16:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:661192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:16:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:661192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:17:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:721193 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:17:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:721193 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:17:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:721193 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:17:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:721193 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:17:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:721194 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:17:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:721194 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:18:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:781192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:18:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:781192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:18:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:781193 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:18:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:781193 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:19:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:841191 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:19:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:841191 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:19:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:841192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:19:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:841192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:19:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:841193 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:19:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:841193 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:20:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:901192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:20:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:901192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:20:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:901192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:20:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:901192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:21:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:961191 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:21:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:961191 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:21:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:961192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:21:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:961192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:21:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:961193 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:21:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:961193 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:22:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1021192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:22:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1021192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:22:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1021192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:22:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1021193 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:23:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1081192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:23:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1081193 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:23:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1081193 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:23:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1081193 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:23:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1081194 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:23:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1081194 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:24:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1141192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:24:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1141192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:24:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1141192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:24:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1141193 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:25:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1201192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:25:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1201192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:25:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1201192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:25:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1201192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:25:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1201193 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:25:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1201194 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:26:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1261192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:26:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1261192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:26:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1261192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:26:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1261192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:27:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1321192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:27:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1321192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:27:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1321192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:27:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1321192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:27:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1321193 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=1|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:27:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1321193 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:28:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1381191 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:28:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1381192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:28:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1381192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:28:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1381192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:29:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1441192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:29:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1441192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:29:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1441192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:29:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1441192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:29:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1441193 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:29:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1441194 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:30:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1501192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:30:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1501192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:30:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1501192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:30:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1501192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:31:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1561192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:31:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1561192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:31:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1561193 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:31:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1561193 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:31:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1561193 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:31:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1561194 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:32:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1621191 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:32:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1621192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:32:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1621192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:32:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1621192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:33:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1681192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:33:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1681192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:33:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1681192 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:33:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1681192 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:33:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1681193 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:33:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1681193 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:34:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1741193 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:34:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1741193 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:34:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1741193 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 15:34:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1741193 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 15:35:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1801192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:35:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1801192 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:35:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1801192 ] - [ INFO ]  freeMemory  :  223 MB
+2017-09-07 15:35:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1801192 ] - [ INFO ]  usedMemory  :  20 MB
+2017-09-07 15:35:48 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1801193 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=1|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:35:48 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1801194 ] - [ INFO ]  database yc_game :total created connection : 11
+total free connection : 11
+total leased connection : 0
+
+2017-09-07 15:36:48 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1861192 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:36:48 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1861193 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:36:48 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1861193 ] - [ INFO ]  freeMemory  :  211 MB
+2017-09-07 15:36:48 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1861193 ] - [ INFO ]  usedMemory  :  32 MB
+2017-09-07 15:38:00 NetClient.java 96 [ nioEventLoopGroup-2-1:648 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-09-07 15:37:49
+2017-09-07 15:39:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:61319 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:39:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:61320 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:39:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:61320 ] - [ INFO ]  freeMemory  :  228 MB
+2017-09-07 15:39:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:61320 ] - [ INFO ]  usedMemory  :  15 MB
+2017-09-07 15:40:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:121309 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:40:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:121309 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:40:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:121309 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 15:40:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:121309 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 15:40:00 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:121311 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:40:00 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:121312 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:41:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:181308 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:41:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:181308 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:41:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:181309 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 15:41:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:181309 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 15:42:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:241309 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:42:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:241309 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:42:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:241309 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 15:42:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:241309 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 15:42:00 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:241311 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:42:00 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:241311 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:43:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:301308 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:43:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:301309 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:43:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:301309 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 15:43:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:301310 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 15:44:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:361309 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:44:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:361309 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:44:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:361309 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 15:44:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:361309 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 15:44:00 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:361311 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:44:00 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:361311 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:45:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:421308 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:45:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:421309 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:45:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:421309 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 15:45:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:421309 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 15:46:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:481309 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:46:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:481309 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:46:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:481310 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 15:46:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:481310 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 15:46:00 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:481310 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:46:00 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:481311 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:47:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:541308 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:47:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:541309 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:47:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:541309 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 15:47:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:541310 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 15:48:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:601308 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:48:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:601308 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:48:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:601309 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 15:48:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:601309 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 15:48:00 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:601310 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:48:00 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:601311 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:49:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:661308 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:49:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:661308 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:49:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:661309 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 15:49:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:661309 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 15:50:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:721308 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:50:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:721308 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:50:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:721309 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 15:50:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:721309 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 15:50:00 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:721310 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:50:00 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:721311 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:51:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:781309 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:51:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:781309 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:51:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:781309 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 15:51:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:781309 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 15:51:37 ClientHandler.java 47 [ nioEventLoopGroup-2-1:818004 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 15:51:37 ClientHandler.java 32 [ nioEventLoopGroup-2-1:818010 ] - [ INFO ]   channel in active 
+2017-09-07 15:51:37 NetClient.java 113 [ nioEventLoopGroup-2-1:818010 ] - [ ERROR ]  LOGIC,serverid=1与center连接断开,自动结束进程
+2017-09-07 15:51:52 NetClient.java 96 [ nioEventLoopGroup-2-1:569 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-09-07 15:51:43
+2017-09-07 15:52:53 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:61137 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:52:53 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:61138 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:52:53 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:61138 ] - [ INFO ]  freeMemory  :  228 MB
+2017-09-07 15:52:53 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:61138 ] - [ INFO ]  usedMemory  :  15 MB
+2017-09-07 15:53:53 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:121119 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:53:53 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:121119 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:53:53 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:121119 ] - [ INFO ]  freeMemory  :  219 MB
+2017-09-07 15:53:53 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:121119 ] - [ INFO ]  usedMemory  :  24 MB
+2017-09-07 15:53:53 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:121121 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:53:53 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:121121 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:54:53 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:181118 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:54:53 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:181118 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:54:53 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:181119 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 15:54:53 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:181119 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 15:55:53 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:241124 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:55:53 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:241124 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:55:53 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:241125 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 15:55:53 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:241125 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 15:55:53 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:241126 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:55:53 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:241126 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=1|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:56:53 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:301121 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:56:53 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:301122 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:56:53 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:301122 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 15:56:53 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:301123 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 15:57:53 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:361118 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:57:53 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:361119 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:57:53 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:361119 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 15:57:53 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:361119 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 15:57:53 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:361120 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 15:57:53 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:361120 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 15:58:53 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:421119 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 15:58:53 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:421120 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 15:58:53 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:421120 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 15:58:53 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:421120 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 15:59:44 ClientHandler.java 47 [ nioEventLoopGroup-2-1:472726 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 15:59:44 ClientHandler.java 32 [ nioEventLoopGroup-2-1:472733 ] - [ INFO ]   channel in active 
+2017-09-07 15:59:44 NetClient.java 113 [ nioEventLoopGroup-2-1:472733 ] - [ ERROR ]  LOGIC,serverid=1与center连接断开,自动结束进程
+2017-09-07 15:59:59 NetClient.java 96 [ nioEventLoopGroup-2-1:612 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-09-07 15:59:50
+2017-09-07 16:01:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:61238 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:01:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:61239 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:01:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:61239 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:01:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:61240 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:02:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:121237 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:02:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:121237 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:02:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:121237 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:02:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:121237 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:02:00 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:121238 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:02:00 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:121239 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:03:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:181237 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:03:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:181238 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:03:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:181238 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:03:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:181238 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:04:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:241237 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:04:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:241237 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:04:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:241237 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:04:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:241237 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:04:00 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:241238 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:04:00 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:241239 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:05:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:301237 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:05:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:301238 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:05:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:301238 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:05:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:301238 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:06:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:361236 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:06:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:361237 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:06:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:361237 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:06:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:361237 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:06:00 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:361238 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:06:00 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:361239 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:07:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:421237 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:07:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:421238 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:07:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:421238 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:07:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:421238 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:08:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:481237 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:08:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:481238 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:08:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:481238 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:08:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:481238 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:08:00 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:481239 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:08:00 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:481239 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:09:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:541238 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:09:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:541238 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:09:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:541238 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:09:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:541238 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:10:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:601237 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:10:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:601237 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:10:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:601237 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:10:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:601238 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:10:00 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:601238 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:10:00 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:601239 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:11:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:661237 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:11:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:661237 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:11:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:661237 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:11:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:661238 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:12:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:721237 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:12:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:721237 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:12:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:721237 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:12:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:721237 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:12:00 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:721239 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:12:00 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:721239 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:13:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:781237 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:13:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:781238 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:13:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:781238 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:13:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:781238 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:14:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:841237 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:14:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:841237 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:14:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:841237 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:14:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:841237 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:14:00 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:841239 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:14:00 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:841239 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:15:00 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:901237 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:15:00 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:901238 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:15:00 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:901238 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:15:00 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:901238 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:15:47 ClientHandler.java 47 [ nioEventLoopGroup-2-1:948622 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 16:15:47 ClientHandler.java 32 [ nioEventLoopGroup-2-1:948627 ] - [ INFO ]   channel in active 
+2017-09-07 16:15:47 NetClient.java 113 [ nioEventLoopGroup-2-1:948627 ] - [ ERROR ]  LOGIC,serverid=1与center连接断开,自动结束进程
+2017-09-07 16:16:06 NetClient.java 96 [ nioEventLoopGroup-2-1:491 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-09-07 16:15:55
+2017-09-07 16:17:06 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:61126 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:17:06 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:61126 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:17:06 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:61127 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:17:06 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:61127 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:18:06 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:121127 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:18:06 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:121128 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:18:06 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:121128 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:18:06 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:121128 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:18:06 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:121129 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:18:06 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:121130 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:19:06 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:181123 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:19:06 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:181123 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:19:06 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:181123 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:19:06 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:181123 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:20:05 ClientHandler.java 47 [ nioEventLoopGroup-2-1:239924 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 16:20:05 ClientHandler.java 32 [ nioEventLoopGroup-2-1:239929 ] - [ INFO ]   channel in active 
+2017-09-07 16:20:05 NetClient.java 113 [ nioEventLoopGroup-2-1:239929 ] - [ ERROR ]  LOGIC,serverid=1与center连接断开,自动结束进程
+2017-09-07 16:20:24 NetClient.java 96 [ nioEventLoopGroup-2-1:554 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-09-07 16:20:13
+2017-09-07 16:21:24 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:61332 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:21:24 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:61332 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:21:24 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:61332 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:21:24 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:61332 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:22:24 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:121328 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:22:24 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:121329 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:22:24 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:121329 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:22:24 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:121329 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:22:24 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:121330 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:22:24 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:121330 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:23:24 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:181327 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:23:24 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:181327 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:23:24 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:181327 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:23:24 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:181327 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:24:24 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:241327 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:24:24 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:241328 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:24:24 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:241328 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:24:24 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:241328 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:24:24 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:241329 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:24:24 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:241329 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:25:24 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:301328 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:25:24 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:301328 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:25:24 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:301328 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:25:24 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:301328 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:25:25 ClientHandler.java 47 [ nioEventLoopGroup-2-1:302163 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 16:25:25 ClientHandler.java 32 [ nioEventLoopGroup-2-1:302170 ] - [ INFO ]   channel in active 
+2017-09-07 16:25:25 NetClient.java 113 [ nioEventLoopGroup-2-1:302171 ] - [ ERROR ]  LOGIC,serverid=1与center连接断开,自动结束进程
+2017-09-07 16:25:46 NetClient.java 96 [ nioEventLoopGroup-2-1:472 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-09-07 16:25:30
+2017-09-07 16:26:46 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:61112 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:26:46 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:61113 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:26:46 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:61113 ] - [ INFO ]  freeMemory  :  226 MB
+2017-09-07 16:26:46 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:61113 ] - [ INFO ]  usedMemory  :  17 MB
+2017-09-07 16:27:46 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:121094 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:27:46 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:121095 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:27:46 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:121095 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 16:27:46 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:121095 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 16:27:46 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:121099 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:27:46 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:121099 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:28:46 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:181094 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:28:46 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:181094 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:28:46 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:181094 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 16:28:46 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:181095 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 16:29:46 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:241094 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:29:46 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:241095 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:29:46 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:241095 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 16:29:46 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:241095 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 16:29:46 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:241097 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:29:46 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:241099 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:30:46 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:301095 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:30:46 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:301095 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:30:46 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:301095 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 16:30:46 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:301096 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 16:31:46 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:361095 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:31:46 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:361096 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:31:46 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:361097 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 16:31:46 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:361097 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 16:31:46 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:361099 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:31:46 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:361100 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:32:46 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:421095 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:32:46 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:421095 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:32:46 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:421095 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 16:32:46 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:421095 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 16:33:46 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:481096 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:33:46 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:481096 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:33:46 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:481096 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 16:33:46 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:481096 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 16:33:46 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:481097 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:33:46 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:481100 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:34:46 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:541095 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:34:46 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:541095 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:34:46 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:541095 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 16:34:46 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:541095 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 16:35:31 ClientHandler.java 47 [ nioEventLoopGroup-2-1:585566 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 16:35:31 ClientHandler.java 32 [ nioEventLoopGroup-2-1:585572 ] - [ INFO ]   channel in active 
+2017-09-07 16:35:31 NetClient.java 113 [ nioEventLoopGroup-2-1:585572 ] - [ ERROR ]  LOGIC,serverid=1与center连接断开,自动结束进程
+2017-09-07 16:36:03 NetClient.java 96 [ nioEventLoopGroup-2-1:453 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-09-07 16:35:53
+2017-09-07 16:37:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:61114 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:37:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:61115 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:37:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:61115 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:37:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:61115 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:38:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:121114 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:38:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:121115 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:38:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:121115 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:38:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:121116 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:38:03 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:121118 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:38:03 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:121118 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:39:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:181113 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:39:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:181113 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:39:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:181114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:39:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:181114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:40:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:241113 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:40:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:241114 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:40:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:241114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:40:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:241114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:40:03 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:241115 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=1|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:40:03 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:241116 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:41:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:301114 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:41:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:301114 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:41:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:301114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:41:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:301114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:42:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:361114 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:42:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:361115 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:42:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:361115 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:42:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:361115 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:42:03 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:361116 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:42:03 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:361116 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:43:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:421114 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:43:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:421114 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:43:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:421114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:43:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:421114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:44:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:481113 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:44:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:481113 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:44:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:481114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:44:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:481114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:44:03 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:481114 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:44:05 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:482402 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:45:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:541114 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:45:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:541114 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:45:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:541114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:45:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:541114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:46:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:601113 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:46:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:601113 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:46:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:601113 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:46:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:601113 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:46:03 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:601115 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:46:03 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:601115 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:47:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:661114 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:47:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:661114 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:47:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:661114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:47:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:661114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:48:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:721114 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:48:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:721114 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:48:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:721114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:48:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:721114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:48:03 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:721115 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:48:03 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:721115 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:49:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:781113 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:49:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:781114 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:49:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:781114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:49:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:781114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:50:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:841113 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:50:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:841113 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:50:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:841114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:50:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:841114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:50:03 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:841115 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=1|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:50:03 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:841116 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:51:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:901113 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:51:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:901114 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:51:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:901114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:51:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:901114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:52:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:961114 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:52:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:961114 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:52:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:961114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:52:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:961114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:52:03 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:961115 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:52:03 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:961116 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:53:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1021114 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:53:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1021115 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:53:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1021115 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:53:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1021115 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:54:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1081113 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:54:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1081113 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:54:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1081114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:54:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1081114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:54:03 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1081115 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:54:03 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1081115 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:55:03 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1141114 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:55:03 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1141114 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:55:03 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1141114 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:55:03 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1141114 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:55:05 ClientHandler.java 47 [ nioEventLoopGroup-2-1:1142387 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 16:55:05 ClientHandler.java 32 [ nioEventLoopGroup-2-1:1142392 ] - [ INFO ]   channel in active 
+2017-09-07 16:55:05 NetClient.java 113 [ nioEventLoopGroup-2-1:1142392 ] - [ ERROR ]  LOGIC,serverid=1与center连接断开,自动结束进程
+2017-09-07 16:55:20 NetClient.java 96 [ nioEventLoopGroup-2-1:538 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-09-07 16:55:10
+2017-09-07 16:56:21 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:61189 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:56:21 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:61189 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:56:21 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:61189 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:56:21 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:61189 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:57:21 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:121188 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:57:21 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:121189 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:57:21 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:121189 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:57:21 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:121189 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:57:21 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:121191 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:57:21 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:121192 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 16:58:21 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:181188 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:58:21 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:181188 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:58:21 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:181189 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:58:21 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:181189 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:59:21 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:241187 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 16:59:21 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:241188 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 16:59:21 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:241188 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 16:59:21 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:241188 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 16:59:21 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:241190 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 16:59:21 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:241190 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:00:21 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:301188 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:00:21 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:301188 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:00:21 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:301189 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 17:00:21 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:301189 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 17:01:21 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:361187 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:01:21 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:361188 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:01:21 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:361188 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 17:01:21 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:361188 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 17:01:21 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:361189 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:01:21 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:361190 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:02:21 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:421187 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:02:21 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:421188 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:02:21 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:421188 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 17:02:21 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:421188 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 17:03:21 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:481188 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:03:21 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:481188 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:03:21 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:481188 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 17:03:21 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:481188 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 17:03:21 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:481190 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:03:21 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:481190 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:04:06 ClientHandler.java 47 [ nioEventLoopGroup-2-1:526205 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 17:04:06 ClientHandler.java 32 [ nioEventLoopGroup-2-1:526211 ] - [ INFO ]   channel in active 
+2017-09-07 17:04:06 NetClient.java 113 [ nioEventLoopGroup-2-1:526212 ] - [ ERROR ]  LOGIC,serverid=1与center连接断开,自动结束进程
+2017-09-07 17:04:48 NetClient.java 96 [ nioEventLoopGroup-2-1:584 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-09-07 17:04:12
+2017-09-07 17:05:49 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:61108 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:05:49 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:61108 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:05:49 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:61109 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 17:05:49 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:61109 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 17:06:49 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:121106 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:06:49 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:121107 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:06:49 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:121107 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 17:06:49 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:121107 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 17:06:49 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:121110 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:06:49 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:121110 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:07:49 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:181106 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:07:49 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:181106 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:07:49 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:181106 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 17:07:49 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:181106 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 17:08:49 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:241106 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:08:49 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:241106 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:08:49 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:241106 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 17:08:49 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:241107 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 17:08:49 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:241108 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:08:49 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:241108 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:09:49 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:301109 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:09:49 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:301110 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:09:49 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:301110 ] - [ INFO ]  freeMemory  :  180 MB
+2017-09-07 17:09:49 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:301110 ] - [ INFO ]  usedMemory  :  63 MB
+2017-09-07 17:10:07 ClientHandler.java 47 [ nioEventLoopGroup-2-1:319170 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 17:10:07 ClientHandler.java 32 [ nioEventLoopGroup-2-1:319177 ] - [ INFO ]   channel in active 
+2017-09-07 17:10:07 NetClient.java 113 [ nioEventLoopGroup-2-1:319178 ] - [ ERROR ]  LOGIC,serverid=1与center连接断开,自动结束进程
+2017-09-07 17:35:13 NetClient.java 96 [ nioEventLoopGroup-2-1:494 ] - [ INFO ]  receive the callback message and the result is 1 , connectServerStartTime 2017-09-07 17:34:33
+2017-09-07 17:36:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:61159 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:36:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:61160 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:36:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:61160 ] - [ INFO ]  freeMemory  :  227 MB
+2017-09-07 17:36:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:61160 ] - [ INFO ]  usedMemory  :  16 MB
+2017-09-07 17:37:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:121147 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:37:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:121148 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:37:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:121148 ] - [ INFO ]  freeMemory  :  218 MB
+2017-09-07 17:37:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:121148 ] - [ INFO ]  usedMemory  :  25 MB
+2017-09-07 17:37:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:121150 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:37:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:121150 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:38:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:181148 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:38:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:181148 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:38:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:181149 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:38:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:181149 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:39:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:241146 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:39:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:241147 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:39:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:241147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:39:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:241147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:39:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:241148 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:39:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:241148 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:40:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:301148 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:40:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:301148 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:40:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:301148 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:40:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:301149 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:41:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:361147 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:41:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:361147 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:41:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:361148 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:41:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:361148 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:41:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:361148 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:41:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:361148 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:42:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:421148 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:42:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:421153 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:42:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:421154 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:42:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:421154 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:43:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:481176 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:43:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:481177 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:43:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:481178 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:43:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:481178 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:43:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:481178 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:43:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:481179 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=1|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:44:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:541146 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:44:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:541147 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:44:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:541147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:44:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:541147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:45:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:601147 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:45:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:601147 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:45:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:601147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:45:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:601147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:45:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:601148 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:45:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:601148 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:46:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:661147 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:46:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:661147 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:46:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:661147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:46:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:661147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:47:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:721146 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:47:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:721146 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:47:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:721147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:47:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:721147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:47:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:721147 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:47:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:721148 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:48:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:781146 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:48:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:781147 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:48:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:781147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:48:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:781147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:49:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:841148 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:49:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:841149 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:49:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:841149 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:49:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:841149 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:49:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:841150 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:49:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:841151 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:50:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:901147 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:50:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:901147 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:50:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:901147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:50:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:901147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:51:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:961146 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:51:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:961147 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:51:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:961147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:51:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:961147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:51:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:961148 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:51:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:961148 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:52:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1021146 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:52:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1021146 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:52:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1021147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:52:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1021147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:53:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1081150 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:53:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1081150 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:53:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1081150 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:53:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1081150 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:53:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1081151 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:53:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1081151 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:54:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1141146 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:54:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1141146 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:54:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1141147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:54:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1141147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:55:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1201147 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:55:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1201147 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:55:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1201147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:55:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1201147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:55:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1201148 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:55:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1201148 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:56:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1261154 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:56:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1261155 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:56:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1261155 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:56:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1261155 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:57:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1321147 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:57:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1321147 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:57:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1321147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:57:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1321147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:57:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1321148 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:57:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1321149 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 17:58:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1381147 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:58:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1381148 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:58:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1381148 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:58:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1381148 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:59:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1441147 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 17:59:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1441148 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 17:59:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1441148 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 17:59:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1441148 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 17:59:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1441149 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 17:59:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1441149 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 18:00:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1501147 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 18:00:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1501147 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 18:00:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1501147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 18:00:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1501147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 18:01:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1561147 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 18:01:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1561147 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 18:01:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1561147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 18:01:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1561147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 18:01:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1561149 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 18:01:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1561149 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 18:02:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1621146 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 18:02:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1621146 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 18:02:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1621147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 18:02:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1621147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 18:03:14 BaseApp.java 142 [ Actor-Dispatcher-logic_actor_pool-1:1681147 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-07 18:03:14 BaseApp.java 143 [ Actor-Dispatcher-logic_actor_pool-1:1681147 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-07 18:03:14 BaseApp.java 144 [ Actor-Dispatcher-logic_actor_pool-1:1681147 ] - [ INFO ]  freeMemory  :  217 MB
+2017-09-07 18:03:14 BaseApp.java 145 [ Actor-Dispatcher-logic_actor_pool-1:1681147 ] - [ INFO ]  usedMemory  :  26 MB
+2017-09-07 18:03:14 BaseApp.java 82 [ Actor-Dispatcher-logic_actor_pool-1:1681148 ] - [ INFO ]  Actor-Dispatcher-record-0=0|Actor-Dispatcher-record-1=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=1|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-07 18:03:14 BaseApp.java 87 [ Actor-Dispatcher-logic_actor_pool-1:1681148 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-07 18:03:51 ClientHandler.java 44 [ nioEventLoopGroup-2-1:1717953 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-07 18:03:51 ClientHandler.java 29 [ nioEventLoopGroup-2-1:1717959 ] - [ INFO ]   channel in active 
+2017-09-07 18:03:51 NetClient.java 113 [ nioEventLoopGroup-2-1:1717959 ] - [ ERROR ]  LOGIC,serverid=1与center连接断开,自动结束进程

@@ -1,12 +1,9 @@
 package config.provider;
 
-import config.JsonUtil;
 import config.bean.AnnouncementData;
 import database.DataQueryResult;
-import util.ASObject;
-import util.MiscUtil;
+import util.MapObject;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -43,8 +40,8 @@ public class AnnouncementProvider extends BaseProvider  {
 
     private void getInfo() {
     	Map<Integer, AnnouncementData> announcement_map = new LinkedHashMap<>();
-        List<ASObject> data_list = DataQueryResult.load("select * from announcement");
-        for (ASObject data_info : data_list) {
+        List<MapObject> data_list = DataQueryResult.load("select * from announcement");
+        for (MapObject data_info : data_list) {
             AnnouncementData ad = new AnnouncementData();
             int id = data_info.getInt("id");
 //            ad.setBegin_time(data_info.getInt("begin_time"));

@@ -926,11 +926,6 @@ public class MiscUtil {
 		}
 	}
 
-	public static List<Pair<Integer, Integer>> fromPBPair(List<Common.PBPair> list) {
-		List<Pair<Integer, Integer>> result = new ArrayList<>();
-		list.forEach(e -> result.add(new Pair<>(e.getKey(), e.getValue())));
-		return result;
-	}
 
 	public static String getCurrentTimeFormat() {
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm");

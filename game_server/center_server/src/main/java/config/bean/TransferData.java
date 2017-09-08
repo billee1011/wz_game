@@ -2,7 +2,7 @@ package config.bean;
 
 import java.io.Serializable;
 
-import util.ASObject;
+import util.MapObject;
 
 /**
  * Created by admin on 2017/4/2.
@@ -72,7 +72,7 @@ public class TransferData implements Serializable{
         this.time = time;
     }
 
-    public static TransferData createTransferData(ASObject data) {
+    public static TransferData createTransferData(MapObject data) {
         TransferData transfer_data = new TransferData();
         transfer_data.setId(data.getInt("id"));
         transfer_data.setPlayer_out_id(data.getInt("player_out_id"));

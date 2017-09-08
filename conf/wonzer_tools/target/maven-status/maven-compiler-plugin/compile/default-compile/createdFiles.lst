@@ -18,6 +18,7 @@ util\IParse.class
 bean\TestClient.class
 reader\RoleNameReader.class
 util\ConvertUtil.class
+bean\EMoney.class
 bean\Hello.class
 frame\MainPanel$1.class
 bean\EAttributeKeyValue.class

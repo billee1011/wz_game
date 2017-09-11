@@ -88,7 +88,7 @@ public class MulSearch<E> {
         int pos = 0;
 
         // 1. find
-        pos = (key.intValue() % hash_size);
+        pos = (int)(key.longValue() % hash_size);
         iterator = ports[pos].root;
         if (null == iterator) {
             return false;

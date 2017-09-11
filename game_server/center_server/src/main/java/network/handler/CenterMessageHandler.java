@@ -43,7 +43,7 @@ public class CenterMessageHandler extends AbstractHandlers {
 		RequestCode reqCode = packet.getReqCode();
 		if (reqCode.getSendTo() != getAppId()) {
 			if (reqCode.getSendTo() == AppId.LOGIC) {
-
+				ServerManager.getInst().getServerSession(reqCode.getSendTo(), 1).sendRequest(packet);
 			} else {
 				ServerManager.getInst().getMinLoadSession(reqCode.getSendTo()).sendRequest(packet);
 			}

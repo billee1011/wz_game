@@ -10,6 +10,7 @@ import network.handler.ServerHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import packet.CocoPacket;
+import proto.Login;
 import proto.creator.CommonCreator;
 import proto.creator.PacketCreator;
 import protocol.c2s.RequestCode;
@@ -50,7 +51,6 @@ public class GateNetHandler extends ServerHandler implements ChannelFutureListen
 	public void channelInactive(ChannelHandlerContext ctx) throws Exception {
 		CocoAgent agent = NettyUtil.getAttribute(ctx, "agent");
 		if (agent != null) {
-			GateApp.getInst().getClient().sendRequest(new CocoPacket(RequestCode.CENTER_PLAYER_LOGOUT, CommonCreator.stringList(agent.getSessionId()), agent.getPlayerId()));
 			AgentManager.getInst().removeAgent(agent.getPlayerId());
 		}
 		ctx.channel().close();
@@ -61,7 +61,6 @@ public class GateNetHandler extends ServerHandler implements ChannelFutureListen
 		if (!future.isSuccess()) {
 			CocoAgent agent = NettyUtil.getAttribute(future, "agent");
 			if (agent != null) {
-				GateApp.getInst().getClient().sendRequest(new CocoPacket(RequestCode.CENTER_PLAYER_LOGOUT, CommonCreator.stringList(agent.getSessionId()), agent.getPlayerId()));
 				AgentManager.getInst().removeAgent(agent.getPlayerId());
 				future.channel().close();
 			}
@@ -81,35 +80,21 @@ public class GateNetHandler extends ServerHandler implements ChannelFutureListen
 
 		if (isRequestMessage(packet)) {
 			RequestCode req = packet.getReqCode();
+			logger.info("the req code is {}", req);
 			if (req == RequestCode.ACCOUNT_LOGIN) {
-				GateApp.getInst().getClient().sendRequest(packet, e -> {
-					if (e instanceof CocoPacket) {
-						CocoPacket res = (CocoPacket) e;
-//						try {
-//							Account.PBLoginSuccRes pb = Account.PBLoginSuccRes.parseFrom(res.getBytes());
-//							CocoAgent preAgent = AgentManager.getInst().getCocoAgent(pb.getPlayerId());
-//							if (preAgent != null) {
-//								if (preAgent.getCtx() != ctx) {
-//									//之前的用户被挤下线
-//									AgentManager.getInst().kickAgent(pb.getPlayerId());
-//								}
-//							}
-//
-//							CocoAgent agent = new CocoAgent(pb.getPlayerId(), ctx, pb.getSessionId());
-//							NettyUtil.setAttribute(ctx, "agent", agent);
-//							AgentManager.getInst().registerAgent(agent);
-//							ChannelFuture channelFuture = ctx.writeAndFlush(PacketCreator.create(res.getReqId(), res.getBytes()));
-//							channelFuture.addListener(this);
-//						} catch (InvalidProtocolBufferException f) {
-//							f.printStackTrace();
-//						}
-					}
-
-				});
+				GateApp.getInst().getClient().sendRequest(packet);
+				Login.PBLoginReq request = Login.PBLoginReq.parseFrom(packet.getBytes());
+				CocoAgent agent = new CocoAgent(0, ctx, request.getUserId());
+				AgentManager.getInst().registerUserAgent(agent);
+				NettyUtil.setAttribute(ctx, "agent", agent);
 			} else {
 				//当前session属于哪个角色,只有登陆验证之后的游戏包才会发送到center
 				CocoAgent curAgent = NettyUtil.getAttribute(ctx, "agent");
 				if (curAgent != null) {
+					if (!curAgent.isValid()) {
+						logger.error(" invalid user and id is {}", curAgent.getUserId());
+						return;
+					}
 					packet.setPlayerId(curAgent.getPlayerId());
 					handlers.handPacket(ctx, (CocoPacket) msg);
 				}

@@ -3,6 +3,7 @@ package proto.creator;
 import com.google.protobuf.MessageLite;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
+import packet.LittleEndianByteBufUtil;
 import protocol.s2c.ResponseCode;
 
 public class PacketCreator {
@@ -28,8 +29,8 @@ public class PacketCreator {
 		if (bytes != null) {
 			length += bytes.length;
 		}
-		buffer.writeShort(length);
-		buffer.writeShort(code);
+		LittleEndianByteBufUtil.writeShort(buffer, length);
+		LittleEndianByteBufUtil.writeShort(buffer, code);
 		if (bytes != null) {
 			buffer.writeBytes(bytes);
 		}

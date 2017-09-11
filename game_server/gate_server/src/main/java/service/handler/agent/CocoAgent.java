@@ -7,46 +7,56 @@ import proto.creator.PacketCreator;
  * Created by Administrator on 2017/2/7.
  */
 public class CocoAgent {
-    private long playerId;
-    private ChannelHandlerContext ctx;
-    private String sessionId;
+	private long playerId;
+	private ChannelHandlerContext ctx;
+	private int userId;
+	private boolean valid;
 
-    public CocoAgent(long playerId, ChannelHandlerContext ctx, String sessionId) {
-        this.playerId = playerId;
-        this.ctx = ctx;
-        this.sessionId = sessionId;
-    }
+	public CocoAgent(long playerId, ChannelHandlerContext ctx, int userId) {
+		this.playerId = playerId;
+		this.ctx = ctx;
+		this.userId = userId;
+		this.valid = false;
+	}
 
-    public long getPlayerId() {
-        return playerId;
-    }
+	public int getUserId() {
+		return userId;
+	}
 
-    public void setPlayerId(long playerId) {
-        this.playerId = playerId;
-    }
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
 
-    public ChannelHandlerContext getCtx() {
-        return ctx;
-    }
+	public boolean isValid() {
+		return valid;
+	}
 
-    public void setCtx(ChannelHandlerContext ctx) {
-        this.ctx = ctx;
-    }
+	public void setValid(boolean valid) {
+		this.valid = valid;
+	}
 
-    public void writeMessage(int code, byte[] bytes) {
-        ctx.writeAndFlush(PacketCreator.create(code, bytes));
-    }
+	public long getPlayerId() {
+		return playerId;
+	}
 
-    public void closeAgent() {
-        ctx.close();
-    }
+	public void setPlayerId(long playerId) {
+		this.playerId = playerId;
+	}
 
-    public String getSessionId() {
-        return sessionId;
-    }
+	public ChannelHandlerContext getCtx() {
+		return ctx;
+	}
 
-    public void setSessionId(String sessionId) {
-        this.sessionId = sessionId;
-    }
+	public void setCtx(ChannelHandlerContext ctx) {
+		this.ctx = ctx;
+	}
+
+	public void writeMessage(int code, byte[] bytes) {
+		ctx.writeAndFlush(PacketCreator.create(code, bytes));
+	}
+
+	public void closeAgent() {
+		ctx.close();
+	}
 
 }

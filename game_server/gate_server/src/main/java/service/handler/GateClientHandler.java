@@ -13,10 +13,12 @@ import network.AbstractHandlers;
 import network.NetClient;
 import packet.CocoPacket;
 import proto.Common;
+import proto.Login;
 import protocol.c2s.RequestCode;
 import protocol.s2c.ResponseCode;
 import service.GateApp;
 import service.handler.agent.AgentManager;
+import service.handler.agent.CocoAgent;
 import util.LogUtil;
 import util.Pair;
 import util.ShowInfo;
@@ -29,18 +31,19 @@ public class GateClientHandler extends AbstractHandlers {
 
 	@Override
 	protected void registerAction() {
-		registerAction(RequestCode.GATE_KICK_PLAYER.getValue(), this::actionKickOutPlayer);
-		registerAction(RequestCode.GATE_KICK_ALL_PLAYER.getValue(), this::actionKickAllPlayer);
+		registerAction(RequestCode.ACCOUNT_LOGIN_RESULT.getValue(), this::actionLoginResult, Login.PBLoginSucc.getDefaultInstance());
 	}
 
-	private void actionKickAllPlayer(ChannelHandlerContext client, CocoPacket packet, MessageHolder<MessageLite> message) {
-		AgentManager.getInst().closeAll();
-		System.exit(0);
-		//直接关了吧 正常退出
-	}
-
-	private void actionKickOutPlayer(ChannelHandlerContext client, CocoPacket packet, MessageHolder<MessageLite> message) {
-		AgentManager.getInst().closeAgent(packet.getPlayerId());
+	private void actionLoginResult(ChannelHandlerContext client, CocoPacket packet, MessageHolder<MessageLite> message) {
+		Login.PBLoginSucc request = message.get();
+		CocoAgent agent = AgentManager.getInst().getAgentByUserId(request.getUserId());
+		if (agent == null) {
+			return;
+		}
+		agent.setValid(true);
+		agent.setPlayerId(request.getPlayerId());
+		AgentManager.getInst().registerAgent(agent);
+		agent.writeMessage(ResponseCode.ACCOUNT_LOGIN_SUCC.getValue(), request.toByteArray());
 	}
 
 	@Override
@@ -67,7 +70,7 @@ public class GateClientHandler extends AbstractHandlers {
 				if (messageAndHandler == null) {
 					if (ResponseCode.ACCOUNT_LOGIN_OTHER_WHERE.getValue() == packet.getReqId()) {
 						AgentManager.getInst().kickAgent(packet.getPlayerId());
-					}else{
+					} else {
 						AgentManager.getInst().writeMessage(packet);
 					}
 				} else {

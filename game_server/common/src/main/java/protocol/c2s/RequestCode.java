@@ -10,8 +10,11 @@ import define.AppId;
 public enum RequestCode {
 	PING(1, AppId.GATE),
 	RESPONSE_TO_CLIIENT_CODE(-1, AppId.GATE),
-	ACCOUNT_BEGIN(0x0100),
-	ACCOUNT_LOGIN(0x0102, AppId.CENTER),
+
+	ACCOUNT_BEGIN(100),
+	ACCOUNT_LOGIN(101, AppId.CENTER),
+	ACCOUNT_LOGIN_RESULT(102, AppId.GATE),
+	ACCOUNT_TEST(103),
 	ACCOUNT_RETRIEVE_PASSWORD(259),
 	ACCOUNT_MODIFY_PASSWORD(260),
 	ACCOUNT_MODIFY_ICON(261, AppId.CENTER),
@@ -60,22 +63,6 @@ public enum RequestCode {
 	LOBBY_GET_SCORE_DETAIL(533, AppId.CENTER),
 	GAME_RECORD(534, AppId.CENTER),    //回放
 	LOBBY_ZJH_BEGIN_GAME(535, AppId.CENTER),                                         //私房游戏开始
-
-	//////////////////////////////////////////
-	/////////////////////////////////////////
-	COUPLE_BEGIN(768),
-	COUPLE_READY(769, AppId.LOGIC),
-	COUPLE_MJ_DISCARD_CARD(770),                            //出牌
-	COUPLE_MJ_CHI_CARD(771),                            //吃
-	COUPLE_MJ_KE_CARD(772),                            //刻
-	COUPLE_MJ_GANG_CARD(773),                            //杠
-	COUPLE_MJ_TING_CARD(774),                            //听
-	COUPLE_MJ_HU_CARD(775),                            //胡
-	COUPLE_WANT_OPERATION(776),                        //想要发起操作
-	COUPLE_CHANGE_OPPOSITE(777),                        //换对手
-	COUPLE_GUO(784),                                    //过
-	COUPLE_DO_TING(785),                                //听牌动作
-	COUPLE_RESET_GAME(786),                            //恢复游戏数据
 
 
 	MAIL_BEGIN(1024),                                //邮件模块

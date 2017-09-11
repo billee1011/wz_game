@@ -1956,3 +1956,27 @@ Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Acto
 Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
 Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
 
+2017-09-08 17:55:02 BaseApp.java 142 [ Actor-db_check_actor:1020889 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-08 17:55:02 BaseApp.java 143 [ Actor-db_check_actor:1020890 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-08 17:55:02 BaseApp.java 144 [ Actor-db_check_actor:1020890 ] - [ INFO ]  freeMemory  :  169 MB
+2017-09-08 17:55:02 BaseApp.java 145 [ Actor-db_check_actor:1020890 ] - [ INFO ]  usedMemory  :  74 MB
+2017-09-08 17:56:02 BaseApp.java 142 [ Actor-db_check_actor:1080889 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-08 17:56:02 BaseApp.java 143 [ Actor-db_check_actor:1080889 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-08 17:56:02 BaseApp.java 144 [ Actor-db_check_actor:1080889 ] - [ INFO ]  freeMemory  :  168 MB
+2017-09-08 17:56:02 BaseApp.java 145 [ Actor-db_check_actor:1080889 ] - [ INFO ]  usedMemory  :  75 MB
+2017-09-08 17:56:02 BaseApp.java 87 [ Actor-db_check_actor:1080890 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-08 17:56:02 BaseApp.java 82 [ Actor-db_check_actor:1080891 ] - [ INFO ]  Actor-db_check_actor=2
+Actor-update_agent=0
+Actor-Dispatcher-db_actor_pool-0=0|Actor-Dispatcher-db_actor_pool-1=0|Actor-Dispatcher-db_actor_pool-2=0|Actor-Dispatcher-db_actor_pool-3=0|Actor-Dispatcher-db_actor_pool-4=0|Actor-Dispatcher-db_actor_pool-5=0|Actor-Dispatcher-db_actor_pool-6=0|Actor-Dispatcher-db_actor_pool-7=0|
+Actor-Dispatcher-db_load_pool-0=0|Actor-Dispatcher-db_load_pool-1=0|Actor-Dispatcher-db_load_pool-2=0|Actor-Dispatcher-db_load_pool-3=0|
+Actor-Dispatcher-logic_actor_pool-0=0|Actor-Dispatcher-logic_actor_pool-1=0|Actor-Dispatcher-logic_actor_pool-2=0|Actor-Dispatcher-logic_actor_pool-3=0|Actor-Dispatcher-logic_actor_pool-4=0|Actor-Dispatcher-logic_actor_pool-5=0|Actor-Dispatcher-logic_actor_pool-6=0|Actor-Dispatcher-logic_actor_pool-7=0|
+Actor-Dispatcher-http_pool-0=0|Actor-Dispatcher-http_pool-1=0|Actor-Dispatcher-http_pool-2=0|Actor-Dispatcher-http_pool-3=0|Actor-Dispatcher-http_pool-4=0|Actor-Dispatcher-http_pool-5=0|Actor-Dispatcher-http_pool-6=0|Actor-Dispatcher-http_pool-7=0|Actor-Dispatcher-http_pool-8=0|Actor-Dispatcher-http_pool-9=0|Actor-Dispatcher-http_pool-10=0|Actor-Dispatcher-http_pool-11=0|Actor-Dispatcher-http_pool-12=0|Actor-Dispatcher-http_pool-13=0|Actor-Dispatcher-http_pool-14=0|Actor-Dispatcher-http_pool-15=0|Actor-Dispatcher-http_pool-16=0|Actor-Dispatcher-http_pool-17=0|Actor-Dispatcher-http_pool-18=0|Actor-Dispatcher-http_pool-19=0|Actor-Dispatcher-http_pool-20=0|Actor-Dispatcher-http_pool-21=0|Actor-Dispatcher-http_pool-22=0|Actor-Dispatcher-http_pool-23=0|
+Actor-Dispatcher-desk_logic-0=0|Actor-Dispatcher-desk_logic-1=0|Actor-Dispatcher-desk_logic-2=0|Actor-Dispatcher-desk_logic-3=0|Actor-Dispatcher-desk_logic-4=0|Actor-Dispatcher-desk_logic-5=0|Actor-Dispatcher-desk_logic-6=0|Actor-Dispatcher-desk_logic-7=0|
+
+2017-09-08 17:57:02 BaseApp.java 142 [ Actor-db_check_actor:1140889 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-08 17:57:02 BaseApp.java 143 [ Actor-db_check_actor:1140889 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-08 17:57:02 BaseApp.java 144 [ Actor-db_check_actor:1140889 ] - [ INFO ]  freeMemory  :  168 MB
+2017-09-08 17:57:02 BaseApp.java 145 [ Actor-db_check_actor:1140889 ] - [ INFO ]  usedMemory  :  75 MB

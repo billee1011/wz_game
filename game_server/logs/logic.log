@@ -1507,3 +1507,38 @@ total leased connection : 0
 2017-09-08 17:54:17 BaseApp.java 82 [ Actor-Dispatcher-load_db-1:961781 ] - [ INFO ]  Actor-Dispatcher-db_actor-0=0|Actor-Dispatcher-db_actor-1=0|Actor-Dispatcher-db_actor-2=0|Actor-Dispatcher-db_actor-3=0|
 Actor-Dispatcher-load_db-0=0|Actor-Dispatcher-load_db-1=0|
 
+2017-09-08 17:55:17 BaseApp.java 142 [ Actor-Dispatcher-load_db-1:1021778 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-08 17:55:17 BaseApp.java 143 [ Actor-Dispatcher-load_db-1:1021778 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-08 17:55:17 BaseApp.java 144 [ Actor-Dispatcher-load_db-1:1021778 ] - [ INFO ]  freeMemory  :  221 MB
+2017-09-08 17:55:17 BaseApp.java 145 [ Actor-Dispatcher-load_db-1:1021778 ] - [ INFO ]  usedMemory  :  22 MB
+2017-09-08 17:56:17 BaseApp.java 142 [ Actor-Dispatcher-load_db-1:1081778 ] - [ INFO ]  totalMemory :  243 MB
+2017-09-08 17:56:17 BaseApp.java 143 [ Actor-Dispatcher-load_db-1:1081778 ] - [ INFO ]  maxMemory :  3612 MB
+2017-09-08 17:56:17 BaseApp.java 144 [ Actor-Dispatcher-load_db-1:1081778 ] - [ INFO ]  freeMemory  :  221 MB
+2017-09-08 17:56:17 BaseApp.java 145 [ Actor-Dispatcher-load_db-1:1081778 ] - [ INFO ]  usedMemory  :  22 MB
+2017-09-08 17:56:17 BaseApp.java 87 [ Actor-Dispatcher-load_db-1:1081779 ] - [ INFO ]  database yc_game :total created connection : 20
+total free connection : 20
+total leased connection : 0
+
+2017-09-08 17:56:17 BaseApp.java 82 [ Actor-Dispatcher-load_db-1:1081780 ] - [ INFO ]  Actor-Dispatcher-db_actor-0=0|Actor-Dispatcher-db_actor-1=0|Actor-Dispatcher-db_actor-2=0|Actor-Dispatcher-db_actor-3=0|
+Actor-Dispatcher-load_db-0=0|Actor-Dispatcher-load_db-1=0|
+
+2017-09-08 17:57:17 ClientHandler.java 44 [ nioEventLoopGroup-2-1:1141275 ] - [ ERROR ]   error : {}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:357)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:898)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:242)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-08 17:57:17 ClientHandler.java 29 [ nioEventLoopGroup-2-1:1141280 ] - [ INFO ]   channel in active 
+2017-09-08 17:57:17 NetClient.java 114 [ nioEventLoopGroup-2-1:1141280 ] - [ ERROR ]  LOGIC,serverid=1与center连接断开,自动结束进程

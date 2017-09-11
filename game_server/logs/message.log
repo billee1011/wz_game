@@ -14401,3 +14401,11 @@ token: "f83a3fc6482d85ea1f1bcd14d1a3576d"
 2017-09-08 17:54:08 CenterMessageHandler.java 60 [ nioEventLoopGroup-3-1:966581 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null
 2017-09-08 17:54:12 CenterMessageHandler.java 60 [ nioEventLoopGroup-3-2:970824 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null
 2017-09-08 17:54:17 CenterMessageHandler.java 60 [ nioEventLoopGroup-3-3:976035 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null
+2017-09-08 17:55:08 CenterMessageHandler.java 60 [ nioEventLoopGroup-3-1:1026581 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null
+2017-09-08 17:55:12 CenterMessageHandler.java 60 [ nioEventLoopGroup-3-2:1030825 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null
+2017-09-08 17:55:17 CenterMessageHandler.java 60 [ nioEventLoopGroup-3-3:1036035 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null
+2017-09-08 17:56:08 CenterMessageHandler.java 60 [ nioEventLoopGroup-3-1:1086580 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null
+2017-09-08 17:56:12 CenterMessageHandler.java 60 [ nioEventLoopGroup-3-2:1090823 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null
+2017-09-08 17:56:17 CenterMessageHandler.java 60 [ nioEventLoopGroup-3-3:1096035 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null
+2017-09-08 17:57:08 CenterMessageHandler.java 60 [ nioEventLoopGroup-3-1:1146581 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null
+2017-09-08 17:57:12 CenterMessageHandler.java 60 [ nioEventLoopGroup-3-2:1150824 ] - [ INFO ]  player 0 , request:CENTER_SERVER_PING, packet null

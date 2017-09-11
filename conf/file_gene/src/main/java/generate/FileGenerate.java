@@ -14,6 +14,7 @@ public class FileGenerate {
 		generateJavaServerFile();
 		generateJavaClientFile();
 		geneJavaEnumFile();
+		geneCsEnumFile();
 	}
 
 
@@ -24,7 +25,11 @@ public class FileGenerate {
 	}
 
 	static void geneJavaEnumFile() {
-		PackConfigManager.getInst().getEnum_list().forEach(e -> geneOneJavaEnum(e));
+		PackConfigManager.getInst().getEnum_list().forEach(FileGenerate::geneOneJavaEnum);
+	}
+
+	static void geneCsEnumFile() {
+		PackConfigManager.getInst().getEnum_list().forEach(FileGenerate::geneOneCsEnum);
 	}
 
 	static void generateJavaServerFile() {
@@ -33,6 +38,7 @@ public class FileGenerate {
 
 	static void generateJavaClientFile() {
 		PackConfigManager.getInst().getConfigList().forEach(e -> geneOneJavaFile(e, false));
+		PackConfigManager.getInst().getConfigList().forEach(FileGenerate::geneCsFile);
 	}
 
 
@@ -52,6 +58,26 @@ public class FileGenerate {
 		return "\t@ListDesc(\"" + modify.split("_")[1] + "\")\n";
 	}
 
+
+	static void geneOneCsEnum(EnumConfig config) {
+		StringBuilder builder = new StringBuilder(128);
+		builder.append("public enum " + config.className);
+		builder.append("{\n");
+		List<Pair<String, Integer>> memberList = config.memberList;
+		for (int i = 0, size = memberList.size(); i < size; i++) {
+			builder.append("	");
+			builder.append(memberList.get(i).getLeft());
+			builder.append(" = ");
+			builder.append(memberList.get(i).getRight());
+			builder.append(",\n");
+		}
+		builder.append("}");
+		try {
+			writeToFile(builder.toString(), config.className, FileType.CS_FILE);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 	static void geneOneJavaEnum(EnumConfig config) {
 		StringBuilder builder = new StringBuilder(128);
@@ -94,12 +120,69 @@ public class FileGenerate {
 		builder.append("	}\n\n");
 		builder.append("}");
 		try {
-			writeToFile(builder.toString(), config.className, true);
+			writeToFile(builder.toString(), config.className, FileType.JAVA_SERVER_FILE);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
+
+	static void geneCsFile(ClassConfig config) {
+		StringBuilder builder = new StringBuilder();
+		builder.append("using System.Collections.Generic;\n");
+		builder.append("using System.Text;\n\n");
+		builder.append("public class " + config.className);
+		builder.append("{\n");
+		FieldConfig[] fieldList = config.clientFieldsList;
+		for (int i = 0; i < fieldList.length; i++) {
+			String filedModify = fieldList[i].xiushifu;
+			if (filedModify.startsWith("array")) {
+				filedModify = getFinalCsTypeString(filedModify);
+			}
+			if(filedModify.equals("String")){
+				filedModify = "string";
+			}
+			builder.append("\tprivate " + filedModify + " " + fieldList[i].fieldName + "; " + "\n\n");
+		}
+		for (int i = 0; i < fieldList.length; i++) {
+			String filedModify = fieldList[i].xiushifu;
+			if (filedModify.startsWith("array")) {
+				filedModify = getFinalCsTypeString(filedModify);
+			}
+			if(filedModify.equals("String")){
+				filedModify = "string";
+			}
+			builder.append("\tpublic " + filedModify + " get" + oneWordToUpper(fieldList[i].fieldName) + "(){\n");
+			builder.append("\t\treturn " + fieldList[i].fieldName + ";\n");
+			builder.append("\t}\n\n");
+			builder.append("\tpublic void set" + oneWordToUpper(fieldList[i].fieldName) + "(" + filedModify + " " + fieldList[i].fieldName + "){\n");
+			builder.append("\t\tthis." + fieldList[i].fieldName + " = " + fieldList[i].fieldName + ";\n");
+			builder.append("\t}\n\n");
+		}
+		//给每个对象加上toString方法可以让一切更容易调试
+		builder.append("	public string toString(){\n");
+		builder.append("		StringBuilder builder = new StringBuilder();\n");
+		for (int i = 0; i < fieldList.length; i++) {
+			builder.append("		builder.Append(\"");
+			builder.append(fieldList[i].fieldName);
+			builder.append("\");\n");
+			builder.append("		builder.Append(\":\");\n");
+			builder.append("		builder.Append(");
+			builder.append(fieldList[i].fieldName);
+			builder.append(");\n");
+			if (i != fieldList.length - 1) {
+				builder.append("		builder.Append(\",\");\n");
+			}
+		}
+		builder.append("		return builder.ToString();\n");
+		builder.append("	}\n");
+		builder.append("}");
+		try {
+			writeToFile(builder.toString(), config.className, FileType.CS_FILE);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 	static void geneOneJavaFile(ClassConfig config, boolean server) {
 		StringBuilder builder = new StringBuilder();
@@ -160,7 +243,7 @@ public class FileGenerate {
 		builder.append("	}\n");
 		builder.append("}");
 		try {
-			writeToFile(builder.toString(), config.className, server);
+			writeToFile(builder.toString(), config.className, server ? FileType.JAVA_SERVER_FILE : FileType.JAVA_CLIENT_FILE);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -185,6 +268,18 @@ public class FileGenerate {
 		}
 	}
 
+	static String getFinalCsTypeString(String original) {
+		String inputType = original.substring(original.lastIndexOf("_") + 1, original.length());
+		String finalArrayType = inputType;
+		if (original.startsWith("array2")) {
+			return String.format("List<List<%s>>", finalArrayType);
+		} else if (original.startsWith("array")) {
+			return String.format("List<%s>", finalArrayType);
+		} else {
+			throw new RuntimeException(" the array type is not defined ");
+		}
+	}
+
 	static String getFinalJavaTypeString(String original) {
 		String inputType = original.substring(original.lastIndexOf("_") + 1, original.length());
 		String finalArrayType = getFinalTypeInJavaArray(inputType);
@@ -197,14 +292,13 @@ public class FileGenerate {
 		}
 	}
 
-	static void writeToFile(String content, String className, boolean server) throws Exception {
-		String path = server ? FilePath.SERVER_JAVA_CONFIG_BEAN : FilePath.CLIENT_JAVA_CONFIG_BEAN;
+	static void writeToFile(String content, String className, FileType fileType) throws Exception {
+		String path = getPath(fileType);
 		File fileDir = new File(path);
 		if (!fileDir.exists()) {
 			fileDir.mkdirs();
 		}
-		FileType type = server ? FileType.JAVA_SERVER_FILE : FileType.JAVA_CLIENT_FILE;
-		String postFix = getPostFixByType(type);
+		String postFix = getPostFixByType(fileType);
 		File file = new File(path + className + postFix);
 		if (!file.exists()) {
 			file.createNewFile();
@@ -212,6 +306,16 @@ public class FileGenerate {
 		OutputStream out = new FileOutputStream(file);
 		out.write(content.getBytes());
 		out.close();
+	}
+
+	private static String getPath(FileType type) {
+		if (type == FileType.JAVA_SERVER_FILE) {
+			return FilePath.SERVER_JAVA_CONFIG_BEAN;
+		} else if (type == FileType.JAVA_CLIENT_FILE) {
+			return FilePath.CLIENT_JAVA_CONFIG_BEAN;
+		} else {
+			return FilePath.CLIENT_CS_CONFIG_BEAN;
+		}
 	}
 
 	static String getPostFixByType(FileType type) {

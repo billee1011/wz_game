@@ -105,7 +105,7 @@ public class ExcelReader {
                 e.printStackTrace();
             }
             try {
-//				writeClientConfig(mapList, sheetName);
+				writeClientConfig(mapList, sheetName);
                 writeServerConfig(mapList, sheetName);
             } catch (IndexOutOfBoundsException e) {
                 e.printStackTrace();
@@ -119,7 +119,7 @@ public class ExcelReader {
         Iterator<Map<String, String>> iter = mapList.iterator();
         List<Object> monsterList = new ArrayList<Object>();
         while (iter.hasNext()) {
-            Object monster = Class.forName("bean." + className + "Client").newInstance();
+            Object monster = Class.forName("bean." + className).newInstance();
             Field[] fileds = monster.getClass().getDeclaredFields();
             Map<String, String> gaga = iter.next();
             Iterator<String> iterSec = gaga.keySet().iterator();
@@ -134,8 +134,8 @@ public class ExcelReader {
             }
             monsterList.add(monster);
         }
-        String luaContent = writeLua(monsterList, false);
-        writeToFile(false, luaContent, className);
+        String content = JSONArray.fromObject(monsterList).toString();;
+        writeToFile(false, content, className);
     }
 
     public static <T> String getPrimitiveStrList(List list, Class<T> classType) {
@@ -423,7 +423,7 @@ public class ExcelReader {
         if (server) {
             path += "server" + File.separator + className + ".json";
         } else {
-            path += "client" + File.separator + "info_" + className + ".lua";
+            path += "client" + File.separator + className + ".json";
         }
         File resultFile = new File(path);
         if (resultFile.exists() == false) {

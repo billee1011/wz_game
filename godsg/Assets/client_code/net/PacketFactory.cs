@@ -32,6 +32,7 @@ namespace P3Net
             if (!m_Dictionary.ContainsKey(packetID))
             {
                 //-- log
+                UnityEngine.Debug.Log(" don't contain  the id " + packetID);
                 return null;
             }
 
@@ -41,15 +42,7 @@ namespace P3Net
                 //-- log
                 return null;
             }
-
-            if (!tmpProcessInfo.m_packetType.IsSubclassOf(typeof(Packet)))
-            {
-                //-- log
-                return null;
-            }
-
-            Packet packet = (Packet)System.Activator.CreateInstance(tmpProcessInfo.m_packetType);
-            return packet;
+            return new Packet((PACKET_TYPE)packetID);
 
         }
 
@@ -59,21 +52,16 @@ namespace P3Net
             //-- 01. valid
             if (packet == null)
             {
-                //-- log
+                UnityEngine.Debug.LogError(" null packet when process");
                 return;
             }
             if (!m_Dictionary.ContainsKey((UInt16)packet.GetPacketID()))
             {
-                //-- log
+                UnityEngine.Debug.LogError("dont't contain the packet id {}" +  packet.GetPacketID());
                 return;
             }
             PacketTypeAndHandler tmpProcessInfo = m_Dictionary[(UInt16)packet.GetPacketID()];
             if (tmpProcessInfo.m_handler == null)
-            {
-                //-- log
-                return;
-            }
-            if (tmpProcessInfo.m_packetType != packet.GetType())
             {
                 //-- log
                 return;

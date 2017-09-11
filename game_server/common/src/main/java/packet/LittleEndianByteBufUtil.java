@@ -13,6 +13,13 @@ public class LittleEndianByteBufUtil {
 		return (short) ((b << 8) + a);
 	}
 
+	public static void writeShort(ByteBuf buf, int value) {
+		byte a = (byte) value;
+		byte b = (byte) (value >>> 8);
+		buf.writeByte(a);
+		buf.writeByte(b);
+	}
+
 
 	public static int readIndex(ByteBuf buf) {
 		return readShort(buf);

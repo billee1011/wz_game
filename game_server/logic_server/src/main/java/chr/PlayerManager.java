@@ -8,26 +8,31 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class PlayerManager {
 
-    private static PlayerManager instance = new PlayerManager();
+	private static PlayerManager instance = new PlayerManager();
 
-    private PlayerManager() {
+	private PlayerManager() {
 
-    }
+	}
 
-    public static PlayerManager getInst() {
-        return instance;
-    }
+	public static PlayerManager getInst() {
+		return instance;
+	}
 
-    private Map<Long, RyCharacter> characterMap = new ConcurrentHashMap<>();
+	private Map<Long, RyCharacter> characterMap = new ConcurrentHashMap<>();
 
-    private Map<String, RyCharacter> name2PlayerMap = new ConcurrentHashMap<>();
+	private Map<String, RyCharacter> name2PlayerMap = new ConcurrentHashMap<>();
 
 
-    public void addPlayer(RyCharacter ch) {
+	public void addPlayer(RyCharacter ch) {
+		characterMap.put(ch.getEntityId(), ch);
+		name2PlayerMap.put(ch.getPlayerName(), ch);
+	}
 
-    }
+	public RyCharacter getCharacter(long entityId) {
+		return characterMap.get(entityId);
+	}
 
-    public void removeCharacter(RyCharacter ch) {
+	public void removeCharacter(RyCharacter ch) {
 
-    }
+	}
 }

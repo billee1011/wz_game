@@ -305,15 +305,14 @@ __NO_USED_LOGICSENDBUFFER:
             Int32 iTmpTotalSize = (Int32)memStream.Length;
             Int32 iTmpDeltaLenth = 0;
             PacketID_t tmpPacketID = (PacketID_t)PACKET_TYPE.PACKET_TYPE_NONE;
-            UInt32 iTmpPacketUInt32 = 0;
-            UInt32 uTmpPacketBodySize = 0;
-            UInt32 uTmpPacketIndex = 0;
-            UInt32 uTmpPacketStatus = 0;
+            Int16 iTmpPacketUInt32 = 0;
 
             while (true)
             {
-                iTmpDeltaLenth = iTmpTotalSize - iTmpHead;
+                iTmpDeltaLenth = iTmpTotalSize;
                 memStream.Seek(iTmpHead, SeekOrigin.Begin);
+                iTmpDeltaLenth -= iTmpHead;
+                UnityEngine.Debug.Log("the head is " + iTmpHead + " and the  deltaLength is " + iTmpDeltaLenth);
                 //-- 如果剩余的消息长度小于Header，则放入m_RemainingStream中。等待下次帧循环来处理
                 if (iTmpDeltaLenth < PacketUtil.PACKET_HEADER_SIZE)
                 {
@@ -324,8 +323,21 @@ __NO_USED_LOGICSENDBUFFER:
                     logicRecvBuf.SetUsedFlag(false);
                     break;
                 }
-                
-                //-- header[PacketID_t + UInt32]
+                UnityEngine.Debug.Log("the temp delta length is " + iTmpDeltaLenth);
+
+                iTmpPacketUInt32 = m_BinaryReader.ReadInt16();                ;
+                //-- 消息没有接收完全。
+                if (iTmpDeltaLenth < iTmpPacketUInt32)
+                {
+                    if (iTmpDeltaLenth > 0)
+                    {
+                        m_LogicRemainingBuf.Write(memStream.GetBuffer(), iTmpHead, iTmpDeltaLenth);
+                    }                    
+                    logicRecvBuf.SetUsedFlag(false);
+                    Console.WriteLine("消息没有接收完全");
+                    break;
+                }
+
                 try
                 {
                     tmpPacketID = m_BinaryReader.ReadUInt16();
@@ -336,72 +348,26 @@ __NO_USED_LOGICSENDBUFFER:
                     CommonDebugLog.LogWarning("ex:=[" + ex.ToString() + "]");
                 }
 
-                iTmpPacketUInt32 = m_BinaryReader.ReadUInt32();                
-                uTmpPacketIndex = PacketUtil.GetPacketIndex(iTmpPacketUInt32);
-                uTmpPacketStatus = PacketUtil.GetPacketStates(iTmpPacketUInt32);
-                uTmpPacketBodySize = PacketUtil.GetPacketBodyLength(iTmpPacketUInt32);
 
-                //Console.WriteLine("Begin_Index:==[" + uTmpPacketIndex + "]");
-                //Console.WriteLine("Index:==[" + uTmpPacketIndex + "]uTmpPacketBodySize:==[" + uTmpPacketBodySize + "]");
-
-                //-- 我们当前没有压缩
-                if (uTmpPacketStatus != (UInt32)PACKET_HEADER_STATUS.PACKET_HEADER_STATUS_UNCOMPRESS)
-                {
-                    //-- log
-                    //Console.WriteLine("uTmpPacketStatus != (UInt32)PACKET_HEADER_STATUS.PACKET_HEADER_STATUS_UNCOMPRESS");
-                }
-
-                //-- 消息没有接收完全。
-                if (iTmpDeltaLenth < PacketUtil.PACKET_HEADER_SIZE + uTmpPacketBodySize)
-                {
-                    if (iTmpDeltaLenth > 0)
-                    {
-                        m_LogicRemainingBuf.Write(memStream.GetBuffer(), iTmpHead, iTmpDeltaLenth);
-                    }                    
-                    logicRecvBuf.SetUsedFlag(false);
-                    //Console.WriteLine("消息没有接收完全");
-                    break;
-                }
-
-				//if (tmpPacketID <= (PacketID_t)PACKET_TYPE.PACKET_TYPE_NONE ||
-				//        tmpPacketID >= (PacketID_t)PACKET_TYPE.PACKET_TYPE_NUM
-				//)
-				//{
-				//    //-- 记录LOG
-				//    //-- 这里+1
-				//    //iTmpHead += sizeof(PacketID_t);
-				//    //Console.WriteLine("tmpPacketID is invalid!");
-				//    iTmpHead += 1;
-				//    continue;
-				//}
-
-                //-- create packet
                 Packet packet = PacketFacotry.GetInstance().CreatePacket(tmpPacketID);
                 if (packet == null)
                 {
                     //-- 抛出异常,根据PacketID创建Packet失败
                     //-- 略过这个出错的消息，并继续处理
-                    iTmpHead += (Int32)(PacketUtil.PACKET_HEADER_SIZE + uTmpPacketBodySize);
+                    iTmpHead += iTmpPacketUInt32;
 					CommonDebugLog.LogWarning(string.Format("CreatePacket Failed packetID = {0}", tmpPacketID));
 					//Console.WriteLine("packet == null");
                     continue;
                 }
 
-                uTmpPacketIndex %= byte.MaxValue;
-                uTmpPacketStatus %= byte.MaxValue;
-                packet.SetPacketIndex((byte)uTmpPacketIndex);
-                packet.SetPacketStatus((byte)uTmpPacketStatus);
-
                 try
                 {
-                    if (!packet.ReadPacketBody(m_BinaryReader, uTmpPacketBodySize))
+                    if (!packet.ReadPacketBody(m_BinaryReader, (Int16)(iTmpPacketUInt32 - 4)))
                     {
 						Console.WriteLine("packet.ReadPacketBody( m_BinaryReader) == false");
                         //-- log
                     }
-
-                    //-- 执行该Packet
-                    serverMsgIndex = (byte)uTmpPacketIndex;
+                    UnityEngine.Debug.LogError("begin process packet ");
                     PacketFacotry.GetInstance().ProcessPacket(packet);
 
 					NetClient.GetInstance().RemoveWatingPackets((PACKET_TYPE)packet.GetPacketID());
@@ -412,7 +378,7 @@ __NO_USED_LOGICSENDBUFFER:
 				}
 
 				//-- 执行成功，set iTmpHead
-				iTmpHead += (Int32)(PacketUtil.PACKET_HEADER_SIZE + uTmpPacketBodySize);
+				iTmpHead += (Int32)(iTmpPacketUInt32);
                
             } //-- end_while (true)
             return true;

@@ -17,8 +17,8 @@ namespace P3Net
 
 		private string mAccount = null;
 
-		protected List<HandlerBase> mHandlerList = new List<HandlerBase>();
 
+		protected List<HandlerBase> mHandlerList = new List<HandlerBase>();
 		protected Dictionary<PACKET_TYPE, PACKET_TYPE> mWaitPackets = new Dictionary<PACKET_TYPE, PACKET_TYPE>();	// 有些协议发送完毕之后，必须等待服务器回应;
 		protected List<PACKET_TYPE> mWatingPackets = new List<PACKET_TYPE>();	// 现在客户端正在等待哪些协议;
 
@@ -34,22 +34,22 @@ namespace P3Net
 
 		public void AddWatingPackets(PACKET_TYPE packetID)
 		{
-			PACKET_TYPE waitPacket = PACKET_TYPE.PACKET_TYPE_NUM;
-			if (!mWaitPackets.TryGetValue(packetID, out waitPacket))
-			{
-				return;
-			}
+            //PACKET_TYPE waitPacket = PACKET_TYPE.PACKET_TYPE_NUM;
+            //if (!mWaitPackets.TryGetValue(packetID, out waitPacket))
+            //{
+            //	return;
+            //}
 
-			if (watingPackets.Contains(waitPacket))
-			{
-				return;
-			}
-			mWatingPackets.Add(waitPacket);
+            //if (watingPackets.Contains(waitPacket))
+            //{
+            //	return;
+            //}
+            //mWatingPackets.Add(waitPacket);
 
-			OnWatingChange();
-		}
+            //OnWatingChange();
+        }
 
-		public void RemoveWatingPackets(PACKET_TYPE packetID)
+        public void RemoveWatingPackets(PACKET_TYPE packetID)
 		{
 			if (!mWatingPackets.Contains(packetID))
 			{
@@ -81,10 +81,15 @@ namespace P3Net
 			}
 
 			mNetManager.initCallback(OnConnectSuccessed, OnConnectFailed);
-
+            InitHandlerList();
 			RegisterHandler();
 			RegisterWaitList();
 		}
+
+        private void InitHandlerList()
+        {
+            mHandlerList.Add(new LoginHandler());
+        }
 
 		protected void RegisterHandler()
 		{

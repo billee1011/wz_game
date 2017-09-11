@@ -28,7 +28,7 @@ abstract class BaseInfoProvider<T> where T : IdParseConf
 
     private string getJsonStr()
     {
-        TextAsset asset = Resources.Load("Hero") as TextAsset;
+        TextAsset asset = Resources.Load("HeroBase") as TextAsset;
         if (asset == null)
         {
             return "";

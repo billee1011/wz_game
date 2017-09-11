@@ -1146,6 +1146,806 @@ public final class Login {
 
   }
 
+  public interface PBLoginSuccOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:proto.PBLoginSucc)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional int32 user_id = 1;</code>
+     */
+    int getUserId();
+
+    /**
+     * <code>optional int64 player_id = 2;</code>
+     */
+    long getPlayerId();
+
+    /**
+     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     */
+    int getResMapCount();
+    /**
+     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     */
+    boolean containsResMap(
+        int key);
+    /**
+     * Use {@link #getResMapMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Long>
+    getResMap();
+    /**
+     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Long>
+    getResMapMap();
+    /**
+     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     */
+
+    long getResMapOrDefault(
+        int key,
+        long defaultValue);
+    /**
+     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     */
+
+    long getResMapOrThrow(
+        int key);
+  }
+  /**
+   * Protobuf type {@code proto.PBLoginSucc}
+   */
+  public  static final class PBLoginSucc extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:proto.PBLoginSucc)
+      PBLoginSuccOrBuilder {
+    // Use PBLoginSucc.newBuilder() to construct.
+    private PBLoginSucc(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private PBLoginSucc() {
+      userId_ = 0;
+      playerId_ = 0L;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private PBLoginSucc(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+
+              userId_ = input.readInt32();
+              break;
+            }
+            case 16: {
+
+              playerId_ = input.readInt64();
+              break;
+            }
+            case 26: {
+              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                resMap_ = com.google.protobuf.MapField.newMapField(
+                    ResMapDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000004;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Long>
+              resMap__ = input.readMessage(
+                  ResMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              resMap_.getMutableMap().put(
+                  resMap__.getKey(), resMap__.getValue());
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return proto.Login.internal_static_proto_PBLoginSucc_descriptor;
+    }
+
+    @SuppressWarnings({"rawtypes"})
+    protected com.google.protobuf.MapField internalGetMapField(
+        int number) {
+      switch (number) {
+        case 3:
+          return internalGetResMap();
+        default:
+          throw new RuntimeException(
+              "Invalid map field number: " + number);
+      }
+    }
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return proto.Login.internal_static_proto_PBLoginSucc_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              proto.Login.PBLoginSucc.class, proto.Login.PBLoginSucc.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int USER_ID_FIELD_NUMBER = 1;
+    private int userId_;
+    /**
+     * <code>optional int32 user_id = 1;</code>
+     */
+    public int getUserId() {
+      return userId_;
+    }
+
+    public static final int PLAYER_ID_FIELD_NUMBER = 2;
+    private long playerId_;
+    /**
+     * <code>optional int64 player_id = 2;</code>
+     */
+    public long getPlayerId() {
+      return playerId_;
+    }
+
+    public static final int RES_MAP_FIELD_NUMBER = 3;
+    private static final class ResMapDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Long> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Long>newDefaultInstance(
+                  proto.Login.internal_static_proto_PBLoginSucc_ResMapEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.INT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.INT64,
+                  0L);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Long> resMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Long>
+    internalGetResMap() {
+      if (resMap_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            ResMapDefaultEntryHolder.defaultEntry);
+      }
+      return resMap_;
+    }
+
+    public int getResMapCount() {
+      return internalGetResMap().getMap().size();
+    }
+    /**
+     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     */
+
+    public boolean containsResMap(
+        int key) {
+      
+      return internalGetResMap().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getResMapMap()} instead.
+     */
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Long> getResMap() {
+      return getResMapMap();
+    }
+    /**
+     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     */
+
+    public java.util.Map<java.lang.Integer, java.lang.Long> getResMapMap() {
+      return internalGetResMap().getMap();
+    }
+    /**
+     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     */
+
+    public long getResMapOrDefault(
+        int key,
+        long defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Long> map =
+          internalGetResMap().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     */
+
+    public long getResMapOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Long> map =
+          internalGetResMap().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (userId_ != 0) {
+        output.writeInt32(1, userId_);
+      }
+      if (playerId_ != 0L) {
+        output.writeInt64(2, playerId_);
+      }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetResMap(),
+          ResMapDefaultEntryHolder.defaultEntry,
+          3);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (userId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, userId_);
+      }
+      if (playerId_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(2, playerId_);
+      }
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Long> entry
+           : internalGetResMap().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Long>
+        resMap__ = ResMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(3, resMap__);
+      }
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof proto.Login.PBLoginSucc)) {
+        return super.equals(obj);
+      }
+      proto.Login.PBLoginSucc other = (proto.Login.PBLoginSucc) obj;
+
+      boolean result = true;
+      result = result && (getUserId()
+          == other.getUserId());
+      result = result && (getPlayerId()
+          == other.getPlayerId());
+      result = result && internalGetResMap().equals(
+          other.internalGetResMap());
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (37 * hash) + USER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getUserId();
+      hash = (37 * hash) + PLAYER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getPlayerId());
+      if (!internalGetResMap().getMap().isEmpty()) {
+        hash = (37 * hash) + RES_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetResMap().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static proto.Login.PBLoginSucc parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static proto.Login.PBLoginSucc parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static proto.Login.PBLoginSucc parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static proto.Login.PBLoginSucc parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static proto.Login.PBLoginSucc parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static proto.Login.PBLoginSucc parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static proto.Login.PBLoginSucc parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static proto.Login.PBLoginSucc parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static proto.Login.PBLoginSucc parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static proto.Login.PBLoginSucc parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(proto.Login.PBLoginSucc prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code proto.PBLoginSucc}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:proto.PBLoginSucc)
+        proto.Login.PBLoginSuccOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return proto.Login.internal_static_proto_PBLoginSucc_descriptor;
+      }
+
+      @SuppressWarnings({"rawtypes"})
+      protected com.google.protobuf.MapField internalGetMapField(
+          int number) {
+        switch (number) {
+          case 3:
+            return internalGetResMap();
+          default:
+            throw new RuntimeException(
+                "Invalid map field number: " + number);
+        }
+      }
+      @SuppressWarnings({"rawtypes"})
+      protected com.google.protobuf.MapField internalGetMutableMapField(
+          int number) {
+        switch (number) {
+          case 3:
+            return internalGetMutableResMap();
+          default:
+            throw new RuntimeException(
+                "Invalid map field number: " + number);
+        }
+      }
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return proto.Login.internal_static_proto_PBLoginSucc_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                proto.Login.PBLoginSucc.class, proto.Login.PBLoginSucc.Builder.class);
+      }
+
+      // Construct using proto.Login.PBLoginSucc.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        userId_ = 0;
+
+        playerId_ = 0L;
+
+        internalGetMutableResMap().clear();
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return proto.Login.internal_static_proto_PBLoginSucc_descriptor;
+      }
+
+      public proto.Login.PBLoginSucc getDefaultInstanceForType() {
+        return proto.Login.PBLoginSucc.getDefaultInstance();
+      }
+
+      public proto.Login.PBLoginSucc build() {
+        proto.Login.PBLoginSucc result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public proto.Login.PBLoginSucc buildPartial() {
+        proto.Login.PBLoginSucc result = new proto.Login.PBLoginSucc(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        result.userId_ = userId_;
+        result.playerId_ = playerId_;
+        result.resMap_ = internalGetResMap();
+        result.resMap_.makeImmutable();
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof proto.Login.PBLoginSucc) {
+          return mergeFrom((proto.Login.PBLoginSucc)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(proto.Login.PBLoginSucc other) {
+        if (other == proto.Login.PBLoginSucc.getDefaultInstance()) return this;
+        if (other.getUserId() != 0) {
+          setUserId(other.getUserId());
+        }
+        if (other.getPlayerId() != 0L) {
+          setPlayerId(other.getPlayerId());
+        }
+        internalGetMutableResMap().mergeFrom(
+            other.internalGetResMap());
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        proto.Login.PBLoginSucc parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (proto.Login.PBLoginSucc) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private int userId_ ;
+      /**
+       * <code>optional int32 user_id = 1;</code>
+       */
+      public int getUserId() {
+        return userId_;
+      }
+      /**
+       * <code>optional int32 user_id = 1;</code>
+       */
+      public Builder setUserId(int value) {
+        
+        userId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 user_id = 1;</code>
+       */
+      public Builder clearUserId() {
+        
+        userId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long playerId_ ;
+      /**
+       * <code>optional int64 player_id = 2;</code>
+       */
+      public long getPlayerId() {
+        return playerId_;
+      }
+      /**
+       * <code>optional int64 player_id = 2;</code>
+       */
+      public Builder setPlayerId(long value) {
+        
+        playerId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 player_id = 2;</code>
+       */
+      public Builder clearPlayerId() {
+        
+        playerId_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Long> resMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Long>
+      internalGetResMap() {
+        if (resMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              ResMapDefaultEntryHolder.defaultEntry);
+        }
+        return resMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Long>
+      internalGetMutableResMap() {
+        onChanged();;
+        if (resMap_ == null) {
+          resMap_ = com.google.protobuf.MapField.newMapField(
+              ResMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!resMap_.isMutable()) {
+          resMap_ = resMap_.copy();
+        }
+        return resMap_;
+      }
+
+      public int getResMapCount() {
+        return internalGetResMap().getMap().size();
+      }
+      /**
+       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       */
+
+      public boolean containsResMap(
+          int key) {
+        
+        return internalGetResMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getResMapMap()} instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Long> getResMap() {
+        return getResMapMap();
+      }
+      /**
+       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       */
+
+      public java.util.Map<java.lang.Integer, java.lang.Long> getResMapMap() {
+        return internalGetResMap().getMap();
+      }
+      /**
+       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       */
+
+      public long getResMapOrDefault(
+          int key,
+          long defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Long> map =
+            internalGetResMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       */
+
+      public long getResMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Long> map =
+            internalGetResMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearResMap() {
+        getMutableResMap().clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       */
+
+      public Builder removeResMap(
+          int key) {
+        
+        getMutableResMap().remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Long>
+      getMutableResMap() {
+        return internalGetMutableResMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       */
+      public Builder putResMap(
+          int key,
+          long value) {
+        
+        
+        getMutableResMap().put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       */
+
+      public Builder putAllResMap(
+          java.util.Map<java.lang.Integer, java.lang.Long> values) {
+        getMutableResMap().putAll(values);
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:proto.PBLoginSucc)
+    }
+
+    // @@protoc_insertion_point(class_scope:proto.PBLoginSucc)
+    private static final proto.Login.PBLoginSucc DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new proto.Login.PBLoginSucc();
+    }
+
+    public static proto.Login.PBLoginSucc getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<PBLoginSucc>
+        PARSER = new com.google.protobuf.AbstractParser<PBLoginSucc>() {
+      public PBLoginSucc parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new PBLoginSucc(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<PBLoginSucc> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<PBLoginSucc> getParserForType() {
+      return PARSER;
+    }
+
+    public proto.Login.PBLoginSucc getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_proto_PBLoginReq_descriptor;
   private static final 
@@ -1156,6 +1956,16 @@ public final class Login {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_proto_PBCreateRoleReq_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_proto_PBLoginSucc_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_proto_PBLoginSucc_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_proto_PBLoginSucc_ResMapEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_proto_PBLoginSucc_ResMapEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1167,8 +1977,11 @@ public final class Login {
     java.lang.String[] descriptorData = {
       "\n\013login.proto\022\005proto\",\n\nPBLoginReq\022\017\n\007us" +
       "er_id\030\001 \001(\005\022\r\n\005token\030\002 \001(\t\"/\n\017PBCreateRo" +
-      "leReq\022\016\n\006gender\030\001 \001(\005\022\014\n\004name\030\002 \001(\tb\006pro" +
-      "to3"
+      "leReq\022\016\n\006gender\030\001 \001(\005\022\014\n\004name\030\002 \001(\t\"\221\001\n\013" +
+      "PBLoginSucc\022\017\n\007user_id\030\001 \001(\005\022\021\n\tplayer_i" +
+      "d\030\002 \001(\003\022/\n\007res_map\030\003 \003(\0132\036.proto.PBLogin" +
+      "Succ.ResMapEntry\032-\n\013ResMapEntry\022\013\n\003key\030\001" +
+      " \001(\005\022\r\n\005value\030\002 \001(\003:\0028\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1194,6 +2007,18 @@ public final class Login {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PBCreateRoleReq_descriptor,
         new java.lang.String[] { "Gender", "Name", });
+    internal_static_proto_PBLoginSucc_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_proto_PBLoginSucc_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_proto_PBLoginSucc_descriptor,
+        new java.lang.String[] { "UserId", "PlayerId", "ResMap", });
+    internal_static_proto_PBLoginSucc_ResMapEntry_descriptor =
+      internal_static_proto_PBLoginSucc_descriptor.getNestedTypes().get(0);
+    internal_static_proto_PBLoginSucc_ResMapEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_proto_PBLoginSucc_ResMapEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

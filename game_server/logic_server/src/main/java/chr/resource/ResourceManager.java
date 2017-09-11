@@ -31,6 +31,10 @@ public class ResourceManager {
         this.resourceMap = resMap;
     }
 
+    public Map<EMoney, Long> getResourceMap() {
+        return resourceMap;
+    }
+
     public void updateResource(EMoney type, long value, boolean add) {
         if (add)
             resourceMap.merge(type, value, (e, f) -> e == null ? 0 + f : e + f);

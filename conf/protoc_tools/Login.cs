@@ -24,12 +24,17 @@ namespace Proto {
           string.Concat(
             "Cgtsb2dpbi5wcm90bxIFcHJvdG8iLAoKUEJMb2dpblJlcRIPCgd1c2VyX2lk",
             "GAEgASgFEg0KBXRva2VuGAIgASgJIi8KD1BCQ3JlYXRlUm9sZVJlcRIOCgZn",
-            "ZW5kZXIYASABKAUSDAoEbmFtZRgCIAEoCWIGcHJvdG8z"));
+            "ZW5kZXIYASABKAUSDAoEbmFtZRgCIAEoCSKRAQoLUEJMb2dpblN1Y2MSDwoH",
+            "dXNlcl9pZBgBIAEoBRIRCglwbGF5ZXJfaWQYAiABKAMSLwoHcmVzX21hcBgD",
+            "IAMoCzIeLnByb3RvLlBCTG9naW5TdWNjLlJlc01hcEVudHJ5Gi0KC1Jlc01h",
+            "cEVudHJ5EgsKA2tleRgBIAEoBRINCgV2YWx1ZRgCIAEoAzoCOAFiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBLoginReq), global::Proto.PBLoginReq.Parser, new[]{ "UserId", "Token" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBCreateRoleReq), global::Proto.PBCreateRoleReq.Parser, new[]{ "Gender", "Name" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBCreateRoleReq), global::Proto.PBCreateRoleReq.Parser, new[]{ "Gender", "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBLoginSucc), global::Proto.PBLoginSucc.Parser, new[]{ "UserId", "PlayerId", "ResMap" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -318,6 +323,171 @@ namespace Proto {
           }
           case 18: {
             Name = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PBLoginSucc : pb::IMessage<PBLoginSucc> {
+    private static readonly pb::MessageParser<PBLoginSucc> _parser = new pb::MessageParser<PBLoginSucc>(() => new PBLoginSucc());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PBLoginSucc> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Proto.LoginReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PBLoginSucc() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PBLoginSucc(PBLoginSucc other) : this() {
+      userId_ = other.userId_;
+      playerId_ = other.playerId_;
+      resMap_ = other.resMap_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PBLoginSucc Clone() {
+      return new PBLoginSucc(this);
+    }
+
+    /// <summary>Field number for the "user_id" field.</summary>
+    public const int UserIdFieldNumber = 1;
+    private int userId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int UserId {
+      get { return userId_; }
+      set {
+        userId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "player_id" field.</summary>
+    public const int PlayerIdFieldNumber = 2;
+    private long playerId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "res_map" field.</summary>
+    public const int ResMapFieldNumber = 3;
+    private static readonly pbc::MapField<int, long>.Codec _map_resMap_codec
+        = new pbc::MapField<int, long>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForInt64(16), 26);
+    private readonly pbc::MapField<int, long> resMap_ = new pbc::MapField<int, long>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<int, long> ResMap {
+      get { return resMap_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PBLoginSucc);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PBLoginSucc other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (UserId != other.UserId) return false;
+      if (PlayerId != other.PlayerId) return false;
+      if (!ResMap.Equals(other.ResMap)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (UserId != 0) hash ^= UserId.GetHashCode();
+      if (PlayerId != 0L) hash ^= PlayerId.GetHashCode();
+      hash ^= ResMap.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (UserId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(UserId);
+      }
+      if (PlayerId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(PlayerId);
+      }
+      resMap_.WriteTo(output, _map_resMap_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (UserId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+      }
+      if (PlayerId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PlayerId);
+      }
+      size += resMap_.CalculateSize(_map_resMap_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PBLoginSucc other) {
+      if (other == null) {
+        return;
+      }
+      if (other.UserId != 0) {
+        UserId = other.UserId;
+      }
+      if (other.PlayerId != 0L) {
+        PlayerId = other.PlayerId;
+      }
+      resMap_.Add(other.resMap_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            UserId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            PlayerId = input.ReadInt64();
+            break;
+          }
+          case 26: {
+            resMap_.AddEntriesFrom(input, _map_resMap_codec);
             break;
           }
         }

@@ -26,8 +26,8 @@
     public class PacketUtil
     {
         public static int PACKET_ID_LENGTH      = sizeof(UInt16);
-        public static int UINT32_LENGTH         = sizeof(UInt32);
-        public static Int32 PACKET_HEADER_SIZE  = PACKET_ID_LENGTH + UINT32_LENGTH; //-- 发送消息的header的长度
+        public static int UINT16_LENGTH         = sizeof(UInt16);
+        public static Int32 PACKET_HEADER_SIZE  =  UINT16_LENGTH + PACKET_HEADER_SIZE; //-- 发送消息的header的长度
         public static Int32 PACKET_MAX_STATUS   = 16;                               //-- 包的最大status。m_PacketStatus < PACKET_MAX_STATUS
         public static Int32 PACKET_MAX_SIZE     = 1048576;                          //-- 包的最大size:2*20 = 1048576。m_PacketSize < PACKET_MAX_SIZE
         public static char CHAR_TERMINATOR      = '\0';
@@ -156,14 +156,25 @@
         private PACKET_TYPE m_PacketID = PACKET_TYPE.PACKET_TYPE_NONE;//-- 消息header处理中无变化。
         private Byte m_PacketIndex  = 0;	//-- 当前消息的序列号, 目前并没被使用。消息head处理中无变化。					备注：目前没有参与收包的校验。如果参与，检测256个index是否够用。
         private Byte m_PacketStatus = 0;	//-- 当前0，无压缩。1，压缩。其他没有被使用。消息head处理中，大小由2*8变为2*4.	备注：必须<=MAX_PACKET_STATUS
-        private IMessage message = null;
-        public Packet(PACKET_TYPE packetID, IMessage message)
+        private byte[] bytes = null;
+        public Packet(PACKET_TYPE packetID, byte[] bytes)
         {
             this.m_PacketID = packetID;
-            this.message = message;
+            this.bytes = bytes;
         }
 
+        public Packet(PACKET_TYPE packetId)
+        {
+            this.m_PacketID = packetId;
+        }
+
+
 #region 属性接口
+
+        public byte[] GetBytes()
+        {
+            return this.bytes;
+        }
 
         public PACKET_TYPE GetPacketID()
         {
@@ -233,9 +244,9 @@
 
         public  bool WritePacketBody(ref BinaryWriter oStream)
         {
-            if(message != null)
+            if(bytes != null)
             {
-                oStream.Write(message.ToByteArray());
+                oStream.Write(bytes);            
             }
             return true;
         }
@@ -273,9 +284,11 @@
 
         }
 
-        public virtual bool ReadPacketBody( BinaryReader iStream, UInt32 iSize)
+        public  bool ReadPacketBody( BinaryReader iStream, Int16 iSize)
         {
-            throw new NotImplementedException();
+            UnityEngine.Debug.Log(" the size is +++" + iSize);
+            this.bytes = iStream.ReadBytes(iSize);
+            return true;   
         }
 
         private void PrintPacketHeaderContect()

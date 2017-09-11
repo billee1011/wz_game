@@ -12,7 +12,7 @@ class GameUiManager : MonoBehaviour
     {
         if (instance == null)
         {
-            GameObject obj = GameObject.Find("GUI");
+            GameObject obj = GameObject.Find("Canvas");
             if( obj == null)
             {
                 return instance;
@@ -26,8 +26,18 @@ class GameUiManager : MonoBehaviour
         return null;
     }
 
+    static Dictionary<PannelType, MonoBehaviour> pannelScripts = new Dictionary<PannelType, MonoBehaviour>();
+
     void Init()
-    {
+    { 
 
     }
+
+
+
+    public static void showWindow(PannelType pannel , bool active)
+    {
+        
+    }
+
 }

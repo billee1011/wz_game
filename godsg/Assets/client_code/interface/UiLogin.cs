@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using P3Net;
 using Proto;
+using Google.Protobuf;
 
 
 class UiLogin : MonoBehaviour
@@ -62,7 +63,7 @@ class UiLogin : MonoBehaviour
         PBLoginReq req = new PBLoginReq();
         req.Token = token;
         req.UserId = userId;
-        Packet packet = new Packet(PACKET_TYPE.PACKET_CLLogin, req);
+        Packet packet = new Packet(PACKET_TYPE.PACKET_CLLogin, MessageExtensions.ToByteArray(req));
         NetClient.Instance.PushPacket(packet);
     }
 

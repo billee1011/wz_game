@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Text;
 
 public class EAttributeKeyValue{
-	private EBattleAttribute attrId; 
+	public EBattleAttribute attrId;
 
-	private int value; 
+    public int value; 
 
 	public EBattleAttribute getAttrId(){
 		return attrId;

@@ -2,23 +2,23 @@ using System.Collections.Generic;
 using System.Text;
 
 public class HeroBase{
-	private int id; 
+	public int id;
 
-	private string name; 
+    public string name;
 
-	private EItemQuality quality; 
+    public EItemQuality quality;
 
-	private int intelligence; 
+    public int intelligence;
 
-	private EJob job; 
+    public EJob job;
 
-	private ECountry country; 
+    public ECountry country;
 
-	private List<int> union_id_list; 
+    public List<int> union_id_list;
 
-	private List<int> break_id_list; 
+    public List<int> break_id_list;
 
-	private List<EAttributeKeyValue> battle_attribute; 
+    public List<EAttributeKeyValue> battle_attribute; 
 
 
 	public int getId(){

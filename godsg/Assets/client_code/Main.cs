@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using Google.Protobuf;
+using LitJson;
 
 public class Main : MonoBehaviour
 {
@@ -25,11 +26,16 @@ public class Main : MonoBehaviour
         }
         UnityEngine.Debug.Log(asset.text);
 
-        HeroBase[] heroList = LitJson.JsonMapper.ToObject<HeroBase[]>(asset.text);
+        List<HeroBase> heroList = JsonMapper.ToObject<List<HeroBase>>(asset.text);
 
-        for (int i = 0,length = heroList.Length; i < length ; i ++){
-            HeroBase hero = heroList[i];
-            UnityEngine.Debug.Log("hero data"+ hero.getId());
+        JsonData data = JsonMapper.ToObject(asset.text);
+
+  
+
+        for(int i = 0; i < data.Count; i++)
+        {
+            HeroBase hero = JsonMapper.ToObject<HeroBase>(data[i].ToJson());
+            UnityEngine.Debug.Log("the hero is " + hero.toString());
         }
 
 

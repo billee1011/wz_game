@@ -1,5 +1,6 @@
 package bean;
 
+import annotation.EnumField;
 public class Equip{
 	private int id; 
 

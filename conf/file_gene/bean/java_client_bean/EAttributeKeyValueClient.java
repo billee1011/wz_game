@@ -1,15 +1,17 @@
 package bean;
 
+import annotation.EnumField;
 public class EAttributeKeyValueClient{
-	private EBattleAttribute attrId; 
+	@EnumField("EBattleAttribute")
+	private int attrId; 
 
 	private int value; 
 
-	public EBattleAttribute getAttrId(){
+	public int getAttrId(){
 		return attrId;
 	}
 
-	public void setAttrId(EBattleAttribute attrId){
+	public void setAttrId(int attrId){
 		this.attrId = attrId;
 	}
 

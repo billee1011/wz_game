@@ -2,18 +2,22 @@ package bean;
 
 import java.util.List;
 import annotation.ListDesc;
+import annotation.EnumField;
 public class HeroBaseClient{
 	private int id; 
 
 	private String name; 
 
-	private EItemQuality quality; 
+	@EnumField("EItemQuality")
+	private int quality; 
 
 	private int intelligence; 
 
-	private EJob job; 
+	@EnumField("EJob")
+	private int job; 
 
-	private ECountry country; 
+	@EnumField("ECountry")
+	private int country; 
 
 	@ListDesc("int")
 	private List<Integer> union_id_list; 
@@ -21,8 +25,8 @@ public class HeroBaseClient{
 	@ListDesc("int")
 	private List<Integer> break_id_list; 
 
-	@ListDesc("EAttributeKeyValue")
-	private List<EAttributeKeyValue> battle_attribute; 
+	@ListDesc("EAttributeKeyValueClient")
+	private List<EAttributeKeyValueClient> battle_attribute; 
 
 	public int getId(){
 		return id;
@@ -40,11 +44,11 @@ public class HeroBaseClient{
 		this.name = name;
 	}
 
-	public EItemQuality getQuality(){
+	public int getQuality(){
 		return quality;
 	}
 
-	public void setQuality(EItemQuality quality){
+	public void setQuality(int quality){
 		this.quality = quality;
 	}
 
@@ -56,19 +60,19 @@ public class HeroBaseClient{
 		this.intelligence = intelligence;
 	}
 
-	public EJob getJob(){
+	public int getJob(){
 		return job;
 	}
 
-	public void setJob(EJob job){
+	public void setJob(int job){
 		this.job = job;
 	}
 
-	public ECountry getCountry(){
+	public int getCountry(){
 		return country;
 	}
 
-	public void setCountry(ECountry country){
+	public void setCountry(int country){
 		this.country = country;
 	}
 
@@ -88,11 +92,11 @@ public class HeroBaseClient{
 		this.break_id_list = break_id_list;
 	}
 
-	public List<EAttributeKeyValue> getBattle_attribute(){
+	public List<EAttributeKeyValueClient> getBattle_attribute(){
 		return battle_attribute;
 	}
 
-	public void setBattle_attribute(List<EAttributeKeyValue> battle_attribute){
+	public void setBattle_attribute(List<EAttributeKeyValueClient> battle_attribute){
 		this.battle_attribute = battle_attribute;
 	}
 

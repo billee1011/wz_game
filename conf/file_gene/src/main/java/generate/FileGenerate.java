@@ -43,7 +43,7 @@ public class FileGenerate {
 
 
 	static List<String> getNeedImportPackage(FieldConfig[] fieldList) {
-		List<String> result = null;
+		List<String> result = new ArrayList<>();
 		for (FieldConfig conf : fieldList) {
 			if (conf.xiushifu.startsWith("array")) {
 				result = new ArrayList<>();
@@ -51,11 +51,33 @@ public class FileGenerate {
 				result.add("annotation.ListDesc");
 			}
 		}
+		result.add("annotation.EnumField");
 		return result;
 	}
 
-	static String getAnnotation(String modify) {
-		return "\t@ListDesc(\"" + modify.split("_")[1] + "\")\n";
+	static String getAnnotation(String modify, boolean server) {
+		String type = modify.split("_")[1];
+		if (!server && !isUnderLiningType(type) && !PackConfigManager.getInst().isEnum(type))
+			type += "Client";
+		return "\t@ListDesc(\"" + type + "\")\n";
+	}
+
+	static boolean isUnderLiningType(String type) {
+		switch (type) {
+			case "int":
+			case "bool":
+			case "float":
+			case "byte":
+			case "long":
+			case "string":
+				return true;
+			default:
+				return false;
+		}
+	}
+
+	static String getEnumAnnotation(String className) {
+		return "\t@EnumField(\"" + className + "\")\n";
 	}
 
 
@@ -139,7 +161,7 @@ public class FileGenerate {
 			if (filedModify.startsWith("array")) {
 				filedModify = getFinalCsTypeString(filedModify);
 			}
-			if(filedModify.equals("String")){
+			if (filedModify.equals("String")) {
 				filedModify = "string";
 			}
 			builder.append("\tprivate " + filedModify + " " + fieldList[i].fieldName + "; " + "\n\n");
@@ -149,7 +171,7 @@ public class FileGenerate {
 			if (filedModify.startsWith("array")) {
 				filedModify = getFinalCsTypeString(filedModify);
 			}
-			if(filedModify.equals("String")){
+			if (filedModify.equals("String")) {
 				filedModify = "string";
 			}
 			builder.append("\tpublic " + filedModify + " get" + oneWordToUpper(fieldList[i].fieldName) + "(){\n");
@@ -202,19 +224,26 @@ public class FileGenerate {
 		for (int i = 0; i < fieldList.length; i++) {
 			String filedModify = fieldList[i].xiushifu;
 			if (filedModify.startsWith("array")) {
-				builder.append(getAnnotation(filedModify));
-				filedModify = getFinalJavaTypeString(filedModify);
+				builder.append(getAnnotation(filedModify, server));
+				filedModify = getFinalJavaTypeString(filedModify, server);
 			} else if (filedModify.equals("string")) {
 				filedModify = "String";
+			}
+			if (!server && PackConfigManager.getInst().isEnum(filedModify)) {
+				builder.append(getEnumAnnotation(filedModify));
+				filedModify = "int";
 			}
 			builder.append("\tprivate " + filedModify + " " + fieldList[i].fieldName + "; " + "\n\n");
 		}
 		for (int i = 0; i < fieldList.length; i++) {
 			String filedModify = fieldList[i].xiushifu;
 			if (filedModify.startsWith("array")) {
-				filedModify = getFinalJavaTypeString(filedModify);
+				filedModify = getFinalJavaTypeString(filedModify, server);
 			} else if (filedModify.equals("string")) {
 				filedModify = "String";
+			}
+			if (!server && PackConfigManager.getInst().isEnum(filedModify)) {
+				filedModify = "int";
 			}
 			builder.append("\tpublic " + filedModify + " get" + oneWordToUpper(fieldList[i].fieldName) + "(){\n");
 			builder.append("\t\treturn " + fieldList[i].fieldName + ";\n");
@@ -249,7 +278,7 @@ public class FileGenerate {
 		}
 	}
 
-	static String getFinalTypeInJavaArray(String original) {
+	static String getFinalTypeInJavaArray(String original, boolean server) {
 		switch (original) {
 			case "int":
 				return "Integer";
@@ -264,7 +293,10 @@ public class FileGenerate {
 			case "string":
 				return "String";
 			default:
-				return original;
+				if (!server && !PackConfigManager.getInst().isEnum(original))
+					return original + "Client";
+				else
+					return original;
 		}
 	}
 
@@ -280,9 +312,9 @@ public class FileGenerate {
 		}
 	}
 
-	static String getFinalJavaTypeString(String original) {
+	static String getFinalJavaTypeString(String original, boolean server) {
 		String inputType = original.substring(original.lastIndexOf("_") + 1, original.length());
-		String finalArrayType = getFinalTypeInJavaArray(inputType);
+		String finalArrayType = getFinalTypeInJavaArray(inputType, server);
 		if (original.startsWith("array2")) {
 			return String.format("List<List<%s>>", finalArrayType);
 		} else if (original.startsWith("array")) {

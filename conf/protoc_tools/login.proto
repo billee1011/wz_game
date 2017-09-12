@@ -20,5 +20,9 @@ message PBLoginSucc
 {
 	int32 user_id = 1;
 	int64 player_id = 2;
-	map<int32, int64> res_map = 3;
+	string name = 3;
+	int32 tili = 4;
+	int32 jingli = 5;
+	int64 battle_score= 6;
+	map<int32, int64> res_map = 7;
 }

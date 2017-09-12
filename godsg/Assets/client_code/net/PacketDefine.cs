@@ -8,6 +8,7 @@ namespace P3Net
 		PACKET_TYPE_NONE = 0,	//-- 消息空，默认值
 
 		//client 2 server
+        PACKET_PING = 100,
 		PACKET_CLLogin = 101,
         PACKET_CL_TEST = 103,
 

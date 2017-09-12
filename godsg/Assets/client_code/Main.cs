@@ -8,6 +8,7 @@ using LitJson;
 public class Main : MonoBehaviour
 {
 
+    private float intervalTime = 0.0f;
 
     void Awake()
     {
@@ -48,6 +49,14 @@ public class Main : MonoBehaviour
     {
         HttpUtil.Instance.OnUpdate();
         P3Net.NetClient.Instance.Update(Time.deltaTime);
+
+        intervalTime += Time.deltaTime;
+
+        if( intervalTime > 5)
+        {
+            P3Net.NetClient.GetInstance().PushPacket(new P3Net.Packet(P3Net.PACKET_TYPE.PACKET_PING, null));
+            intervalTime = 0;
+        }
     }
 
   

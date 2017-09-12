@@ -27,6 +27,8 @@ class LoginHandler : HandlerBase
         GameUiManager.getInst().showWindow(PanelType.UIMain_bottom, true);
         GameUiManager.getInst().showWindow(PanelType.UIMain, true);
 
+        VoiceManager.Instance.PlayMusic("world01");
+
     }
 
     public void OnReceiveTestMsg(Packet packet)

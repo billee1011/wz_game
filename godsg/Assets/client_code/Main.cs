@@ -24,32 +24,16 @@ public class Main : MonoBehaviour
         {
             
         }
-        UnityEngine.Debug.Log(asset.text);
-
-        List<HeroBase> heroList = JsonMapper.ToObject<List<HeroBase>>(asset.text);
-
-        JsonData data = JsonMapper.ToObject(asset.text);
-
-  
-
-        for(int i = 0; i < data.Count; i++)
-        {
-            HeroBase hero = JsonMapper.ToObject<HeroBase>(data[i].ToJson());
-            UnityEngine.Debug.Log("the hero is " + hero.toString());
-        }
+        HeroInfoProvider.Instance.LoadConfig(asset.text);
 
 
         //HttpUtil.Instance.sendGetRequest("http://localhost:10024/fast_login?machine_id=111111&channel=123&device=android", onLoginComplete, 3000);
 
         GameUiManager.getInst();
-        GameObject obj = GameObject.Find("Canvas");
+        PanelManager.GetInstance().registerAllPanel();
 
-        GameObject loginObj = Resources.Load("Perfab/Gui/UiLogin") as GameObject;
 
-        GameObject newObj = GameObject.Instantiate(loginObj);
-        newObj.transform.parent = obj.transform;
-        newObj.transform.localPosition = Vector2.zero;
-        newObj.AddComponent<UiLogin>();
+        GameUiManager.getInst().showWindow(PanelType.UILogin, true);
         
     }
 

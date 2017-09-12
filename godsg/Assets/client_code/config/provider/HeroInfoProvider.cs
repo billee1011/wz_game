@@ -3,32 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using LitJson;
 
-class HeroInfoProvider : BaseInfoProvider<Hero>
+class HeroInfoProvider : Singleton<HeroInfoProvider>
 {
 
-    protected override List<Hero> getConfList(string jsonStr)
+    private Dictionary<int, HeroBase> heroConfigMap = new Dictionary<int, HeroBase>();
+
+    public bool LoadConfig(string jsonStr)
     {
-        try
+        heroConfigMap.Clear();
+        JsonData data = JsonMapper.ToObject(jsonStr);
+        for(int i = 0, count = data.Count; i< count; i++)
         {
-            HeroList list = JsonUtility.FromJson<HeroList>(jsonStr);
-            return list.list;
+            HeroBase hero = JsonMapper.ToObject<HeroBase>(data[i].ToJson());
+            heroConfigMap[hero.getId()] = hero;
         }
-        catch
-        {
-            UnityEngine.Debug.Log("exception when convert into  herl list ");
-            return null;
-        }
+        return true;
     }
 
-    public override ConfType getConfType()
-    {
-        return ConfType.HERO;
-    }
 
-    protected override string getJsonName()
+    public HeroBase getHeroConfig(int confId)
     {
-        return "Hero";
+        return heroConfigMap[confId];
     }
 
 

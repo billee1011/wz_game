@@ -9,7 +9,7 @@ using Proto;
 using Google.Protobuf;
 
 
-class UiLogin : MonoBehaviour
+class UiLogin : UIPanelBase
 {
     private InputField userName;
     private InputField password;
@@ -23,6 +23,16 @@ class UiLogin : MonoBehaviour
         submitButton.onClick.AddListener(OnButtonClicked);
     }
 
+
+    public override void OnShow(params object[] paramsList) {
+        Debuger.Log(" show window haha");
+    }
+    public override void OnClose() {
+        Debuger.Log(" close window " + name);
+    }
+    public override void OnRemove() { }
+
+
     void OnButtonClicked()
     {
         string name = userName.text;
@@ -33,10 +43,10 @@ class UiLogin : MonoBehaviour
 
     class LoginResponse
     {
-        public string gateHost;
-        public int gatePort;
-        public int userId;
-        public string token;
+        public string gateHost = "";
+        public int gatePort = 0;
+        public int userId = 0;
+        public string token = "";
     }
 
 

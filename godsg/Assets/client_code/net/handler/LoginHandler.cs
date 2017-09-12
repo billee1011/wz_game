@@ -20,23 +20,13 @@ class LoginHandler : HandlerBase
 
 
         PBLoginSucc pb = PBLoginSucc.Parser.ParseFrom(bytes);
-
-        List<KeyValuePair<int,long>> resMap = pb.ResMap.ToList();
-
-        for (int i = 0, count = resMap.Count; i < count; i ++)
-        {
-            UnityEngine.Debug.Log("the key is  +" + resMap[i].Key + " the value is +" + resMap[i].Value);
-        }
-
+        PlayerManager.GetInstance().InitFromLoginData(pb);
         UnityEngine.Debug.LogError("fuck  the result is " + pb.PlayerId);
+        GameUiManager.getInst().showWindow(PanelType.UILogin, false);
+        // login success and begin to do something ;
+        GameUiManager.getInst().showWindow(PanelType.UIMain_bottom, true);
+        GameUiManager.getInst().showWindow(PanelType.UIMain, true);
 
-        PBStringList testPB = new PBStringList();
-        testPB.List.Add("a");
-        testPB.List.Add("b");
-        testPB.List.Add("c");
-        Packet testPacket = new Packet(PACKET_TYPE.PACKET_CL_TEST,MessageExtensions.ToByteArray(testPB ));
-        NetClient.GetInstance().PushPacket(testPacket);
-        
     }
 
     public void OnReceiveTestMsg(Packet packet)

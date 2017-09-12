@@ -24,17 +24,18 @@ namespace Proto {
           string.Concat(
             "Cgtsb2dpbi5wcm90bxIFcHJvdG8iLAoKUEJMb2dpblJlcRIPCgd1c2VyX2lk",
             "GAEgASgFEg0KBXRva2VuGAIgASgJIi8KD1BCQ3JlYXRlUm9sZVJlcRIOCgZn",
-            "ZW5kZXIYASABKAUSDAoEbmFtZRgCIAEoCSKRAQoLUEJMb2dpblN1Y2MSDwoH",
-            "dXNlcl9pZBgBIAEoBRIRCglwbGF5ZXJfaWQYAiABKAMSLwoHcmVzX21hcBgD",
-            "IAMoCzIeLnByb3RvLlBCTG9naW5TdWNjLlJlc01hcEVudHJ5Gi0KC1Jlc01h",
-            "cEVudHJ5EgsKA2tleRgBIAEoBRINCgV2YWx1ZRgCIAEoAzoCOAFiBnByb3Rv",
-            "Mw=="));
+            "ZW5kZXIYASABKAUSDAoEbmFtZRgCIAEoCSLTAQoLUEJMb2dpblN1Y2MSDwoH",
+            "dXNlcl9pZBgBIAEoBRIRCglwbGF5ZXJfaWQYAiABKAMSDAoEbmFtZRgDIAEo",
+            "CRIMCgR0aWxpGAQgASgFEg4KBmppbmdsaRgFIAEoBRIUCgxiYXR0bGVfc2Nv",
+            "cmUYBiABKAMSLwoHcmVzX21hcBgHIAMoCzIeLnByb3RvLlBCTG9naW5TdWNj",
+            "LlJlc01hcEVudHJ5Gi0KC1Jlc01hcEVudHJ5EgsKA2tleRgBIAEoBRINCgV2",
+            "YWx1ZRgCIAEoAzoCOAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBLoginReq), global::Proto.PBLoginReq.Parser, new[]{ "UserId", "Token" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBCreateRoleReq), global::Proto.PBCreateRoleReq.Parser, new[]{ "Gender", "Name" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBLoginSucc), global::Proto.PBLoginSucc.Parser, new[]{ "UserId", "PlayerId", "ResMap" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBLoginSucc), global::Proto.PBLoginSucc.Parser, new[]{ "UserId", "PlayerId", "Name", "Tili", "Jingli", "BattleScore", "ResMap" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -357,6 +358,10 @@ namespace Proto {
     public PBLoginSucc(PBLoginSucc other) : this() {
       userId_ = other.userId_;
       playerId_ = other.playerId_;
+      name_ = other.name_;
+      tili_ = other.tili_;
+      jingli_ = other.jingli_;
+      battleScore_ = other.battleScore_;
       resMap_ = other.resMap_.Clone();
     }
 
@@ -387,10 +392,54 @@ namespace Proto {
       }
     }
 
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 3;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "tili" field.</summary>
+    public const int TiliFieldNumber = 4;
+    private int tili_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Tili {
+      get { return tili_; }
+      set {
+        tili_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "jingli" field.</summary>
+    public const int JingliFieldNumber = 5;
+    private int jingli_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Jingli {
+      get { return jingli_; }
+      set {
+        jingli_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "battle_score" field.</summary>
+    public const int BattleScoreFieldNumber = 6;
+    private long battleScore_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long BattleScore {
+      get { return battleScore_; }
+      set {
+        battleScore_ = value;
+      }
+    }
+
     /// <summary>Field number for the "res_map" field.</summary>
-    public const int ResMapFieldNumber = 3;
+    public const int ResMapFieldNumber = 7;
     private static readonly pbc::MapField<int, long>.Codec _map_resMap_codec
-        = new pbc::MapField<int, long>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForInt64(16), 26);
+        = new pbc::MapField<int, long>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForInt64(16), 58);
     private readonly pbc::MapField<int, long> resMap_ = new pbc::MapField<int, long>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<int, long> ResMap {
@@ -412,6 +461,10 @@ namespace Proto {
       }
       if (UserId != other.UserId) return false;
       if (PlayerId != other.PlayerId) return false;
+      if (Name != other.Name) return false;
+      if (Tili != other.Tili) return false;
+      if (Jingli != other.Jingli) return false;
+      if (BattleScore != other.BattleScore) return false;
       if (!ResMap.Equals(other.ResMap)) return false;
       return true;
     }
@@ -421,6 +474,10 @@ namespace Proto {
       int hash = 1;
       if (UserId != 0) hash ^= UserId.GetHashCode();
       if (PlayerId != 0L) hash ^= PlayerId.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Tili != 0) hash ^= Tili.GetHashCode();
+      if (Jingli != 0) hash ^= Jingli.GetHashCode();
+      if (BattleScore != 0L) hash ^= BattleScore.GetHashCode();
       hash ^= ResMap.GetHashCode();
       return hash;
     }
@@ -440,6 +497,22 @@ namespace Proto {
         output.WriteRawTag(16);
         output.WriteInt64(PlayerId);
       }
+      if (Name.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Name);
+      }
+      if (Tili != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(Tili);
+      }
+      if (Jingli != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(Jingli);
+      }
+      if (BattleScore != 0L) {
+        output.WriteRawTag(48);
+        output.WriteInt64(BattleScore);
+      }
       resMap_.WriteTo(output, _map_resMap_codec);
     }
 
@@ -451,6 +524,18 @@ namespace Proto {
       }
       if (PlayerId != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(PlayerId);
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Tili != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Tili);
+      }
+      if (Jingli != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Jingli);
+      }
+      if (BattleScore != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BattleScore);
       }
       size += resMap_.CalculateSize(_map_resMap_codec);
       return size;
@@ -466,6 +551,18 @@ namespace Proto {
       }
       if (other.PlayerId != 0L) {
         PlayerId = other.PlayerId;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Tili != 0) {
+        Tili = other.Tili;
+      }
+      if (other.Jingli != 0) {
+        Jingli = other.Jingli;
+      }
+      if (other.BattleScore != 0L) {
+        BattleScore = other.BattleScore;
       }
       resMap_.Add(other.resMap_);
     }
@@ -487,6 +584,22 @@ namespace Proto {
             break;
           }
           case 26: {
+            Name = input.ReadString();
+            break;
+          }
+          case 32: {
+            Tili = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            Jingli = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            BattleScore = input.ReadInt64();
+            break;
+          }
+          case 58: {
             resMap_.AddEntriesFrom(input, _map_resMap_codec);
             break;
           }

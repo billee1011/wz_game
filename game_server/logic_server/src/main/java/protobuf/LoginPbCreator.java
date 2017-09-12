@@ -14,6 +14,10 @@ public class LoginPbCreator {
 		Login.PBLoginSucc.Builder builder = Login.PBLoginSucc.newBuilder();
 		builder.setPlayerId(ch.getEntityId());
 		builder.setUserId(ch.getUserId());
+		builder.setName(ch.getPlayerName());
+		builder.setBattleScore(ch.getCharFormation().calBattleScore());
+		builder.setTili(ch.getTili());
+		builder.setJingli(ch.getJingli());
 		ch.getResourceManager().getResourceMap().forEach((e, f) -> builder.putResMap(e.getValue(), f));
 		return builder.build();
 	}

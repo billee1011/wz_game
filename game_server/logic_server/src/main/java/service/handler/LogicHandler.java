@@ -87,8 +87,7 @@ public class LogicHandler extends AbstractHandlers {
 	private void onPlayerLoginSuccess(ChannelHandlerContext ctx, RyCharacter ch) {
 		PlayerManager.getInst().addPlayer(ch);
 		ch.setIoSession(ctx);
-		ch.write(new CocoPacket(RequestCode.ACCOUNT_LOGIN_RESULT.getValue()
-				, LoginPbCreator.loginSucc(ch).toByteArray(), ch.getEntityId()));
+		ch.write(RequestCode.ACCOUNT_LOGIN_RESULT, LoginPbCreator.loginSucc(ch));
 		logger.info("player login success ");
 	}
 

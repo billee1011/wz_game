@@ -26,6 +26,10 @@ public class CharHero {
 		heroMap.put(entity.getEntityId(), entity);
 	}
 
+	public HeroEntity getHeroEntity(long heroId) {
+		return heroMap.get(heroId);
+	}
+
 	public void removeHero(long entityId) {
 		heroMap.remove(entityId);
 	}

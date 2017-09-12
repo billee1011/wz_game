@@ -1161,11 +1161,36 @@ public final class Login {
     long getPlayerId();
 
     /**
-     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     * <code>optional string name = 3;</code>
+     */
+    String getName();
+    /**
+     * <code>optional string name = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+
+    /**
+     * <code>optional int32 tili = 4;</code>
+     */
+    int getTili();
+
+    /**
+     * <code>optional int32 jingli = 5;</code>
+     */
+    int getJingli();
+
+    /**
+     * <code>optional int64 battle_score = 6;</code>
+     */
+    long getBattleScore();
+
+    /**
+     * <code>map&lt;int32, int64&gt; res_map = 7;</code>
      */
     int getResMapCount();
     /**
-     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     * <code>map&lt;int32, int64&gt; res_map = 7;</code>
      */
     boolean containsResMap(
 			int key);
@@ -1176,19 +1201,19 @@ public final class Login {
     java.util.Map<Integer, Long>
     getResMap();
     /**
-     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     * <code>map&lt;int32, int64&gt; res_map = 7;</code>
      */
     java.util.Map<Integer, Long>
     getResMapMap();
     /**
-     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     * <code>map&lt;int32, int64&gt; res_map = 7;</code>
      */
 
     long getResMapOrDefault(
 			int key,
 			long defaultValue);
     /**
-     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     * <code>map&lt;int32, int64&gt; res_map = 7;</code>
      */
 
     long getResMapOrThrow(
@@ -1208,6 +1233,10 @@ public final class Login {
     private PBLoginSucc() {
       userId_ = 0;
       playerId_ = 0L;
+      name_ = "";
+      tili_ = 0;
+      jingli_ = 0;
+      battleScore_ = 0L;
     }
 
     @Override
@@ -1246,10 +1275,31 @@ public final class Login {
               break;
             }
             case 26: {
-              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+              String s = input.readStringRequireUtf8();
+
+              name_ = s;
+              break;
+            }
+            case 32: {
+
+              tili_ = input.readInt32();
+              break;
+            }
+            case 40: {
+
+              jingli_ = input.readInt32();
+              break;
+            }
+            case 48: {
+
+              battleScore_ = input.readInt64();
+              break;
+            }
+            case 58: {
+              if (!((mutable_bitField0_ & 0x00000040) == 0x00000040)) {
                 resMap_ = com.google.protobuf.MapField.newMapField(
                     ResMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000040;
               }
               com.google.protobuf.MapEntry<Integer, Long>
               resMap__ = input.readMessage(
@@ -1278,7 +1328,7 @@ public final class Login {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 3:
+        case 7:
           return internalGetResMap();
         default:
           throw new RuntimeException(
@@ -1311,7 +1361,68 @@ public final class Login {
       return playerId_;
     }
 
-    public static final int RES_MAP_FIELD_NUMBER = 3;
+    public static final int NAME_FIELD_NUMBER = 3;
+    private volatile Object name_;
+    /**
+     * <code>optional string name = 3;</code>
+     */
+    public String getName() {
+      Object ref = name_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        name_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>optional string name = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      Object ref = name_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int TILI_FIELD_NUMBER = 4;
+    private int tili_;
+    /**
+     * <code>optional int32 tili = 4;</code>
+     */
+    public int getTili() {
+      return tili_;
+    }
+
+    public static final int JINGLI_FIELD_NUMBER = 5;
+    private int jingli_;
+    /**
+     * <code>optional int32 jingli = 5;</code>
+     */
+    public int getJingli() {
+      return jingli_;
+    }
+
+    public static final int BATTLE_SCORE_FIELD_NUMBER = 6;
+    private long battleScore_;
+    /**
+     * <code>optional int64 battle_score = 6;</code>
+     */
+    public long getBattleScore() {
+      return battleScore_;
+    }
+
+    public static final int RES_MAP_FIELD_NUMBER = 7;
     private static final class ResMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           Integer, Long> defaultEntry =
@@ -1338,7 +1449,7 @@ public final class Login {
       return internalGetResMap().getMap().size();
     }
     /**
-     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     * <code>map&lt;int32, int64&gt; res_map = 7;</code>
      */
 
     public boolean containsResMap(
@@ -1354,14 +1465,14 @@ public final class Login {
       return getResMapMap();
     }
     /**
-     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     * <code>map&lt;int32, int64&gt; res_map = 7;</code>
      */
 
     public java.util.Map<Integer, Long> getResMapMap() {
       return internalGetResMap().getMap();
     }
     /**
-     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     * <code>map&lt;int32, int64&gt; res_map = 7;</code>
      */
 
     public long getResMapOrDefault(
@@ -1373,7 +1484,7 @@ public final class Login {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+     * <code>map&lt;int32, int64&gt; res_map = 7;</code>
      */
 
     public long getResMapOrThrow(
@@ -1405,12 +1516,24 @@ public final class Login {
       if (playerId_ != 0L) {
         output.writeInt64(2, playerId_);
       }
+      if (!getNameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, name_);
+      }
+      if (tili_ != 0) {
+        output.writeInt32(4, tili_);
+      }
+      if (jingli_ != 0) {
+        output.writeInt32(5, jingli_);
+      }
+      if (battleScore_ != 0L) {
+        output.writeInt64(6, battleScore_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetResMap(),
           ResMapDefaultEntryHolder.defaultEntry,
-          3);
+          7);
     }
 
     public int getSerializedSize() {
@@ -1426,6 +1549,21 @@ public final class Login {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(2, playerId_);
       }
+      if (!getNameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, name_);
+      }
+      if (tili_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, tili_);
+      }
+      if (jingli_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, jingli_);
+      }
+      if (battleScore_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(6, battleScore_);
+      }
       for (java.util.Map.Entry<Integer, Long> entry
            : internalGetResMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<Integer, Long>
@@ -1434,7 +1572,7 @@ public final class Login {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(3, resMap__);
+            .computeMessageSize(7, resMap__);
       }
       memoizedSize = size;
       return size;
@@ -1456,6 +1594,14 @@ public final class Login {
           == other.getUserId());
       result = result && (getPlayerId()
           == other.getPlayerId());
+      result = result && getName()
+          .equals(other.getName());
+      result = result && (getTili()
+          == other.getTili());
+      result = result && (getJingli()
+          == other.getJingli());
+      result = result && (getBattleScore()
+          == other.getBattleScore());
       result = result && internalGetResMap().equals(
           other.internalGetResMap());
       return result;
@@ -1473,6 +1619,15 @@ public final class Login {
       hash = (37 * hash) + PLAYER_ID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getPlayerId());
+      hash = (37 * hash) + NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getName().hashCode();
+      hash = (37 * hash) + TILI_FIELD_NUMBER;
+      hash = (53 * hash) + getTili();
+      hash = (37 * hash) + JINGLI_FIELD_NUMBER;
+      hash = (53 * hash) + getJingli();
+      hash = (37 * hash) + BATTLE_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getBattleScore());
       if (!internalGetResMap().getMap().isEmpty()) {
         hash = (37 * hash) + RES_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetResMap().hashCode();
@@ -1575,7 +1730,7 @@ public final class Login {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 3:
+          case 7:
             return internalGetResMap();
           default:
             throw new RuntimeException(
@@ -1586,7 +1741,7 @@ public final class Login {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 3:
+          case 7:
             return internalGetMutableResMap();
           default:
             throw new RuntimeException(
@@ -1621,6 +1776,14 @@ public final class Login {
 
         playerId_ = 0L;
 
+        name_ = "";
+
+        tili_ = 0;
+
+        jingli_ = 0;
+
+        battleScore_ = 0L;
+
         internalGetMutableResMap().clear();
         return this;
       }
@@ -1648,6 +1811,10 @@ public final class Login {
         int to_bitField0_ = 0;
         result.userId_ = userId_;
         result.playerId_ = playerId_;
+        result.name_ = name_;
+        result.tili_ = tili_;
+        result.jingli_ = jingli_;
+        result.battleScore_ = battleScore_;
         result.resMap_ = internalGetResMap();
         result.resMap_.makeImmutable();
         result.bitField0_ = to_bitField0_;
@@ -1697,6 +1864,19 @@ public final class Login {
         }
         if (other.getPlayerId() != 0L) {
           setPlayerId(other.getPlayerId());
+        }
+        if (!other.getName().isEmpty()) {
+          name_ = other.name_;
+          onChanged();
+        }
+        if (other.getTili() != 0) {
+          setTili(other.getTili());
+        }
+        if (other.getJingli() != 0) {
+          setJingli(other.getJingli());
+        }
+        if (other.getBattleScore() != 0L) {
+          setBattleScore(other.getBattleScore());
         }
         internalGetMutableResMap().mergeFrom(
             other.internalGetResMap());
@@ -1779,6 +1959,153 @@ public final class Login {
         return this;
       }
 
+      private Object name_ = "";
+      /**
+       * <code>optional string name = 3;</code>
+       */
+      public String getName() {
+        Object ref = name_;
+        if (!(ref instanceof String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
+          name_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 3;</code>
+       */
+      public Builder setName(
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 3;</code>
+       */
+      public Builder clearName() {
+        
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 3;</code>
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        name_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int tili_ ;
+      /**
+       * <code>optional int32 tili = 4;</code>
+       */
+      public int getTili() {
+        return tili_;
+      }
+      /**
+       * <code>optional int32 tili = 4;</code>
+       */
+      public Builder setTili(int value) {
+        
+        tili_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 tili = 4;</code>
+       */
+      public Builder clearTili() {
+        
+        tili_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int jingli_ ;
+      /**
+       * <code>optional int32 jingli = 5;</code>
+       */
+      public int getJingli() {
+        return jingli_;
+      }
+      /**
+       * <code>optional int32 jingli = 5;</code>
+       */
+      public Builder setJingli(int value) {
+        
+        jingli_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 jingli = 5;</code>
+       */
+      public Builder clearJingli() {
+        
+        jingli_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long battleScore_ ;
+      /**
+       * <code>optional int64 battle_score = 6;</code>
+       */
+      public long getBattleScore() {
+        return battleScore_;
+      }
+      /**
+       * <code>optional int64 battle_score = 6;</code>
+       */
+      public Builder setBattleScore(long value) {
+        
+        battleScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 battle_score = 6;</code>
+       */
+      public Builder clearBattleScore() {
+        
+        battleScore_ = 0L;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.MapField<
           Integer, Long> resMap_;
       private com.google.protobuf.MapField<Integer, Long>
@@ -1806,7 +2133,7 @@ public final class Login {
         return internalGetResMap().getMap().size();
       }
       /**
-       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       * <code>map&lt;int32, int64&gt; res_map = 7;</code>
        */
 
       public boolean containsResMap(
@@ -1822,14 +2149,14 @@ public final class Login {
         return getResMapMap();
       }
       /**
-       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       * <code>map&lt;int32, int64&gt; res_map = 7;</code>
        */
 
       public java.util.Map<Integer, Long> getResMapMap() {
         return internalGetResMap().getMap();
       }
       /**
-       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       * <code>map&lt;int32, int64&gt; res_map = 7;</code>
        */
 
       public long getResMapOrDefault(
@@ -1841,7 +2168,7 @@ public final class Login {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       * <code>map&lt;int32, int64&gt; res_map = 7;</code>
        */
 
       public long getResMapOrThrow(
@@ -1860,7 +2187,7 @@ public final class Login {
         return this;
       }
       /**
-       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       * <code>map&lt;int32, int64&gt; res_map = 7;</code>
        */
 
       public Builder removeResMap(
@@ -1878,7 +2205,7 @@ public final class Login {
         return internalGetMutableResMap().getMutableMap();
       }
       /**
-       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       * <code>map&lt;int32, int64&gt; res_map = 7;</code>
        */
       public Builder putResMap(
           int key,
@@ -1889,7 +2216,7 @@ public final class Login {
         return this;
       }
       /**
-       * <code>map&lt;int32, int64&gt; res_map = 3;</code>
+       * <code>map&lt;int32, int64&gt; res_map = 7;</code>
        */
 
       public Builder putAllResMap(
@@ -1977,11 +2304,13 @@ public final class Login {
     String[] descriptorData = {
       "\n\013login.proto\022\005proto\",\n\nPBLoginReq\022\017\n\007us" +
       "er_id\030\001 \001(\005\022\r\n\005token\030\002 \001(\t\"/\n\017PBCreateRo" +
-      "leReq\022\016\n\006gender\030\001 \001(\005\022\014\n\004name\030\002 \001(\t\"\221\001\n\013" +
+      "leReq\022\016\n\006gender\030\001 \001(\005\022\014\n\004name\030\002 \001(\t\"\323\001\n\013" +
       "PBLoginSucc\022\017\n\007user_id\030\001 \001(\005\022\021\n\tplayer_i" +
-      "d\030\002 \001(\003\022/\n\007res_map\030\003 \003(\0132\036.proto.PBLogin" +
-      "Succ.ResMapEntry\032-\n\013ResMapEntry\022\013\n\003key\030\001" +
-      " \001(\005\022\r\n\005value\030\002 \001(\003:\0028\001b\006proto3"
+      "d\030\002 \001(\003\022\014\n\004name\030\003 \001(\t\022\014\n\004tili\030\004 \001(\005\022\016\n\006j" +
+      "ingli\030\005 \001(\005\022\024\n\014battle_score\030\006 \001(\003\022/\n\007res" +
+      "_map\030\007 \003(\0132\036.proto.PBLoginSucc.ResMapEnt" +
+      "ry\032-\n\013ResMapEntry\022\013\n\003key\030\001 \001(\005\022\r\n\005value\030" +
+      "\002 \001(\003:\0028\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2012,7 +2341,7 @@ public final class Login {
     internal_static_proto_PBLoginSucc_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PBLoginSucc_descriptor,
-        new String[] { "UserId", "PlayerId", "ResMap", });
+        new String[] { "UserId", "PlayerId", "Name", "Tili", "Jingli", "BattleScore", "ResMap", });
     internal_static_proto_PBLoginSucc_ResMapEntry_descriptor =
       internal_static_proto_PBLoginSucc_descriptor.getNestedTypes().get(0);
     internal_static_proto_PBLoginSucc_ResMapEntry_fieldAccessorTable = new

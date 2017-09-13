@@ -19,6 +19,9 @@ public class LoginPbCreator {
 		builder.setTili(ch.getTili());
 		builder.setJingli(ch.getJingli());
 		ch.getResourceManager().getResourceMap().forEach((e, f) -> builder.putResMap(e.getValue(), f));
+		ch.getCharHero().getHeroMap().entrySet().forEach(e -> {
+			builder.addHeroList(HeroPbCreator.heroEntity(e.getValue()));
+		});
 		return builder.build();
 	}
 }

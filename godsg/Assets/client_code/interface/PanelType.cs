@@ -6,6 +6,8 @@ public class PanelType {
 	public static string UILogin = "UiLogin";
     public static string UIMain_bottom = "Ui_Main_Bottom";
     public static string UIMain = "Ui_Main";
+    public static string UIHeroList = "Ui_Hero_List";
+    public static string UIFormation = "Ui_Formation";
 }
 
 public class PanelDepth

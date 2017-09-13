@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import config.provider.BaseProvider;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
@@ -46,6 +47,12 @@ public class JsonUtil {
 		} catch (Exception e) {
 			e.printStackTrace();
 			return "";
+		}finally {
+			try {
+				in.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 

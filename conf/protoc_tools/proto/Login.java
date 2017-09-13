@@ -1218,6 +1218,30 @@ public final class Login {
 
     long getResMapOrThrow(
         int key);
+
+    /**
+     * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+     */
+    java.util.List<proto.Hero.PBHeroEntity> 
+        getHeroListList();
+    /**
+     * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+     */
+    proto.Hero.PBHeroEntity getHeroList(int index);
+    /**
+     * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+     */
+    int getHeroListCount();
+    /**
+     * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+     */
+    java.util.List<? extends proto.Hero.PBHeroEntityOrBuilder> 
+        getHeroListOrBuilderList();
+    /**
+     * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+     */
+    proto.Hero.PBHeroEntityOrBuilder getHeroListOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code proto.PBLoginSucc}
@@ -1237,6 +1261,7 @@ public final class Login {
       tili_ = 0;
       jingli_ = 0;
       battleScore_ = 0L;
+      heroList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -1308,6 +1333,15 @@ public final class Login {
                   resMap__.getKey(), resMap__.getValue());
               break;
             }
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+                heroList_ = new java.util.ArrayList<proto.Hero.PBHeroEntity>();
+                mutable_bitField0_ |= 0x00000080;
+              }
+              heroList_.add(
+                  input.readMessage(proto.Hero.PBHeroEntity.parser(), extensionRegistry));
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -1316,6 +1350,9 @@ public final class Login {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+          heroList_ = java.util.Collections.unmodifiableList(heroList_);
+        }
         makeExtensionsImmutable();
       }
     }
@@ -1498,6 +1535,41 @@ public final class Login {
       return map.get(key);
     }
 
+    public static final int HERO_LIST_FIELD_NUMBER = 8;
+    private java.util.List<proto.Hero.PBHeroEntity> heroList_;
+    /**
+     * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+     */
+    public java.util.List<proto.Hero.PBHeroEntity> getHeroListList() {
+      return heroList_;
+    }
+    /**
+     * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+     */
+    public java.util.List<? extends proto.Hero.PBHeroEntityOrBuilder> 
+        getHeroListOrBuilderList() {
+      return heroList_;
+    }
+    /**
+     * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+     */
+    public int getHeroListCount() {
+      return heroList_.size();
+    }
+    /**
+     * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+     */
+    public proto.Hero.PBHeroEntity getHeroList(int index) {
+      return heroList_.get(index);
+    }
+    /**
+     * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+     */
+    public proto.Hero.PBHeroEntityOrBuilder getHeroListOrBuilder(
+        int index) {
+      return heroList_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -1534,6 +1606,9 @@ public final class Login {
           internalGetResMap(),
           ResMapDefaultEntryHolder.defaultEntry,
           7);
+      for (int i = 0; i < heroList_.size(); i++) {
+        output.writeMessage(8, heroList_.get(i));
+      }
     }
 
     public int getSerializedSize() {
@@ -1574,6 +1649,10 @@ public final class Login {
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(7, resMap__);
       }
+      for (int i = 0; i < heroList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, heroList_.get(i));
+      }
       memoizedSize = size;
       return size;
     }
@@ -1604,6 +1683,8 @@ public final class Login {
           == other.getBattleScore());
       result = result && internalGetResMap().equals(
           other.internalGetResMap());
+      result = result && getHeroListList()
+          .equals(other.getHeroListList());
       return result;
     }
 
@@ -1631,6 +1712,10 @@ public final class Login {
       if (!internalGetResMap().getMap().isEmpty()) {
         hash = (37 * hash) + RES_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetResMap().hashCode();
+      }
+      if (getHeroListCount() > 0) {
+        hash = (37 * hash) + HERO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getHeroListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -1768,6 +1853,7 @@ public final class Login {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getHeroListFieldBuilder();
         }
       }
       public Builder clear() {
@@ -1785,6 +1871,12 @@ public final class Login {
         battleScore_ = 0L;
 
         internalGetMutableResMap().clear();
+        if (heroListBuilder_ == null) {
+          heroList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000080);
+        } else {
+          heroListBuilder_.clear();
+        }
         return this;
       }
 
@@ -1817,6 +1909,15 @@ public final class Login {
         result.battleScore_ = battleScore_;
         result.resMap_ = internalGetResMap();
         result.resMap_.makeImmutable();
+        if (heroListBuilder_ == null) {
+          if (((bitField0_ & 0x00000080) == 0x00000080)) {
+            heroList_ = java.util.Collections.unmodifiableList(heroList_);
+            bitField0_ = (bitField0_ & ~0x00000080);
+          }
+          result.heroList_ = heroList_;
+        } else {
+          result.heroList_ = heroListBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -1880,6 +1981,32 @@ public final class Login {
         }
         internalGetMutableResMap().mergeFrom(
             other.internalGetResMap());
+        if (heroListBuilder_ == null) {
+          if (!other.heroList_.isEmpty()) {
+            if (heroList_.isEmpty()) {
+              heroList_ = other.heroList_;
+              bitField0_ = (bitField0_ & ~0x00000080);
+            } else {
+              ensureHeroListIsMutable();
+              heroList_.addAll(other.heroList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.heroList_.isEmpty()) {
+            if (heroListBuilder_.isEmpty()) {
+              heroListBuilder_.dispose();
+              heroListBuilder_ = null;
+              heroList_ = other.heroList_;
+              bitField0_ = (bitField0_ & ~0x00000080);
+              heroListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getHeroListFieldBuilder() : null;
+            } else {
+              heroListBuilder_.addAllMessages(other.heroList_);
+            }
+          }
+        }
         onChanged();
         return this;
       }
@@ -2224,6 +2351,246 @@ public final class Login {
         getMutableResMap().putAll(values);
         return this;
       }
+
+      private java.util.List<proto.Hero.PBHeroEntity> heroList_ =
+        java.util.Collections.emptyList();
+      private void ensureHeroListIsMutable() {
+        if (!((bitField0_ & 0x00000080) == 0x00000080)) {
+          heroList_ = new java.util.ArrayList<proto.Hero.PBHeroEntity>(heroList_);
+          bitField0_ |= 0x00000080;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          proto.Hero.PBHeroEntity, proto.Hero.PBHeroEntity.Builder, proto.Hero.PBHeroEntityOrBuilder> heroListBuilder_;
+
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public java.util.List<proto.Hero.PBHeroEntity> getHeroListList() {
+        if (heroListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(heroList_);
+        } else {
+          return heroListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public int getHeroListCount() {
+        if (heroListBuilder_ == null) {
+          return heroList_.size();
+        } else {
+          return heroListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public proto.Hero.PBHeroEntity getHeroList(int index) {
+        if (heroListBuilder_ == null) {
+          return heroList_.get(index);
+        } else {
+          return heroListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public Builder setHeroList(
+          int index, proto.Hero.PBHeroEntity value) {
+        if (heroListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHeroListIsMutable();
+          heroList_.set(index, value);
+          onChanged();
+        } else {
+          heroListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public Builder setHeroList(
+          int index, proto.Hero.PBHeroEntity.Builder builderForValue) {
+        if (heroListBuilder_ == null) {
+          ensureHeroListIsMutable();
+          heroList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          heroListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public Builder addHeroList(proto.Hero.PBHeroEntity value) {
+        if (heroListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHeroListIsMutable();
+          heroList_.add(value);
+          onChanged();
+        } else {
+          heroListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public Builder addHeroList(
+          int index, proto.Hero.PBHeroEntity value) {
+        if (heroListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHeroListIsMutable();
+          heroList_.add(index, value);
+          onChanged();
+        } else {
+          heroListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public Builder addHeroList(
+          proto.Hero.PBHeroEntity.Builder builderForValue) {
+        if (heroListBuilder_ == null) {
+          ensureHeroListIsMutable();
+          heroList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          heroListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public Builder addHeroList(
+          int index, proto.Hero.PBHeroEntity.Builder builderForValue) {
+        if (heroListBuilder_ == null) {
+          ensureHeroListIsMutable();
+          heroList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          heroListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public Builder addAllHeroList(
+          java.lang.Iterable<? extends proto.Hero.PBHeroEntity> values) {
+        if (heroListBuilder_ == null) {
+          ensureHeroListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, heroList_);
+          onChanged();
+        } else {
+          heroListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public Builder clearHeroList() {
+        if (heroListBuilder_ == null) {
+          heroList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000080);
+          onChanged();
+        } else {
+          heroListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public Builder removeHeroList(int index) {
+        if (heroListBuilder_ == null) {
+          ensureHeroListIsMutable();
+          heroList_.remove(index);
+          onChanged();
+        } else {
+          heroListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public proto.Hero.PBHeroEntity.Builder getHeroListBuilder(
+          int index) {
+        return getHeroListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public proto.Hero.PBHeroEntityOrBuilder getHeroListOrBuilder(
+          int index) {
+        if (heroListBuilder_ == null) {
+          return heroList_.get(index);  } else {
+          return heroListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public java.util.List<? extends proto.Hero.PBHeroEntityOrBuilder> 
+           getHeroListOrBuilderList() {
+        if (heroListBuilder_ != null) {
+          return heroListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(heroList_);
+        }
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public proto.Hero.PBHeroEntity.Builder addHeroListBuilder() {
+        return getHeroListFieldBuilder().addBuilder(
+            proto.Hero.PBHeroEntity.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public proto.Hero.PBHeroEntity.Builder addHeroListBuilder(
+          int index) {
+        return getHeroListFieldBuilder().addBuilder(
+            index, proto.Hero.PBHeroEntity.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .proto.PBHeroEntity hero_list = 8;</code>
+       */
+      public java.util.List<proto.Hero.PBHeroEntity.Builder> 
+           getHeroListBuilderList() {
+        return getHeroListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          proto.Hero.PBHeroEntity, proto.Hero.PBHeroEntity.Builder, proto.Hero.PBHeroEntityOrBuilder> 
+          getHeroListFieldBuilder() {
+        if (heroListBuilder_ == null) {
+          heroListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              proto.Hero.PBHeroEntity, proto.Hero.PBHeroEntity.Builder, proto.Hero.PBHeroEntityOrBuilder>(
+                  heroList_,
+                  ((bitField0_ & 0x00000080) == 0x00000080),
+                  getParentForChildren(),
+                  isClean());
+          heroList_ = null;
+        }
+        return heroListBuilder_;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return this;
@@ -2302,15 +2669,16 @@ public final class Login {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\013login.proto\022\005proto\",\n\nPBLoginReq\022\017\n\007us" +
-      "er_id\030\001 \001(\005\022\r\n\005token\030\002 \001(\t\"/\n\017PBCreateRo" +
-      "leReq\022\016\n\006gender\030\001 \001(\005\022\014\n\004name\030\002 \001(\t\"\323\001\n\013" +
-      "PBLoginSucc\022\017\n\007user_id\030\001 \001(\005\022\021\n\tplayer_i" +
-      "d\030\002 \001(\003\022\014\n\004name\030\003 \001(\t\022\014\n\004tili\030\004 \001(\005\022\016\n\006j" +
-      "ingli\030\005 \001(\005\022\024\n\014battle_score\030\006 \001(\003\022/\n\007res" +
-      "_map\030\007 \003(\0132\036.proto.PBLoginSucc.ResMapEnt" +
-      "ry\032-\n\013ResMapEntry\022\013\n\003key\030\001 \001(\005\022\r\n\005value\030" +
-      "\002 \001(\003:\0028\001b\006proto3"
+      "\n\013login.proto\022\005proto\032\nhero.proto\",\n\nPBLo" +
+      "ginReq\022\017\n\007user_id\030\001 \001(\005\022\r\n\005token\030\002 \001(\t\"/" +
+      "\n\017PBCreateRoleReq\022\016\n\006gender\030\001 \001(\005\022\014\n\004nam" +
+      "e\030\002 \001(\t\"\373\001\n\013PBLoginSucc\022\017\n\007user_id\030\001 \001(\005" +
+      "\022\021\n\tplayer_id\030\002 \001(\003\022\014\n\004name\030\003 \001(\t\022\014\n\004til" +
+      "i\030\004 \001(\005\022\016\n\006jingli\030\005 \001(\005\022\024\n\014battle_score\030" +
+      "\006 \001(\003\022/\n\007res_map\030\007 \003(\0132\036.proto.PBLoginSu" +
+      "cc.ResMapEntry\022&\n\thero_list\030\010 \003(\0132\023.prot" +
+      "o.PBHeroEntity\032-\n\013ResMapEntry\022\013\n\003key\030\001 \001" +
+      "(\005\022\r\n\005value\030\002 \001(\003:\0028\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2323,6 +2691,7 @@ public final class Login {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          proto.Hero.getDescriptor(),
         }, assigner);
     internal_static_proto_PBLoginReq_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -2341,13 +2710,14 @@ public final class Login {
     internal_static_proto_PBLoginSucc_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PBLoginSucc_descriptor,
-        new java.lang.String[] { "UserId", "PlayerId", "Name", "Tili", "Jingli", "BattleScore", "ResMap", });
+        new java.lang.String[] { "UserId", "PlayerId", "Name", "Tili", "Jingli", "BattleScore", "ResMap", "HeroList", });
     internal_static_proto_PBLoginSucc_ResMapEntry_descriptor =
       internal_static_proto_PBLoginSucc_descriptor.getNestedTypes().get(0);
     internal_static_proto_PBLoginSucc_ResMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PBLoginSucc_ResMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
+    proto.Hero.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

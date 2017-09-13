@@ -116,9 +116,10 @@ public class PanelManager : Singleton<PanelManager>
 		{
 			g_AllPanel.Clear();
 			g_AllPanel.Add(PanelType.UILogin, new PanelModuleData(typeof(UiLogin), PanelType.UILogin, PanelDepth.PD_PDLayer_1));
-            g_AllPanel.Add(PanelType.UIMain_bottom, new PanelModuleData(typeof(UiLogin), PanelType.UIMain_bottom, PanelDepth.PD_PDLayer_1));
+            g_AllPanel.Add(PanelType.UIMain_bottom, new PanelModuleData(typeof(UiMainBottom), PanelType.UIMain_bottom, PanelDepth.PD_PDLayer_1));
             g_AllPanel.Add(PanelType.UIMain, new PanelModuleData(typeof(UiMain), PanelType.UIMain, PanelDepth.PD_PDLayer_1));
-
+            g_AllPanel.Add(PanelType.UIHeroList, new PanelModuleData(typeof(UiMain), PanelType.UIHeroList, PanelDepth.PD_PDLayer_1));
+            g_AllPanel.Add(PanelType.UIFormation, new PanelModuleData(typeof(UiMain), PanelType.UIFormation, PanelDepth.PD_PDLayer_1));
         }
 
 	}

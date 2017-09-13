@@ -1,5 +1,6 @@
-
 syntax = "proto3";
+
+import "hero.proto";
 
 package proto;
 
@@ -25,4 +26,5 @@ message PBLoginSucc
 	int32 jingli = 5;
 	int64 battle_score= 6;
 	map<int32, int64> res_map = 7;
+	repeated PBHeroEntity hero_list = 8;
 }

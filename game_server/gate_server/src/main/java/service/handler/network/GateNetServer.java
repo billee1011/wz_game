@@ -40,7 +40,7 @@ public class GateNetServer {
 		boot.channel(NioServerSocketChannel.class);
 		boot.childHandler(new ChannelInitializer<SocketChannel>() {
 			protected void initChannel(SocketChannel channel) throws Exception {
-//				channel.pipeline().addLast(new IdleStateHandler(10, 0, 0));
+				channel.pipeline().addLast(new IdleStateHandler(20, 0, 0));
 				if (decoder != null) {
 					channel.pipeline().addLast(decoder.getClass().newInstance());
 				}

@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import define.AppId;
 
 public enum RequestCode {
-	PING(1, AppId.GATE),
+	PING(100, AppId.GATE),
 	RESPONSE_TO_CLIIENT_CODE(-1, AppId.GATE),
 
 	ACCOUNT_BEGIN(100),

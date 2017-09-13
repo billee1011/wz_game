@@ -117,7 +117,6 @@ public class HeroEntity extends IEntity {
 	}
 
 	public void loadLevelAttribute() {
-
 	}
 
 	public void loadBreakAttribute() {
@@ -125,6 +124,11 @@ public class HeroEntity extends IEntity {
 	}
 
 	public void loadAwakeAttribute() {
+
+	}
+
+	//计算属性还是蛮烦的
+	public void reloadAttribute(){
 
 	}
 

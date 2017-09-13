@@ -50,17 +50,6 @@ public abstract class BaseProvider {
 		ProvinceProvider.getInst();
 
 		/// 当服务器重启时,玩家的登录状态没有修改,在开启服务器的时候,全部重置一下
-		initLoginStatus();
-	}
-
-	public static void initLoginStatus() {
-		try {
-			Map<String, Object> data = new HashMap<>();
-			data.put("login", 0);
-			DBUtil.executeUpdate("player", null, data);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 
 	public void reLoad() {

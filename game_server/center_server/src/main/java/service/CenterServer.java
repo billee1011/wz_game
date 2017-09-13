@@ -139,9 +139,9 @@ public class CenterServer extends BaseApp {
 
     @Override
     protected void initServer() {
-        initDataBase();
-        checkRandomName();
-        PlayerNameManager.getInst().loadNameInfo();
+//        initDataBase();
+//        checkRandomName();
+//        PlayerNameManager.getInst().loadNameInfo();
         reloadDynamicProps();
         initStaticConfig();
         CenterActorManager.getInstance().start();

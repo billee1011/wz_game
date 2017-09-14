@@ -45,3 +45,19 @@ CREATE TABLE `player` (
   `user_id` int(11) NOT NULL,
   PRIMARY KEY (`player_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `char_equip`;
+CREATE TABLE `char_equip` (
+  player_id bigint(20) NOT NULL,
+  equip_id  bigint(20) NOT NULL,
+  conf_id int(11) not null,
+  level int(11) not null,
+  jinglian_level int(11) not null,
+  jinglian_exp int(11) not null,
+  star_level int(11) not null,
+  star_exp int(11) not null,
+  star_bless int(11) not null,
+  gold_level int(11) not null,
+  PRIMARY KEY (player_id,equip_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

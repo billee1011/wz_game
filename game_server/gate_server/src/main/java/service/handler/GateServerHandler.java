@@ -30,10 +30,7 @@ public class GateServerHandler extends AbstractHandlers {
 	}
 
 	private void actionPing(ChannelHandlerContext client, CocoPacket packet, MessageHolder<MessageLite> message) {
-		CocoAgent agent = NettyUtil.getAttribute(client, "agent");
-		if (agent != null) {
-			agent.writeMessage(ResponseCode.PONG.getValue(), null);
-		}
+		logger.info(" player ping the  server ");
 	}
 
 
@@ -51,7 +48,7 @@ public class GateServerHandler extends AbstractHandlers {
 		} else {
 			Pair<MessageLite, IActionHandler> messageAndHandler = actionHandlers.get(packet.getReqId());
 			if (messageAndHandler == null) {
-				if(reqCode != RequestCode.PING) {
+				if (reqCode != RequestCode.PING) {
 					ShowInfo.showIsNullToLog("Gate", reqCode);
 				}
 			} else {

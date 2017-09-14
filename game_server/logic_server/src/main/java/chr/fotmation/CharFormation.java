@@ -31,7 +31,7 @@ public class CharFormation {
 		for (Formation formation : formations) {
 			if (formation == null)
 				continue;
-			HeroEntity hero = ch.getCharHero().getHeroEntity(formation.getHeroId());
+			HeroEntity hero = ch.getCharHero().getEntity(formation.getHeroId());
 			if (hero == null)
 				continue;
 			score += hero.calBattleScore();

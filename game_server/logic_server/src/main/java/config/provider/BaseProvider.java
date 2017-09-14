@@ -19,6 +19,7 @@ public abstract class BaseProvider {
 
 	public final static void init() {
 		HeroInfoProvider.getInst();
+		EquipInfoProvider.getInst();
 	}
 
 	public void reLoad() {
@@ -36,9 +37,12 @@ public abstract class BaseProvider {
 
 	public boolean loadConfig() {
 		doLoad();
+
 		initString();
 		return true;
 	}
+
+
 
 
 	public abstract void doLoad();

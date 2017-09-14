@@ -1,5 +1,7 @@
 package chr;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -28,8 +30,18 @@ public class PlayerManager {
 		name2PlayerMap.put(ch.getPlayerName(), ch);
 	}
 
+	public Collection<RyCharacter> getAllPlayers() {
+		synchronized (this) {
+			return new ArrayList<>(characterMap.values());
+		}
+	}
+
 	public RyCharacter getCharacter(long entityId) {
 		return characterMap.get(entityId);
+	}
+
+	public void saveAllCharacter(long intervalTime) {
+
 	}
 
 	public void removeCharacter(RyCharacter ch) {

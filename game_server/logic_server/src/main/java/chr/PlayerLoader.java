@@ -46,7 +46,7 @@ public class PlayerLoader {
 			heroEntity.setLevel(heroData.getInt("level"));
 			heroEntity.setExp(heroData.getInt("exp"));
 			heroEntity.setAwakeInfo(JsonUtil.getGson().fromJson(heroData.getString("awake_info"), int[].class));
-			ch.getCharHero().addHero(heroEntity);
+			ch.getCharHero().addEntity(heroEntity);
 		}
 	}
 }

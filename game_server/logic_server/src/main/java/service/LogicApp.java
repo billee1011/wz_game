@@ -3,6 +3,7 @@ package service;
 import java.io.File;
 import java.sql.SQLException;
 
+import chr.PlayerManager;
 import db.DataManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +19,8 @@ import service.handler.LogicHandler;
 import timer.ActTimer;
 import util.XProperties;
 
+import javax.xml.ws.handler.LogicalHandler;
+
 /**
  * Created by Administrator on 2017/2/6.
  */
@@ -27,6 +30,9 @@ public class LogicApp extends BaseApp {
 	private static Logger logger = LoggerFactory.getLogger(LogicApp.class);
 
 	private int serverId = 1;
+
+	public static final int SAVE_INTERNAL = 2 * 60 * 1000;                            //mills
+
 
 	private LogicApp() {
 
@@ -93,6 +99,13 @@ public class LogicApp extends BaseApp {
 				logger.error("", e);
 			}
 		}
+	}
+
+	@Override
+	protected void registerCronTask() {
+		LogicActorManager.getDBTimer().register(SAVE_INTERNAL, SAVE_INTERNAL, () -> {
+			PlayerManager.getInst().saveAllCharacter(SAVE_INTERNAL);
+		}, LogicActorManager.getDBCheckActor(), "save_player");
 	}
 
 	@Override

@@ -6,7 +6,8 @@ package define;
 public enum EntityType {
 	CHARACTER(1),
 	HERO(2),
-	EQUIP(3),;
+	EQUIP(3),
+	;
 
 	private int value;
 

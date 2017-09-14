@@ -37,7 +37,6 @@ public class HeroInfoProvider extends BaseProvider {
 	@Override
 	public void doLoad() {
 		heroBaseMap = JsonUtil.getJsonMap(HeroBase[].class, "HeroBase.json");
-
 		heroBaseMap.forEach((e, f) -> System.out.println(f));
 	}
 }

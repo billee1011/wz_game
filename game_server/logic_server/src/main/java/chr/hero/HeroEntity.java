@@ -1,6 +1,7 @@
 package chr.hero;
 
 import base.IEntity;
+import chr.attr.AttrEntity;
 import config.bean.EBattleAttribute;
 import config.bean.ECountry;
 import config.bean.HeroBase;
@@ -16,7 +17,7 @@ import java.util.Map;
 /**
  * Created by think on 2017/9/8.
  */
-public class HeroEntity extends IEntity {
+public class HeroEntity extends AttrEntity {
 	private static Logger logger = LoggerFactory.getLogger(HeroEntity.class);
 
 	private int heroId;
@@ -50,17 +51,13 @@ public class HeroEntity extends IEntity {
 		this.heroId = heroId;
 	}
 
-	public Map<EBattleAttribute, Integer> getAttributeMap() {
-		return attributeMap;
-	}
-
 	public void loadBaseConfig() {
 		HeroBase baseConf = HeroInfoProvider.getInst().getHeroBaseConfById(this.heroId);
 		if (baseConf == null) {
 			logger.warn("create hero with unknow id {}", this.heroId);
 			return;
 		}
-		baseConf.getBattle_attribute().forEach(e -> attributeMap.put(e.getAttrId(), e.getValue()));
+		baseConf.getBattle_attribute().forEach(e -> addAttribute(e.getAttrId(), e.getValue()));
 		this.heroConf = baseConf;
 	}
 

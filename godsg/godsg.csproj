@@ -81,19 +81,37 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\client_code\Define\EAttributeKeyValue.cs" />
+    <Compile Include="Assets\client_code\Define\EBattleAttribute.cs" />
+    <Compile Include="Assets\client_code\Define\ECountry.cs" />
+    <Compile Include="Assets\client_code\Define\EItemQuality.cs" />
+    <Compile Include="Assets\client_code\Define\EJob.cs" />
+    <Compile Include="Assets\client_code\Define\EMoney.cs" />
+    <Compile Include="Assets\client_code\Define\Equip.cs" />
+    <Compile Include="Assets\client_code\Define\HeroBase.cs" />
+    <Compile Include="Assets\client_code\Define\Person.cs" />
     <Compile Include="Assets\client_code\Main.cs" />
-    <Compile Include="Assets\client_code\config\ConfManager.cs" />
     <Compile Include="Assets\client_code\config\ConfType.cs" />
     <Compile Include="Assets\client_code\config\bean\Hero.cs" />
     <Compile Include="Assets\client_code\config\bean\IdConf.cs" />
-    <Compile Include="Assets\client_code\config\provider\BaseInfoProvider.cs" />
     <Compile Include="Assets\client_code\config\provider\HeroInfoProvider.cs" />
     <Compile Include="Assets\client_code\config\provider\T.cs" />
     <Compile Include="Assets\client_code\eventbus\ClientEvent.cs" />
     <Compile Include="Assets\client_code\eventbus\ClientEventManager.cs" />
     <Compile Include="Assets\client_code\eventbus\ClientEventType.cs" />
+    <Compile Include="Assets\client_code\helper\DebugLog.cs" />
+    <Compile Include="Assets\client_code\helper\ObjectCommon.cs" />
+    <Compile Include="Assets\client_code\interface\PanelType.cs" />
+    <Compile Include="Assets\client_code\interface\UIPanelBase.cs" />
     <Compile Include="Assets\client_code\interface\UiLogin.cs" />
+    <Compile Include="Assets\client_code\interface\UiMain.cs" />
+    <Compile Include="Assets\client_code\interface\UiMainBottom.cs" />
+    <Compile Include="Assets\client_code\interface\UiTab.cs" />
     <Compile Include="Assets\client_code\interface\manager\GameUiManager.cs" />
+    <Compile Include="Assets\client_code\interface\manager\PanelManager.cs" />
+    <Compile Include="Assets\client_code\interface\manager\ResourceManager.cs" />
+    <Compile Include="Assets\client_code\logic\manager\HeroManager.cs" />
+    <Compile Include="Assets\client_code\logic\manager\PlayerManager.cs" />
     <Compile Include="Assets\client_code\net\LogicRecvHandler.cs" />
     <Compile Include="Assets\client_code\net\LogicSendHandler.cs" />
     <Compile Include="Assets\client_code\net\NetClient.cs" />
@@ -107,6 +125,8 @@
     <Compile Include="Assets\client_code\net\TNetConfig.cs" />
     <Compile Include="Assets\client_code\net\TSocket.cs" />
     <Compile Include="Assets\client_code\net\handler\HandlerBase.cs" />
+    <Compile Include="Assets\client_code\net\handler\LoginHandler.cs" />
+    <Compile Include="Assets\client_code\net\protobuf\Common.cs" />
     <Compile Include="Assets\client_code\net\protobuf\Login.cs" />
     <Compile Include="Assets\client_code\object_pool\IPooledObjectSupporter.cs" />
     <Compile Include="Assets\client_code\object_pool\ObjectPool.cs" />
@@ -116,6 +136,7 @@
     <Compile Include="Assets\client_code\util\Pair.cs" />
     <Compile Include="Assets\client_code\util\QuickList.cs" />
     <Compile Include="Assets\client_code\util\Singleton.cs" />
+    <Compile Include="Assets\client_code\voice\VoiceManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\readme.txt" />

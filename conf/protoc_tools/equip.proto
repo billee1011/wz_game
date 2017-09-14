@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package proto;
+
+
+//这个位置需要属性吗， 假如装备可以洗练， 还是加上去
+message PBEquipEntity
+{
+	int64 entity_id = 1;
+	int32 conf_id = 2;
+	int32 level = 3;
+	map<int32,int32> attts = 4;
+}

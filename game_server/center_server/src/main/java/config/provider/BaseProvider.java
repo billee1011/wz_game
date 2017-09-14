@@ -33,21 +33,6 @@ public abstract class BaseProvider {
 	protected static List<BaseProvider> providerList = new ArrayList<>();
 
 	public static void init() {
-		DynamicInfoProvider.getInst();
-		CoupleRoomInfoProvider.getInst();
-		RankInfoProvider.getInst();
-		ChannelInfoProvider.getInst();
-		ConfPlayerExceptionProvider.getInst();
-		PaoMaDengProvider.getInst();
-		AgentInfoProvider.getInst();
-		ExchangeBigLimitProvider.getInst();
-		AgentAuickReplyProvider.getInst();
-		PlayerCGConfigProvider.getInst();
-		AnnouncementProvider.getInst();
-		ConfNiuProvider.getInst();
-		ConfServerStateProvider.getInst();
-		DynamicPropertiesPublicProvider.getInst();
-		ProvinceProvider.getInst();
 
 		/// 当服务器重启时,玩家的登录状态没有修改,在开启服务器的时候,全部重置一下
 	}

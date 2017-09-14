@@ -1,5 +1,6 @@
 package chr.hero;
 
+import base.EntityStorage;
 import chr.RyCharacter;
 import util.ArrayMap;
 
@@ -8,31 +9,13 @@ import java.util.*;
 /**
  * Created by think on 2017/9/8.
  */
-public class CharHero {
+public class CharHero extends EntityStorage<HeroEntity> {
 	private RyCharacter character = null;
 
-	private Map<Long, HeroEntity> heroMap;
 
 	public CharHero(RyCharacter character) {
+		super();
 		this.character = character;
-		heroMap = new HashMap<>();                                 //key => value very fast , haha
 	}
-
-	public Map<Long, HeroEntity> getHeroMap() {
-		return heroMap;
-	}
-
-	public void addHero(HeroEntity entity) {
-		heroMap.put(entity.getEntityId(), entity);
-	}
-
-	public HeroEntity getHeroEntity(long heroId) {
-		return heroMap.get(heroId);
-	}
-
-	public void removeHero(long entityId) {
-		heroMap.remove(entityId);
-	}
-
 	//你属于我， 我属于你
 }

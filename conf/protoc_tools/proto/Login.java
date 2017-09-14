@@ -1242,6 +1242,30 @@ public final class Login {
      */
     proto.Hero.PBHeroEntityOrBuilder getHeroListOrBuilder(
         int index);
+
+    /**
+     * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+     */
+    java.util.List<proto.Equip.PBEquipEntity> 
+        getEquipListList();
+    /**
+     * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+     */
+    proto.Equip.PBEquipEntity getEquipList(int index);
+    /**
+     * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+     */
+    int getEquipListCount();
+    /**
+     * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+     */
+    java.util.List<? extends proto.Equip.PBEquipEntityOrBuilder> 
+        getEquipListOrBuilderList();
+    /**
+     * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+     */
+    proto.Equip.PBEquipEntityOrBuilder getEquipListOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code proto.PBLoginSucc}
@@ -1262,6 +1286,7 @@ public final class Login {
       jingli_ = 0;
       battleScore_ = 0L;
       heroList_ = java.util.Collections.emptyList();
+      equipList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -1342,6 +1367,15 @@ public final class Login {
                   input.readMessage(proto.Hero.PBHeroEntity.parser(), extensionRegistry));
               break;
             }
+            case 74: {
+              if (!((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+                equipList_ = new java.util.ArrayList<proto.Equip.PBEquipEntity>();
+                mutable_bitField0_ |= 0x00000100;
+              }
+              equipList_.add(
+                  input.readMessage(proto.Equip.PBEquipEntity.parser(), extensionRegistry));
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -1352,6 +1386,9 @@ public final class Login {
       } finally {
         if (((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
           heroList_ = java.util.Collections.unmodifiableList(heroList_);
+        }
+        if (((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+          equipList_ = java.util.Collections.unmodifiableList(equipList_);
         }
         makeExtensionsImmutable();
       }
@@ -1570,6 +1607,41 @@ public final class Login {
       return heroList_.get(index);
     }
 
+    public static final int EQUIP_LIST_FIELD_NUMBER = 9;
+    private java.util.List<proto.Equip.PBEquipEntity> equipList_;
+    /**
+     * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+     */
+    public java.util.List<proto.Equip.PBEquipEntity> getEquipListList() {
+      return equipList_;
+    }
+    /**
+     * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+     */
+    public java.util.List<? extends proto.Equip.PBEquipEntityOrBuilder> 
+        getEquipListOrBuilderList() {
+      return equipList_;
+    }
+    /**
+     * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+     */
+    public int getEquipListCount() {
+      return equipList_.size();
+    }
+    /**
+     * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+     */
+    public proto.Equip.PBEquipEntity getEquipList(int index) {
+      return equipList_.get(index);
+    }
+    /**
+     * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+     */
+    public proto.Equip.PBEquipEntityOrBuilder getEquipListOrBuilder(
+        int index) {
+      return equipList_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -1608,6 +1680,9 @@ public final class Login {
           7);
       for (int i = 0; i < heroList_.size(); i++) {
         output.writeMessage(8, heroList_.get(i));
+      }
+      for (int i = 0; i < equipList_.size(); i++) {
+        output.writeMessage(9, equipList_.get(i));
       }
     }
 
@@ -1653,6 +1728,10 @@ public final class Login {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(8, heroList_.get(i));
       }
+      for (int i = 0; i < equipList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, equipList_.get(i));
+      }
       memoizedSize = size;
       return size;
     }
@@ -1685,6 +1764,8 @@ public final class Login {
           other.internalGetResMap());
       result = result && getHeroListList()
           .equals(other.getHeroListList());
+      result = result && getEquipListList()
+          .equals(other.getEquipListList());
       return result;
     }
 
@@ -1716,6 +1797,10 @@ public final class Login {
       if (getHeroListCount() > 0) {
         hash = (37 * hash) + HERO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getHeroListList().hashCode();
+      }
+      if (getEquipListCount() > 0) {
+        hash = (37 * hash) + EQUIP_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getEquipListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -1854,6 +1939,7 @@ public final class Login {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
           getHeroListFieldBuilder();
+          getEquipListFieldBuilder();
         }
       }
       public Builder clear() {
@@ -1876,6 +1962,12 @@ public final class Login {
           bitField0_ = (bitField0_ & ~0x00000080);
         } else {
           heroListBuilder_.clear();
+        }
+        if (equipListBuilder_ == null) {
+          equipList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+        } else {
+          equipListBuilder_.clear();
         }
         return this;
       }
@@ -1917,6 +2009,15 @@ public final class Login {
           result.heroList_ = heroList_;
         } else {
           result.heroList_ = heroListBuilder_.build();
+        }
+        if (equipListBuilder_ == null) {
+          if (((bitField0_ & 0x00000100) == 0x00000100)) {
+            equipList_ = java.util.Collections.unmodifiableList(equipList_);
+            bitField0_ = (bitField0_ & ~0x00000100);
+          }
+          result.equipList_ = equipList_;
+        } else {
+          result.equipList_ = equipListBuilder_.build();
         }
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -2004,6 +2105,32 @@ public final class Login {
                    getHeroListFieldBuilder() : null;
             } else {
               heroListBuilder_.addAllMessages(other.heroList_);
+            }
+          }
+        }
+        if (equipListBuilder_ == null) {
+          if (!other.equipList_.isEmpty()) {
+            if (equipList_.isEmpty()) {
+              equipList_ = other.equipList_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+            } else {
+              ensureEquipListIsMutable();
+              equipList_.addAll(other.equipList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.equipList_.isEmpty()) {
+            if (equipListBuilder_.isEmpty()) {
+              equipListBuilder_.dispose();
+              equipListBuilder_ = null;
+              equipList_ = other.equipList_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+              equipListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getEquipListFieldBuilder() : null;
+            } else {
+              equipListBuilder_.addAllMessages(other.equipList_);
             }
           }
         }
@@ -2591,6 +2718,246 @@ public final class Login {
         }
         return heroListBuilder_;
       }
+
+      private java.util.List<proto.Equip.PBEquipEntity> equipList_ =
+        java.util.Collections.emptyList();
+      private void ensureEquipListIsMutable() {
+        if (!((bitField0_ & 0x00000100) == 0x00000100)) {
+          equipList_ = new java.util.ArrayList<proto.Equip.PBEquipEntity>(equipList_);
+          bitField0_ |= 0x00000100;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          proto.Equip.PBEquipEntity, proto.Equip.PBEquipEntity.Builder, proto.Equip.PBEquipEntityOrBuilder> equipListBuilder_;
+
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public java.util.List<proto.Equip.PBEquipEntity> getEquipListList() {
+        if (equipListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(equipList_);
+        } else {
+          return equipListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public int getEquipListCount() {
+        if (equipListBuilder_ == null) {
+          return equipList_.size();
+        } else {
+          return equipListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public proto.Equip.PBEquipEntity getEquipList(int index) {
+        if (equipListBuilder_ == null) {
+          return equipList_.get(index);
+        } else {
+          return equipListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public Builder setEquipList(
+          int index, proto.Equip.PBEquipEntity value) {
+        if (equipListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEquipListIsMutable();
+          equipList_.set(index, value);
+          onChanged();
+        } else {
+          equipListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public Builder setEquipList(
+          int index, proto.Equip.PBEquipEntity.Builder builderForValue) {
+        if (equipListBuilder_ == null) {
+          ensureEquipListIsMutable();
+          equipList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          equipListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public Builder addEquipList(proto.Equip.PBEquipEntity value) {
+        if (equipListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEquipListIsMutable();
+          equipList_.add(value);
+          onChanged();
+        } else {
+          equipListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public Builder addEquipList(
+          int index, proto.Equip.PBEquipEntity value) {
+        if (equipListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEquipListIsMutable();
+          equipList_.add(index, value);
+          onChanged();
+        } else {
+          equipListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public Builder addEquipList(
+          proto.Equip.PBEquipEntity.Builder builderForValue) {
+        if (equipListBuilder_ == null) {
+          ensureEquipListIsMutable();
+          equipList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          equipListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public Builder addEquipList(
+          int index, proto.Equip.PBEquipEntity.Builder builderForValue) {
+        if (equipListBuilder_ == null) {
+          ensureEquipListIsMutable();
+          equipList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          equipListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public Builder addAllEquipList(
+          java.lang.Iterable<? extends proto.Equip.PBEquipEntity> values) {
+        if (equipListBuilder_ == null) {
+          ensureEquipListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, equipList_);
+          onChanged();
+        } else {
+          equipListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public Builder clearEquipList() {
+        if (equipListBuilder_ == null) {
+          equipList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+          onChanged();
+        } else {
+          equipListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public Builder removeEquipList(int index) {
+        if (equipListBuilder_ == null) {
+          ensureEquipListIsMutable();
+          equipList_.remove(index);
+          onChanged();
+        } else {
+          equipListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public proto.Equip.PBEquipEntity.Builder getEquipListBuilder(
+          int index) {
+        return getEquipListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public proto.Equip.PBEquipEntityOrBuilder getEquipListOrBuilder(
+          int index) {
+        if (equipListBuilder_ == null) {
+          return equipList_.get(index);  } else {
+          return equipListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public java.util.List<? extends proto.Equip.PBEquipEntityOrBuilder> 
+           getEquipListOrBuilderList() {
+        if (equipListBuilder_ != null) {
+          return equipListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(equipList_);
+        }
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public proto.Equip.PBEquipEntity.Builder addEquipListBuilder() {
+        return getEquipListFieldBuilder().addBuilder(
+            proto.Equip.PBEquipEntity.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public proto.Equip.PBEquipEntity.Builder addEquipListBuilder(
+          int index) {
+        return getEquipListFieldBuilder().addBuilder(
+            index, proto.Equip.PBEquipEntity.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .proto.PBEquipEntity equip_list = 9;</code>
+       */
+      public java.util.List<proto.Equip.PBEquipEntity.Builder> 
+           getEquipListBuilderList() {
+        return getEquipListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          proto.Equip.PBEquipEntity, proto.Equip.PBEquipEntity.Builder, proto.Equip.PBEquipEntityOrBuilder> 
+          getEquipListFieldBuilder() {
+        if (equipListBuilder_ == null) {
+          equipListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              proto.Equip.PBEquipEntity, proto.Equip.PBEquipEntity.Builder, proto.Equip.PBEquipEntityOrBuilder>(
+                  equipList_,
+                  ((bitField0_ & 0x00000100) == 0x00000100),
+                  getParentForChildren(),
+                  isClean());
+          equipList_ = null;
+        }
+        return equipListBuilder_;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return this;
@@ -2669,16 +3036,18 @@ public final class Login {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\013login.proto\022\005proto\032\nhero.proto\",\n\nPBLo" +
-      "ginReq\022\017\n\007user_id\030\001 \001(\005\022\r\n\005token\030\002 \001(\t\"/" +
-      "\n\017PBCreateRoleReq\022\016\n\006gender\030\001 \001(\005\022\014\n\004nam" +
-      "e\030\002 \001(\t\"\373\001\n\013PBLoginSucc\022\017\n\007user_id\030\001 \001(\005" +
-      "\022\021\n\tplayer_id\030\002 \001(\003\022\014\n\004name\030\003 \001(\t\022\014\n\004til" +
-      "i\030\004 \001(\005\022\016\n\006jingli\030\005 \001(\005\022\024\n\014battle_score\030" +
-      "\006 \001(\003\022/\n\007res_map\030\007 \003(\0132\036.proto.PBLoginSu" +
-      "cc.ResMapEntry\022&\n\thero_list\030\010 \003(\0132\023.prot" +
-      "o.PBHeroEntity\032-\n\013ResMapEntry\022\013\n\003key\030\001 \001" +
-      "(\005\022\r\n\005value\030\002 \001(\003:\0028\001b\006proto3"
+      "\n\013login.proto\022\005proto\032\nhero.proto\032\013equip." +
+      "proto\",\n\nPBLoginReq\022\017\n\007user_id\030\001 \001(\005\022\r\n\005" +
+      "token\030\002 \001(\t\"/\n\017PBCreateRoleReq\022\016\n\006gender" +
+      "\030\001 \001(\005\022\014\n\004name\030\002 \001(\t\"\245\002\n\013PBLoginSucc\022\017\n\007" +
+      "user_id\030\001 \001(\005\022\021\n\tplayer_id\030\002 \001(\003\022\014\n\004name" +
+      "\030\003 \001(\t\022\014\n\004tili\030\004 \001(\005\022\016\n\006jingli\030\005 \001(\005\022\024\n\014" +
+      "battle_score\030\006 \001(\003\022/\n\007res_map\030\007 \003(\0132\036.pr" +
+      "oto.PBLoginSucc.ResMapEntry\022&\n\thero_list" +
+      "\030\010 \003(\0132\023.proto.PBHeroEntity\022(\n\nequip_lis" +
+      "t\030\t \003(\0132\024.proto.PBEquipEntity\032-\n\013ResMapE",
+      "ntry\022\013\n\003key\030\001 \001(\005\022\r\n\005value\030\002 \001(\003:\0028\001b\006pr" +
+      "oto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2692,6 +3061,7 @@ public final class Login {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           proto.Hero.getDescriptor(),
+          proto.Equip.getDescriptor(),
         }, assigner);
     internal_static_proto_PBLoginReq_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -2710,7 +3080,7 @@ public final class Login {
     internal_static_proto_PBLoginSucc_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PBLoginSucc_descriptor,
-        new java.lang.String[] { "UserId", "PlayerId", "Name", "Tili", "Jingli", "BattleScore", "ResMap", "HeroList", });
+        new java.lang.String[] { "UserId", "PlayerId", "Name", "Tili", "Jingli", "BattleScore", "ResMap", "HeroList", "EquipList", });
     internal_static_proto_PBLoginSucc_ResMapEntry_descriptor =
       internal_static_proto_PBLoginSucc_descriptor.getNestedTypes().get(0);
     internal_static_proto_PBLoginSucc_ResMapEntry_fieldAccessorTable = new
@@ -2718,6 +3088,7 @@ public final class Login {
         internal_static_proto_PBLoginSucc_ResMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     proto.Hero.getDescriptor();
+    proto.Equip.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

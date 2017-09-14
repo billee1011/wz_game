@@ -1,13 +1,29 @@
 package config.bean;
 
-public class Equip{
+import java.util.List;
+import annotation.ListDesc;
+import annotation.EnumField;
+import config.IConfParseBean;
+
+public class Equip implements IConfParseBean{
 	private int id; 
 
 	private String name; 
 
-	private int attribute; 
+	@ListDesc("EAttributeKeyValue")
+	private List<EAttributeKeyValue> attribute; 
 
 	private EItemQuality quality; 
+
+	@ListDesc("EAttributeKeyValue")
+	private List<EAttributeKeyValue> level_add_attribute; 
+
+	private EEquipPos equip_pos;
+
+	@Override
+	public boolean parse() {
+		return false;
+	}
 
 	public int getId(){
 		return id;
@@ -25,11 +41,11 @@ public class Equip{
 		this.name = name;
 	}
 
-	public int getAttribute(){
+	public List<EAttributeKeyValue> getAttribute(){
 		return attribute;
 	}
 
-	public void setAttribute(int attribute){
+	public void setAttribute(List<EAttributeKeyValue> attribute){
 		this.attribute = attribute;
 	}
 
@@ -39,6 +55,22 @@ public class Equip{
 
 	public void setQuality(EItemQuality quality){
 		this.quality = quality;
+	}
+
+	public List<EAttributeKeyValue> getLevel_add_attribute(){
+		return level_add_attribute;
+	}
+
+	public void setLevel_add_attribute(List<EAttributeKeyValue> level_add_attribute){
+		this.level_add_attribute = level_add_attribute;
+	}
+
+	public EEquipPos getEquip_pos(){
+		return equip_pos;
+	}
+
+	public void setEquip_pos(EEquipPos equip_pos){
+		this.equip_pos = equip_pos;
 	}
 
 	@Override
@@ -59,6 +91,14 @@ public class Equip{
 		builder.append("quality");
 		builder.append(":");
 		builder.append(quality);
+		builder.append(",");
+		builder.append("level_add_attribute");
+		builder.append(":");
+		builder.append(level_add_attribute);
+		builder.append(",");
+		builder.append("equip_pos");
+		builder.append(":");
+		builder.append(equip_pos);
 		return builder.toString();
 	}
 }

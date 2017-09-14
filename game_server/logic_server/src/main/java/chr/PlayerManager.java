@@ -1,5 +1,10 @@
 package chr;
 
+import db.DataManager;
+import service.LogicApp;
+
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -28,8 +33,25 @@ public class PlayerManager {
 		name2PlayerMap.put(ch.getPlayerName(), ch);
 	}
 
+	public Collection<RyCharacter> getAllPlayers() {
+		synchronized (this) {
+			return new ArrayList<>(characterMap.values());
+		}
+	}
+
 	public RyCharacter getCharacter(long entityId) {
 		return characterMap.get(entityId);
+	}
+
+	public void saveAllCharacter() {
+		getAllPlayers().forEach(this::saveRyCharacter);
+	}
+
+	private void saveRyCharacter(RyCharacter ch) {
+		long time = System.currentTimeMillis();
+		if (time - ch.getLastSaveTime() >= LogicApp.SAVE_INTERNAL) {
+			PlayerSaver.savePlayer(ch);
+		}
 	}
 
 	public void removeCharacter(RyCharacter ch) {

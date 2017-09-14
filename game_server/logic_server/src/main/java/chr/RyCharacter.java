@@ -3,6 +3,8 @@ package chr;
 import actor.LogicActorManager;
 import base.EntityCreator;
 import base.IEntity;
+import chr.equip.CharEquip;
+import chr.equip.EquipEntity;
 import chr.fotmation.CharFormation;
 import chr.hero.CharHero;
 import chr.hero.HeroEntity;
@@ -28,6 +30,14 @@ public class RyCharacter extends IEntity {
 
 	private String playerName;
 
+	private ResourceManager resourceManager;
+
+	private CharHero charHero;
+
+	private CharEquip charEquip;
+
+	private CharFormation charFormation;
+
 	private int tili;
 
 	private int jingli;
@@ -36,11 +46,7 @@ public class RyCharacter extends IEntity {
 
 	private int jingliRemain;
 
-	private ResourceManager resourceManager;
-
-	private CharHero charHero;
-
-	private CharFormation charFormation;
+	private long lastSaveTime;
 
 	private ChannelHandlerContext ioSession;
 
@@ -49,6 +55,8 @@ public class RyCharacter extends IEntity {
 		charHero = new CharHero(this);
 		resourceManager = new ResourceManager(this);
 		charFormation = new CharFormation(this);
+		charEquip = new CharEquip(this);
+		lastSaveTime = System.currentTimeMillis();
 	}
 
 	private ScheduledFuture<?> recoveryFuture;
@@ -93,6 +101,18 @@ public class RyCharacter extends IEntity {
 			this.tili++;
 			tiliRemain = Constant.TILI_NEED_TIME;
 		}
+	}
+
+	public CharEquip getCharEquip() {
+		return charEquip;
+	}
+
+	public long getLastSaveTime() {
+		return lastSaveTime;
+	}
+
+	public void setLastSaveTime(long lastSaveTime) {
+		this.lastSaveTime = lastSaveTime;
 	}
 
 	public boolean isTiliFull() {
@@ -158,10 +178,14 @@ public class RyCharacter extends IEntity {
 		character.setJingli(Constant.JINGLI_INIT_COUNT);
 		//初始化一个英雄给玩家
 		HeroEntity heroEntity = EntityCreator.createHero(Constant.MAIN_HERO_ID);                    //创建出来之后首先添加到英雄列表里面
-		character.getCharHero().addHero(heroEntity);                                                  //加入以后就要让英雄上阵了
+		character.getCharHero().addEntity(heroEntity);                                                  //加入以后就要让英雄上阵了
 		character.getResourceManager().updateResource(EMoney.DIAMOND, 50, true);                      //初始化给玩家增加50元宝1000银币
 		character.getResourceManager().updateResource(EMoney.SILVER, 10000, true);
 		character.getCharFormation().addHeroIntoFormation(heroEntity);
+		character.getCharEquip().addEntity(EntityCreator.createEquipEntity(200001));
+		character.getCharEquip().addEntity(EntityCreator.createEquipEntity(200002));
+		character.getCharEquip().addEntity(EntityCreator.createEquipEntity(200003));
+		character.getCharEquip().addEntity(EntityCreator.createEquipEntity(200004));
 		return character;
 	}
 
@@ -180,7 +204,7 @@ public class RyCharacter extends IEntity {
 		write(new CocoPacket(code.getValue(), message == null ? null : message.toByteArray(), getEntityId()));
 	}
 
-	public void write(RequestCode code, MessageLite message){
+	public void write(RequestCode code, MessageLite message) {
 		if (message != null) {
 			LogUtil.msgLogger.info("player id is {} write message {} and length is {} and the content is {}", getEntityId(), code, message.toByteArray().length, message);
 		} else {

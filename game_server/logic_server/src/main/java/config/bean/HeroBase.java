@@ -1,11 +1,11 @@
 package config.bean;
 
+import java.util.List;
 import annotation.ListDesc;
+import annotation.EnumField;
 import config.IConfParseBean;
 
-import java.util.List;
-
-public class HeroBase implements IConfParseBean {
+public class HeroBase implements IConfParseBean{
 	private int id; 
 
 	private String name; 
@@ -100,6 +100,11 @@ public class HeroBase implements IConfParseBean {
 	}
 
 	@Override
+	public boolean parse() {
+		return false;
+	}
+
+	@Override
 	public String toString(){
 		StringBuilder builder = new StringBuilder();
 		builder.append("id");
@@ -138,10 +143,5 @@ public class HeroBase implements IConfParseBean {
 		builder.append(":");
 		builder.append(battle_attribute);
 		return builder.toString();
-	}
-
-	@Override
-	public boolean parse() {
-		return false;
 	}
 }

@@ -89,7 +89,7 @@ public class DataManager {
 		return true;
 	}
 
-	public void saveModule(int playerId, DBAction action, MapObject data) {
+	public void saveModule(long playerId, DBAction action, MapObject data) {
 		CharData charData = (CharData) dataCache.query(playerId);
 		if (charData == null) {
 			System.out.print("the player is null in cache  why ");

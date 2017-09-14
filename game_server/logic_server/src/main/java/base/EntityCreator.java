@@ -1,6 +1,7 @@
 package base;
 
 import chr.RyCharacter;
+import chr.equip.EquipEntity;
 import chr.hero.HeroEntity;
 import define.EntityType;
 import service.LogicApp;
@@ -26,6 +27,10 @@ public class EntityCreator {
 		RyCharacter ch = RyCharacter.getDefault(geneEntityId(EntityType.CHARACTER), name, userId);
 		ch.beginRecovery();
 		return ch;
+	}
+
+	public static EquipEntity createEquipEntity(int confId){
+		return EquipEntity.createEquip(geneEntityId(EntityType.EQUIP), confId);
 	}
 
 

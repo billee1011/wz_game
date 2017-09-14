@@ -8,6 +8,7 @@ bean\Equip.class
 frame\MainPanel.class
 frame\MainPanel$3.class
 annotation\EnumField.class
+bean\EEquipPos.class
 bean\Person.class
 bean\EquipClient.class
 reader\PackConfigManager.class

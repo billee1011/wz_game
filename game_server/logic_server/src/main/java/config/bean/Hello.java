@@ -1,9 +1,7 @@
 package config.bean;
 
-import annotation.ListDesc;
-
 import java.util.List;
-
+import annotation.ListDesc;
 public class Hello{
 	private int id; 
 
@@ -12,12 +10,12 @@ public class Hello{
 	@ListDesc("int")
 	private List<List<Integer>> hehe; 
 
-	private EItemQuality test_enum;
+	private EItemQuality test_enum; 
 
 	@ListDesc("EItemQuality")
-	private List<EItemQuality> test_list_enum;
+	private List<EItemQuality> test_list_enum; 
 
-	private Person test_struct_enum;
+	private Person test_struct_enum; 
 
 	public int getId(){
 		return id;

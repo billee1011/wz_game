@@ -22,21 +22,22 @@ namespace Proto {
     static LoginReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cgtsb2dpbi5wcm90bxIFcHJvdG8aCmhlcm8ucHJvdG8iLAoKUEJMb2dpblJl",
-            "cRIPCgd1c2VyX2lkGAEgASgFEg0KBXRva2VuGAIgASgJIi8KD1BCQ3JlYXRl",
-            "Um9sZVJlcRIOCgZnZW5kZXIYASABKAUSDAoEbmFtZRgCIAEoCSL7AQoLUEJM",
-            "b2dpblN1Y2MSDwoHdXNlcl9pZBgBIAEoBRIRCglwbGF5ZXJfaWQYAiABKAMS",
-            "DAoEbmFtZRgDIAEoCRIMCgR0aWxpGAQgASgFEg4KBmppbmdsaRgFIAEoBRIU",
-            "CgxiYXR0bGVfc2NvcmUYBiABKAMSLwoHcmVzX21hcBgHIAMoCzIeLnByb3Rv",
-            "LlBCTG9naW5TdWNjLlJlc01hcEVudHJ5EiYKCWhlcm9fbGlzdBgIIAMoCzIT",
-            "LnByb3RvLlBCSGVyb0VudGl0eRotCgtSZXNNYXBFbnRyeRILCgNrZXkYASAB",
-            "KAUSDQoFdmFsdWUYAiABKAM6AjgBYgZwcm90bzM="));
+            "Cgtsb2dpbi5wcm90bxIFcHJvdG8aCmhlcm8ucHJvdG8aC2VxdWlwLnByb3Rv",
+            "IiwKClBCTG9naW5SZXESDwoHdXNlcl9pZBgBIAEoBRINCgV0b2tlbhgCIAEo",
+            "CSIvCg9QQkNyZWF0ZVJvbGVSZXESDgoGZ2VuZGVyGAEgASgFEgwKBG5hbWUY",
+            "AiABKAkipQIKC1BCTG9naW5TdWNjEg8KB3VzZXJfaWQYASABKAUSEQoJcGxh",
+            "eWVyX2lkGAIgASgDEgwKBG5hbWUYAyABKAkSDAoEdGlsaRgEIAEoBRIOCgZq",
+            "aW5nbGkYBSABKAUSFAoMYmF0dGxlX3Njb3JlGAYgASgDEi8KB3Jlc19tYXAY",
+            "ByADKAsyHi5wcm90by5QQkxvZ2luU3VjYy5SZXNNYXBFbnRyeRImCgloZXJv",
+            "X2xpc3QYCCADKAsyEy5wcm90by5QQkhlcm9FbnRpdHkSKAoKZXF1aXBfbGlz",
+            "dBgJIAMoCzIULnByb3RvLlBCRXF1aXBFbnRpdHkaLQoLUmVzTWFwRW50cnkS",
+            "CwoDa2V5GAEgASgFEg0KBXZhbHVlGAIgASgDOgI4AWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Proto.HeroReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Proto.HeroReflection.Descriptor, global::Proto.EquipReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBLoginReq), global::Proto.PBLoginReq.Parser, new[]{ "UserId", "Token" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBCreateRoleReq), global::Proto.PBCreateRoleReq.Parser, new[]{ "Gender", "Name" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBLoginSucc), global::Proto.PBLoginSucc.Parser, new[]{ "UserId", "PlayerId", "Name", "Tili", "Jingli", "BattleScore", "ResMap", "HeroList" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBLoginSucc), global::Proto.PBLoginSucc.Parser, new[]{ "UserId", "PlayerId", "Name", "Tili", "Jingli", "BattleScore", "ResMap", "HeroList", "EquipList" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -365,6 +366,7 @@ namespace Proto {
       battleScore_ = other.battleScore_;
       resMap_ = other.resMap_.Clone();
       heroList_ = other.heroList_.Clone();
+      equipList_ = other.equipList_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -458,6 +460,16 @@ namespace Proto {
       get { return heroList_; }
     }
 
+    /// <summary>Field number for the "equip_list" field.</summary>
+    public const int EquipListFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::Proto.PBEquipEntity> _repeated_equipList_codec
+        = pb::FieldCodec.ForMessage(74, global::Proto.PBEquipEntity.Parser);
+    private readonly pbc::RepeatedField<global::Proto.PBEquipEntity> equipList_ = new pbc::RepeatedField<global::Proto.PBEquipEntity>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Proto.PBEquipEntity> EquipList {
+      get { return equipList_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PBLoginSucc);
@@ -479,6 +491,7 @@ namespace Proto {
       if (BattleScore != other.BattleScore) return false;
       if (!ResMap.Equals(other.ResMap)) return false;
       if(!heroList_.Equals(other.heroList_)) return false;
+      if(!equipList_.Equals(other.equipList_)) return false;
       return true;
     }
 
@@ -493,6 +506,7 @@ namespace Proto {
       if (BattleScore != 0L) hash ^= BattleScore.GetHashCode();
       hash ^= ResMap.GetHashCode();
       hash ^= heroList_.GetHashCode();
+      hash ^= equipList_.GetHashCode();
       return hash;
     }
 
@@ -529,6 +543,7 @@ namespace Proto {
       }
       resMap_.WriteTo(output, _map_resMap_codec);
       heroList_.WriteTo(output, _repeated_heroList_codec);
+      equipList_.WriteTo(output, _repeated_equipList_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -554,6 +569,7 @@ namespace Proto {
       }
       size += resMap_.CalculateSize(_map_resMap_codec);
       size += heroList_.CalculateSize(_repeated_heroList_codec);
+      size += equipList_.CalculateSize(_repeated_equipList_codec);
       return size;
     }
 
@@ -582,6 +598,7 @@ namespace Proto {
       }
       resMap_.Add(other.resMap_);
       heroList_.Add(other.heroList_);
+      equipList_.Add(other.equipList_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -622,6 +639,10 @@ namespace Proto {
           }
           case 66: {
             heroList_.AddEntriesFrom(input, _repeated_heroList_codec);
+            break;
+          }
+          case 74: {
+            equipList_.AddEntriesFrom(input, _repeated_equipList_codec);
             break;
           }
         }

@@ -103,6 +103,21 @@ public class RyCharacter extends IEntity {
 		}
 	}
 
+	public void checkInit() {
+		if (charHero.getEntityMap().size() != 0)
+			return;
+		//初始化一个英雄给玩家
+		HeroEntity heroEntity = EntityCreator.createHero(Constant.MAIN_HERO_ID);                    //创建出来之后首先添加到英雄列表里面
+		getCharHero().addEntity(heroEntity);                                                  //加入以后就要让英雄上阵了
+		getResourceManager().updateResource(EMoney.DIAMOND, 50, true);                      //初始化给玩家增加50元宝1000银币
+		getResourceManager().updateResource(EMoney.SILVER, 10000, true);
+		getCharFormation().addHeroIntoFormation(heroEntity);
+		getCharEquip().addEntity(EntityCreator.createEquipEntity(200001));
+		getCharEquip().addEntity(EntityCreator.createEquipEntity(200002));
+		getCharEquip().addEntity(EntityCreator.createEquipEntity(200003));
+		getCharEquip().addEntity(EntityCreator.createEquipEntity(200004));
+	}
+
 	public CharEquip getCharEquip() {
 		return charEquip;
 	}
@@ -176,16 +191,6 @@ public class RyCharacter extends IEntity {
 		character.setUserId(userId);
 		character.setTili(Constant.TILI_INIT_COUNT);
 		character.setJingli(Constant.JINGLI_INIT_COUNT);
-		//初始化一个英雄给玩家
-		HeroEntity heroEntity = EntityCreator.createHero(Constant.MAIN_HERO_ID);                    //创建出来之后首先添加到英雄列表里面
-		character.getCharHero().addEntity(heroEntity);                                                  //加入以后就要让英雄上阵了
-		character.getResourceManager().updateResource(EMoney.DIAMOND, 50, true);                      //初始化给玩家增加50元宝1000银币
-		character.getResourceManager().updateResource(EMoney.SILVER, 10000, true);
-		character.getCharFormation().addHeroIntoFormation(heroEntity);
-		character.getCharEquip().addEntity(EntityCreator.createEquipEntity(200001));
-		character.getCharEquip().addEntity(EntityCreator.createEquipEntity(200002));
-		character.getCharEquip().addEntity(EntityCreator.createEquipEntity(200003));
-		character.getCharEquip().addEntity(EntityCreator.createEquipEntity(200004));
 		return character;
 	}
 

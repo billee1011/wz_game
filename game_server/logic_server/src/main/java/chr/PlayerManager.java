@@ -1,5 +1,6 @@
 package chr;
 
+import base.EntityStorage;
 import db.DataManager;
 import service.LogicApp;
 
@@ -11,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Created by think on 2017/9/8.
  */
-public class PlayerManager {
+public class PlayerManager extends EntityStorage<RyCharacter> {
 
 	private static PlayerManager instance = new PlayerManager();
 
@@ -23,28 +24,9 @@ public class PlayerManager {
 		return instance;
 	}
 
-	private Map<Long, RyCharacter> characterMap = new ConcurrentHashMap<>();
-
-	private Map<String, RyCharacter> name2PlayerMap = new ConcurrentHashMap<>();
-
-
-	public void addPlayer(RyCharacter ch) {
-		characterMap.put(ch.getEntityId(), ch);
-		name2PlayerMap.put(ch.getPlayerName(), ch);
-	}
-
-	public Collection<RyCharacter> getAllPlayers() {
-		synchronized (this) {
-			return new ArrayList<>(characterMap.values());
-		}
-	}
-
-	public RyCharacter getCharacter(long entityId) {
-		return characterMap.get(entityId);
-	}
 
 	public void saveAllCharacter() {
-		getAllPlayers().forEach(this::saveRyCharacter);
+		getAllEntitiesSafe().forEach(this::saveRyCharacter);
 	}
 
 	private void saveRyCharacter(RyCharacter ch) {

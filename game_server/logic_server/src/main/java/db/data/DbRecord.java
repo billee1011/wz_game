@@ -1,5 +1,6 @@
 package db.data;
 
+import database.DBUtil;
 import util.MapObject;
 import util.MiscUtil;
 
@@ -157,7 +158,7 @@ public class DbRecord {
 		}
 		if (updates.size() > 0) {
 			Object[] updatelist = updates.toArray();
-//            DBUtil.batchInsertOrUpdate(table, keys, updatelist);
+            DBUtil.batchInsertOrUpdate(table, keys, updatelist);
 		}
 		// 2. deletes
 		List<DbRecord> toDelete = MiscUtil.newArrayList();
@@ -170,7 +171,7 @@ public class DbRecord {
 		}
 		if (deletes.size() > 0) {
 			Object[] deletelist = deletes.toArray();
-//            DBUtil.batchDelete(table, keys, null, deletelist);
+            DBUtil.batchDelete(table, keys, null, deletelist);
 		}
 		for (DbRecord record : toDelete) {
 			records.remove(record);

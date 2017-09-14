@@ -49,7 +49,7 @@ public class LogicHandler extends AbstractHandlers {
 	}
 
 	private void actionTest(ChannelHandlerContext client, CocoPacket packet, MessageHolder<MessageLite> message) {
-		RyCharacter ch = PlayerManager.getInst().getCharacter(packet.getPlayerId());
+		RyCharacter ch = PlayerManager.getInst().getEntity(packet.getPlayerId());
 		if (ch == null) {
 			logger.warn(" ch is null and the player id is {}", packet.getPlayerId());
 			return;
@@ -63,29 +63,32 @@ public class LogicHandler extends AbstractHandlers {
 		Map<String, Object> where = new HashMap<>();
 		where.put("user_id", userId);
 		MapObject player = DataQueryResult.loadSingleResult("player", where);
+		long playerId = 0;
 		if (player == null) {
 			RyCharacter newChar = EntityCreator.createChar("user_id", userId);                                                //插入一些必须的数据吧
 			try {
-				PlayerSaver.insertPlayer(newChar);
-				onPlayerLoginSuccess(client, newChar);
+				playerId = PlayerSaver.insertPlayer(newChar);
 			} catch (SQLException e) {
-				logger.error("create character failed ", e);
+				throw new RuntimeException("insert player failed");
 			}
 		} else {
-			DataManager.getInst().loadChar(player.getLong("player_id"), (e, f) -> {
-				if (e == null || e instanceof Exception) {
-					logger.error(f);
-					return;
-				}
-				CharData data = (CharData) e;
-				RyCharacter ch = PlayerLoader.loadFromCharData(data);
-				onPlayerLoginSuccess(client, ch);
-			});
+			playerId = player.getLong("player_id");
 		}
+		DataManager.getInst().loadChar(playerId, (e, f) -> {
+			if (e == null || e instanceof Exception) {
+				logger.error(f);
+				return;
+			}
+			CharData data = (CharData) e;
+			RyCharacter ch = PlayerLoader.loadFromCharData(data);
+			onPlayerLoginSuccess(client, ch);
+		});
 	}
 
+
 	private void onPlayerLoginSuccess(ChannelHandlerContext ctx, RyCharacter ch) {
-		PlayerManager.getInst().addPlayer(ch);
+		ch.checkInit();
+		PlayerManager.getInst().addEntity(ch);
 		ch.setIoSession(ctx);
 		ch.write(RequestCode.ACCOUNT_LOGIN_RESULT, LoginPbCreator.loginSucc(ch));
 		logger.info("player login success ");

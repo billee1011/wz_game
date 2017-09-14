@@ -1,5 +1,7 @@
 package base;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,5 +34,15 @@ public class EntityStorage<T extends IEntity> {
 
 	public T getEntity(long id) {
 		return entityMap.get(id);
+	}
+
+	public Collection<T> getAllEntities() {
+		return entityMap.values();
+	}
+
+	public Collection<T> getAllEntitiesSafe() {
+		synchronized (this) {
+			return new ArrayList<>(entityMap.values());
+		}
 	}
 }

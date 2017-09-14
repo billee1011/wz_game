@@ -56,6 +56,11 @@ public class ResourceManager : MonoBehaviour
 		instanceTran.parent = GameUiManager.UIRootTran;
 		instanceTran.localPosition = Vector3.zero;
 		instanceTran.localScale = Vector3.one;
+        GameObject mainBottomObj = ObjectCommon.GetChild(GameUiManager.UIRootTran.gameObject, PanelType.UIMain_bottom);
+        if(mainBottomObj != null)
+        {
+            mainBottomObj.transform.SetSiblingIndex(instanceTran.GetSiblingIndex());
+        }
 		
 		PanelManager.PanelModuleData panelData = PanelManager.GetInstance().getComponent(name);
         Debuger.LogError("pannel data is null ?" + panelData);

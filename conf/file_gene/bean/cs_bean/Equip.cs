@@ -6,9 +6,13 @@ public class Equip{
 
 	private string name; 
 
-	private int attribute; 
+	private List<EAttributeKeyValue> attribute; 
 
 	private EItemQuality quality; 
+
+	private List<EAttributeKeyValue> level_add_attribute; 
+
+	private EEquipPos equip_pos; 
 
 	public int getId(){
 		return id;
@@ -26,11 +30,11 @@ public class Equip{
 		this.name = name;
 	}
 
-	public int getAttribute(){
+	public List<EAttributeKeyValue> getAttribute(){
 		return attribute;
 	}
 
-	public void setAttribute(int attribute){
+	public void setAttribute(List<EAttributeKeyValue> attribute){
 		this.attribute = attribute;
 	}
 
@@ -40,6 +44,22 @@ public class Equip{
 
 	public void setQuality(EItemQuality quality){
 		this.quality = quality;
+	}
+
+	public List<EAttributeKeyValue> getLevel_add_attribute(){
+		return level_add_attribute;
+	}
+
+	public void setLevel_add_attribute(List<EAttributeKeyValue> level_add_attribute){
+		this.level_add_attribute = level_add_attribute;
+	}
+
+	public EEquipPos getEquip_pos(){
+		return equip_pos;
+	}
+
+	public void setEquip_pos(EEquipPos equip_pos){
+		this.equip_pos = equip_pos;
 	}
 
 	public string toString(){
@@ -59,6 +79,14 @@ public class Equip{
 		builder.Append("quality");
 		builder.Append(":");
 		builder.Append(quality);
+		builder.Append(",");
+		builder.Append("level_add_attribute");
+		builder.Append(":");
+		builder.Append(level_add_attribute);
+		builder.Append(",");
+		builder.Append("equip_pos");
+		builder.Append(":");
+		builder.Append(equip_pos);
 		return builder.ToString();
 	}
 }

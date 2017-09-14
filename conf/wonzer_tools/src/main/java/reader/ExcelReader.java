@@ -22,10 +22,10 @@ import java.util.concurrent.Executors;
 public class ExcelReader {
 	static String USER_DIR = System.getProperty("user.dir") + File.separator;
 
+	static String excelPath = USER_DIR + ".." + File.separator + "sg_excel" + File.separator;
 
 	public static void main(String[] args) throws Exception {
 
-		String excelPath = USER_DIR + ".." + File.separator + "sg_excel" + File.separator + "Hero.xls";
 //		if (args.length == 0) {
 //			System.out.println("wo kao    error  return a a a a ");
 //		}
@@ -52,7 +52,12 @@ public class ExcelReader {
 //		}
 //		new MainFrame(configPath, stringList);
 
-		readExcel(excelPath, 1);
+		readExcel("Hero.xls");
+		readExcel("Equip.xls");
+	}
+
+	private static void readExcel(String fileName) {
+		readExcel(excelPath + fileName, 1);
 	}
 
 	public static List<Map<String, String>> readExcelAsMapList(Sheet sheet, int row) throws Exception {
@@ -294,7 +299,7 @@ public class ExcelReader {
 					Method method1 = enumType.getMethod("getValue");
 					Object enumValue = method.invoke(enumType, value);
 					Object intValue = method1.invoke(enumValue);
-					field.setInt(object, (int)intValue);
+					field.setInt(object, (int) intValue);
 				}
 			} else if (fileTypeName.equals("java.util.List")) {
 				setArrayValueToObject(field, object, value);

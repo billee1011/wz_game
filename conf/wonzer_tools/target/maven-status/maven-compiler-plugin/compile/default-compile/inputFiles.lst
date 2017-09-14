@@ -13,6 +13,7 @@ E:\day_up\wz_game\conf\wonzer_tools\src\main\java\reader\RoleNameReader.java
 E:\day_up\wz_game\conf\wonzer_tools\src\main\java\util\IConfigBean.java
 E:\day_up\wz_game\conf\wonzer_tools\src\main\java\reader\ExcelReader.java
 E:\day_up\wz_game\conf\wonzer_tools\src\main\java\bean\EAttributeKeyValue.java
+E:\day_up\wz_game\conf\wonzer_tools\src\main\java\bean\EEquipPos.java
 E:\day_up\wz_game\conf\wonzer_tools\src\main\java\bean\Equip.java
 E:\day_up\wz_game\conf\wonzer_tools\src\main\java\util\IParse.java
 E:\day_up\wz_game\conf\wonzer_tools\src\main\java\util\JsonToLua.java

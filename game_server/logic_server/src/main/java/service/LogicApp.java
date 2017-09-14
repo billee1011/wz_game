@@ -25,128 +25,128 @@ import javax.xml.ws.handler.LogicalHandler;
  * Created by Administrator on 2017/2/6.
  */
 public class LogicApp extends BaseApp {
-	private static LogicApp instance = new LogicApp();
+    private static LogicApp instance = new LogicApp();
 
-	private static Logger logger = LoggerFactory.getLogger(LogicApp.class);
+    private static Logger logger = LoggerFactory.getLogger(LogicApp.class);
 
-	private int serverId = 1;
+    private int serverId = 1;
 
-	public static final int SAVE_INTERNAL = 2 * 60 * 1000;                            //mills
-
-
-	private LogicApp() {
-
-	}
+    public static final int SAVE_INTERNAL = 2 * 60 * 1000;                            //mills
 
 
-	public int getServerId() {
-		return serverId;
-	}
+    private LogicApp() {
 
-	public void setServerId(int serverId) {
-		this.serverId = serverId;
-	}
+    }
 
-	public static LogicApp getInst() {
-		return instance;
-	}
 
-	private void initDataBase() {
-		DBManager.setProps(props);
-		DBManager.setDefaultDatabase("yc_game");
-		try {
-			DBManager.touch();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
+    public int getServerId() {
+        return serverId;
+    }
 
-	public void loadDebugProps() {
-		XProperties debug = new XProperties();
-		debug.load(getConfDir() + "debug.properties");
-	}
+    public void setServerId(int serverId) {
+        this.serverId = serverId;
+    }
 
-	@Override
-	protected void initServer() {
-		initDataBase();
-		BaseProvider.CONF_PATH = getConfDir();
-		BaseProvider.init();
-		BaseProvider.loadAll();
-		LogicActorManager.getInstance().start();
-		DataManager.getInst().start();
-	}
+    public static LogicApp getInst() {
+        return instance;
+    }
 
-	@Override
-	protected void afterStart() {
-		File reloadFile = new File("reload");
-		while (true) {
-			try {
-				Thread.sleep(3 * 1000);
-			} catch (Exception e) {
-				// do nothing
-			}
-			checkReloadFile(reloadFile);
-		}
-	}
+    private void initDataBase() {
+        DBManager.setProps(props);
+        DBManager.setDefaultDatabase("yc_game");
+        try {
+            DBManager.touch();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
-	private static void checkReloadFile(File reloadFile) {
-		if (reloadFile != null && reloadFile.exists()) {
-			try {
-				reloadFile.delete();
-				LogicApp.getInst().loadDebugProps();
-			} catch (Exception e) {
-				// ignore
-				logger.error("", e);
-			}
-		}
-	}
+    public void loadDebugProps() {
+        XProperties debug = new XProperties();
+        debug.load(getConfDir() + "debug.properties");
+    }
 
-	@Override
-	protected void registerCronTask() {
-		LogicActorManager.getDBTimer().register(SAVE_INTERNAL, SAVE_INTERNAL, () -> {
-			PlayerManager.getInst().saveAllCharacter(SAVE_INTERNAL);
-		}, LogicActorManager.getDBCheckActor(), "save_player");
-	}
+    @Override
+    protected void initServer() {
+        initDataBase();
+        BaseProvider.CONF_PATH = getConfDir();
+        BaseProvider.init();
+        BaseProvider.loadAll();
+        LogicActorManager.getInstance().start();
+        DataManager.getInst().start();
+    }
 
-	@Override
-	protected AbstractHandlers getClientHandler() {
-		return new LogicHandler();
-	}
+    @Override
+    protected void afterStart() {
+        File reloadFile = new File("reload");
+        while (true) {
+            try {
+                Thread.sleep(3 * 1000);
+            } catch (Exception e) {
+                // do nothing
+            }
+            checkReloadFile(reloadFile);
+        }
+    }
 
-	@Override
-	protected AppId getAppId() {
-		return AppId.LOGIC;
-	}
+    private static void checkReloadFile(File reloadFile) {
+        if (reloadFile != null && reloadFile.exists()) {
+            try {
+                reloadFile.delete();
+                LogicApp.getInst().loadDebugProps();
+            } catch (Exception e) {
+                // ignore
+                logger.error("", e);
+            }
+        }
+    }
 
-	@Override
-	protected String getServerName() {
-		return "logic_server";
-	}
+    @Override
+    protected void registerCronTask() {
+        LogicActorManager.getDBTimer().register(SAVE_INTERNAL, SAVE_INTERNAL, () -> {
+            PlayerManager.getInst().saveAllCharacter();
+        }, LogicActorManager.getDBCheckActor(), "save_player");
+    }
 
-	public static void main(String[] args) {
-		LogicApp.getInst().start();
-	}
+    @Override
+    protected AbstractHandlers getClientHandler() {
+        return new LogicHandler();
+    }
 
-	@Override
-	protected IActor getCrontabActor() {
-		return LogicActorManager.getLogicActor();
-	}
+    @Override
+    protected AppId getAppId() {
+        return AppId.LOGIC;
+    }
 
-	@Override
-	protected ActTimer getCrontabTimer() {
-		return LogicActorManager.getTimer();
-	}
+    @Override
+    protected String getServerName() {
+        return "logic_server";
+    }
 
-	@Override
-	protected IActorManager getActorManager() {
-		return LogicActorManager.getInstance();
-	}
+    public static void main(String[] args) {
+        LogicApp.getInst().start();
+    }
 
-	@Override
-	public void stop() {
-		logger.info("服务器正在关闭....");
-		System.exit(0);
-		logger.info("服务器正在成功....");
-	}
+    @Override
+    protected IActor getCrontabActor() {
+        return LogicActorManager.getLogicActor();
+    }
+
+    @Override
+    protected ActTimer getCrontabTimer() {
+        return LogicActorManager.getTimer();
+    }
+
+    @Override
+    protected IActorManager getActorManager() {
+        return LogicActorManager.getInstance();
+    }
+
+    @Override
+    public void stop() {
+        logger.info("服务器正在关闭....");
+        System.exit(0);
+        logger.info("服务器正在成功....");
+    }
 
 }

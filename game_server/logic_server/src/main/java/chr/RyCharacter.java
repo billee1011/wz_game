@@ -107,6 +107,14 @@ public class RyCharacter extends IEntity {
 		return charEquip;
 	}
 
+	public long getLastSaveTime() {
+		return lastSaveTime;
+	}
+
+	public void setLastSaveTime(long lastSaveTime) {
+		this.lastSaveTime = lastSaveTime;
+	}
+
 	public boolean isTiliFull() {
 		return true;
 	}

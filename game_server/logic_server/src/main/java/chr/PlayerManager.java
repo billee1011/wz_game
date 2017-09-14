@@ -1,5 +1,8 @@
 package chr;
 
+import db.DataManager;
+import service.LogicApp;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
@@ -40,8 +43,15 @@ public class PlayerManager {
 		return characterMap.get(entityId);
 	}
 
-	public void saveAllCharacter(long intervalTime) {
+	public void saveAllCharacter() {
+		getAllPlayers().forEach(this::saveRyCharacter);
+	}
 
+	private void saveRyCharacter(RyCharacter ch) {
+		long time = System.currentTimeMillis();
+		if (time - ch.getLastSaveTime() >= LogicApp.SAVE_INTERNAL) {
+			PlayerSaver.savePlayer(ch);
+		}
 	}
 
 	public void removeCharacter(RyCharacter ch) {

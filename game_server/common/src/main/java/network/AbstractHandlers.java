@@ -17,18 +17,6 @@ import java.util.Map;
 public abstract class AbstractHandlers {
 	private static final Logger logger = LoggerFactory.getLogger(AbstractHandlers.class);
 
-	public class MessageHolder<MessageLite> {
-		private MessageLite t;
-
-		public MessageHolder(MessageLite t) {
-			this.t = t;
-		}
-
-		public <T> T get() {
-			return (T) t;
-		}
-	}
-
 	public AbstractHandlers() {
 		registerAction();
 	}

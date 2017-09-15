@@ -1,8 +1,7 @@
 package data.logdata;
 
 import com.google.protobuf.MessageLite;
-import io.netty.buffer.ByteBuf;
-import network.AbstractHandlers;
+import network.MessageHolder;
 
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
@@ -12,7 +11,7 @@ import java.util.Date;
  * Created by think on 2017/3/21.
  */
 public interface ILogInfo {
-    void read(AbstractHandlers.MessageHolder<MessageLite> messageContainer);
+    void read(MessageHolder<MessageLite> messageContainer);
 
     MessageLite write();
 

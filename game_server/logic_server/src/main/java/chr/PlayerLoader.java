@@ -1,6 +1,7 @@
 package chr;
 
 import base.EntityCreator;
+import chr.fotmation.Formation;
 import chr.hero.HeroEntity;
 import config.JsonUtil;
 import db.CharData;
@@ -17,7 +18,18 @@ public class PlayerLoader {
 		RyCharacter ch = RyCharacter.getEmptyChar(data.getCharId());
 		loadBaseData(ch, data);
 		loadHeroEntity(ch, data);
+		loadFormation(ch, data.getModuleData(DBAction.FORMATION));
 		return ch;
+	}
+
+	private static void loadFormation(RyCharacter ch, MapObject moduleData) {
+		Object[] datas = (Object[]) moduleData.get("" + ch.getEntityId());
+		if (datas.length == 0)
+			return;
+		MapObject data = (MapObject) datas[0];
+		ch.getCharFormation().setPartners(JsonUtil.getGson().fromJson(data.getString("partners"), long[].class));
+		ch.getCharFormation().setBattleFormation(JsonUtil.getGson().fromJson(data.getString("battle_formation"), long[].class));
+		ch.getCharFormation().setFormations(JsonUtil.getGson().fromJson(data.getString("formation_info"), Formation[].class));
 	}
 
 	private static void loadBaseData(RyCharacter ch, CharData charData) {

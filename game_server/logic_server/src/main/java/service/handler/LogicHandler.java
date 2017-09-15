@@ -5,11 +5,13 @@ import chr.PlayerLoader;
 import chr.PlayerManager;
 import chr.PlayerSaver;
 import chr.RyCharacter;
-import database.DBUtil;
 import database.DataQueryResult;
 import db.CharData;
 import db.DataManager;
-import define.EMoney;
+import manager.EquipManager;
+import manager.FormationManager;
+import manager.IMessageHandler;
+import network.MessageHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,10 +44,21 @@ import java.util.Map;
 public class LogicHandler extends AbstractHandlers {
 	private static Logger logger = LoggerFactory.getLogger(LogicHandler.class);
 
+
+	private Map<Integer, IMessageHandler> messageHandlerMap;
+
 	@Override
 	protected void registerAction() {
+		messageHandlerMap = new HashMap<>();
 		registerAction(RequestCode.LOGIC_PLAYER_LOGIN.getValue(), this::actionPlayerLogin, Login.PBLoginReq.getDefaultInstance());
 		registerAction(RequestCode.ACCOUNT_TEST.getValue(), this::actionTest, Common.PBStringList.getDefaultInstance());
+		registerAction(RequestCode.FORMATION_EQUIP.getValue(), null, Common.PBStringList.getDefaultInstance(), FormationManager.getInst()::formationEquip);
+		registerAction(RequestCode.EQUIP_STRENGTHEN.getValue(), null, Common.PBInt64.getDefaultInstance(), EquipManager.getInst()::strengthenEquip);
+	}
+
+	public void registerAction(int action, IActionHandler handler, MessageLite message, IMessageHandler msgHandler) {
+		super.registerAction(action, handler, message);
+		messageHandlerMap.put(action, msgHandler);
 	}
 
 	private void actionTest(ChannelHandlerContext client, CocoPacket packet, MessageHolder<MessageLite> message) {
@@ -103,22 +116,34 @@ public class LogicHandler extends AbstractHandlers {
 		} else {
 			Pair<MessageLite, IActionHandler> messageAndHandler = actionHandlers.get(packet.getReqId());
 			if (messageAndHandler == null) {
-				logger.debug(" the mssage hand is null and the req code is {}", reqCode);
+				logger.debug(" the message hand is null and the req code is {}", reqCode);
 			} else {
 				IActionHandler handler = messageAndHandler.getRight();
 				MessageLite protoType = messageAndHandler.getLeft();
 				if (handler != null) {
-					MessageLite message = null;
-					try {
-						message = protoType == null ? null : protoType.getParserForType().parseFrom(packet.getBytes());
-						LogUtil.msgLogger.info("player {} , request:{}, packet {}", new Object[]{packet.getPlayerId(), reqCode, message});
-					} catch (InvalidProtocolBufferException e) {
-						logger.error("exception; {}", e);
-					}
+					MessageLite message = getMessageLite(packet, reqCode, protoType);
 					handler.doAction(client, packet, new MessageHolder<>(message));
+				} else {
+					IMessageHandler msgHandler = messageHandlerMap.get(packet.getReqId());
+					if (msgHandler != null) {
+						RyCharacter ch = PlayerManager.getInst().getEntity(packet.getPlayerId());
+						MessageLite message = getMessageLite(packet, reqCode, protoType);
+						msgHandler.actionHandle(ch, new MessageHolder<>(message));
+					}
 				}
 			}
 		}
+	}
+
+	private MessageLite getMessageLite(CocoPacket packet, RequestCode reqCode, MessageLite protoType) {
+		MessageLite message = null;
+		try {
+			message = protoType == null ? null : protoType.getParserForType().parseFrom(packet.getBytes());
+			LogUtil.msgLogger.info("player {} , request:{}, packet {}", new Object[]{packet.getPlayerId(), reqCode, message});
+		} catch (InvalidProtocolBufferException e) {
+			logger.error("exception; ", e);
+		}
+		return message;
 	}
 
 	private void sendLogicDeskIsRemove(int playerId) {

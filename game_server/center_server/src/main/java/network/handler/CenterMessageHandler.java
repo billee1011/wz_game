@@ -1,5 +1,6 @@
 package network.handler;
 
+import network.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,14 +10,9 @@ import com.google.protobuf.MessageLite;
 import actor.CenterActorManager;
 import define.AppId;
 import io.netty.channel.ChannelHandlerContext;
-import network.AbstractHandlers;
-import network.NetClient;
-import network.ServerManager;
-import network.ServerSession;
 import network.handler.module.AccountModule;
 import network.handler.module.BackendModule;
 import network.handler.module.CenterModule;
-import network.handler.module.ExchangeModule;
 import packet.CocoPacket;
 import protocol.c2s.RequestCode;
 import service.CenterServer;
@@ -33,7 +29,6 @@ public class CenterMessageHandler extends AbstractHandlers {
 	@Override
 	protected void registerAction() {
 		new AccountModule().registerModuleHandler(this);
-		new ExchangeModule().registerModuleHandler(this);
 		CenterModule.getIns().registerModuleHandler(this);
 		new BackendModule().registerModuleHandler(this);
 	}

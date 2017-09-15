@@ -35,6 +35,11 @@ public class LoginServer extends BaseApp {
 	}
 
 
+	@Override
+	protected void beforeStart() {
+
+	}
+
 	public static LoginServer getInst() {
 		return instance;
 	}

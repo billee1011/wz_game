@@ -3,6 +3,7 @@ package network.handler.module;
 import java.util.HashMap;
 import java.util.Map;
 
+import network.MessageHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -47,7 +48,7 @@ public class CenterModule implements IModuleMessageHandler {
 	}
 
 
-	private void actionServerPing(ChannelHandlerContext ioSession, CocoPacket packet, AbstractHandlers.MessageHolder<MessageLite> message) {
+	private void actionServerPing(ChannelHandlerContext ioSession, CocoPacket packet, MessageHolder<MessageLite> message) {
 		ServerSession session = NettyUtil.getAttribute(ioSession, ServerSession.KEY);
 		if (session == null) {
 			logger.info(" server ping  and session is null");
@@ -56,7 +57,7 @@ public class CenterModule implements IModuleMessageHandler {
 	}
 
 
-	private void actionRegisterServer(ChannelHandlerContext ioSession, CocoPacket srcPacket, AbstractHandlers.MessageHolder<MessageLite> message) {
+	private void actionRegisterServer(ChannelHandlerContext ioSession, CocoPacket srcPacket, MessageHolder<MessageLite> message) {
 		Common.PBStringList req = message.get();
 		ServerSession session = NettyUtil.getAttribute(ioSession, ServerSession.KEY);
 
@@ -75,7 +76,7 @@ public class CenterModule implements IModuleMessageHandler {
 		ioSession.writeAndFlush(packet);
 	}
 
-	private void actionDispatchGate(ChannelHandlerContext ioSession, CocoPacket srcPacket, AbstractHandlers.MessageHolder<MessageLite> message) {
+	private void actionDispatchGate(ChannelHandlerContext ioSession, CocoPacket srcPacket, MessageHolder<MessageLite> message) {
 		ServerSession session = ServerManager.getInst().getMinLoadSession(AppId.GATE);
 		if (session == null) {
 			logger.warn("没有gate可以分配");
@@ -95,7 +96,7 @@ public class CenterModule implements IModuleMessageHandler {
 		ioSession.writeAndFlush(packet);
 	}
 
-	private void actionValidLogin(ChannelHandlerContext ioSession, CocoPacket srcPacket, AbstractHandlers.MessageHolder<MessageLite> message) {
+	private void actionValidLogin(ChannelHandlerContext ioSession, CocoPacket srcPacket, MessageHolder<MessageLite> message) {
 		logger.info("player login the game ");
 		Login.PBLoginReq request = message.get();
 		if (request == null) {

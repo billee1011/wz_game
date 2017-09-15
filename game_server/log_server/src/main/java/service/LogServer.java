@@ -37,6 +37,11 @@ public class LogServer extends BaseApp {
 
 	}
 
+	@Override
+	protected void beforeStart() {
+
+	}
+
 	private void initDataBase() {
 		DBManager.setProps(props);
 		DBManager.setDefaultDatabase("yc_log");

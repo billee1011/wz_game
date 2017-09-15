@@ -28,6 +28,10 @@ public class AttrEntity extends IEntity {
 		attrMap.merge(type, value, (e, f) -> e == null ? f : e + f);
 	}
 
+	public int getAttributeValue(EBattleAttribute type) {
+		return attrMap.containsKey(type) ? attrMap.get(type) : 0;
+	}
+
 	public void reduceAttribute(EBattleAttribute type, int value) {
 		attrMap.merge(type, value, (e, f) -> e == null ? -f : e - f);
 	}

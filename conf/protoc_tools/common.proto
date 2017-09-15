@@ -12,6 +12,10 @@ message PBInt32{
 	int32 value = 1;
 }
 
+message PBInt64{
+	int64 value = 1;
+}
+
 message PBString{
 	string value = 1;
 }

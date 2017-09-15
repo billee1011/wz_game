@@ -47,6 +47,11 @@ public class GateApp extends BaseApp {
 	}
 
 	@Override
+	protected void beforeStart() {
+
+	}
+
+	@Override
 	protected void initServer() {
 		int port = props.getInteger("gate.port", 9091);
 		

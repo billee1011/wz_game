@@ -35,14 +35,18 @@ public abstract class BaseApp implements Service {
 
 	protected abstract void afterStart();
 
+
+	protected abstract void beforeStart();
+
+
 	protected abstract AppId getAppId();
 
 	protected NetClient client;
-	
+
 	protected ScheduledFuture<?> stopFuture;
-	
+
 	private long startTime = System.currentTimeMillis();
-	
+
 	private void initServerProps() {
 		props = new XProperties();
 		props.load(getConfDir() + "server.properties");
@@ -96,14 +100,18 @@ public abstract class BaseApp implements Service {
 	protected abstract ActTimer getCrontabTimer();
 
 	protected abstract IActorManager getActorManager();
-	
-	protected List<String> getRegistParam(){
+
+	protected List<String> getRegistParam() {
 		return null;
-	};
-	
-	protected ICallback getSessionCloseCallBack(){
+	}
+
+	;
+
+	protected ICallback getSessionCloseCallBack() {
 		return null;
-	};
+	}
+
+	;
 
 	protected AbstractHandlers getClientHandler() {
 		return null;
@@ -147,6 +155,7 @@ public abstract class BaseApp implements Service {
 	}
 
 	public void start() {
+		beforeStart();
 		initServerProps();
 		registerToCenterServer();
 		initServer();
@@ -160,12 +169,12 @@ public abstract class BaseApp implements Service {
 	}
 
 	public abstract void stop();
-	
-	
-	public void beginStop(int endTime){
+
+
+	public void beginStop(int endTime) {
 		long endTimeMs = endTime * 1000l;
-		logger.info("服务器将于{}强制关闭!",MiscUtil.getDateStr_(endTimeMs));
-		
+		logger.info("服务器将于{}强制关闭!", MiscUtil.getDateStr_(endTimeMs));
+
 		ActTimer timer = getCrontabTimer();
 		if (timer != null) {
 			IActor actor = getCrontabActor();
@@ -174,27 +183,27 @@ public abstract class BaseApp implements Service {
 			}
 			cancelStopFuture();
 			long delay = endTimeMs - System.currentTimeMillis();
-			if(delay > 0){
-				stopFuture = timer.register(1000,delay,1, ()->startStop(),actor, "stopServer");
-			}else{
+			if (delay > 0) {
+				stopFuture = timer.register(1000, delay, 1, () -> startStop(), actor, "stopServer");
+			} else {
 				startStop();
 			}
 		}
 	}
-	
-	public void startStop(){
+
+	public void startStop() {
 		cancelStopFuture();
 		stop();
 	}
-	
-	protected void cancelStopFuture(){
-		if(stopFuture != null){
+
+	protected void cancelStopFuture() {
+		if (stopFuture != null) {
 			stopFuture.cancel(true);
 			stopFuture = null;
 		}
 	}
-	
-	public boolean isStop(){
+
+	public boolean isStop() {
 		return stopFuture != null;
 	}
 

@@ -1,22 +1,20 @@
 package config.provider;
 
+import com.google.inject.Singleton;
 import config.JsonUtil;
 import config.bean.HeroBase;
+import inject.BeanManager;
 
 import java.util.Map;
 
 /**
  * Created by think on 2017/9/8.
  */
+@Singleton
 public class HeroInfoProvider extends BaseProvider {
-	private static HeroInfoProvider instance = new HeroInfoProvider();
-
-	private HeroInfoProvider() {
-
-	}
 
 	public static HeroInfoProvider getInst() {
-		return instance;
+		return BeanManager.getBean(HeroInfoProvider.class);
 	}
 
 	private Map<Integer, HeroBase> heroBaseMap = null;
@@ -37,6 +35,10 @@ public class HeroInfoProvider extends BaseProvider {
 	@Override
 	public void doLoad() {
 		heroBaseMap = JsonUtil.getJsonMap(HeroBase[].class, "HeroBase.json");
-		heroBaseMap.forEach((e, f) -> System.out.println(f));
+	}
+
+	@Override
+	public String toString() {
+		return JsonUtil.getGson().toJson(heroBaseMap);
 	}
 }

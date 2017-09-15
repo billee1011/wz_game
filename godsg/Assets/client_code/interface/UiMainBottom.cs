@@ -26,6 +26,13 @@ class UiMainBottom : UIPanelBase
         buttonMain.onClick.AddListener(OnMainButtonClicked);
 
         buttonZhenrong.onClick.AddListener(OnZhenrongButtonClicked);
+
+        buttonShop.onClick.AddListener(OnShopButtonClicked);
+    }
+
+    void OnShopButtonClicked()
+    {
+        P3Net.NetClient.Instance.PushPacket(new P3Net.Packet(P3Net.PACKET_TYPE.EQUIP_STRENGTHEN, PBCreator.pbInt64(241430705429549056L)));
     }
 
     void OnZhenrongButtonClicked()

@@ -1,5 +1,7 @@
 package config.provider;
 
+import inject.BeanManager;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,11 +19,6 @@ public abstract class BaseProvider {
 
 	protected static List<BaseProvider> providerList = new ArrayList<>();
 
-	public final static void init() {
-		HeroInfoProvider.getInst();
-		EquipInfoProvider.getInst();
-	}
-
 	public void reLoad() {
 		doLoad();
 		initString();
@@ -29,6 +26,11 @@ public abstract class BaseProvider {
 
 	public String getConfString() {
 		return confString;
+	}
+
+	public static void init() {
+		HeroInfoProvider.getInst();
+		EquipInfoProvider.getInst();
 	}
 
 	public static void loadAll() {
@@ -41,8 +43,6 @@ public abstract class BaseProvider {
 		initString();
 		return true;
 	}
-
-
 
 
 	public abstract void doLoad();

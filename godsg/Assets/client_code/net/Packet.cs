@@ -163,6 +163,12 @@
             this.bytes = bytes;
         }
 
+        public Packet(PACKET_TYPE packetID,IMessage message)
+        {
+            this.m_PacketID = packetID;
+            this.bytes = message == null ? null : message.ToByteArray();
+        }
+
         public Packet(PACKET_TYPE packetId)
         {
             this.m_PacketID = packetId;

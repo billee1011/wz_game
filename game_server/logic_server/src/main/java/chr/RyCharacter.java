@@ -111,7 +111,7 @@ public class RyCharacter extends IEntity {
 		getCharHero().addEntity(heroEntity);                                                  //加入以后就要让英雄上阵了
 		getResourceManager().updateResource(EMoney.DIAMOND, 50, true);                      //初始化给玩家增加50元宝1000银币
 		getResourceManager().updateResource(EMoney.SILVER, 10000, true);
-		getCharFormation().addHeroIntoFormation(heroEntity);
+		getCharFormation().addFirstHero(heroEntity);
 		getCharEquip().addEntity(EntityCreator.createEquipEntity(200001));
 		getCharEquip().addEntity(EntityCreator.createEquipEntity(200002));
 		getCharEquip().addEntity(EntityCreator.createEquipEntity(200003));

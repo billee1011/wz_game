@@ -7,6 +7,7 @@ import config.bean.ECountry;
 import config.bean.HeroBase;
 import config.provider.HeroInfoProvider;
 import define.EntityType;
+import inject.BeanManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sun.font.EAttribute;
@@ -36,13 +37,11 @@ public class HeroEntity extends AttrEntity {
 
 	private int tianmingLevel;                    //天命等级
 
-	private int huashenLevel;					//化神等级						橙武将多少， 红武将多少
+	private int huashenLevel;                    //化神等级						橙武将多少， 红武将多少
 
-	private Map<EBattleAttribute, Integer> attributeMap;
 
 	public HeroEntity() {
 		super(EntityType.HERO);
-		this.attributeMap = new HashMap<>();
 		this.level = 1;
 	}
 
@@ -101,7 +100,7 @@ public class HeroEntity extends AttrEntity {
 	}
 
 	public long calBattleScore() {
-		return attributeMap.get(EBattleAttribute.HP) * 10;
+		return getAttributeValue(EBattleAttribute.HP) * 10;
 	}
 
 	public void setBreakLevel(int breakLevel) {
@@ -136,7 +135,7 @@ public class HeroEntity extends AttrEntity {
 	}
 
 	//计算属性还是蛮烦的
-	public void reloadAttribute(){
+	public void reloadAttribute() {
 
 	}
 

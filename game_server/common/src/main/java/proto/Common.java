@@ -1000,6 +1000,436 @@ public final class Common {
 
   }
 
+  public interface PBInt64OrBuilder extends
+      // @@protoc_insertion_point(interface_extends:proto.PBInt64)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional int64 value = 1;</code>
+     */
+    long getValue();
+  }
+  /**
+   * Protobuf type {@code proto.PBInt64}
+   */
+  public  static final class PBInt64 extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:proto.PBInt64)
+      PBInt64OrBuilder {
+    // Use PBInt64.newBuilder() to construct.
+    private PBInt64(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private PBInt64() {
+      value_ = 0L;
+    }
+
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private PBInt64(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+
+              value_ = input.readInt64();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return Common.internal_static_proto_PBInt64_descriptor;
+    }
+
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return Common.internal_static_proto_PBInt64_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              PBInt64.class, Builder.class);
+    }
+
+    public static final int VALUE_FIELD_NUMBER = 1;
+    private long value_;
+    /**
+     * <code>optional int64 value = 1;</code>
+     */
+    public long getValue() {
+      return value_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (value_ != 0L) {
+        output.writeInt64(1, value_);
+      }
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (value_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, value_);
+      }
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @Override
+    public boolean equals(final Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof PBInt64)) {
+        return super.equals(obj);
+      }
+      PBInt64 other = (PBInt64) obj;
+
+      boolean result = true;
+      result = result && (getValue()
+          == other.getValue());
+      return result;
+    }
+
+    @Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (37 * hash) + VALUE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getValue());
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static PBInt64 parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static PBInt64 parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static PBInt64 parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static PBInt64 parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static PBInt64 parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static PBInt64 parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static PBInt64 parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static PBInt64 parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static PBInt64 parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static PBInt64 parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(PBInt64 prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @Override
+    protected Builder newBuilderForType(
+        BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code proto.PBInt64}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:proto.PBInt64)
+        PBInt64OrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return Common.internal_static_proto_PBInt64_descriptor;
+      }
+
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return Common.internal_static_proto_PBInt64_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                PBInt64.class, Builder.class);
+      }
+
+      // Construct using proto.Common.PBInt64.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        value_ = 0L;
+
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return Common.internal_static_proto_PBInt64_descriptor;
+      }
+
+      public PBInt64 getDefaultInstanceForType() {
+        return PBInt64.getDefaultInstance();
+      }
+
+      public PBInt64 build() {
+        PBInt64 result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public PBInt64 buildPartial() {
+        PBInt64 result = new PBInt64(this);
+        result.value_ = value_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof PBInt64) {
+          return mergeFrom((PBInt64)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(PBInt64 other) {
+        if (other == PBInt64.getDefaultInstance()) return this;
+        if (other.getValue() != 0L) {
+          setValue(other.getValue());
+        }
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        PBInt64 parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (PBInt64) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private long value_ ;
+      /**
+       * <code>optional int64 value = 1;</code>
+       */
+      public long getValue() {
+        return value_;
+      }
+      /**
+       * <code>optional int64 value = 1;</code>
+       */
+      public Builder setValue(long value) {
+        
+        value_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 value = 1;</code>
+       */
+      public Builder clearValue() {
+        
+        value_ = 0L;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:proto.PBInt64)
+    }
+
+    // @@protoc_insertion_point(class_scope:proto.PBInt64)
+    private static final PBInt64 DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new PBInt64();
+    }
+
+    public static PBInt64 getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<PBInt64>
+        PARSER = new com.google.protobuf.AbstractParser<PBInt64>() {
+      public PBInt64 parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new PBInt64(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<PBInt64> parser() {
+      return PARSER;
+    }
+
+    @Override
+    public com.google.protobuf.Parser<PBInt64> getParserForType() {
+      return PARSER;
+    }
+
+    public PBInt64 getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface PBStringOrBuilder extends
       // @@protoc_insertion_point(interface_extends:proto.PBString)
       com.google.protobuf.MessageOrBuilder {
@@ -1514,6 +1944,11 @@ public final class Common {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_proto_PBInt32_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_proto_PBInt64_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_proto_PBInt64_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_proto_PBString_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -1528,8 +1963,9 @@ public final class Common {
   static {
     String[] descriptorData = {
       "\n\014common.proto\022\005proto\"\034\n\014PBStringList\022\014\n" +
-      "\004list\030\001 \003(\t\"\030\n\007PBInt32\022\r\n\005value\030\001 \001(\005\"\031\n" +
-      "\010PBString\022\r\n\005value\030\001 \001(\tb\006proto3"
+      "\004list\030\001 \003(\t\"\030\n\007PBInt32\022\r\n\005value\030\001 \001(\005\"\030\n" +
+      "\007PBInt64\022\r\n\005value\030\001 \001(\003\"\031\n\010PBString\022\r\n\005v" +
+      "alue\030\001 \001(\tb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1555,8 +1991,14 @@ public final class Common {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PBInt32_descriptor,
         new String[] { "Value", });
-    internal_static_proto_PBString_descriptor =
+    internal_static_proto_PBInt64_descriptor =
       getDescriptor().getMessageTypes().get(2);
+    internal_static_proto_PBInt64_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_proto_PBInt64_descriptor,
+        new String[] { "Value", });
+    internal_static_proto_PBString_descriptor =
+      getDescriptor().getMessageTypes().get(3);
     internal_static_proto_PBString_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PBString_descriptor,

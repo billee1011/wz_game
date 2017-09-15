@@ -19,6 +19,18 @@ public class CharFormation {
 		return formations;
 	}
 
+	public void setFormations(Formation[] formations) {
+		this.formations = formations;
+	}
+
+	public void setPartners(long[] partners) {
+		this.partners = partners;
+	}
+
+	public void setBattleFormation(long[] battleFormation) {
+		this.battleFormation = battleFormation;
+	}
+
 	public long[] getPartners() {
 		return partners;
 	}
@@ -34,8 +46,17 @@ public class CharFormation {
 	public void addHeroIntoFormation(HeroEntity hero) {
 		for (int i = 0, length = formations.length; i < length; i++) {
 			if (formations[i] == null)
-				formations[i] = new Formation(hero.getHeroId());
+				formations[i] = new Formation(hero.getEntityId());
 		}
+		for (int i = 0, length = battleFormation.length; i < length; i++) {
+			if (battleFormation[i] == 0)
+				battleFormation[i] = hero.getEntityId();
+		}
+	}
+
+	public void addFirstHero(HeroEntity hero) {
+		formations[0] = new Formation(hero.getEntityId());
+		battleFormation[1] = hero.getEntityId();
 	}
 
 	public long calBattleScore() {

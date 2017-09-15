@@ -89,6 +89,7 @@ public class PlayerSaver {
 	private static MapObject genePlayerData(long playerId, RyCharacter ch) {
 		MapObject data = new MapObject();
 		data.put("player_id", ch.getEntityId());
+		data.put("user_id", ch.getUserId());
 		data.put("diamond", ch.getResourceManager().getResCount(EMoney.DIAMOND));
 		data.put("silver", ch.getResourceManager().getResCount(EMoney.SILVER));
 		data.put("reputation", ch.getResourceManager().getResCount(EMoney.REPUTATION));

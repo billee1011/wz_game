@@ -15,28 +15,12 @@ public enum RequestCode {
 	ACCOUNT_LOGIN(101, AppId.CENTER),
 	ACCOUNT_LOGIN_RESULT(102, AppId.GATE),
 	ACCOUNT_TEST(103),
-	ACCOUNT_RETRIEVE_PASSWORD(259),
-	ACCOUNT_MODIFY_PASSWORD(260),
-	ACCOUNT_MODIFY_ICON(261, AppId.CENTER),
-	ACCOUNT_BIND_ALI_PAY(262, AppId.CENTER),
-	ACCOUNT_MODIFY_BANK_PASSWORD(263, AppId.CENTER),
-	ACCOUNT_SAVE_MONEY(264, AppId.CENTER),
-	ACCOUNT_WITHDRAW_MONEY(265, AppId.CENTER),
-	ACCOUNT_MODIFY_GENDER(266, AppId.CENTER),
-	ACCOUNT_EXCHANGE(268, AppId.CENTER),                            //兑换
-	ACCOUNT_GAIN_VALID_CODE(269),                        //获取验证码
-	ACCOUNT_GET_WX_PRE_ID(270),                        //获取pre id
-	ACCOUNT_UPDATE_DATA(271, AppId.CENTER),                        //获取pre id
-	ACCOUNT_GENE_PAY_ORDER(272, AppId.CENTER),                    //生成订单号
-	ACCOUNT_REGISTER_GAME_ID(273, AppId.CENTER),                  //接收玩家渠道号
-	ACCOUNT_ADD_COIN(274, AppId.CENTER),                  //接收玩家渠道号
-	ACCOUNT_MODIFY_NICK_NAME(275, AppId.CENTER),                        //修改昵称
-	ACCOUNT_GET_DYNAMIC_CONFIG(276, AppId.CENTER),                        //获取动态配置
-	ACCOUNT_GET_RANDOM_NAME(277, AppId.CENTER),                             //获取随机名字
-	ACCOUNT_GET_ANNOUNCEMENT(278, AppId.CENTER),                            //获取公告
-	ACCOUNT_REQUEST_AGENT_INFO(279, AppId.CENTER),                            //请求代理
-	ACCOUNT_COMPLAINT(280, AppId.CENTER),                     // 投诉代理或客服
-	ACCOUNT_OPEN_BANK(281, AppId.CENTER),                     // 开启保险箱
+
+
+	FORMATION_EQUIP(202),														//穿装备
+
+
+	EQUIP_STRENGTHEN(201),
 
 	/////////////////////////////////////////////
 	////////////////////////////////////////////
@@ -188,8 +172,6 @@ public enum RequestCode {
 		this.value = value;
 		this.sendTo = AppId.LOGIC;
 	}
-
-	public static List<RequestCode> NO_NEED_LOG_CODE_LIST = Arrays.asList(RESPONSE_TO_CLIIENT_CODE, ACCOUNT_GET_DYNAMIC_CONFIG);
 
 	public int getValue() {
 		return this.value;

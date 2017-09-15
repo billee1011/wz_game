@@ -166,6 +166,11 @@ public class CenterServer extends BaseApp {
 		}
 	}
 
+	@Override
+	protected void beforeStart() {
+
+	}
+
 	private static void checkReloadFile(File reloadFile) {
 		if (reloadFile != null && reloadFile.exists()) {
 			try {

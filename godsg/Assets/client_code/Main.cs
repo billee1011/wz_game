@@ -54,7 +54,7 @@ public class Main : MonoBehaviour
 
         if( intervalTime > 5)
         {
-            P3Net.NetClient.GetInstance().PushPacket(new P3Net.Packet(P3Net.PACKET_TYPE.PACKET_PING, null));
+            P3Net.NetClient.GetInstance().PushPacket(new P3Net.Packet(P3Net.PACKET_TYPE.PACKET_PING, (byte[])null));
             intervalTime = 0;
         }
     }

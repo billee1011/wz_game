@@ -11,10 +11,13 @@ namespace P3Net
         PACKET_PING = 100,
 		PACKET_CLLogin = 101,
         PACKET_CL_TEST = 103,
-
+        EQUIP_STRENGTHEN = 201,
 		
 	    //server 2 client
         PACKET_GC_LOGIN_SUCC = 30101,
         PACKET_GC_TEST_RECEIVE = 30102,
+
+
+  
 	}
 }

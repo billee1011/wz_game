@@ -8,3 +8,16 @@
 *.idea
 */target/*
 *.log
+*.csprog
+*.sln
+/godsg/.vs
+/godsg/Library
+/godsg/godsg.v11.suo
+/godsg/Assembly-CSharp.csproj
+/godsg/Assembly-CSharp-Editor.csproj
+/godsg/Assembly-CSharp-firstpass.csproj
+/godsg/godsg.csproj
+/godsg/godsg.Editor.csproj
+/godsg/godsg.Plugins.csproj
+/godsg/godsg.sln
+/godsg/godsg.userprefs

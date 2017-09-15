@@ -34,34 +34,6 @@ public class LoginServer extends BaseApp {
 
 	}
 
-//	public Map<String, LoginHandler.ValidCodeInfo> validCodeInfoMap = new HashMap<>();
-
-	private ConcurrentHashMap<Integer, Integer> package2channel = new ConcurrentHashMap<>();
-
-	private ConcurrentHashMap<Integer, String> package2plat = new ConcurrentHashMap<>();
-
-	private ConcurrentHashMap<String, Boolean> province2open = new ConcurrentHashMap<>();
-
-	private ConcurrentHashMap<String, Boolean> openSet = new ConcurrentHashMap<>();
-
-	private String provinceOtherPlace = "";
-
-//	public void addValidCodeInfo(String phone, LoginHandler.ValidCodeInfo info) {
-//		logger.info(" add valid code info and the code info is {} : {}", phone, info.validCode);
-//		validCodeInfoMap.put(phone, info);
-//	}
-//
-//	public LoginHandler.ValidCodeInfo getValidCodeInfo(String phone) {
-//		return validCodeInfoMap.get(phone);
-//	}
-
-	public int getChannelForPackageId(int packageId) {
-		return package2channel.get(packageId);
-	}
-
-	public String getPlatformForPackageId(int packageId) {
-		return package2plat.get(packageId);
-	}
 
 	public static LoginServer getInst() {
 		return instance;
@@ -91,55 +63,6 @@ public class LoginServer extends BaseApp {
 			package2plat.put(packageId, platfromId);
 			package2channel.put(packageId, channelId);
 		}
-		this.package2plat = package2plat;
-		this.package2channel = package2channel;
-		logger.info("加载 包对应平台{}", this.package2plat.toString());
-		logger.info("加载 包对应渠道{}", this.package2channel.toString());
-	}
-
-	/**
-	 * 加载全局开关与共享地区名字
-	 */
-	private void initPublicSet() {
-		String provinceOtherPlace = "";
-		ConcurrentHashMap<String, Boolean> openSet = new ConcurrentHashMap<>();
-		List<MapObject> data = DataQueryResult.load("conf_dynamic_properties_public", new HashMap<>());
-		for (MapObject obj : data) {
-			openSet.put(obj.getString("key"), obj.getInt("status") == 1);
-			if (obj.getString("key").equals("provinceotherplace")) {
-				provinceOtherPlace = obj.getString("value");
-			}
-		}
-		this.openSet = openSet;
-		this.provinceOtherPlace = provinceOtherPlace;
-		logger.info("加载 全局开关状态{}", this.openSet.toString());
-		logger.info("加载 共享地区名:{}", this.provinceOtherPlace);
-	}
-
-	/**
-	 * 是否开启登陆开关
-	 *
-	 * @return
-	 */
-	public boolean isOpenLogin() {
-		return true;
-	}
-
-	/**
-	 * 获取维护状态
-	 *
-	 * @param name
-	 * @return
-	 */
-	public boolean getProvinceOpen(String name) {
-		Boolean open = province2open.get(name);
-		if (open == null) {
-			open = province2open.get(provinceOtherPlace);
-		}
-		if (open == null) {
-			logger.error("找不到 {} 地区配置 且并没有配置共享地址!", name);
-		}
-		return open == null ? false : open;
 	}
 
 	@Override

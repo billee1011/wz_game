@@ -67,7 +67,8 @@ public class LogicHandler extends AbstractHandlers {
 		if (player == null) {
 			RyCharacter newChar = EntityCreator.createChar("user_id", userId);                                                //插入一些必须的数据吧
 			try {
-				playerId = PlayerSaver.insertPlayer(newChar);
+				PlayerSaver.insertPlayer(newChar);
+				playerId = newChar.getEntityId();
 			} catch (SQLException e) {
 				throw new RuntimeException("insert player failed");
 			}

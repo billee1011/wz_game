@@ -124,8 +124,6 @@ public class CenterServer extends BaseApp {
 		reloadDynamicProps();
 		initStaticConfig();
 		CenterActorManager.getInstance().start();
-//		DataManager.getInst().init(100000, 50000);
-//		DataManager.getInst().start();
 		int serverPort = props.getInteger("center.port", 9090);
 		logger.info(" the server port is {}", serverPort);
 		server = new NetServer(serverPort);

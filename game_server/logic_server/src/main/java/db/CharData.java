@@ -30,6 +30,7 @@ public class CharData {
         modules.put(DBAction.PLAYER, new CommonModule(this.charId, "player", "player_id", Arrays.asList("player_id"), false));
         modules.put(DBAction.HERO, new CommonModule(this.charId, "char_hero", "player_id", Arrays.asList("player_id", "hero_id"), false));
         modules.put(DBAction.EQUIP, new CommonModule(this.charId, "char_equip", "player_id", Arrays.asList("player_id", "equip_id"), false));
+        modules.put(DBAction.FORMATION, new CommonModule(this.charId, "char_formation", "player_id", Arrays.asList("player_id"), false));
     }
 
     public long getCharId() {

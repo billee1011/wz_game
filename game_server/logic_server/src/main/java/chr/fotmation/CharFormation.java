@@ -15,6 +15,18 @@ public class CharFormation {
 
 	private long[] battleFormation = new long[6];
 
+	public Formation[] getFormations() {
+		return formations;
+	}
+
+	public long[] getPartners() {
+		return partners;
+	}
+
+	public long[] getBattleFormation() {
+		return battleFormation;
+	}
+
 	public CharFormation(RyCharacter ch) {
 		this.ch = ch;
 	}

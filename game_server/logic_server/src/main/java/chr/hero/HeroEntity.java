@@ -36,11 +36,22 @@ public class HeroEntity extends AttrEntity {
 
 	private int tianmingLevel;                    //天命等级
 
+	private int huashenLevel;					//化神等级						橙武将多少， 红武将多少
+
 	private Map<EBattleAttribute, Integer> attributeMap;
 
 	public HeroEntity() {
 		super(EntityType.HERO);
-		attributeMap = new HashMap<>();
+		this.attributeMap = new HashMap<>();
+		this.level = 1;
+	}
+
+	public int getHuashenLevel() {
+		return huashenLevel;
+	}
+
+	public void setHuashenLevel(int huashenLevel) {
+		this.huashenLevel = huashenLevel;
 	}
 
 	public int getHeroId() {

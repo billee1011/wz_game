@@ -6,7 +6,9 @@ public enum DBAction {
 	ALL(0), //
 	PLAYER(1),
 	HERO(2),
-	EQUIP(3),;
+	EQUIP(3),
+	FORMATION(4),
+	;
 
 
 	private int value;

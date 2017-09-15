@@ -61,3 +61,13 @@ CREATE TABLE `char_equip` (
   gold_level int(11) not null,
   PRIMARY KEY (player_id,equip_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `char_formation`;
+CREATE TABLE `char_formation` (
+  player_id bigint(20) not null,
+  formation_info text not null,
+  partners text not null,
+  battle_formation text not null,
+  PRIMARY KEY (player_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

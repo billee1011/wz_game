@@ -21,3 +21,4 @@
 /godsg/godsg.Plugins.csproj
 /godsg/godsg.sln
 /godsg/godsg.userprefs
+*.log*

@@ -102,8 +102,8 @@ public class EquipEntity extends AttrEntity {
 
 	public static EquipEntity createEquip(long entityId, int confId) {
 		EquipEntity entity = new EquipEntity();
-		Equip conf = EquipInfoProvider.getInst().getEquipConfById(confId);
-
+		entity.setEntityId(entityId);
+		entity.setEquipId(confId);
 		return entity;
 	}
 }

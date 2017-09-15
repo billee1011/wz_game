@@ -1,5 +1,6 @@
 package chr;
 
+import chr.equip.EquipEntity;
 import chr.hero.CharHero;
 import chr.hero.HeroEntity;
 import config.JsonUtil;
@@ -12,7 +13,9 @@ import org.slf4j.LoggerFactory;
 import util.MapObject;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -23,15 +26,39 @@ public class PlayerSaver {
 
 
 	public static void savePlayer(RyCharacter ch) {
-		DataManager.getInst().saveModule(ch.getEntityId(), DBAction.PLAYER, genePlayerModule(ch));
+//		DataManager.getInst().saveModule(ch.getEntityId(), DBAction.PLAYER, genePlayerModule(ch));
+		DataManager.getInst().saveModule(ch.getEntityId(), DBAction.EQUIP, geneEquipModule(ch));
 	}
 
 	private static MapObject genePlayerModule(RyCharacter ch) {
+		MapObject data = new MapObject();
+		return null;
+	}
 
+	private static MapObject geneEquipModule(RyCharacter ch) {
+		MapObject moduleData = new MapObject();
+		List<MapObject> dataList = new ArrayList<>();
+		ch.getCharEquip().getEntityMap().entrySet().forEach(e -> {
+			MapObject data = new MapObject();
+			data.put("player_id", e.getKey());
+			EquipEntity entity = e.getValue();
+			data.put("equip_id", entity.getEntityId());
+			data.put("conf_id", entity.getEquipId());
+			data.put("level", entity.getLevel());
+			data.put("jinglian_level", entity.getJinglianLevel());
+			data.put("jinglian_exp", entity.getJinglianExp());
+			data.put("star_level", entity.getStarLevel());
+			data.put("star_exp", entity.getStarExp());
+			data.put("star_bless", entity.getStarBless());
+			data.put("gold_level", entity.getGoldLevel());
+			dataList.add(data);
+		});
+		moduleData.put(ch.getEntityId() + "", dataList.toArray());
+		return moduleData;
 	}
 
 
-	public static void insertPlayer(RyCharacter ch) throws SQLException {
+	public static long insertPlayer(RyCharacter ch) throws SQLException {
 		Map<String, Object> data = new HashMap<>();
 		data.put("player_id", ch.getEntityId());
 		data.put("diamond", ch.getResourceManager().getResCount(EMoney.DIAMOND));
@@ -39,19 +66,6 @@ public class PlayerSaver {
 		data.put("reputation", ch.getResourceManager().getResCount(EMoney.REPUTATION));
 		data.put("player_name", ch.getPlayerName());
 		data.put("user_id", ch.getUserId());
-		DBUtil.executeInsert("player", data);
-		for (HeroEntity heroEntity : ch.getCharHero().getEntityMap().values()) {
-			Map<String, Object> heroData = new HashMap<>();
-			heroData.put("player_id", ch.getEntityId());
-			heroData.put("hero_id", heroEntity.getEntityId());
-			heroData.put("conf_id", heroEntity.getHeroId());
-			heroData.put("level", heroEntity.getLevel());
-			heroData.put("exp", heroEntity.getExp());
-			heroData.put("break_level", heroEntity.getBreakLevel());
-			heroData.put("awake_level", heroEntity.getAwakeLevel());
-			heroData.put("awake_info", JsonUtil.getGson().toJson(heroEntity.getAwakeInfo(), int[].class));
-			heroData.put("tianming_level", heroEntity.getTianmingLevel());
-			DBUtil.executeInsert("char_hero", heroData);
-		}
+		return DBUtil.executeInsert("player", data);
 	}
 }

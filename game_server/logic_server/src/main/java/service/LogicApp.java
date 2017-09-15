@@ -31,7 +31,7 @@ public class LogicApp extends BaseApp {
 
     private int serverId = 1;
 
-    public static final int SAVE_INTERNAL = 2 * 60 * 1000;                            //mills
+    public static final int SAVE_INTERNAL = 30 * 1000;                            //mills
 
 
     private LogicApp() {

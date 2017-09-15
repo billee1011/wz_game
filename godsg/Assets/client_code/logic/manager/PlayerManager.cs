@@ -35,6 +35,10 @@ class PlayerManager : Singleton<PlayerManager>
         {
             resMap.Add((EMoney)list[i].Key, list[i].Value);
         }
+        for(int i = 0 , count = pb.HeroList.Count; i < count; i++)
+        {
+            HeroManager.Instance.addHeroEntity(pb.HeroList[i]);
+        }
     }
 
     public long GetResCount(EMoney type)

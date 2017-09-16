@@ -32,7 +32,8 @@ class UiMainBottom : UIPanelBase
 
     void OnShopButtonClicked()
     {
-        P3Net.NetClient.Instance.PushPacket(new P3Net.Packet(P3Net.PACKET_TYPE.EQUIP_STRENGTHEN, PBCreator.pbInt64(241430705429549056L)));
+        EquipEntity entity = EquipManager.Instance.getEquipEntity(1111L);
+        P3Net.NetClient.Instance.PushPacket(new P3Net.Packet(P3Net.PACKET_TYPE.EQUIP_STRENGTHEN, PBCreator.Int64(entity.EquipId)));
     }
 
     void OnZhenrongButtonClicked()

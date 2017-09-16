@@ -10,4 +10,10 @@ message PBEquipEntity
 	int32 conf_id = 2;
 	int32 level = 3;
 	map<int32,int32> attts = 4;
+	int32 jinglian_level = 5;
+	int32 jinglian_exp = 6;
+	int32 star_level = 7;
+	int32 star_exp = 9;
+	int32 star_bless = 10;
+	int32 gold_level = 11;
 }

@@ -8,9 +8,9 @@ import io.netty.buffer.ByteBuf;
 public class LittleEndianByteBufUtil {
 
 	public static short readShort(ByteBuf buf) {
-		byte a = buf.readByte();
-		byte b = buf.readByte();
-		return (short) ((b << 8) + a);
+		short a = buf.readByte();
+		short b = buf.readByte();
+		return (short) ((b << 8 & 0xff00) + a & 0x00ff);
 	}
 
 	public static void writeShort(ByteBuf buf, int value) {

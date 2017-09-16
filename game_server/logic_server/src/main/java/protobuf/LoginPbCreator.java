@@ -22,6 +22,9 @@ public class LoginPbCreator {
 		ch.getCharHero().getEntityMap().entrySet().forEach(e -> {
 			builder.addHeroList(HeroPbCreator.heroEntity(e.getValue()));
 		});
+		ch.getCharEquip().getEntityMap().entrySet().forEach(e -> {
+			builder.addEquipList(EquipPbCreator.equipEntity(e.getValue()));
+		});
 		return builder.build();
 	}
 }

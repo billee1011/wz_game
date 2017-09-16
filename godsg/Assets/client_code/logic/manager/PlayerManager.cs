@@ -15,7 +15,7 @@ class PlayerManager : Singleton<PlayerManager>
 
     private string name;
 
-    private long battleScore;
+    private long battleScore; 
 
     private int tili;
 
@@ -38,6 +38,10 @@ class PlayerManager : Singleton<PlayerManager>
         for(int i = 0 , count = pb.HeroList.Count; i < count; i++)
         {
             HeroManager.Instance.addHeroEntity(pb.HeroList[i]);
+        }
+        for (int i = 0, count = pb.EquipList.Count; i < count; i++)
+        {
+            EquipManager.Instance.addEquipEntity(pb.EquipList[i]);
         }
     }
 

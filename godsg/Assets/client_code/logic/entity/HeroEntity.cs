@@ -22,12 +22,9 @@ class HeroEntity
 
     private int exp;
 
-    private Dictionary<EBattleAttribute, int> attributes;
-
-
     public int GetAttributeValue(EBattleAttribute type)
     {
-        if(!attributes.ContainsKey(type))
+        if (!attributes.ContainsKey(type))
         {
             return 0;
         }
@@ -36,6 +33,8 @@ class HeroEntity
             return attributes[type];
         }
     }
+
+    private Dictionary<EBattleAttribute, int> attributes;
 
     public Dictionary<EBattleAttribute, int> Attributes
     {

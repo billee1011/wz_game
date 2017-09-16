@@ -22,15 +22,17 @@ namespace Proto {
     static EquipReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgtlcXVpcC5wcm90bxIFcHJvdG8ioAEKDVBCRXF1aXBFbnRpdHkSEQoJZW50",
+            "CgtlcXVpcC5wcm90bxIFcHJvdG8inAIKDVBCRXF1aXBFbnRpdHkSEQoJZW50",
             "aXR5X2lkGAEgASgDEg8KB2NvbmZfaWQYAiABKAUSDQoFbGV2ZWwYAyABKAUS",
             "LgoFYXR0dHMYBCADKAsyHy5wcm90by5QQkVxdWlwRW50aXR5LkF0dHRzRW50",
-            "cnkaLAoKQXR0dHNFbnRyeRILCgNrZXkYASABKAUSDQoFdmFsdWUYAiABKAU6",
-            "AjgBYgZwcm90bzM="));
+            "cnkSFgoOamluZ2xpYW5fbGV2ZWwYBSABKAUSFAoMamluZ2xpYW5fZXhwGAYg",
+            "ASgFEhIKCnN0YXJfbGV2ZWwYByABKAUSEAoIc3Rhcl9leHAYCSABKAUSEgoK",
+            "c3Rhcl9ibGVzcxgKIAEoBRISCgpnb2xkX2xldmVsGAsgASgFGiwKCkF0dHRz",
+            "RW50cnkSCwoDa2V5GAEgASgFEg0KBXZhbHVlGAIgASgFOgI4AWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBEquipEntity), global::Proto.PBEquipEntity.Parser, new[]{ "EntityId", "ConfId", "Level", "Attts" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBEquipEntity), global::Proto.PBEquipEntity.Parser, new[]{ "EntityId", "ConfId", "Level", "Attts", "JinglianLevel", "JinglianExp", "StarLevel", "StarExp", "StarBless", "GoldLevel" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -68,6 +70,12 @@ namespace Proto {
       confId_ = other.confId_;
       level_ = other.level_;
       attts_ = other.attts_.Clone();
+      jinglianLevel_ = other.jinglianLevel_;
+      jinglianExp_ = other.jinglianExp_;
+      starLevel_ = other.starLevel_;
+      starExp_ = other.starExp_;
+      starBless_ = other.starBless_;
+      goldLevel_ = other.goldLevel_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -118,6 +126,72 @@ namespace Proto {
       get { return attts_; }
     }
 
+    /// <summary>Field number for the "jinglian_level" field.</summary>
+    public const int JinglianLevelFieldNumber = 5;
+    private int jinglianLevel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int JinglianLevel {
+      get { return jinglianLevel_; }
+      set {
+        jinglianLevel_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "jinglian_exp" field.</summary>
+    public const int JinglianExpFieldNumber = 6;
+    private int jinglianExp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int JinglianExp {
+      get { return jinglianExp_; }
+      set {
+        jinglianExp_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "star_level" field.</summary>
+    public const int StarLevelFieldNumber = 7;
+    private int starLevel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int StarLevel {
+      get { return starLevel_; }
+      set {
+        starLevel_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "star_exp" field.</summary>
+    public const int StarExpFieldNumber = 9;
+    private int starExp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int StarExp {
+      get { return starExp_; }
+      set {
+        starExp_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "star_bless" field.</summary>
+    public const int StarBlessFieldNumber = 10;
+    private int starBless_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int StarBless {
+      get { return starBless_; }
+      set {
+        starBless_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "gold_level" field.</summary>
+    public const int GoldLevelFieldNumber = 11;
+    private int goldLevel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int GoldLevel {
+      get { return goldLevel_; }
+      set {
+        goldLevel_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PBEquipEntity);
@@ -135,6 +209,12 @@ namespace Proto {
       if (ConfId != other.ConfId) return false;
       if (Level != other.Level) return false;
       if (!Attts.Equals(other.Attts)) return false;
+      if (JinglianLevel != other.JinglianLevel) return false;
+      if (JinglianExp != other.JinglianExp) return false;
+      if (StarLevel != other.StarLevel) return false;
+      if (StarExp != other.StarExp) return false;
+      if (StarBless != other.StarBless) return false;
+      if (GoldLevel != other.GoldLevel) return false;
       return true;
     }
 
@@ -145,6 +225,12 @@ namespace Proto {
       if (ConfId != 0) hash ^= ConfId.GetHashCode();
       if (Level != 0) hash ^= Level.GetHashCode();
       hash ^= Attts.GetHashCode();
+      if (JinglianLevel != 0) hash ^= JinglianLevel.GetHashCode();
+      if (JinglianExp != 0) hash ^= JinglianExp.GetHashCode();
+      if (StarLevel != 0) hash ^= StarLevel.GetHashCode();
+      if (StarExp != 0) hash ^= StarExp.GetHashCode();
+      if (StarBless != 0) hash ^= StarBless.GetHashCode();
+      if (GoldLevel != 0) hash ^= GoldLevel.GetHashCode();
       return hash;
     }
 
@@ -168,6 +254,30 @@ namespace Proto {
         output.WriteInt32(Level);
       }
       attts_.WriteTo(output, _map_attts_codec);
+      if (JinglianLevel != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(JinglianLevel);
+      }
+      if (JinglianExp != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(JinglianExp);
+      }
+      if (StarLevel != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(StarLevel);
+      }
+      if (StarExp != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(StarExp);
+      }
+      if (StarBless != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(StarBless);
+      }
+      if (GoldLevel != 0) {
+        output.WriteRawTag(88);
+        output.WriteInt32(GoldLevel);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -183,6 +293,24 @@ namespace Proto {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Level);
       }
       size += attts_.CalculateSize(_map_attts_codec);
+      if (JinglianLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(JinglianLevel);
+      }
+      if (JinglianExp != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(JinglianExp);
+      }
+      if (StarLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StarLevel);
+      }
+      if (StarExp != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StarExp);
+      }
+      if (StarBless != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StarBless);
+      }
+      if (GoldLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GoldLevel);
+      }
       return size;
     }
 
@@ -201,6 +329,24 @@ namespace Proto {
         Level = other.Level;
       }
       attts_.Add(other.attts_);
+      if (other.JinglianLevel != 0) {
+        JinglianLevel = other.JinglianLevel;
+      }
+      if (other.JinglianExp != 0) {
+        JinglianExp = other.JinglianExp;
+      }
+      if (other.StarLevel != 0) {
+        StarLevel = other.StarLevel;
+      }
+      if (other.StarExp != 0) {
+        StarExp = other.StarExp;
+      }
+      if (other.StarBless != 0) {
+        StarBless = other.StarBless;
+      }
+      if (other.GoldLevel != 0) {
+        GoldLevel = other.GoldLevel;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -225,6 +371,30 @@ namespace Proto {
           }
           case 34: {
             attts_.AddEntriesFrom(input, _map_attts_codec);
+            break;
+          }
+          case 40: {
+            JinglianLevel = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            JinglianExp = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            StarLevel = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            StarExp = input.ReadInt32();
+            break;
+          }
+          case 80: {
+            StarBless = input.ReadInt32();
+            break;
+          }
+          case 88: {
+            GoldLevel = input.ReadInt32();
             break;
           }
         }

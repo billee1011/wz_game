@@ -66,6 +66,36 @@ public final class Equip {
 
     int getAtttsOrThrow(
 			int key);
+
+    /**
+     * <code>optional int32 jinglian_level = 5;</code>
+     */
+    int getJinglianLevel();
+
+    /**
+     * <code>optional int32 jinglian_exp = 6;</code>
+     */
+    int getJinglianExp();
+
+    /**
+     * <code>optional int32 star_level = 7;</code>
+     */
+    int getStarLevel();
+
+    /**
+     * <code>optional int32 star_exp = 9;</code>
+     */
+    int getStarExp();
+
+    /**
+     * <code>optional int32 star_bless = 10;</code>
+     */
+    int getStarBless();
+
+    /**
+     * <code>optional int32 gold_level = 11;</code>
+     */
+    int getGoldLevel();
   }
   /**
    * <pre>
@@ -86,6 +116,12 @@ public final class Equip {
       entityId_ = 0L;
       confId_ = 0;
       level_ = 0;
+      jinglianLevel_ = 0;
+      jinglianExp_ = 0;
+      starLevel_ = 0;
+      starExp_ = 0;
+      starBless_ = 0;
+      goldLevel_ = 0;
     }
 
     @Override
@@ -139,6 +175,36 @@ public final class Equip {
                   AtttsDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               attts_.getMutableMap().put(
                   attts__.getKey(), attts__.getValue());
+              break;
+            }
+            case 40: {
+
+              jinglianLevel_ = input.readInt32();
+              break;
+            }
+            case 48: {
+
+              jinglianExp_ = input.readInt32();
+              break;
+            }
+            case 56: {
+
+              starLevel_ = input.readInt32();
+              break;
+            }
+            case 72: {
+
+              starExp_ = input.readInt32();
+              break;
+            }
+            case 80: {
+
+              starBless_ = input.readInt32();
+              break;
+            }
+            case 88: {
+
+              goldLevel_ = input.readInt32();
               break;
             }
           }
@@ -279,6 +345,60 @@ public final class Equip {
       return map.get(key);
     }
 
+    public static final int JINGLIAN_LEVEL_FIELD_NUMBER = 5;
+    private int jinglianLevel_;
+    /**
+     * <code>optional int32 jinglian_level = 5;</code>
+     */
+    public int getJinglianLevel() {
+      return jinglianLevel_;
+    }
+
+    public static final int JINGLIAN_EXP_FIELD_NUMBER = 6;
+    private int jinglianExp_;
+    /**
+     * <code>optional int32 jinglian_exp = 6;</code>
+     */
+    public int getJinglianExp() {
+      return jinglianExp_;
+    }
+
+    public static final int STAR_LEVEL_FIELD_NUMBER = 7;
+    private int starLevel_;
+    /**
+     * <code>optional int32 star_level = 7;</code>
+     */
+    public int getStarLevel() {
+      return starLevel_;
+    }
+
+    public static final int STAR_EXP_FIELD_NUMBER = 9;
+    private int starExp_;
+    /**
+     * <code>optional int32 star_exp = 9;</code>
+     */
+    public int getStarExp() {
+      return starExp_;
+    }
+
+    public static final int STAR_BLESS_FIELD_NUMBER = 10;
+    private int starBless_;
+    /**
+     * <code>optional int32 star_bless = 10;</code>
+     */
+    public int getStarBless() {
+      return starBless_;
+    }
+
+    public static final int GOLD_LEVEL_FIELD_NUMBER = 11;
+    private int goldLevel_;
+    /**
+     * <code>optional int32 gold_level = 11;</code>
+     */
+    public int getGoldLevel() {
+      return goldLevel_;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -306,6 +426,24 @@ public final class Equip {
           internalGetAttts(),
           AtttsDefaultEntryHolder.defaultEntry,
           4);
+      if (jinglianLevel_ != 0) {
+        output.writeInt32(5, jinglianLevel_);
+      }
+      if (jinglianExp_ != 0) {
+        output.writeInt32(6, jinglianExp_);
+      }
+      if (starLevel_ != 0) {
+        output.writeInt32(7, starLevel_);
+      }
+      if (starExp_ != 0) {
+        output.writeInt32(9, starExp_);
+      }
+      if (starBless_ != 0) {
+        output.writeInt32(10, starBless_);
+      }
+      if (goldLevel_ != 0) {
+        output.writeInt32(11, goldLevel_);
+      }
     }
 
     public int getSerializedSize() {
@@ -335,6 +473,30 @@ public final class Equip {
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(4, attts__);
       }
+      if (jinglianLevel_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, jinglianLevel_);
+      }
+      if (jinglianExp_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, jinglianExp_);
+      }
+      if (starLevel_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, starLevel_);
+      }
+      if (starExp_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(9, starExp_);
+      }
+      if (starBless_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(10, starBless_);
+      }
+      if (goldLevel_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, goldLevel_);
+      }
       memoizedSize = size;
       return size;
     }
@@ -359,6 +521,18 @@ public final class Equip {
           == other.getLevel());
       result = result && internalGetAttts().equals(
           other.internalGetAttts());
+      result = result && (getJinglianLevel()
+          == other.getJinglianLevel());
+      result = result && (getJinglianExp()
+          == other.getJinglianExp());
+      result = result && (getStarLevel()
+          == other.getStarLevel());
+      result = result && (getStarExp()
+          == other.getStarExp());
+      result = result && (getStarBless()
+          == other.getStarBless());
+      result = result && (getGoldLevel()
+          == other.getGoldLevel());
       return result;
     }
 
@@ -380,6 +554,18 @@ public final class Equip {
         hash = (37 * hash) + ATTTS_FIELD_NUMBER;
         hash = (53 * hash) + internalGetAttts().hashCode();
       }
+      hash = (37 * hash) + JINGLIAN_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getJinglianLevel();
+      hash = (37 * hash) + JINGLIAN_EXP_FIELD_NUMBER;
+      hash = (53 * hash) + getJinglianExp();
+      hash = (37 * hash) + STAR_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getStarLevel();
+      hash = (37 * hash) + STAR_EXP_FIELD_NUMBER;
+      hash = (53 * hash) + getStarExp();
+      hash = (37 * hash) + STAR_BLESS_FIELD_NUMBER;
+      hash = (53 * hash) + getStarBless();
+      hash = (37 * hash) + GOLD_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getGoldLevel();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -531,6 +717,18 @@ public final class Equip {
         level_ = 0;
 
         internalGetMutableAttts().clear();
+        jinglianLevel_ = 0;
+
+        jinglianExp_ = 0;
+
+        starLevel_ = 0;
+
+        starExp_ = 0;
+
+        starBless_ = 0;
+
+        goldLevel_ = 0;
+
         return this;
       }
 
@@ -560,6 +758,12 @@ public final class Equip {
         result.level_ = level_;
         result.attts_ = internalGetAttts();
         result.attts_.makeImmutable();
+        result.jinglianLevel_ = jinglianLevel_;
+        result.jinglianExp_ = jinglianExp_;
+        result.starLevel_ = starLevel_;
+        result.starExp_ = starExp_;
+        result.starBless_ = starBless_;
+        result.goldLevel_ = goldLevel_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -613,6 +817,24 @@ public final class Equip {
         }
         internalGetMutableAttts().mergeFrom(
             other.internalGetAttts());
+        if (other.getJinglianLevel() != 0) {
+          setJinglianLevel(other.getJinglianLevel());
+        }
+        if (other.getJinglianExp() != 0) {
+          setJinglianExp(other.getJinglianExp());
+        }
+        if (other.getStarLevel() != 0) {
+          setStarLevel(other.getStarLevel());
+        }
+        if (other.getStarExp() != 0) {
+          setStarExp(other.getStarExp());
+        }
+        if (other.getStarBless() != 0) {
+          setStarBless(other.getStarBless());
+        }
+        if (other.getGoldLevel() != 0) {
+          setGoldLevel(other.getGoldLevel());
+        }
         onChanged();
         return this;
       }
@@ -836,6 +1058,162 @@ public final class Equip {
         getMutableAttts().putAll(values);
         return this;
       }
+
+      private int jinglianLevel_ ;
+      /**
+       * <code>optional int32 jinglian_level = 5;</code>
+       */
+      public int getJinglianLevel() {
+        return jinglianLevel_;
+      }
+      /**
+       * <code>optional int32 jinglian_level = 5;</code>
+       */
+      public Builder setJinglianLevel(int value) {
+        
+        jinglianLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 jinglian_level = 5;</code>
+       */
+      public Builder clearJinglianLevel() {
+        
+        jinglianLevel_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int jinglianExp_ ;
+      /**
+       * <code>optional int32 jinglian_exp = 6;</code>
+       */
+      public int getJinglianExp() {
+        return jinglianExp_;
+      }
+      /**
+       * <code>optional int32 jinglian_exp = 6;</code>
+       */
+      public Builder setJinglianExp(int value) {
+        
+        jinglianExp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 jinglian_exp = 6;</code>
+       */
+      public Builder clearJinglianExp() {
+        
+        jinglianExp_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int starLevel_ ;
+      /**
+       * <code>optional int32 star_level = 7;</code>
+       */
+      public int getStarLevel() {
+        return starLevel_;
+      }
+      /**
+       * <code>optional int32 star_level = 7;</code>
+       */
+      public Builder setStarLevel(int value) {
+        
+        starLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 star_level = 7;</code>
+       */
+      public Builder clearStarLevel() {
+        
+        starLevel_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int starExp_ ;
+      /**
+       * <code>optional int32 star_exp = 9;</code>
+       */
+      public int getStarExp() {
+        return starExp_;
+      }
+      /**
+       * <code>optional int32 star_exp = 9;</code>
+       */
+      public Builder setStarExp(int value) {
+        
+        starExp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 star_exp = 9;</code>
+       */
+      public Builder clearStarExp() {
+        
+        starExp_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int starBless_ ;
+      /**
+       * <code>optional int32 star_bless = 10;</code>
+       */
+      public int getStarBless() {
+        return starBless_;
+      }
+      /**
+       * <code>optional int32 star_bless = 10;</code>
+       */
+      public Builder setStarBless(int value) {
+        
+        starBless_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 star_bless = 10;</code>
+       */
+      public Builder clearStarBless() {
+        
+        starBless_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int goldLevel_ ;
+      /**
+       * <code>optional int32 gold_level = 11;</code>
+       */
+      public int getGoldLevel() {
+        return goldLevel_;
+      }
+      /**
+       * <code>optional int32 gold_level = 11;</code>
+       */
+      public Builder setGoldLevel(int value) {
+        
+        goldLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 gold_level = 11;</code>
+       */
+      public Builder clearGoldLevel() {
+        
+        goldLevel_ = 0;
+        onChanged();
+        return this;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return this;
@@ -904,11 +1282,14 @@ public final class Equip {
       descriptor;
   static {
     String[] descriptorData = {
-      "\n\013equip.proto\022\005proto\"\240\001\n\rPBEquipEntity\022\021" +
+      "\n\013equip.proto\022\005proto\"\234\002\n\rPBEquipEntity\022\021" +
       "\n\tentity_id\030\001 \001(\003\022\017\n\007conf_id\030\002 \001(\005\022\r\n\005le" +
       "vel\030\003 \001(\005\022.\n\005attts\030\004 \003(\0132\037.proto.PBEquip" +
-      "Entity.AtttsEntry\032,\n\nAtttsEntry\022\013\n\003key\030\001" +
-      " \001(\005\022\r\n\005value\030\002 \001(\005:\0028\001b\006proto3"
+      "Entity.AtttsEntry\022\026\n\016jinglian_level\030\005 \001(" +
+      "\005\022\024\n\014jinglian_exp\030\006 \001(\005\022\022\n\nstar_level\030\007 " +
+      "\001(\005\022\020\n\010star_exp\030\t \001(\005\022\022\n\nstar_bless\030\n \001(" +
+      "\005\022\022\n\ngold_level\030\013 \001(\005\032,\n\nAtttsEntry\022\013\n\003k" +
+      "ey\030\001 \001(\005\022\r\n\005value\030\002 \001(\005:\0028\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -927,7 +1308,7 @@ public final class Equip {
     internal_static_proto_PBEquipEntity_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PBEquipEntity_descriptor,
-        new String[] { "EntityId", "ConfId", "Level", "Attts", });
+        new String[] { "EntityId", "ConfId", "Level", "Attts", "JinglianLevel", "JinglianExp", "StarLevel", "StarExp", "StarBless", "GoldLevel", });
     internal_static_proto_PBEquipEntity_AtttsEntry_descriptor =
       internal_static_proto_PBEquipEntity_descriptor.getNestedTypes().get(0);
     internal_static_proto_PBEquipEntity_AtttsEntry_fieldAccessorTable = new

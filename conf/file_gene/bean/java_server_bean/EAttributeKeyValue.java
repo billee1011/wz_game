@@ -1,6 +1,5 @@
 package bean;
 
-import annotation.EnumField;
 public class EAttributeKeyValue{
 	private EBattleAttribute attrId; 
 

@@ -2,6 +2,7 @@ reader\PackConfig.class
 util\JsonToLua.class
 bean\ClientData.class
 bean\HeroBase.class
+bean\Hero_union.class
 bean\EJob.class
 bean\Test.class
 bean\Equip.class
@@ -33,6 +34,7 @@ test\JsonUtil.class
 frame\MainPanel$2.class
 bean\PersonClient.class
 bean\EAttributeKeyValueClient.class
+bean\Hero_unionClient.class
 util\IConfigBean.class
 reader\ExcelReader.class
 reader\Monster.class

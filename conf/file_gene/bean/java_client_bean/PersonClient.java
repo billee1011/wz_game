@@ -1,6 +1,5 @@
 package bean;
 
-import annotation.EnumField;
 public class PersonClient{
 	private int id; 
 
@@ -10,7 +9,6 @@ public class PersonClient{
 
 	private int test; 
 
-	@EnumField("EItemQuality")
 	private int quality; 
 
 	public int getId(){

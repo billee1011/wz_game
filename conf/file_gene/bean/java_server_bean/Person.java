@@ -1,6 +1,5 @@
 package bean;
 
-import annotation.EnumField;
 public class Person{
 	private int id; 
 

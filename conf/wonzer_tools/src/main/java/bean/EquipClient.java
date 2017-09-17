@@ -2,22 +2,19 @@ package bean;
 
 import java.util.List;
 import annotation.ListDesc;
-import annotation.EnumField;
 public class EquipClient{
 	private int id; 
 
 	private String name; 
 
-	@ListDesc("EAttributeKeyValueClient")
-	private List<EAttributeKeyValueClient> attribute; 
+	@ListDesc("EAttributeKeyValue")
+	private List<EAttributeKeyValue> attribute; 
 
-	@EnumField("EItemQuality")
 	private int quality; 
 
-	@ListDesc("EAttributeKeyValueClient")
-	private List<EAttributeKeyValueClient> level_add_attribute; 
+	@ListDesc("EAttributeKeyValue")
+	private List<EAttributeKeyValue> level_add_attribute; 
 
-	@EnumField("EEquipPos")
 	private int equip_pos; 
 
 	public int getId(){
@@ -36,11 +33,11 @@ public class EquipClient{
 		this.name = name;
 	}
 
-	public List<EAttributeKeyValueClient> getAttribute(){
+	public List<EAttributeKeyValue> getAttribute(){
 		return attribute;
 	}
 
-	public void setAttribute(List<EAttributeKeyValueClient> attribute){
+	public void setAttribute(List<EAttributeKeyValue> attribute){
 		this.attribute = attribute;
 	}
 
@@ -52,11 +49,11 @@ public class EquipClient{
 		this.quality = quality;
 	}
 
-	public List<EAttributeKeyValueClient> getLevel_add_attribute(){
+	public List<EAttributeKeyValue> getLevel_add_attribute(){
 		return level_add_attribute;
 	}
 
-	public void setLevel_add_attribute(List<EAttributeKeyValueClient> level_add_attribute){
+	public void setLevel_add_attribute(List<EAttributeKeyValue> level_add_attribute){
 		this.level_add_attribute = level_add_attribute;
 	}
 

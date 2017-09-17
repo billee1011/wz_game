@@ -2,7 +2,6 @@ package bean;
 
 import java.util.List;
 import annotation.ListDesc;
-import annotation.EnumField;
 public class Equip{
 	private int id; 
 

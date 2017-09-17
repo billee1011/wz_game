@@ -2,21 +2,17 @@ package bean;
 
 import java.util.List;
 import annotation.ListDesc;
-import annotation.EnumField;
 public class HeroBaseClient{
 	private int id; 
 
 	private String name; 
 
-	@EnumField("EItemQuality")
 	private int quality; 
 
 	private int intelligence; 
 
-	@EnumField("EJob")
 	private int job; 
 
-	@EnumField("ECountry")
 	private int country; 
 
 	@ListDesc("int")
@@ -25,8 +21,8 @@ public class HeroBaseClient{
 	@ListDesc("int")
 	private List<Integer> break_id_list; 
 
-	@ListDesc("EAttributeKeyValueClient")
-	private List<EAttributeKeyValueClient> battle_attribute; 
+	@ListDesc("EAttributeKeyValue")
+	private List<EAttributeKeyValue> battle_attribute; 
 
 	public int getId(){
 		return id;
@@ -92,11 +88,11 @@ public class HeroBaseClient{
 		this.break_id_list = break_id_list;
 	}
 
-	public List<EAttributeKeyValueClient> getBattle_attribute(){
+	public List<EAttributeKeyValue> getBattle_attribute(){
 		return battle_attribute;
 	}
 
-	public void setBattle_attribute(List<EAttributeKeyValueClient> battle_attribute){
+	public void setBattle_attribute(List<EAttributeKeyValue> battle_attribute){
 		this.battle_attribute = battle_attribute;
 	}
 

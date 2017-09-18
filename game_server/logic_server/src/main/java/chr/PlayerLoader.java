@@ -19,6 +19,7 @@ public class PlayerLoader {
 		loadBaseData(ch, data);
 		loadHeroEntity(ch, data);
 		loadFormation(ch, data.getModuleData(DBAction.FORMATION));
+		ch.reloadAllItemAttribute();
 		return ch;
 	}
 

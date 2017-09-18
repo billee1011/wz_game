@@ -136,7 +136,11 @@ public class HeroEntity extends AttrEntity {
 
 	//计算属性还是蛮烦的
 	public void reloadAttribute() {
-
+		clearAttribute();
+		loadBaseConfig();
+		loadLevelAttribute();
+		loadAwakeAttribute();
+		loadBreakAttribute();
 	}
 
 	public static HeroEntity getEmptyEntity() {

@@ -3,9 +3,11 @@ package chr;
 import actor.LogicActorManager;
 import base.EntityCreator;
 import base.IEntity;
+import chr.bag.CharBag;
 import chr.equip.CharEquip;
 import chr.equip.EquipEntity;
 import chr.fotmation.CharFormation;
+import chr.fotmation.Formation;
 import chr.hero.CharHero;
 import chr.hero.HeroEntity;
 import chr.resource.ResourceManager;
@@ -36,6 +38,8 @@ public class RyCharacter extends IEntity {
 
 	private CharEquip charEquip;
 
+	private CharBag charBag;
+
 	private CharFormation charFormation;
 
 	private int tili;
@@ -56,6 +60,7 @@ public class RyCharacter extends IEntity {
 		resourceManager = new ResourceManager(this);
 		charFormation = new CharFormation(this);
 		charEquip = new CharEquip(this);
+		charBag = new CharBag(this);
 		lastSaveTime = System.currentTimeMillis();
 	}
 
@@ -103,6 +108,24 @@ public class RyCharacter extends IEntity {
 		}
 	}
 
+	public void reloadAllItemAttribute() {
+		reloadAllEquipAttribute();
+		reloadUnionAttribute();
+		reloadAllHeroAttribute();
+	}
+
+	private void reloadAllHeroAttribute() {
+		getCharHero().getAllEntities().forEach(HeroEntity::reloadAttribute);
+	}
+
+	private void reloadAllEquipAttribute() {
+
+	}
+
+	private void reloadUnionAttribute() {
+
+	}
+
 	public void checkInit() {
 		if (charHero.getEntityMap().size() != 0)
 			return;
@@ -116,6 +139,17 @@ public class RyCharacter extends IEntity {
 		getCharEquip().addEntity(EntityCreator.createEquipEntity(200002));
 		getCharEquip().addEntity(EntityCreator.createEquipEntity(200003));
 		getCharEquip().addEntity(EntityCreator.createEquipEntity(200004));
+	}
+
+	public boolean isInFormation(HeroEntity entity) {
+		for (Formation formation : getCharFormation().getFormations()) {
+			if (formation == null) {
+				continue;
+			}
+			if (formation.getHeroId() == entity.getEntityId())
+				return true;
+		}
+		return false;
 	}
 
 	public CharEquip getCharEquip() {

@@ -25,6 +25,8 @@ public class LoginPbCreator {
 		ch.getCharEquip().getEntityMap().entrySet().forEach(e -> {
 			builder.addEquipList(EquipPbCreator.equipEntity(e.getValue()));
 		});
+		builder.setFormation(HeroPbCreator.formation(ch));
+		//这是一个很寂寞的天下着有些伤心的雨
 		return builder.build();
 	}
 }

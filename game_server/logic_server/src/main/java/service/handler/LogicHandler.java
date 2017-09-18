@@ -10,6 +10,7 @@ import db.CharData;
 import db.DataManager;
 import manager.EquipManager;
 import manager.FormationManager;
+import manager.HeroManager;
 import manager.IMessageHandler;
 import network.MessageHolder;
 import org.slf4j.Logger;
@@ -51,9 +52,13 @@ public class LogicHandler extends AbstractHandlers {
 	protected void registerAction() {
 		messageHandlerMap = new HashMap<>();
 		registerAction(RequestCode.LOGIC_PLAYER_LOGIN.getValue(), this::actionPlayerLogin, Login.PBLoginReq.getDefaultInstance());
-		registerAction(RequestCode.ACCOUNT_TEST.getValue(), this::actionTest, Common.PBStringList.getDefaultInstance());
 		registerAction(RequestCode.FORMATION_EQUIP.getValue(), null, Common.PBStringList.getDefaultInstance(), FormationManager.getInst()::formationEquip);
 		registerAction(RequestCode.EQUIP_STRENGTHEN.getValue(), null, Common.PBInt64.getDefaultInstance(), EquipManager.getInst()::strengthenEquip);
+		registerAction(RequestCode.EQUIP_WEAR.getValue(), null, Common.PBInt64.getDefaultInstance(), EquipManager.getInst()::wearEquipment);
+
+
+		registerAction(RequestCode.HERO_STRENGTHEN.getValue(), null, Common.PBInt64.getDefaultInstance(), HeroManager.getInst()::heroLevelUp);
+
 	}
 
 	public void registerAction(int action, IActionHandler handler, MessageLite message, IMessageHandler msgHandler) {
@@ -61,14 +66,6 @@ public class LogicHandler extends AbstractHandlers {
 		messageHandlerMap.put(action, msgHandler);
 	}
 
-	private void actionTest(ChannelHandlerContext client, CocoPacket packet, MessageHolder<MessageLite> message) {
-		RyCharacter ch = PlayerManager.getInst().getEntity(packet.getPlayerId());
-		if (ch == null) {
-			logger.warn(" ch is null and the player id is {}", packet.getPlayerId());
-			return;
-		}
-		ch.write(ResponseCode.ACCOUNT_TEST_REPLY, CommonCreator.stringList("hello", " moto ", "is", "my", "life"));
-	}
 
 	private void actionPlayerLogin(ChannelHandlerContext client, CocoPacket packet, MessageHolder<MessageLite> message) {
 		Login.PBLoginReq req = message.get();

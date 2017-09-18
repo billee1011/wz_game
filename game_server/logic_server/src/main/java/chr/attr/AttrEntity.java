@@ -12,13 +12,21 @@ import java.util.Map;
  * 拥有属性的实体.
  */
 public class AttrEntity extends IEntity {
+	//含有百分比属性的时候的数值
 	private Map<EBattleAttribute, Integer> attrMap;
+
+	//百分比算成最终数值的数 ， 如果上面额修改了， 下面需要reload
+	private Map<EBattleAttribute, Integer> finalAttr;
 
 	public AttrEntity(EntityType type) {
 		super(type);
 		attrMap = new HashMap<>();
+		finalAttr = new HashMap<>();
 	}
 
+	public Map<EBattleAttribute, Integer> getFinalAttr() {
+		return finalAttr;
+	}
 
 	public Map<EBattleAttribute, Integer> getAttrMap() {
 		return attrMap;
@@ -36,5 +44,11 @@ public class AttrEntity extends IEntity {
 		attrMap.merge(type, value, (e, f) -> e == null ? -f : e - f);
 	}
 
+	public void clearAttribute() {
+		this.attrMap.clear();
+	}
 
+	public void calFinalAttribute() {
+		finalAttr.clear();
+	}
 }

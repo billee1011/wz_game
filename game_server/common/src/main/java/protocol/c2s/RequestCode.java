@@ -14,14 +14,15 @@ public enum RequestCode {
 	ACCOUNT_BEGIN(100),
 	ACCOUNT_LOGIN(101, AppId.CENTER),
 	ACCOUNT_LOGIN_RESULT(102, AppId.GATE),
-	ACCOUNT_TEST(103),
 
 
 	FORMATION_EQUIP(202),														//穿装备
 
 
 	EQUIP_STRENGTHEN(201),
+	EQUIP_WEAR(202),
 
+	HERO_STRENGTHEN(301),
 	/////////////////////////////////////////////
 	////////////////////////////////////////////
 	LOBBY_BEGIN(512),

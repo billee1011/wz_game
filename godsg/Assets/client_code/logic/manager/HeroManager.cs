@@ -31,9 +31,15 @@ class HeroManager : Singleton<HeroManager>
         
     }
 
-    public HeroEntity getHeroEntity()
+    public HeroEntity getHeroEntity(int formationIndex)
     {
-        return heroMap.Values.First<HeroEntity>();
+        long heroId = PlayerManager.GetInstance().getHeroIdByFormationIndex(formationIndex);
+        Debuger.Log("the hero id is " + heroId);
+        if (!heroMap.ContainsKey(heroId))
+        {
+            return null;
+        }
+        return heroMap[heroId];
     }
 
 }

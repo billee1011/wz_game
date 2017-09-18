@@ -24,13 +24,22 @@ public class EquipManager {
 	}
 
 
-	public void strengthenEquip(RyCharacter ch, MessageHolder<MessageLite> message) {
-		Common.PBInt64 value = message.get();
-		logger.info(" strengthen  and the value is {}", value);
+	public void wearEquipment(RyCharacter ch, MessageHolder<MessageLite> message) {
 
 	}
 
-	//servcice
+	public void strengthenEquip(RyCharacter ch, MessageHolder<MessageLite> message) {
+		Common.PBInt64 request = message.get();
+		EquipEntity equipEntity = ch.getCharEquip().getEntity(request.getValue());
+		if (equipEntity == null) {
+			logger.warn("player {} strengthenEquip {} is not found", ch.getEntityId(), request.getValue());
+			return;
+		}
+		equipEntity.setLevel(equipEntity.getLevel() + 1);
+
+	}
+
+	//service
 	public HeroEntity getEquipHero(RyCharacter ch, EquipEntity entity) {
 		return null;
 	}

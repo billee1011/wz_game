@@ -1301,6 +1301,1883 @@ public final class Hero {
 
   }
 
+  public interface PBFormationOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:proto.PBFormation)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated .proto.PBOneFormation formation = 1;</code>
+     */
+    java.util.List<proto.Hero.PBOneFormation> 
+        getFormationList();
+    /**
+     * <code>repeated .proto.PBOneFormation formation = 1;</code>
+     */
+    proto.Hero.PBOneFormation getFormation(int index);
+    /**
+     * <code>repeated .proto.PBOneFormation formation = 1;</code>
+     */
+    int getFormationCount();
+    /**
+     * <code>repeated .proto.PBOneFormation formation = 1;</code>
+     */
+    java.util.List<? extends proto.Hero.PBOneFormationOrBuilder> 
+        getFormationOrBuilderList();
+    /**
+     * <code>repeated .proto.PBOneFormation formation = 1;</code>
+     */
+    proto.Hero.PBOneFormationOrBuilder getFormationOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated int64 partner = 2;</code>
+     */
+    java.util.List<java.lang.Long> getPartnerList();
+    /**
+     * <code>repeated int64 partner = 2;</code>
+     */
+    int getPartnerCount();
+    /**
+     * <code>repeated int64 partner = 2;</code>
+     */
+    long getPartner(int index);
+
+    /**
+     * <code>repeated int64 battle_formation = 3;</code>
+     */
+    java.util.List<java.lang.Long> getBattleFormationList();
+    /**
+     * <code>repeated int64 battle_formation = 3;</code>
+     */
+    int getBattleFormationCount();
+    /**
+     * <code>repeated int64 battle_formation = 3;</code>
+     */
+    long getBattleFormation(int index);
+  }
+  /**
+   * Protobuf type {@code proto.PBFormation}
+   */
+  public  static final class PBFormation extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:proto.PBFormation)
+      PBFormationOrBuilder {
+    // Use PBFormation.newBuilder() to construct.
+    private PBFormation(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private PBFormation() {
+      formation_ = java.util.Collections.emptyList();
+      partner_ = java.util.Collections.emptyList();
+      battleFormation_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private PBFormation(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                formation_ = new java.util.ArrayList<proto.Hero.PBOneFormation>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              formation_.add(
+                  input.readMessage(proto.Hero.PBOneFormation.parser(), extensionRegistry));
+              break;
+            }
+            case 16: {
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                partner_ = new java.util.ArrayList<java.lang.Long>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              partner_.add(input.readInt64());
+              break;
+            }
+            case 18: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002) && input.getBytesUntilLimit() > 0) {
+                partner_ = new java.util.ArrayList<java.lang.Long>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                partner_.add(input.readInt64());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 24: {
+              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                battleFormation_ = new java.util.ArrayList<java.lang.Long>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              battleFormation_.add(input.readInt64());
+              break;
+            }
+            case 26: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004) && input.getBytesUntilLimit() > 0) {
+                battleFormation_ = new java.util.ArrayList<java.lang.Long>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                battleFormation_.add(input.readInt64());
+              }
+              input.popLimit(limit);
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          formation_ = java.util.Collections.unmodifiableList(formation_);
+        }
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+          partner_ = java.util.Collections.unmodifiableList(partner_);
+        }
+        if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+          battleFormation_ = java.util.Collections.unmodifiableList(battleFormation_);
+        }
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return proto.Hero.internal_static_proto_PBFormation_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return proto.Hero.internal_static_proto_PBFormation_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              proto.Hero.PBFormation.class, proto.Hero.PBFormation.Builder.class);
+    }
+
+    public static final int FORMATION_FIELD_NUMBER = 1;
+    private java.util.List<proto.Hero.PBOneFormation> formation_;
+    /**
+     * <code>repeated .proto.PBOneFormation formation = 1;</code>
+     */
+    public java.util.List<proto.Hero.PBOneFormation> getFormationList() {
+      return formation_;
+    }
+    /**
+     * <code>repeated .proto.PBOneFormation formation = 1;</code>
+     */
+    public java.util.List<? extends proto.Hero.PBOneFormationOrBuilder> 
+        getFormationOrBuilderList() {
+      return formation_;
+    }
+    /**
+     * <code>repeated .proto.PBOneFormation formation = 1;</code>
+     */
+    public int getFormationCount() {
+      return formation_.size();
+    }
+    /**
+     * <code>repeated .proto.PBOneFormation formation = 1;</code>
+     */
+    public proto.Hero.PBOneFormation getFormation(int index) {
+      return formation_.get(index);
+    }
+    /**
+     * <code>repeated .proto.PBOneFormation formation = 1;</code>
+     */
+    public proto.Hero.PBOneFormationOrBuilder getFormationOrBuilder(
+        int index) {
+      return formation_.get(index);
+    }
+
+    public static final int PARTNER_FIELD_NUMBER = 2;
+    private java.util.List<java.lang.Long> partner_;
+    /**
+     * <code>repeated int64 partner = 2;</code>
+     */
+    public java.util.List<java.lang.Long>
+        getPartnerList() {
+      return partner_;
+    }
+    /**
+     * <code>repeated int64 partner = 2;</code>
+     */
+    public int getPartnerCount() {
+      return partner_.size();
+    }
+    /**
+     * <code>repeated int64 partner = 2;</code>
+     */
+    public long getPartner(int index) {
+      return partner_.get(index);
+    }
+    private int partnerMemoizedSerializedSize = -1;
+
+    public static final int BATTLE_FORMATION_FIELD_NUMBER = 3;
+    private java.util.List<java.lang.Long> battleFormation_;
+    /**
+     * <code>repeated int64 battle_formation = 3;</code>
+     */
+    public java.util.List<java.lang.Long>
+        getBattleFormationList() {
+      return battleFormation_;
+    }
+    /**
+     * <code>repeated int64 battle_formation = 3;</code>
+     */
+    public int getBattleFormationCount() {
+      return battleFormation_.size();
+    }
+    /**
+     * <code>repeated int64 battle_formation = 3;</code>
+     */
+    public long getBattleFormation(int index) {
+      return battleFormation_.get(index);
+    }
+    private int battleFormationMemoizedSerializedSize = -1;
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      for (int i = 0; i < formation_.size(); i++) {
+        output.writeMessage(1, formation_.get(i));
+      }
+      if (getPartnerList().size() > 0) {
+        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(partnerMemoizedSerializedSize);
+      }
+      for (int i = 0; i < partner_.size(); i++) {
+        output.writeInt64NoTag(partner_.get(i));
+      }
+      if (getBattleFormationList().size() > 0) {
+        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(battleFormationMemoizedSerializedSize);
+      }
+      for (int i = 0; i < battleFormation_.size(); i++) {
+        output.writeInt64NoTag(battleFormation_.get(i));
+      }
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < formation_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, formation_.get(i));
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < partner_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt64SizeNoTag(partner_.get(i));
+        }
+        size += dataSize;
+        if (!getPartnerList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        partnerMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < battleFormation_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt64SizeNoTag(battleFormation_.get(i));
+        }
+        size += dataSize;
+        if (!getBattleFormationList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        battleFormationMemoizedSerializedSize = dataSize;
+      }
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof proto.Hero.PBFormation)) {
+        return super.equals(obj);
+      }
+      proto.Hero.PBFormation other = (proto.Hero.PBFormation) obj;
+
+      boolean result = true;
+      result = result && getFormationList()
+          .equals(other.getFormationList());
+      result = result && getPartnerList()
+          .equals(other.getPartnerList());
+      result = result && getBattleFormationList()
+          .equals(other.getBattleFormationList());
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptorForType().hashCode();
+      if (getFormationCount() > 0) {
+        hash = (37 * hash) + FORMATION_FIELD_NUMBER;
+        hash = (53 * hash) + getFormationList().hashCode();
+      }
+      if (getPartnerCount() > 0) {
+        hash = (37 * hash) + PARTNER_FIELD_NUMBER;
+        hash = (53 * hash) + getPartnerList().hashCode();
+      }
+      if (getBattleFormationCount() > 0) {
+        hash = (37 * hash) + BATTLE_FORMATION_FIELD_NUMBER;
+        hash = (53 * hash) + getBattleFormationList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static proto.Hero.PBFormation parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static proto.Hero.PBFormation parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static proto.Hero.PBFormation parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static proto.Hero.PBFormation parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static proto.Hero.PBFormation parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static proto.Hero.PBFormation parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static proto.Hero.PBFormation parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static proto.Hero.PBFormation parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static proto.Hero.PBFormation parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static proto.Hero.PBFormation parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(proto.Hero.PBFormation prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code proto.PBFormation}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:proto.PBFormation)
+        proto.Hero.PBFormationOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return proto.Hero.internal_static_proto_PBFormation_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return proto.Hero.internal_static_proto_PBFormation_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                proto.Hero.PBFormation.class, proto.Hero.PBFormation.Builder.class);
+      }
+
+      // Construct using proto.Hero.PBFormation.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getFormationFieldBuilder();
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        if (formationBuilder_ == null) {
+          formation_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          formationBuilder_.clear();
+        }
+        partner_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        battleFormation_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return proto.Hero.internal_static_proto_PBFormation_descriptor;
+      }
+
+      public proto.Hero.PBFormation getDefaultInstanceForType() {
+        return proto.Hero.PBFormation.getDefaultInstance();
+      }
+
+      public proto.Hero.PBFormation build() {
+        proto.Hero.PBFormation result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public proto.Hero.PBFormation buildPartial() {
+        proto.Hero.PBFormation result = new proto.Hero.PBFormation(this);
+        int from_bitField0_ = bitField0_;
+        if (formationBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+            formation_ = java.util.Collections.unmodifiableList(formation_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.formation_ = formation_;
+        } else {
+          result.formation_ = formationBuilder_.build();
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          partner_ = java.util.Collections.unmodifiableList(partner_);
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.partner_ = partner_;
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          battleFormation_ = java.util.Collections.unmodifiableList(battleFormation_);
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.battleFormation_ = battleFormation_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof proto.Hero.PBFormation) {
+          return mergeFrom((proto.Hero.PBFormation)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(proto.Hero.PBFormation other) {
+        if (other == proto.Hero.PBFormation.getDefaultInstance()) return this;
+        if (formationBuilder_ == null) {
+          if (!other.formation_.isEmpty()) {
+            if (formation_.isEmpty()) {
+              formation_ = other.formation_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureFormationIsMutable();
+              formation_.addAll(other.formation_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.formation_.isEmpty()) {
+            if (formationBuilder_.isEmpty()) {
+              formationBuilder_.dispose();
+              formationBuilder_ = null;
+              formation_ = other.formation_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              formationBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getFormationFieldBuilder() : null;
+            } else {
+              formationBuilder_.addAllMessages(other.formation_);
+            }
+          }
+        }
+        if (!other.partner_.isEmpty()) {
+          if (partner_.isEmpty()) {
+            partner_ = other.partner_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensurePartnerIsMutable();
+            partner_.addAll(other.partner_);
+          }
+          onChanged();
+        }
+        if (!other.battleFormation_.isEmpty()) {
+          if (battleFormation_.isEmpty()) {
+            battleFormation_ = other.battleFormation_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            ensureBattleFormationIsMutable();
+            battleFormation_.addAll(other.battleFormation_);
+          }
+          onChanged();
+        }
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        proto.Hero.PBFormation parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (proto.Hero.PBFormation) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.util.List<proto.Hero.PBOneFormation> formation_ =
+        java.util.Collections.emptyList();
+      private void ensureFormationIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          formation_ = new java.util.ArrayList<proto.Hero.PBOneFormation>(formation_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          proto.Hero.PBOneFormation, proto.Hero.PBOneFormation.Builder, proto.Hero.PBOneFormationOrBuilder> formationBuilder_;
+
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public java.util.List<proto.Hero.PBOneFormation> getFormationList() {
+        if (formationBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(formation_);
+        } else {
+          return formationBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public int getFormationCount() {
+        if (formationBuilder_ == null) {
+          return formation_.size();
+        } else {
+          return formationBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public proto.Hero.PBOneFormation getFormation(int index) {
+        if (formationBuilder_ == null) {
+          return formation_.get(index);
+        } else {
+          return formationBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public Builder setFormation(
+          int index, proto.Hero.PBOneFormation value) {
+        if (formationBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFormationIsMutable();
+          formation_.set(index, value);
+          onChanged();
+        } else {
+          formationBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public Builder setFormation(
+          int index, proto.Hero.PBOneFormation.Builder builderForValue) {
+        if (formationBuilder_ == null) {
+          ensureFormationIsMutable();
+          formation_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          formationBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public Builder addFormation(proto.Hero.PBOneFormation value) {
+        if (formationBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFormationIsMutable();
+          formation_.add(value);
+          onChanged();
+        } else {
+          formationBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public Builder addFormation(
+          int index, proto.Hero.PBOneFormation value) {
+        if (formationBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFormationIsMutable();
+          formation_.add(index, value);
+          onChanged();
+        } else {
+          formationBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public Builder addFormation(
+          proto.Hero.PBOneFormation.Builder builderForValue) {
+        if (formationBuilder_ == null) {
+          ensureFormationIsMutable();
+          formation_.add(builderForValue.build());
+          onChanged();
+        } else {
+          formationBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public Builder addFormation(
+          int index, proto.Hero.PBOneFormation.Builder builderForValue) {
+        if (formationBuilder_ == null) {
+          ensureFormationIsMutable();
+          formation_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          formationBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public Builder addAllFormation(
+          java.lang.Iterable<? extends proto.Hero.PBOneFormation> values) {
+        if (formationBuilder_ == null) {
+          ensureFormationIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, formation_);
+          onChanged();
+        } else {
+          formationBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public Builder clearFormation() {
+        if (formationBuilder_ == null) {
+          formation_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          formationBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public Builder removeFormation(int index) {
+        if (formationBuilder_ == null) {
+          ensureFormationIsMutable();
+          formation_.remove(index);
+          onChanged();
+        } else {
+          formationBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public proto.Hero.PBOneFormation.Builder getFormationBuilder(
+          int index) {
+        return getFormationFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public proto.Hero.PBOneFormationOrBuilder getFormationOrBuilder(
+          int index) {
+        if (formationBuilder_ == null) {
+          return formation_.get(index);  } else {
+          return formationBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public java.util.List<? extends proto.Hero.PBOneFormationOrBuilder> 
+           getFormationOrBuilderList() {
+        if (formationBuilder_ != null) {
+          return formationBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(formation_);
+        }
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public proto.Hero.PBOneFormation.Builder addFormationBuilder() {
+        return getFormationFieldBuilder().addBuilder(
+            proto.Hero.PBOneFormation.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public proto.Hero.PBOneFormation.Builder addFormationBuilder(
+          int index) {
+        return getFormationFieldBuilder().addBuilder(
+            index, proto.Hero.PBOneFormation.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .proto.PBOneFormation formation = 1;</code>
+       */
+      public java.util.List<proto.Hero.PBOneFormation.Builder> 
+           getFormationBuilderList() {
+        return getFormationFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          proto.Hero.PBOneFormation, proto.Hero.PBOneFormation.Builder, proto.Hero.PBOneFormationOrBuilder> 
+          getFormationFieldBuilder() {
+        if (formationBuilder_ == null) {
+          formationBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              proto.Hero.PBOneFormation, proto.Hero.PBOneFormation.Builder, proto.Hero.PBOneFormationOrBuilder>(
+                  formation_,
+                  ((bitField0_ & 0x00000001) == 0x00000001),
+                  getParentForChildren(),
+                  isClean());
+          formation_ = null;
+        }
+        return formationBuilder_;
+      }
+
+      private java.util.List<java.lang.Long> partner_ = java.util.Collections.emptyList();
+      private void ensurePartnerIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          partner_ = new java.util.ArrayList<java.lang.Long>(partner_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated int64 partner = 2;</code>
+       */
+      public java.util.List<java.lang.Long>
+          getPartnerList() {
+        return java.util.Collections.unmodifiableList(partner_);
+      }
+      /**
+       * <code>repeated int64 partner = 2;</code>
+       */
+      public int getPartnerCount() {
+        return partner_.size();
+      }
+      /**
+       * <code>repeated int64 partner = 2;</code>
+       */
+      public long getPartner(int index) {
+        return partner_.get(index);
+      }
+      /**
+       * <code>repeated int64 partner = 2;</code>
+       */
+      public Builder setPartner(
+          int index, long value) {
+        ensurePartnerIsMutable();
+        partner_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int64 partner = 2;</code>
+       */
+      public Builder addPartner(long value) {
+        ensurePartnerIsMutable();
+        partner_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int64 partner = 2;</code>
+       */
+      public Builder addAllPartner(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensurePartnerIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, partner_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int64 partner = 2;</code>
+       */
+      public Builder clearPartner() {
+        partner_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<java.lang.Long> battleFormation_ = java.util.Collections.emptyList();
+      private void ensureBattleFormationIsMutable() {
+        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
+          battleFormation_ = new java.util.ArrayList<java.lang.Long>(battleFormation_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+      /**
+       * <code>repeated int64 battle_formation = 3;</code>
+       */
+      public java.util.List<java.lang.Long>
+          getBattleFormationList() {
+        return java.util.Collections.unmodifiableList(battleFormation_);
+      }
+      /**
+       * <code>repeated int64 battle_formation = 3;</code>
+       */
+      public int getBattleFormationCount() {
+        return battleFormation_.size();
+      }
+      /**
+       * <code>repeated int64 battle_formation = 3;</code>
+       */
+      public long getBattleFormation(int index) {
+        return battleFormation_.get(index);
+      }
+      /**
+       * <code>repeated int64 battle_formation = 3;</code>
+       */
+      public Builder setBattleFormation(
+          int index, long value) {
+        ensureBattleFormationIsMutable();
+        battleFormation_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int64 battle_formation = 3;</code>
+       */
+      public Builder addBattleFormation(long value) {
+        ensureBattleFormationIsMutable();
+        battleFormation_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int64 battle_formation = 3;</code>
+       */
+      public Builder addAllBattleFormation(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensureBattleFormationIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, battleFormation_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int64 battle_formation = 3;</code>
+       */
+      public Builder clearBattleFormation() {
+        battleFormation_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:proto.PBFormation)
+    }
+
+    // @@protoc_insertion_point(class_scope:proto.PBFormation)
+    private static final proto.Hero.PBFormation DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new proto.Hero.PBFormation();
+    }
+
+    public static proto.Hero.PBFormation getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<PBFormation>
+        PARSER = new com.google.protobuf.AbstractParser<PBFormation>() {
+      public PBFormation parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new PBFormation(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<PBFormation> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<PBFormation> getParserForType() {
+      return PARSER;
+    }
+
+    public proto.Hero.PBFormation getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface PBOneFormationOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:proto.PBOneFormation)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional int64 hero_id = 1;</code>
+     */
+    long getHeroId();
+
+    /**
+     * <code>repeated int64 equip = 2;</code>
+     */
+    java.util.List<java.lang.Long> getEquipList();
+    /**
+     * <code>repeated int64 equip = 2;</code>
+     */
+    int getEquipCount();
+    /**
+     * <code>repeated int64 equip = 2;</code>
+     */
+    long getEquip(int index);
+
+    /**
+     * <code>optional int64 pet_id = 3;</code>
+     */
+    long getPetId();
+
+    /**
+     * <code>optional int64 horse_id = 4;</code>
+     */
+    long getHorseId();
+
+    /**
+     * <code>optional int64 mingjiang_id = 5;</code>
+     */
+    long getMingjiangId();
+  }
+  /**
+   * Protobuf type {@code proto.PBOneFormation}
+   */
+  public  static final class PBOneFormation extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:proto.PBOneFormation)
+      PBOneFormationOrBuilder {
+    // Use PBOneFormation.newBuilder() to construct.
+    private PBOneFormation(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private PBOneFormation() {
+      heroId_ = 0L;
+      equip_ = java.util.Collections.emptyList();
+      petId_ = 0L;
+      horseId_ = 0L;
+      mingjiangId_ = 0L;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private PBOneFormation(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+
+              heroId_ = input.readInt64();
+              break;
+            }
+            case 16: {
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                equip_ = new java.util.ArrayList<java.lang.Long>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              equip_.add(input.readInt64());
+              break;
+            }
+            case 18: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002) && input.getBytesUntilLimit() > 0) {
+                equip_ = new java.util.ArrayList<java.lang.Long>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                equip_.add(input.readInt64());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 24: {
+
+              petId_ = input.readInt64();
+              break;
+            }
+            case 32: {
+
+              horseId_ = input.readInt64();
+              break;
+            }
+            case 40: {
+
+              mingjiangId_ = input.readInt64();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+          equip_ = java.util.Collections.unmodifiableList(equip_);
+        }
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return proto.Hero.internal_static_proto_PBOneFormation_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return proto.Hero.internal_static_proto_PBOneFormation_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              proto.Hero.PBOneFormation.class, proto.Hero.PBOneFormation.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int HERO_ID_FIELD_NUMBER = 1;
+    private long heroId_;
+    /**
+     * <code>optional int64 hero_id = 1;</code>
+     */
+    public long getHeroId() {
+      return heroId_;
+    }
+
+    public static final int EQUIP_FIELD_NUMBER = 2;
+    private java.util.List<java.lang.Long> equip_;
+    /**
+     * <code>repeated int64 equip = 2;</code>
+     */
+    public java.util.List<java.lang.Long>
+        getEquipList() {
+      return equip_;
+    }
+    /**
+     * <code>repeated int64 equip = 2;</code>
+     */
+    public int getEquipCount() {
+      return equip_.size();
+    }
+    /**
+     * <code>repeated int64 equip = 2;</code>
+     */
+    public long getEquip(int index) {
+      return equip_.get(index);
+    }
+    private int equipMemoizedSerializedSize = -1;
+
+    public static final int PET_ID_FIELD_NUMBER = 3;
+    private long petId_;
+    /**
+     * <code>optional int64 pet_id = 3;</code>
+     */
+    public long getPetId() {
+      return petId_;
+    }
+
+    public static final int HORSE_ID_FIELD_NUMBER = 4;
+    private long horseId_;
+    /**
+     * <code>optional int64 horse_id = 4;</code>
+     */
+    public long getHorseId() {
+      return horseId_;
+    }
+
+    public static final int MINGJIANG_ID_FIELD_NUMBER = 5;
+    private long mingjiangId_;
+    /**
+     * <code>optional int64 mingjiang_id = 5;</code>
+     */
+    public long getMingjiangId() {
+      return mingjiangId_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (heroId_ != 0L) {
+        output.writeInt64(1, heroId_);
+      }
+      if (getEquipList().size() > 0) {
+        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(equipMemoizedSerializedSize);
+      }
+      for (int i = 0; i < equip_.size(); i++) {
+        output.writeInt64NoTag(equip_.get(i));
+      }
+      if (petId_ != 0L) {
+        output.writeInt64(3, petId_);
+      }
+      if (horseId_ != 0L) {
+        output.writeInt64(4, horseId_);
+      }
+      if (mingjiangId_ != 0L) {
+        output.writeInt64(5, mingjiangId_);
+      }
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (heroId_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, heroId_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < equip_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt64SizeNoTag(equip_.get(i));
+        }
+        size += dataSize;
+        if (!getEquipList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        equipMemoizedSerializedSize = dataSize;
+      }
+      if (petId_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(3, petId_);
+      }
+      if (horseId_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(4, horseId_);
+      }
+      if (mingjiangId_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(5, mingjiangId_);
+      }
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof proto.Hero.PBOneFormation)) {
+        return super.equals(obj);
+      }
+      proto.Hero.PBOneFormation other = (proto.Hero.PBOneFormation) obj;
+
+      boolean result = true;
+      result = result && (getHeroId()
+          == other.getHeroId());
+      result = result && getEquipList()
+          .equals(other.getEquipList());
+      result = result && (getPetId()
+          == other.getPetId());
+      result = result && (getHorseId()
+          == other.getHorseId());
+      result = result && (getMingjiangId()
+          == other.getMingjiangId());
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (37 * hash) + HERO_ID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getHeroId());
+      if (getEquipCount() > 0) {
+        hash = (37 * hash) + EQUIP_FIELD_NUMBER;
+        hash = (53 * hash) + getEquipList().hashCode();
+      }
+      hash = (37 * hash) + PET_ID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getPetId());
+      hash = (37 * hash) + HORSE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getHorseId());
+      hash = (37 * hash) + MINGJIANG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getMingjiangId());
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static proto.Hero.PBOneFormation parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static proto.Hero.PBOneFormation parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static proto.Hero.PBOneFormation parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static proto.Hero.PBOneFormation parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static proto.Hero.PBOneFormation parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static proto.Hero.PBOneFormation parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static proto.Hero.PBOneFormation parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static proto.Hero.PBOneFormation parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static proto.Hero.PBOneFormation parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static proto.Hero.PBOneFormation parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(proto.Hero.PBOneFormation prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code proto.PBOneFormation}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:proto.PBOneFormation)
+        proto.Hero.PBOneFormationOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return proto.Hero.internal_static_proto_PBOneFormation_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return proto.Hero.internal_static_proto_PBOneFormation_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                proto.Hero.PBOneFormation.class, proto.Hero.PBOneFormation.Builder.class);
+      }
+
+      // Construct using proto.Hero.PBOneFormation.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        heroId_ = 0L;
+
+        equip_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        petId_ = 0L;
+
+        horseId_ = 0L;
+
+        mingjiangId_ = 0L;
+
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return proto.Hero.internal_static_proto_PBOneFormation_descriptor;
+      }
+
+      public proto.Hero.PBOneFormation getDefaultInstanceForType() {
+        return proto.Hero.PBOneFormation.getDefaultInstance();
+      }
+
+      public proto.Hero.PBOneFormation build() {
+        proto.Hero.PBOneFormation result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public proto.Hero.PBOneFormation buildPartial() {
+        proto.Hero.PBOneFormation result = new proto.Hero.PBOneFormation(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        result.heroId_ = heroId_;
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          equip_ = java.util.Collections.unmodifiableList(equip_);
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.equip_ = equip_;
+        result.petId_ = petId_;
+        result.horseId_ = horseId_;
+        result.mingjiangId_ = mingjiangId_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof proto.Hero.PBOneFormation) {
+          return mergeFrom((proto.Hero.PBOneFormation)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(proto.Hero.PBOneFormation other) {
+        if (other == proto.Hero.PBOneFormation.getDefaultInstance()) return this;
+        if (other.getHeroId() != 0L) {
+          setHeroId(other.getHeroId());
+        }
+        if (!other.equip_.isEmpty()) {
+          if (equip_.isEmpty()) {
+            equip_ = other.equip_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureEquipIsMutable();
+            equip_.addAll(other.equip_);
+          }
+          onChanged();
+        }
+        if (other.getPetId() != 0L) {
+          setPetId(other.getPetId());
+        }
+        if (other.getHorseId() != 0L) {
+          setHorseId(other.getHorseId());
+        }
+        if (other.getMingjiangId() != 0L) {
+          setMingjiangId(other.getMingjiangId());
+        }
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        proto.Hero.PBOneFormation parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (proto.Hero.PBOneFormation) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private long heroId_ ;
+      /**
+       * <code>optional int64 hero_id = 1;</code>
+       */
+      public long getHeroId() {
+        return heroId_;
+      }
+      /**
+       * <code>optional int64 hero_id = 1;</code>
+       */
+      public Builder setHeroId(long value) {
+        
+        heroId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 hero_id = 1;</code>
+       */
+      public Builder clearHeroId() {
+        
+        heroId_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<java.lang.Long> equip_ = java.util.Collections.emptyList();
+      private void ensureEquipIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          equip_ = new java.util.ArrayList<java.lang.Long>(equip_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated int64 equip = 2;</code>
+       */
+      public java.util.List<java.lang.Long>
+          getEquipList() {
+        return java.util.Collections.unmodifiableList(equip_);
+      }
+      /**
+       * <code>repeated int64 equip = 2;</code>
+       */
+      public int getEquipCount() {
+        return equip_.size();
+      }
+      /**
+       * <code>repeated int64 equip = 2;</code>
+       */
+      public long getEquip(int index) {
+        return equip_.get(index);
+      }
+      /**
+       * <code>repeated int64 equip = 2;</code>
+       */
+      public Builder setEquip(
+          int index, long value) {
+        ensureEquipIsMutable();
+        equip_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int64 equip = 2;</code>
+       */
+      public Builder addEquip(long value) {
+        ensureEquipIsMutable();
+        equip_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int64 equip = 2;</code>
+       */
+      public Builder addAllEquip(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensureEquipIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, equip_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int64 equip = 2;</code>
+       */
+      public Builder clearEquip() {
+        equip_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private long petId_ ;
+      /**
+       * <code>optional int64 pet_id = 3;</code>
+       */
+      public long getPetId() {
+        return petId_;
+      }
+      /**
+       * <code>optional int64 pet_id = 3;</code>
+       */
+      public Builder setPetId(long value) {
+        
+        petId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 pet_id = 3;</code>
+       */
+      public Builder clearPetId() {
+        
+        petId_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long horseId_ ;
+      /**
+       * <code>optional int64 horse_id = 4;</code>
+       */
+      public long getHorseId() {
+        return horseId_;
+      }
+      /**
+       * <code>optional int64 horse_id = 4;</code>
+       */
+      public Builder setHorseId(long value) {
+        
+        horseId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 horse_id = 4;</code>
+       */
+      public Builder clearHorseId() {
+        
+        horseId_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long mingjiangId_ ;
+      /**
+       * <code>optional int64 mingjiang_id = 5;</code>
+       */
+      public long getMingjiangId() {
+        return mingjiangId_;
+      }
+      /**
+       * <code>optional int64 mingjiang_id = 5;</code>
+       */
+      public Builder setMingjiangId(long value) {
+        
+        mingjiangId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 mingjiang_id = 5;</code>
+       */
+      public Builder clearMingjiangId() {
+        
+        mingjiangId_ = 0L;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:proto.PBOneFormation)
+    }
+
+    // @@protoc_insertion_point(class_scope:proto.PBOneFormation)
+    private static final proto.Hero.PBOneFormation DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new proto.Hero.PBOneFormation();
+    }
+
+    public static proto.Hero.PBOneFormation getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<PBOneFormation>
+        PARSER = new com.google.protobuf.AbstractParser<PBOneFormation>() {
+      public PBOneFormation parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new PBOneFormation(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<PBOneFormation> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<PBOneFormation> getParserForType() {
+      return PARSER;
+    }
+
+    public proto.Hero.PBOneFormation getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_proto_PBHeroEntity_descriptor;
   private static final 
@@ -1311,6 +3188,16 @@ public final class Hero {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_proto_PBHeroEntity_AttributesEntry_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_proto_PBFormation_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_proto_PBFormation_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_proto_PBOneFormation_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_proto_PBOneFormation_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1327,7 +3214,12 @@ public final class Hero {
       "\022\026\n\016tianming_level\030\010 \001(\005\0227\n\nattributes\030\t" +
       " \003(\0132#.proto.PBHeroEntity.AttributesEntr" +
       "y\0321\n\017AttributesEntry\022\013\n\003key\030\001 \001(\005\022\r\n\005val" +
-      "ue\030\002 \001(\005:\0028\001b\006proto3"
+      "ue\030\002 \001(\005:\0028\001\"b\n\013PBFormation\022(\n\tformation" +
+      "\030\001 \003(\0132\025.proto.PBOneFormation\022\017\n\007partner" +
+      "\030\002 \003(\003\022\030\n\020battle_formation\030\003 \003(\003\"h\n\016PBOn",
+      "eFormation\022\017\n\007hero_id\030\001 \001(\003\022\r\n\005equip\030\002 \003" +
+      "(\003\022\016\n\006pet_id\030\003 \001(\003\022\020\n\010horse_id\030\004 \001(\003\022\024\n\014" +
+      "mingjiang_id\030\005 \001(\003b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1353,6 +3245,18 @@ public final class Hero {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PBHeroEntity_AttributesEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
+    internal_static_proto_PBFormation_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_proto_PBFormation_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_proto_PBFormation_descriptor,
+        new java.lang.String[] { "Formation", "Partner", "BattleFormation", });
+    internal_static_proto_PBOneFormation_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_proto_PBOneFormation_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_proto_PBOneFormation_descriptor,
+        new java.lang.String[] { "HeroId", "Equip", "PetId", "HorseId", "MingjiangId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

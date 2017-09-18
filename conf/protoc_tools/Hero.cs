@@ -28,11 +28,18 @@ namespace Proto {
             "IAMoBRITCgthd2FrZV9sZXZlbBgHIAEoBRIWCg50aWFubWluZ19sZXZlbBgI",
             "IAEoBRI3CgphdHRyaWJ1dGVzGAkgAygLMiMucHJvdG8uUEJIZXJvRW50aXR5",
             "LkF0dHJpYnV0ZXNFbnRyeRoxCg9BdHRyaWJ1dGVzRW50cnkSCwoDa2V5GAEg",
-            "ASgFEg0KBXZhbHVlGAIgASgFOgI4AWIGcHJvdG8z"));
+            "ASgFEg0KBXZhbHVlGAIgASgFOgI4ASJiCgtQQkZvcm1hdGlvbhIoCglmb3Jt",
+            "YXRpb24YASADKAsyFS5wcm90by5QQk9uZUZvcm1hdGlvbhIPCgdwYXJ0bmVy",
+            "GAIgAygDEhgKEGJhdHRsZV9mb3JtYXRpb24YAyADKAMiaAoOUEJPbmVGb3Jt",
+            "YXRpb24SDwoHaGVyb19pZBgBIAEoAxINCgVlcXVpcBgCIAMoAxIOCgZwZXRf",
+            "aWQYAyABKAMSEAoIaG9yc2VfaWQYBCABKAMSFAoMbWluZ2ppYW5nX2lkGAUg",
+            "ASgDYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBHeroEntity), global::Proto.PBHeroEntity.Parser, new[]{ "HeroId", "ConfId", "Level", "BreakLevel", "Exp", "AwakeInfo", "AwakeLevel", "TianmingLevel", "Attributes" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBHeroEntity), global::Proto.PBHeroEntity.Parser, new[]{ "HeroId", "ConfId", "Level", "BreakLevel", "Exp", "AwakeInfo", "AwakeLevel", "TianmingLevel", "Attributes" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBFormation), global::Proto.PBFormation.Parser, new[]{ "Formation", "Partner", "BattleFormation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBOneFormation), global::Proto.PBOneFormation.Parser, new[]{ "HeroId", "Equip", "PetId", "HorseId", "MingjiangId" }, null, null, null)
           }));
     }
     #endregion
@@ -357,6 +364,379 @@ namespace Proto {
           }
           case 74: {
             attributes_.AddEntriesFrom(input, _map_attributes_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PBFormation : pb::IMessage<PBFormation> {
+    private static readonly pb::MessageParser<PBFormation> _parser = new pb::MessageParser<PBFormation>(() => new PBFormation());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PBFormation> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Proto.HeroReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PBFormation() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PBFormation(PBFormation other) : this() {
+      formation_ = other.formation_.Clone();
+      partner_ = other.partner_.Clone();
+      battleFormation_ = other.battleFormation_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PBFormation Clone() {
+      return new PBFormation(this);
+    }
+
+    /// <summary>Field number for the "formation" field.</summary>
+    public const int FormationFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Proto.PBOneFormation> _repeated_formation_codec
+        = pb::FieldCodec.ForMessage(10, global::Proto.PBOneFormation.Parser);
+    private readonly pbc::RepeatedField<global::Proto.PBOneFormation> formation_ = new pbc::RepeatedField<global::Proto.PBOneFormation>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Proto.PBOneFormation> Formation {
+      get { return formation_; }
+    }
+
+    /// <summary>Field number for the "partner" field.</summary>
+    public const int PartnerFieldNumber = 2;
+    private static readonly pb::FieldCodec<long> _repeated_partner_codec
+        = pb::FieldCodec.ForInt64(18);
+    private readonly pbc::RepeatedField<long> partner_ = new pbc::RepeatedField<long>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<long> Partner {
+      get { return partner_; }
+    }
+
+    /// <summary>Field number for the "battle_formation" field.</summary>
+    public const int BattleFormationFieldNumber = 3;
+    private static readonly pb::FieldCodec<long> _repeated_battleFormation_codec
+        = pb::FieldCodec.ForInt64(26);
+    private readonly pbc::RepeatedField<long> battleFormation_ = new pbc::RepeatedField<long>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<long> BattleFormation {
+      get { return battleFormation_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PBFormation);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PBFormation other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!formation_.Equals(other.formation_)) return false;
+      if(!partner_.Equals(other.partner_)) return false;
+      if(!battleFormation_.Equals(other.battleFormation_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= formation_.GetHashCode();
+      hash ^= partner_.GetHashCode();
+      hash ^= battleFormation_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      formation_.WriteTo(output, _repeated_formation_codec);
+      partner_.WriteTo(output, _repeated_partner_codec);
+      battleFormation_.WriteTo(output, _repeated_battleFormation_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += formation_.CalculateSize(_repeated_formation_codec);
+      size += partner_.CalculateSize(_repeated_partner_codec);
+      size += battleFormation_.CalculateSize(_repeated_battleFormation_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PBFormation other) {
+      if (other == null) {
+        return;
+      }
+      formation_.Add(other.formation_);
+      partner_.Add(other.partner_);
+      battleFormation_.Add(other.battleFormation_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            formation_.AddEntriesFrom(input, _repeated_formation_codec);
+            break;
+          }
+          case 18:
+          case 16: {
+            partner_.AddEntriesFrom(input, _repeated_partner_codec);
+            break;
+          }
+          case 26:
+          case 24: {
+            battleFormation_.AddEntriesFrom(input, _repeated_battleFormation_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PBOneFormation : pb::IMessage<PBOneFormation> {
+    private static readonly pb::MessageParser<PBOneFormation> _parser = new pb::MessageParser<PBOneFormation>(() => new PBOneFormation());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PBOneFormation> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Proto.HeroReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PBOneFormation() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PBOneFormation(PBOneFormation other) : this() {
+      heroId_ = other.heroId_;
+      equip_ = other.equip_.Clone();
+      petId_ = other.petId_;
+      horseId_ = other.horseId_;
+      mingjiangId_ = other.mingjiangId_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PBOneFormation Clone() {
+      return new PBOneFormation(this);
+    }
+
+    /// <summary>Field number for the "hero_id" field.</summary>
+    public const int HeroIdFieldNumber = 1;
+    private long heroId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long HeroId {
+      get { return heroId_; }
+      set {
+        heroId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "equip" field.</summary>
+    public const int EquipFieldNumber = 2;
+    private static readonly pb::FieldCodec<long> _repeated_equip_codec
+        = pb::FieldCodec.ForInt64(18);
+    private readonly pbc::RepeatedField<long> equip_ = new pbc::RepeatedField<long>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<long> Equip {
+      get { return equip_; }
+    }
+
+    /// <summary>Field number for the "pet_id" field.</summary>
+    public const int PetIdFieldNumber = 3;
+    private long petId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long PetId {
+      get { return petId_; }
+      set {
+        petId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "horse_id" field.</summary>
+    public const int HorseIdFieldNumber = 4;
+    private long horseId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long HorseId {
+      get { return horseId_; }
+      set {
+        horseId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mingjiang_id" field.</summary>
+    public const int MingjiangIdFieldNumber = 5;
+    private long mingjiangId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long MingjiangId {
+      get { return mingjiangId_; }
+      set {
+        mingjiangId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PBOneFormation);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PBOneFormation other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (HeroId != other.HeroId) return false;
+      if(!equip_.Equals(other.equip_)) return false;
+      if (PetId != other.PetId) return false;
+      if (HorseId != other.HorseId) return false;
+      if (MingjiangId != other.MingjiangId) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HeroId != 0L) hash ^= HeroId.GetHashCode();
+      hash ^= equip_.GetHashCode();
+      if (PetId != 0L) hash ^= PetId.GetHashCode();
+      if (HorseId != 0L) hash ^= HorseId.GetHashCode();
+      if (MingjiangId != 0L) hash ^= MingjiangId.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (HeroId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(HeroId);
+      }
+      equip_.WriteTo(output, _repeated_equip_codec);
+      if (PetId != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(PetId);
+      }
+      if (HorseId != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(HorseId);
+      }
+      if (MingjiangId != 0L) {
+        output.WriteRawTag(40);
+        output.WriteInt64(MingjiangId);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HeroId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(HeroId);
+      }
+      size += equip_.CalculateSize(_repeated_equip_codec);
+      if (PetId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PetId);
+      }
+      if (HorseId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(HorseId);
+      }
+      if (MingjiangId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MingjiangId);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PBOneFormation other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HeroId != 0L) {
+        HeroId = other.HeroId;
+      }
+      equip_.Add(other.equip_);
+      if (other.PetId != 0L) {
+        PetId = other.PetId;
+      }
+      if (other.HorseId != 0L) {
+        HorseId = other.HorseId;
+      }
+      if (other.MingjiangId != 0L) {
+        MingjiangId = other.MingjiangId;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            HeroId = input.ReadInt64();
+            break;
+          }
+          case 18:
+          case 16: {
+            equip_.AddEntriesFrom(input, _repeated_equip_codec);
+            break;
+          }
+          case 24: {
+            PetId = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            HorseId = input.ReadInt64();
+            break;
+          }
+          case 40: {
+            MingjiangId = input.ReadInt64();
             break;
           }
         }

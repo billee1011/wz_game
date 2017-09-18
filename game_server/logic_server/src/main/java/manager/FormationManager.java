@@ -26,4 +26,17 @@ public class FormationManager {
 	public void formationEquip(RyCharacter ch, MessageHolder<MessageLite> holder) {
 		logger.info(" formation Equip  ");
 	}
+
+	public void addHeroToFormation(RyCharacter ch, MessageHolder<MessageLite> holder) {
+
+	}
+
+	public void changeHeroFromFormation(RyCharacter ch, MessageHolder<MessageHolder> holder) {
+
+	}
+
+	public void addHeroToPartners(RyCharacter ch, MessageHolder<MessageLite> holder) {
+
+	}
+
 }

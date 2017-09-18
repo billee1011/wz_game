@@ -29,4 +29,5 @@ message PBLoginSucc
 	map<int32, int64> res_map = 7;
 	repeated PBHeroEntity hero_list = 8;
 	repeated PBEquipEntity equip_list = 9;
+	PBFormation formation = 10;
 }

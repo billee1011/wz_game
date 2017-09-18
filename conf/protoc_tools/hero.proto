@@ -16,3 +16,20 @@ message PBHeroEntity
 	int32 tianming_level = 8;
 	map<int32,int32> attributes = 9;
 }
+
+
+message PBFormation
+{
+	repeated PBOneFormation formation = 1;
+	repeated int64 partner = 2;
+	repeated int64 battle_formation = 3;
+}
+
+message PBOneFormation
+{
+	int64 hero_id = 1;
+	repeated int64 equip = 2;
+	int64 pet_id = 3;
+	int64 horse_id = 4;
+	int64 mingjiang_id = 5;
+}

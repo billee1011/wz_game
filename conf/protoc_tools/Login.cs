@@ -25,19 +25,20 @@ namespace Proto {
             "Cgtsb2dpbi5wcm90bxIFcHJvdG8aCmhlcm8ucHJvdG8aC2VxdWlwLnByb3Rv",
             "IiwKClBCTG9naW5SZXESDwoHdXNlcl9pZBgBIAEoBRINCgV0b2tlbhgCIAEo",
             "CSIvCg9QQkNyZWF0ZVJvbGVSZXESDgoGZ2VuZGVyGAEgASgFEgwKBG5hbWUY",
-            "AiABKAkipQIKC1BCTG9naW5TdWNjEg8KB3VzZXJfaWQYASABKAUSEQoJcGxh",
+            "AiABKAkizAIKC1BCTG9naW5TdWNjEg8KB3VzZXJfaWQYASABKAUSEQoJcGxh",
             "eWVyX2lkGAIgASgDEgwKBG5hbWUYAyABKAkSDAoEdGlsaRgEIAEoBRIOCgZq",
             "aW5nbGkYBSABKAUSFAoMYmF0dGxlX3Njb3JlGAYgASgDEi8KB3Jlc19tYXAY",
             "ByADKAsyHi5wcm90by5QQkxvZ2luU3VjYy5SZXNNYXBFbnRyeRImCgloZXJv",
             "X2xpc3QYCCADKAsyEy5wcm90by5QQkhlcm9FbnRpdHkSKAoKZXF1aXBfbGlz",
-            "dBgJIAMoCzIULnByb3RvLlBCRXF1aXBFbnRpdHkaLQoLUmVzTWFwRW50cnkS",
-            "CwoDa2V5GAEgASgFEg0KBXZhbHVlGAIgASgDOgI4AWIGcHJvdG8z"));
+            "dBgJIAMoCzIULnByb3RvLlBCRXF1aXBFbnRpdHkSJQoJZm9ybWF0aW9uGAog",
+            "ASgLMhIucHJvdG8uUEJGb3JtYXRpb24aLQoLUmVzTWFwRW50cnkSCwoDa2V5",
+            "GAEgASgFEg0KBXZhbHVlGAIgASgDOgI4AWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Proto.HeroReflection.Descriptor, global::Proto.EquipReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBLoginReq), global::Proto.PBLoginReq.Parser, new[]{ "UserId", "Token" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBCreateRoleReq), global::Proto.PBCreateRoleReq.Parser, new[]{ "Gender", "Name" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBLoginSucc), global::Proto.PBLoginSucc.Parser, new[]{ "UserId", "PlayerId", "Name", "Tili", "Jingli", "BattleScore", "ResMap", "HeroList", "EquipList" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Proto.PBLoginSucc), global::Proto.PBLoginSucc.Parser, new[]{ "UserId", "PlayerId", "Name", "Tili", "Jingli", "BattleScore", "ResMap", "HeroList", "EquipList", "Formation" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -367,6 +368,7 @@ namespace Proto {
       resMap_ = other.resMap_.Clone();
       heroList_ = other.heroList_.Clone();
       equipList_ = other.equipList_.Clone();
+      Formation = other.formation_ != null ? other.Formation.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -470,6 +472,17 @@ namespace Proto {
       get { return equipList_; }
     }
 
+    /// <summary>Field number for the "formation" field.</summary>
+    public const int FormationFieldNumber = 10;
+    private global::Proto.PBFormation formation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Proto.PBFormation Formation {
+      get { return formation_; }
+      set {
+        formation_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PBLoginSucc);
@@ -492,6 +505,7 @@ namespace Proto {
       if (!ResMap.Equals(other.ResMap)) return false;
       if(!heroList_.Equals(other.heroList_)) return false;
       if(!equipList_.Equals(other.equipList_)) return false;
+      if (!object.Equals(Formation, other.Formation)) return false;
       return true;
     }
 
@@ -507,6 +521,7 @@ namespace Proto {
       hash ^= ResMap.GetHashCode();
       hash ^= heroList_.GetHashCode();
       hash ^= equipList_.GetHashCode();
+      if (formation_ != null) hash ^= Formation.GetHashCode();
       return hash;
     }
 
@@ -544,6 +559,10 @@ namespace Proto {
       resMap_.WriteTo(output, _map_resMap_codec);
       heroList_.WriteTo(output, _repeated_heroList_codec);
       equipList_.WriteTo(output, _repeated_equipList_codec);
+      if (formation_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(Formation);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -570,6 +589,9 @@ namespace Proto {
       size += resMap_.CalculateSize(_map_resMap_codec);
       size += heroList_.CalculateSize(_repeated_heroList_codec);
       size += equipList_.CalculateSize(_repeated_equipList_codec);
+      if (formation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Formation);
+      }
       return size;
     }
 
@@ -599,6 +621,12 @@ namespace Proto {
       resMap_.Add(other.resMap_);
       heroList_.Add(other.heroList_);
       equipList_.Add(other.equipList_);
+      if (other.formation_ != null) {
+        if (formation_ == null) {
+          formation_ = new global::Proto.PBFormation();
+        }
+        Formation.MergeFrom(other.Formation);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -643,6 +671,13 @@ namespace Proto {
           }
           case 74: {
             equipList_.AddEntriesFrom(input, _repeated_equipList_codec);
+            break;
+          }
+          case 82: {
+            if (formation_ == null) {
+              formation_ = new global::Proto.PBFormation();
+            }
+            input.ReadMessage(formation_);
             break;
           }
         }

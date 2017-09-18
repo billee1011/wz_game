@@ -2,6 +2,7 @@ package chr.equip;
 
 import base.IEntity;
 import chr.attr.AttrEntity;
+import chr.hero.HeroEntity;
 import config.bean.EBattleAttribute;
 import config.bean.Equip;
 import config.provider.EquipInfoProvider;
@@ -105,5 +106,9 @@ public class EquipEntity extends AttrEntity {
 		entity.setEntityId(entityId);
 		entity.setEquipId(confId);
 		return entity;
+	}
+
+	public static EquipEntity getEmptyEntity() {
+		return new EquipEntity();
 	}
 }

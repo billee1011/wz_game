@@ -1,6 +1,7 @@
 package chr;
 
 import base.EntityCreator;
+import chr.equip.EquipEntity;
 import chr.fotmation.Formation;
 import chr.hero.HeroEntity;
 import config.JsonUtil;
@@ -18,6 +19,7 @@ public class PlayerLoader {
 		RyCharacter ch = RyCharacter.getEmptyChar(data.getCharId());
 		loadBaseData(ch, data);
 		loadHeroEntity(ch, data);
+		loadEquipData(ch, data);
 		loadFormation(ch, data.getModuleData(DBAction.FORMATION));
 		ch.reloadAllItemAttribute();
 		return ch;
@@ -43,6 +45,26 @@ public class PlayerLoader {
 		ch.getResourceManager().updateResource(EMoney.SILVER, playerData.getLong("silver"), true);
 		ch.getResourceManager().updateResource(EMoney.REPUTATION, playerData.getLong("reputation"), true);
 	}
+
+	private static void loadEquipData(RyCharacter ch, CharData charData) {
+		MapObject baseData = charData.getModuleData(DBAction.EQUIP);
+		Object[] datas = (Object[]) baseData.get("" + ch.getEntityId());
+		for (Object data : datas) {
+			MapObject equipData = (MapObject) data;
+			EquipEntity equipEntity = EquipEntity.getEmptyEntity();
+			equipEntity.setEntityId(equipData.getLong("equip_id"));
+			equipEntity.setEquipId(equipData.getInt("conf_id"));
+			equipEntity.setLevel(equipData.getInt("level"));
+			equipEntity.setJinglianExp(equipData.getInt("jinglian_exp"));
+			equipEntity.setJinglianLevel(equipData.getInt("jinglian_level"));
+			equipEntity.setStarLevel(equipData.getInt("star_level"));
+			equipEntity.setStarExp(equipData.getInt("star_exp"));
+			equipEntity.setStarBless(equipData.getInt("star_bless"));
+			equipEntity.setGoldLevel(equipData.getInt("gold_level"));
+			ch.getCharEquip().addEntity(equipEntity);
+		}
+	}
+
 
 	//怎么读取都行啊， 反正都话
 	private static void loadHeroEntity(RyCharacter ch, CharData charData) {

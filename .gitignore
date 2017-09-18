@@ -7,6 +7,7 @@
 */target
 *.idea
 */target/*
+*/Temp/*
 *.log
 *.csprog
 *.sln

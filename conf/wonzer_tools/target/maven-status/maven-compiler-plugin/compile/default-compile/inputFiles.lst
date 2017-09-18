@@ -2,6 +2,7 @@ D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\Person.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\EEquipPos.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\util\JsonUtil.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\EJob.java
+D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\SkillClient.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\annotation\ListDesc.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\annotation\EnumField.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\ECountry.java
@@ -10,7 +11,9 @@ D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\Hello.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\EAttributeKeyValueClient.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\IConfig.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\Equip.java
+D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\ESkillType.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\Test.java
+D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\ESkillTarget.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\TestClient.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\util\ConvertUtil.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\EquipClient.java
@@ -29,6 +32,7 @@ D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\reader\PackConfigManager
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\reader\RoleNameReader.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\reader\Monster.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\HeroBase.java
+D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\Skill.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\Hero_union.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\HelloClient.java
 D:\game_develop\wz_game\conf\wonzer_tools\src\main\java\bean\EMoney.java

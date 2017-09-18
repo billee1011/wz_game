@@ -3,15 +3,18 @@ util\JsonToLua.class
 bean\ClientData.class
 bean\HeroBase.class
 bean\Hero_union.class
+bean\SkillClient.class
 bean\EJob.class
 bean\Test.class
 bean\Equip.class
+bean\Skill.class
 frame\MainPanel.class
 frame\MainPanel$3.class
 annotation\EnumField.class
 bean\EEquipPos.class
 bean\Person.class
 bean\EquipClient.class
+bean\ESkillTarget.class
 reader\PackConfigManager.class
 util\JsonUtil.class
 bean\IConfig.class
@@ -26,6 +29,7 @@ bean\Hello.class
 frame\MainPanel$1.class
 bean\EAttributeKeyValue.class
 bean\HelloClient.class
+bean\ESkillType.class
 frame\MainFrame.class
 bean\EItemQuality.class
 util\IConfParseBean.class

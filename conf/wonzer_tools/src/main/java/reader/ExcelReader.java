@@ -54,6 +54,7 @@ public class ExcelReader {
 
 		readExcel("Hero.xls");
 		readExcel("Equip.xls");
+		readExcel("skill.xls");
 	}
 
 	private static void readExcel(String fileName) {

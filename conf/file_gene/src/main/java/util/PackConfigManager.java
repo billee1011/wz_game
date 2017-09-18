@@ -126,6 +126,7 @@ public class PackConfigManager {
 		List<FieldConfig> clientList = new ArrayList<>();
 		List<FieldConfig> serverList = new ArrayList<>();
 		for (int i = 0; i < secondColumnCount; i++) {
+			System.out.println("the sheet name is " + sheet.getSheetName());
 			String modifyName = secondRow.getCell(i).getStringCellValue();
 			System.out.println("the total col num is " + secondColumnCount + "the column is " + i + "and the modify name is " + modifyName);
 			FieldConfig fieldConfig = new FieldConfig();

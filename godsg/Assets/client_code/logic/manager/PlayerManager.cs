@@ -21,6 +21,12 @@ class PlayerManager : Singleton<PlayerManager>
 
     private int jingli;
 
+    private Formation[] formations;
+
+    private long[] partners;
+
+    private long[] battleFormation;
+
     public void InitFromLoginData(PBLoginSucc pb)
     {
         this.playerId = pb.PlayerId;
@@ -43,6 +49,31 @@ class PlayerManager : Singleton<PlayerManager>
         {
             EquipManager.Instance.addEquipEntity(pb.EquipList[i]);
         }
+        formations = new Formation[6];
+        for (int i = 0, count = pb.Formation.Formation.Count; i < count; i++)
+        {
+            PBOneFormation formationPb = pb.Formation.Formation[i];
+            formations[i] = new Formation();
+            formations[i].HeroId = formationPb.HeroId;
+            formations[i].PetId = formationPb.PetId;
+            formations[i].HorseId = formationPb.HorseId;
+            formations[i].MingjiangId = formationPb.MingjiangId;
+            for(int j = 0 ,equipCount = formationPb.Equip.Count;j < count; j++)
+            {
+                formations[i].EquipList[i] = formationPb.Equip[i];
+            }
+        }
+        partners = pb.Formation.Partner.ToArray<long>();
+        battleFormation = pb.Formation.BattleFormation.ToArray<long>();
+    }
+
+    public long getHeroIdByFormationIndex(int index)
+    {
+        if (index < 0 || index >= formations.Length)
+            return 0L;
+        if(formations[index] == null)
+            return 0L;
+        return formations[index].HeroId;
     }
 
     public long GetResCount(EMoney type)

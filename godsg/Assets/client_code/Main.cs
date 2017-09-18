@@ -29,7 +29,6 @@ public class Main : MonoBehaviour
 
 
         //HttpUtil.Instance.sendGetRequest("http://localhost:10024/fast_login?machine_id=111111&channel=123&device=android", onLoginComplete, 3000);
-
         GameUiManager.getInst();
         PanelManager.GetInstance().registerAllPanel();
 
@@ -49,7 +48,7 @@ public class Main : MonoBehaviour
     {
         HttpUtil.Instance.OnUpdate();
         P3Net.NetClient.Instance.Update(Time.deltaTime);
-
+        P3GameClient.ClientEventManager.GetInstance().OnUpdate();
         intervalTime += Time.deltaTime;
 
         if( intervalTime > 5)
